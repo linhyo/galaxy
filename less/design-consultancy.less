@@ -1,0 +1,186 @@
+@pink: #fcdbd9;
+@pink-text: #bb949c;
+
+@blue: #c5cddb;
+@blue-text: #829ccb;
+
+@color-1: #c72129;
+@color-2: #f7c668;
+@color-3: #8fa96d;
+@color-4: #70cbb6;
+@color-5: #9ce7e3;
+@color-6: #6ca4c2;
+@color-7: #906fa1;
+@color-8: #ea7d99;
+@color-9: #cd6a88;
+@color-10: #ff91b3;
+
+#design-consultancy {
+  position: relative;
+  display: block;
+  width: 100%;
+  &:after {
+    .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #f07d19, #f6e829);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .block-content{
+    position: relative;
+    display: block;
+    &.pink{
+      color: @pink-text;
+      background-color: @pink;
+    }
+    &.blue{
+      color: @blue-text;
+      background-color: @blue;
+    }
+    .image-wrapper{
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 10px 0;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    h1.title-block{
+      color: #8b9aa7;
+      display: block;
+      margin: 0;
+      padding: 0 15px 0 3px;
+      font-weight: 700;
+      font-size: 20px;
+      background-color: #fff;
+      position: absolute;
+      z-index: 1;
+    }
+    .content-wraper{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 30px 0 20px;
+      &:after {
+        .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #a54c5a, #f6e829);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .padding5{
+        padding: 2px 5px !important;
+      }
+      .color-board{
+        .border-radius(8px);
+        width: 100%;
+        height: 80px;
+        display: inline-block;
+        &.color-1{
+          background-color: @color-1;
+        }
+        &.color-2{
+          background-color: @color-2;
+        }
+        &.color-3{
+          background-color: @color-3;
+        }
+        &.color-4{
+          background-color: @color-4;
+        }
+        &.color-5{
+          background-color: @color-5;
+        }
+        &.color-6{
+          background-color: @color-6;
+        }
+        &.color-7{
+          background-color: @color-7;
+        }
+        &.color-8{
+          background-color: @color-8;
+        }
+        &.color-9{
+          background-color: @color-9;
+        }
+        &.color-10{
+          background-color: @color-10;
+        }
+      }
+    }
+    .intro{
+      display: block;
+      padding: 15px 180px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      h1{
+        margin: 0 0 15px;
+        font-family: @import-font;
+        font-size: 30px;
+      }
+      p{
+        color: #7a797a;
+      }
+    }
+  }
+}
+
+.tab-header {
+  height: auto;
+  width: 100%;
+  display: block;
+  .background-gradient(#ffffff, #d2d4d5);
+  .nav-tabs {
+    border: none;
+    display: block;
+    margin: 25px 0 0;
+    padding: 0 15px;
+    li {
+      margin-right: 20px;
+      margin-bottom: 0;
+      min-width: 180px;
+      display: inline-block;
+      a {
+        font-weight: 600;
+        border: 0;
+        margin-right: 0;
+        color: #ffffff;
+        text-align: center;
+        background: #8b9aa7;
+        .transition(all, 0.3s, ease-out);
+      }
+
+      &:hover {
+        a {
+          border: 0;
+          background: rgba(0, 0, 0, .1);
+          color: #333333;
+        }
+      }
+
+      &.active {
+        position: relative;
+        a {
+          border: 0;
+          background: #ffffff;
+          color: #8393a1;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: -3px;
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+  }
+}
+
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}

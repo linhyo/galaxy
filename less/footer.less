@@ -1,0 +1,139 @@
+#footer {
+  width: 100%;
+  height: 70px;
+  background-color: #5b1e73;
+  .footer-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  .paint-roller {
+    position: absolute;
+    bottom: 0;
+    right: -90px;
+    width: 123px;
+    height: 90px;
+    background: transparent url("../images/paint-roller.png") no-repeat center center;
+    z-index: 10;
+  }
+  .white-bg {
+    position: absolute;
+    bottom: 0;
+    right: -89px;
+    width: 8%;
+    height: 70px;
+    background-color: #fff;
+  }
+  .copyright {
+    color: #fff;
+    //line-height: 70px;
+  }
+  .contact-now {
+    height: 70px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .social-network {
+    width: 40%;
+    ul > li {
+      display: inline-block;
+      margin-right: 10px;
+      > a {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: #fff;
+        .border-radius(50px);
+        text-align: center;
+        > i {
+          color: #753989;
+          font-size: 20px;
+          line-height: 38px;
+          &.fa-youtube-play {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+  .send-mail {
+    width: 53%;
+    .btn-send {
+      color: #fff;
+      .horizontal-gradient(#f4901e, #f6ea23);
+      border-color: #e3e4e5;
+      font-weight: 700;
+      padding: 6px 32px;
+    }
+    .form-control:focus {
+      border-color: #e3e4e5;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(253, 254, 255, 0.07), 0 0 8px rgba(179, 116, 205, 0.6);
+      box-shadow: inset 0 1px 1px rgba(253, 254, 255, 0.07), 0 0 8px rgba(179, 120, 205, 0.6);
+    }
+    #user-email {
+      &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+        color: #753989;
+        font-size: 13px;
+      }
+    }
+    #user-email::-webkit-input-placeholder {
+      color: #753989;
+      font-size: 13px;
+    }
+
+    #user-email:-moz-placeholder {
+      color: #753989;
+      font-size: 13px;
+    }
+
+    #user-email::-moz-placeholder {
+      color: #753989;
+      font-size: 13px;
+    }
+
+    #user-email:-ms-input-placeholder {
+      color: #753989;
+      font-size: 13px;
+    }
+    input, button {
+      .border-radius(0) !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .copyright {
+      line-height: 70px;
+    }
+    .contact-now {
+      height: 70px;
+    }
+  }
+  @media (max-width: 992px) {
+    .contact-now {
+      height: 50px;
+    }
+  }
+  @media (max-width: 480px) {
+    height: 120px;
+    .contact-now {
+      display: block;
+    }
+    .social-network {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .send-mail {
+      width: 96%;
+    }
+    .copyright {
+      margin: 5px 0;
+    }
+  }
+}

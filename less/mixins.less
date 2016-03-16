@@ -300,3 +300,24 @@
   background: -o-linear-gradient(left, @color-left 0%, @color-middle 50%, @color-right 100%);
   background: linear-gradient(left, @color-left 0%, @color-middle 50%, @color-right 100%);
 }
+
+.background-gradient-linear(@start : #ff4921, @middle : #ff9d87, @stop: #ff5421) {
+  background: -moz-linear-gradient(-45deg, @start 26%, @middle 51%, @stop 77%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(26%, @start), color-stop(51%, @middle), color-stop(77%, @stop)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, @start 26%, @middle 51%, @stop 77%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, @start 26%, @middle 51%, @stop 77%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, @start 26%, @middle 51%, @stop 77%); /* IE10+ */
+  background: linear-gradient(135deg, @start 26%, @middle 51%, @stop 77%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4921', endColorstr='@stop', GradientType=1);
+}
+
+.radial-position(@star-color : #1a82f7, @end-color:#2F2727) {
+  /* fallback */
+  background-color: transparent;
+  background-position: 70% 45%;
+  background-repeat: no-repeat; /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(radial, 70% 45%, 0, 80% 40%, 100, from(@star-color), to(@end-color)); /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(70% 45%, closest-corner, @star-color, @end-color); /* Firefox 3.6+ */
+  background: -moz-radial-gradient(70% 45%, closest-corner, @star-color, @end-color); /* IE 10 */
+  background: -ms-radial-gradient(70% 45%, closest-corner, @star-color, @end-color); /* Opera cannot do radial gradients yet */
+}

@@ -50,14 +50,23 @@
         width: 36px;
         height: 36px;
         background-color: #fff;
+        border: 1px solid transparent;
         .border-radius(50px);
         text-align: center;
         > i {
           color: #753989;
           font-size: 20px;
-          line-height: 38px;
+          line-height: 36px;
           &.fa-youtube-play {
             font-size: 22px;
+          }
+        }
+        &:hover {
+          background-color: #753989;
+          border-color: #fff;
+          .transition();
+          > i {
+            color: #fff;
           }
         }
       }

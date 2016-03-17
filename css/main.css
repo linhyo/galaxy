@@ -594,6 +594,7 @@ a:active {
   width: 36px;
   height: 36px;
   background-color: #fff;
+  border: 1px solid transparent;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -606,10 +607,22 @@ a:active {
 #footer .social-network ul > li > a > i {
   color: #753989;
   font-size: 20px;
-  line-height: 38px;
+  line-height: 36px;
 }
 #footer .social-network ul > li > a > i.fa-youtube-play {
   font-size: 22px;
+}
+#footer .social-network ul > li > a:hover {
+  background-color: #753989;
+  border-color: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#footer .social-network ul > li > a:hover > i {
+  color: #fff;
 }
 #footer .send-mail {
   width: 53%;

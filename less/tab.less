@@ -1,0 +1,55 @@
+.tab-header {
+  height: auto;
+  width: 100%;
+  display: block;
+  .gradient(#ffffff, #d2d4d5);
+  .nav-tabs {
+    border: none;
+    display: block;
+    margin: 25px 0 0;
+    padding: 0 15px;
+    li {
+      margin-right: 20px;
+      margin-bottom: 0;
+      min-width: 180px;
+      display: inline-block;
+      a {
+        font-weight: 600;
+        border: 0;
+        margin-right: 0;
+        color: #ffffff;
+        text-align: center;
+        background: #8b9aa7;
+        .transition(all, 0.3s, ease-out);
+      }
+
+      &:hover {
+        a {
+          border: 0;
+          background: rgba(0, 0, 0, .1);
+          color: #333333;
+        }
+      }
+
+      &.active {
+        position: relative;
+        a {
+          border: 0;
+          background: #ffffff;
+          color: #8393a1;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: -3px;
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+  }
+}
+
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}

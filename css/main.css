@@ -1395,14 +1395,14 @@ a:active {
   position: absolute;
   z-index: 1;
 }
-#design-consultancy .block-content .content-wrapper {
+.content-wrapper {
   position: relative;
   display: block;
   width: 100%;
   margin-top: 10px;
   padding: 30px 0 20px;
 }
-#design-consultancy .block-content .content-wrapper:after {
+.content-wrapper:after {
   border: 0;
   height: 8px;
   width: 100%;
@@ -1418,32 +1418,96 @@ a:active {
   left: 0;
   top: 0;
 }
-#design-consultancy .block-content .content-wrapper .media {
+.content-wrapper form {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.content-wrapper form label {
+  display: block;
+  width: 100%;
+}
+.content-wrapper form label input.cmd-search {
+  display: block;
+  border: 1px solid #a8b3bd;
+  width: 100%;
+  padding: 12px 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.content-wrapper form .search-color {
+  padding: 5px 15px 5px 35px;
+  position: absolute;
+  right: -120px;
+  top: 6px;
+  background-color: #bf1411;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
+  background-image: -webkit-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -moz-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -ms-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -o-linear-gradient(top, #bf1411, #f16e18);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3 ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+  -ms-transition: all 0.3 ease-out;
+  transition: all 0.3 ease-out;
+}
+.content-wrapper form .search-color:hover {
+  background-color: #96110d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#96110d), to(#d36015));
+  background-image: -webkit-linear-gradient(top, #96110d, #d36015);
+  background-image: -moz-linear-gradient(top, #96110d, #d36015);
+  background-image: -ms-linear-gradient(top, #96110d, #d36015);
+  background-image: -o-linear-gradient(top, #96110d, #d36015);
+}
+.content-wrapper form .search-color:before {
+  content: '';
+  background: url("../images/icon-search-color.png") no-repeat;
+  background-size: 20%;
+  width: 31;
+  height: 35px;
+  position: absolute;
+  left: 10px;
+  right: 0;
+}
+.content-wrapper .media {
   padding: 15px;
   border-bottom: 1px solid #96a3af;
   margin-bottom: 15px;
   min-height: 185px;
 }
-#design-consultancy .block-content .content-wrapper .media .media-left {
+.content-wrapper .media .media-left {
   padding-right: 20px;
 }
-#design-consultancy .block-content .content-wrapper .media .media-left a {
+.content-wrapper .media .media-left a {
   background-position: center center;
   background-size: cover;
   display: block;
   height: 130px;
   width: 170px;
 }
-#design-consultancy .block-content .content-wrapper .media .media-body {
+.content-wrapper .media .media-body {
   padding-bottom: 35px;
   position: relative;
 }
-#design-consultancy .block-content .content-wrapper .media .media-body .media-heading {
+.content-wrapper .media .media-body .media-heading {
   font-size: 16px;
   color: #96a3af;
   font-weight: 700;
 }
-#design-consultancy .block-content .content-wrapper .media .media-body a.btn-read-more {
+.content-wrapper .media .media-body a.btn-read-more {
   padding: 5px 15px;
   background-color: #bf1411;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
@@ -1467,7 +1531,7 @@ a:active {
   -ms-transition: all 0.3 ease-out;
   transition: all 0.3 ease-out;
 }
-#design-consultancy .block-content .content-wrapper .media .media-body a.btn-read-more:hover {
+.content-wrapper .media .media-body a.btn-read-more:hover {
   background-color: #96110d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#96110d), to(#d36015));
   background-image: -webkit-linear-gradient(top, #96110d, #d36015);
@@ -1475,10 +1539,10 @@ a:active {
   background-image: -ms-linear-gradient(top, #96110d, #d36015);
   background-image: -o-linear-gradient(top, #96110d, #d36015);
 }
-#design-consultancy .block-content .content-wrapper .padding5 {
+.content-wrapper .padding5 {
   padding: 2px 5px !important;
 }
-#design-consultancy .block-content .content-wrapper .color-board {
+.content-wrapper .color-board {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -1490,49 +1554,49 @@ a:active {
   height: 80px;
   display: inline-block;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-1 {
+.content-wrapper .color-board.color-1 {
   background-color: #c72129;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-2 {
+.content-wrapper .color-board.color-2 {
   background-color: #f7c668;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-3 {
+.content-wrapper .color-board.color-3 {
   background-color: #8fa96d;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-4 {
+.content-wrapper .color-board.color-4 {
   background-color: #70cbb6;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-5 {
+.content-wrapper .color-board.color-5 {
   background-color: #9ce7e3;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-6 {
+.content-wrapper .color-board.color-6 {
   background-color: #6ca4c2;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-7 {
+.content-wrapper .color-board.color-7 {
   background-color: #906fa1;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-8 {
+.content-wrapper .color-board.color-8 {
   background-color: #ea7d99;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-9 {
+.content-wrapper .color-board.color-9 {
   background-color: #cd6a88;
 }
-#design-consultancy .block-content .content-wrapper .color-board.color-10 {
+.content-wrapper .color-board.color-10 {
   background-color: #ff91b3;
 }
-#design-consultancy .block-content .intro {
+.intro {
   display: block;
   padding: 15px 180px;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-#design-consultancy .block-content .intro h1 {
+.intro h1 {
   margin: 0 0 15px;
   font-family: 'iCiel Bambola', sans-serif;
   font-size: 30px;
 }
-#design-consultancy .block-content .intro p {
+.intro p {
   color: #7a797a;
 }
 .tab-header {

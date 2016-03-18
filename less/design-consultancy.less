@@ -15,10 +15,17 @@
 @color-9: #cd6a88;
 @color-10: #ff91b3;
 
+.tab-content{
+  padding: 0;
+}
+
 #design-consultancy {
   position: relative;
   display: block;
   width: 100%;
+  #tab_painting_house{
+    margin-bottom: 10px;
+  }
   .block-content {
     position: relative;
     display: block;
@@ -29,6 +36,85 @@
     &.blue {
       color: @blue-text;
       background-color: @blue;
+    }
+    .guild-block {
+      width: 100%;
+      display: block;
+      padding: 3px;
+      margin-top: 10px;
+      border: 1px solid #c0c8cf;
+      .border-radius(8px);
+      text-align: center;
+      position: relative;
+      span {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        background: #4f1566;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 8px;
+        .border-radius-custom(4px, 0, 4px, 0);
+        .transition(all, 0.3, ease-out);
+      }
+      .img-guild {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        a.bg-guild {
+          position: relative;
+          width: 100%;
+          height: 210px;
+          display: block;
+          background-size: cover;
+          background-position: center center;
+          .transition(all, 1, ease);
+        }
+      }
+      .guild-content {
+        width: 100%;
+        display: block;
+        ul.action-content {
+          border: 1px solid #eceef0;
+          display: inline-block;
+          margin: 5px 0;
+          width: 100%;
+          li {
+            border-left: 1px solid #eceef0;
+            display: inline;
+            float: left;
+            width: 50%;
+            a {
+              display: block;
+              font-size: 20px;
+              color: #a8a8a8;
+              &:hover {
+                background: whitesmoke;
+              }
+            }
+            &:first-child {
+              border-left: 0;
+              text-align: right;
+              a {
+                padding: 0 30px 0 10px;
+              }
+            }
+            &:last-child {
+              text-align: left;
+              a {
+                padding: 0 10px 0 30px;
+              }
+            }
+          }
+        }
+        p {
+          text-align: left;
+          color: #acb7c0;
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+      }
     }
     .image-wrapper {
       display: block;
@@ -66,6 +152,34 @@
     position: absolute;
     left: 0;
     top: 0;
+  }
+  .pagination {
+    float: right;
+    li {
+      display: inline-block;
+      a {
+        .border-radius(0);
+        border: 0;
+        color: white;
+        font-weight: 400;
+        background-color: #8b9aa7;
+      }
+      &.disable {
+        a {
+          background-color: #8b9aa7;
+        }
+      }
+      &.active {
+        a {
+          .horizontal-gradient(#f4941f, #fcf157);
+        }
+      }
+      &:hover {
+        a {
+          background-color: #707b86;
+        }
+      }
+    }
   }
   form{
     display: block;
@@ -123,6 +237,12 @@
         display: block;
         height: 130px;
         width: 170px;
+      }
+      @media (max-width: 360px) {
+        a{
+          height: 55px;
+          width: 85px;
+        }
       }
     }
     .media-body {
@@ -191,12 +311,15 @@
     }
   }
 }
+
 .intro {
   display: block;
-  padding: 15px 180px;
-  width: 100%;
   height: 100%;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 15px 0;
   text-align: center;
+  width: 100%;
   h1 {
     margin: 0 0 15px;
     font-family: @import-font;
@@ -204,6 +327,58 @@
   }
   p {
     color: #7a797a;
+  }
+}
+
+.tab-header {
+  height: auto;
+  width: 100%;
+  display: block;
+  .gradient(#ffffff, #d2d4d5);
+  .nav-tabs {
+    border: none;
+    display: block;
+    margin: 25px 0 0;
+    padding: 0;
+    li {
+      margin-right: 20px;
+      margin-bottom: 0;
+      min-width: 180px;
+      display: inline-block;
+      a {
+        font-weight: 600;
+        border: 0;
+        margin-right: 0;
+        color: #ffffff;
+        text-align: center;
+        background: #8b9aa7;
+        .transition(all, 0.3s, ease-out);
+      }
+
+      &:hover {
+        a {
+          border: 0;
+          background: rgba(0, 0, 0, .1);
+          color: #333333;
+        }
+      }
+
+      &.active {
+        position: relative;
+        a {
+          border: 0;
+          background: #ffffff;
+          color: #8393a1;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: -3px;
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
   }
 }
 
@@ -305,10 +480,6 @@
       }
     }
   }
-}
-
-.portlet .tabbable-line > .tab-content {
-  padding-bottom: 0;
 }
 
 @dark-red-color : #ac1400;

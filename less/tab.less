@@ -8,6 +8,7 @@
     display: block;
     margin: 25px 0 0;
     li {
+      width: auto;
       display: inline-block;
       margin-right: 20px;
       margin-bottom: 0;
@@ -36,6 +37,14 @@
           border: 0;
           background: #ffffff;
           color: #8393a1;
+        }
+      }
+    }
+    @media (max-width: 360px) {
+      li{
+        width: 100%;
+        a{
+          .border-radius(0);
         }
       }
     }

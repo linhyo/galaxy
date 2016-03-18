@@ -466,7 +466,8 @@ a:active {
   transform: translateY(-10px);
 }
 .navbar-nav > li > a:hover::after,
-.navbar-nav > li > a:focus::after {
+.navbar-nav > li > a:focus::after,
+.navbar-nav > .active > a:after {
   height: 5px;
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -482,13 +483,6 @@ a:active {
 }
 .navbar-nav > .active > a {
   color: #fff;
-}
-.navbar-nav > .active > a:after {
-  height: 5px;
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px);
 }
 .navbar-nav > .open > a {
   color: #555;
@@ -597,6 +591,35 @@ a:active {
   .navbar-form:after {
     right: 8px;
   }
+}
+.top-banner {
+  position: relative;
+  width: 100%;
+  height: 325px;
+  background: transparent no-repeat center center / cover;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.top-banner:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+}
+.top-banner.product-banner {
+  background-image: url("../images/banner/banner-6.jpg");
 }
 #footer {
   width: 100%;
@@ -782,13 +805,12 @@ a:active {
   border: none;
   display: block;
   margin: 25px 0 0;
-  padding: 0 15px;
 }
 .tab-header .nav-tabs li {
+  display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
   min-width: 180px;
-  display: inline-block;
 }
 .tab-header .nav-tabs li a {
   font-weight: 600;
@@ -816,12 +838,15 @@ a:active {
   background: #ffffff;
   color: #8393a1;
 }
-.tab-header .tab-content {
-  margin-top: -3px;
+.tab-header.product-tab .nav-tabs li {
+  margin-right: 1%;
+  min-width: 13%;
+}
+.tab-content {
   background-color: #fff;
-  border: 0;
+  border: none;
   border-top: 1px solid #eee;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
@@ -839,9 +864,16 @@ a:active {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 100%;
+  border: 0;
   height: 8px;
-  background: transparent url("../images/divider.png") repeat-x top center;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
 }
 #galaxyBanner {
   width: 100%;
@@ -1657,62 +1689,6 @@ a:active {
 .intro p {
   color: #7a797a;
 }
-.tab-header {
-  height: auto;
-  width: 100%;
-  display: block;
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d2d4d5));
-  background-image: -webkit-linear-gradient(top, #ffffff, #d2d4d5);
-  background-image: -moz-linear-gradient(top, #ffffff, #d2d4d5);
-  background-image: -ms-linear-gradient(top, #ffffff, #d2d4d5);
-  background-image: -o-linear-gradient(top, #ffffff, #d2d4d5);
-}
-.tab-header .nav-tabs {
-  border: none;
-  display: block;
-  margin: 25px 0 0;
-  padding: 0 15px;
-}
-.tab-header .nav-tabs li {
-  margin-right: 20px;
-  margin-bottom: 0;
-  min-width: 180px;
-  display: inline-block;
-}
-.tab-header .nav-tabs li a {
-  font-weight: 600;
-  border: 0;
-  margin-right: 0;
-  color: #ffffff;
-  text-align: center;
-  background: #8b9aa7;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.tab-header .nav-tabs li:hover a {
-  border: 0;
-  background: rgba(0, 0, 0, 0.1);
-  color: #333333;
-}
-.tab-header .nav-tabs li.active {
-  position: relative;
-}
-.tab-header .nav-tabs li.active a {
-  border: 0;
-  background: #ffffff;
-  color: #8393a1;
-}
-.tab-header .tab-content {
-  margin-top: -3px;
-  background-color: #fff;
-  border: 0;
-  border-top: 1px solid #eee;
-  padding: 15px 0;
-}
 .sub-tabs {
   height: auto;
   width: 100%;
@@ -2070,4 +2046,49 @@ a:active {
 }
 .tabs-left .tab-content .active {
   display: block;
+}
+.galaxy-select .dropdown-toggle {
+  width: 100%;
+  text-transform: uppercase;
+}
+.galaxy-select .dropdown-menu {
+  right: 0;
+}
+.galaxy-select .caret {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  border-top: 8px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.galaxy-button {
+  background-color: #bf1411;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
+  background-image: -webkit-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -moz-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -ms-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -o-linear-gradient(top, #bf1411, #f16e18);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3 ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+  -ms-transition: all 0.3 ease-out;
+  transition: all 0.3 ease-out;
+}
+.galaxy-button:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
 }

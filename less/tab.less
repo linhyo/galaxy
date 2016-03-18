@@ -7,12 +7,11 @@
     border: none;
     display: block;
     margin: 25px 0 0;
-    padding: 0 15px;
     li {
+      display: inline-block;
       margin-right: 20px;
       margin-bottom: 0;
       min-width: 180px;
-      display: inline-block;
       a {
         font-weight: 600;
         border: 0;
@@ -41,13 +40,19 @@
       }
     }
   }
-  .tab-content {
-    margin-top: -3px;
-    background-color: #fff;
-    border: 0;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
+  &.product-tab {
+    .nav-tabs li {
+      margin-right: 1%;
+      min-width: 13%;
+    }
   }
+}
+
+.tab-content {
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #eee;
+  padding: 30px 0;
 }
 
 .portlet .tabbable-line > .tab-content {

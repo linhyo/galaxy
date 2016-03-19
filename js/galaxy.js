@@ -91,5 +91,15 @@
     }
   });
 
+  // Select event
+  $('.dropdown-menu > li > a').on('click', function(e) {
+    e.preventDefault();
+    var option = $(this).text();
+    var btnDropdown = $(this).parents('ul.dropdown-menu').prev();
+    console.log(btnDropdown);
+    btnDropdown.find('.text-uppercase').remove();
+    btnDropdown.find('.selected-value').text(option);
+  });
+
 })();
 

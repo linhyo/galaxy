@@ -419,3 +419,66 @@
   }
 }
 
+#contact-lucky-painter{
+  .modal-header{
+    padding: 5px 0;
+    margin: 0 10px;
+    border-bottom: 0;
+    position: relative;
+    .modal-title{
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #8191a0;
+      font-weight: 600;
+    }
+    &:after {
+      .border-gradient-left-to-right(0, 4px, 100%, #6b2b85, #a54c5a, #f6e829);
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+    }
+  }
+  .modal-body{
+    margin: 0 10px;
+    padding: 10px 0 0;
+    border-bottom: 0;
+    position: relative;
+    h5.modal-body-title{
+      font-size: 14px;
+      color: #8191a0;
+      font-weight: 400;
+    }
+    .send-message{
+      padding: 10px 10px 50px;
+      position: relative;
+      width: 100%;
+      display: block;
+      .border-radius(8px);
+      border: 1px solid #8191a0;
+      textarea {
+        border: none;
+        overflow: auto;
+        outline: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+      }
+      .cmd-send{
+        bottom: 10px;
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+  .modal-footer{
+    border-top: 0;
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+}
+

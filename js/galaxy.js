@@ -53,6 +53,7 @@
     }
   ];
 
+  // Homepage: Petal effect (Click each petal to change wall paint color)
   function anim(effect) {
     $('#galaxyBanner').removeClass().addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass();
@@ -73,6 +74,21 @@
       $('#galaxyBanner').css('background-image', 'url(' + src + ')');
       anim('fadeIn')
     }, 100);
+  });
+
+
+  // Change banner for each selected tab
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr("href");
+    var banner = $('#top-banner');
+
+    if (target == '#color-trends') {
+      banner.removeClass().addClass('color-trend-banner');
+    } else if (target == '#color-palette') {
+      banner.removeClass().addClass('color-palette-banner');
+    } else if (target == '#painting-house') {
+      banner.removeClass().addClass('painting-house-banner');
+    }
   });
 
 })();

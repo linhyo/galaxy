@@ -393,6 +393,92 @@ a:active {
 .galaxy-icon-tool:before {
   content: "\e90b";
 }
+#top-banner {
+  position: relative;
+  width: 100%;
+  height: 325px;
+  background: transparent no-repeat center center / cover;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#top-banner:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+}
+#top-banner.color-trend-banner {
+  background-image: url("../images/banner/banner-2.jpg");
+}
+#top-banner.color-palette-banner {
+  background-image: url("../images/banner/banner-3.jpg");
+}
+#top-banner.painting-house-banner {
+  background-image: url("../images/banner/banner-4.jpg");
+}
+#top-banner.painting-detail-banner {
+  background-image: url("../images/banner/banner-5.jpg");
+}
+#top-banner.product-banner {
+  background-image: url("../images/banner/banner-6.jpg");
+}
+.galaxy-select .dropdown-toggle {
+  width: 100%;
+  text-transform: uppercase;
+}
+.galaxy-select .dropdown-menu {
+  right: 0;
+}
+.galaxy-select .caret {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  border-top: 8px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.galaxy-button {
+  background-color: #bf1411;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
+  background-image: -webkit-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -moz-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -ms-linear-gradient(top, #bf1411, #f16e18);
+  background-image: -o-linear-gradient(top, #bf1411, #f16e18);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3 ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+  -ms-transition: all 0.3 ease-out;
+  transition: all 0.3 ease-out;
+}
+.galaxy-button:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 .navbar {
   position: relative;
   width: 100%;
@@ -508,7 +594,7 @@ a:active {
   position: absolute;
   top: 4px;
   right: 20px;
-  font-family: 'galaxy';
+  font-family: 'galaxy' !important;
   font-size: 15px;
   line-height: 1;
   color: #8b9ba8;
@@ -591,35 +677,6 @@ a:active {
   .navbar-form:after {
     right: 8px;
   }
-}
-.top-banner {
-  position: relative;
-  width: 100%;
-  height: 325px;
-  background: transparent no-repeat center center / cover;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.top-banner:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  border: 0;
-  height: 8px;
-  width: 100%;
-  background: #6b2b85;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
-  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-}
-.top-banner.product-banner {
-  background-image: url("../images/banner/banner-6.jpg");
 }
 #footer {
   width: 100%;
@@ -1470,7 +1527,7 @@ a:active {
   display: block;
   width: 100%;
 }
-#design-consultancy #tab_painting_house {
+#design-consultancy #painting-house {
   margin-bottom: 10px;
 }
 #design-consultancy .block-content {
@@ -2312,49 +2369,4 @@ a:active {
 }
 .tabs-left .tab-content .active {
   display: block;
-}
-.galaxy-select .dropdown-toggle {
-  width: 100%;
-  text-transform: uppercase;
-}
-.galaxy-select .dropdown-menu {
-  right: 0;
-}
-.galaxy-select .caret {
-  position: absolute;
-  right: 12px;
-  top: 14px;
-  border-top: 8px solid;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.galaxy-button {
-  background-color: #bf1411;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
-  background-image: -webkit-linear-gradient(top, #bf1411, #f16e18);
-  background-image: -moz-linear-gradient(top, #bf1411, #f16e18);
-  background-image: -ms-linear-gradient(top, #bf1411, #f16e18);
-  background-image: -o-linear-gradient(top, #bf1411, #f16e18);
-  font-weight: 700;
-  font-size: 13px;
-  text-align: center;
-  color: white;
-  padding: 5px 15px;
-  border: none;
-  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
-}
-.galaxy-button:hover {
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
 }

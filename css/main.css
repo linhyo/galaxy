@@ -969,7 +969,6 @@ a:active {
   margin: 25px 0 0;
 }
 .tab-header .nav-tabs li {
-  width: auto;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
@@ -1581,6 +1580,159 @@ a:active {
 }
 .content-row {
   margin: 30px -15px 0;
+}
+#lucky-painter-page .tab-header .nav-tabs li {
+  margin: 0;
+}
+#lucky-painter-page .tab-header .nav-tabs li a {
+  width: 100%;
+}
+#lucky-painter-page .tab-content .tab-pane {
+  padding: 30px 0;
+}
+#lucky-painter-page .tab-content .tab-pane .avatar-company {
+  display: block;
+  width: 100%;
+}
+#lucky-painter-page .tab-content .tab-pane .avatar-company img {
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company h1 {
+  font-size: 25px;
+  color: #8b9aa7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company h3 {
+  font-size: 22px;
+  color: #8b9aa7;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company p.content-intro {
+  padding: 22px 0 30px;
+  color: #78787b;
+  position: relative;
+  margin-top: 22px;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company p.content-intro:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  height: 1px;
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company a.btn-register {
+  background-color: #b80001;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
+  background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
+  background-image: -moz-linear-gradient(top, #b80001, #ef7420);
+  background-image: -ms-linear-gradient(top, #b80001, #ef7420);
+  background-image: -o-linear-gradient(top, #b80001, #ef7420);
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 10px;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company a.btn-suicide {
+  padding: 20px 10px 20px 65px;
+  background: #5d2075;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  margin-top: 10px;
+}
+#lucky-painter-page .tab-content .tab-pane .intro-company a.btn-suicide:after {
+  background: rgba(0, 0, 0, 0) url("../images/icon-contact.png") repeat scroll center center / cover;
+  content: "";
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  top: 15px;
+  width: 30px;
+}
+#lucky-painter-page .tab-content .tab-pane .title-lucky-painter {
+  display: block;
+  width: 100%;
+}
+#lucky-painter-page .tab-content .tab-pane .title-lucky-painter h1 {
+  padding: 0 0 10px 40px;
+  color: #8b9aa7;
+  position: relative;
+  line-height: 30px;
+  font-size: 18px;
+  border-bottom: 1px solid #8b9aa7;
+}
+#lucky-painter-page .tab-content .tab-pane .title-lucky-painter h1:after {
+  background: rgba(0, 0, 0, 0) url("../images/icon-note.png") repeat scroll center center / cover;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+#lucky-painter-page .tab-content .tab-pane .block-content .content-wrapper h1.title-block {
+  background-color: #ffffff;
+  color: #8b9aa7;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  left: 0;
+  margin: 0;
+  padding: 0 15px 0 3px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 1;
+}
+#lucky-painter-page .tab-content .tab-pane .block-content .content-wrapper:after {
+  top: 14px;
+}
+#lucky-painter-page .tab-content .tab-pane .block-content .content-wrapper .thumb-image {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+}
+#lucky-painter-page .tab-content .tab-pane .block-content .content-wrapper .thumb-image img {
+  width: 100%;
+  display: block;
 }
 #design-consultancy {
   position: relative;

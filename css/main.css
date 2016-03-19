@@ -407,11 +407,11 @@ h6 {
   width: 100%;
   height: 325px;
   background: transparent no-repeat center center / cover;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 #top-banner:after {
   content: '';
@@ -514,11 +514,11 @@ h6 {
   -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .galaxy-button:hover {
   -moz-opacity: 0.8;
@@ -1605,6 +1605,9 @@ h6 {
 #lucky-painter-page .tab-content #lucky-painter.tab-pane {
   padding: 30px 0;
 }
+#lucky-painter-page .tab-content .tab-pane {
+  min-height: 560px;
+}
 #lucky-painter-page .tab-content .tab-pane .avatar-company {
   display: block;
   width: 100%;
@@ -1880,6 +1883,14 @@ h6 {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#lucky-painter-page .tab-content .tab-pane .block-content .detail-lucky-painter .contact-to-lucky-painter:hover {
+  background-color: #6e318d;
 }
 #lucky-painter-page .tab-content .tab-pane .block-content .project-preview {
   overflow: hidden;
@@ -2107,11 +2118,11 @@ h6 {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .block-content .guild-block .img-guild {
   display: block;
@@ -2125,11 +2136,11 @@ h6 {
   display: block;
   background-size: cover;
   background-position: center center;
-  -webkit-transition: all 1 ease;
-  -moz-transition: all 1 ease;
-  -o-transition: all 1 ease;
-  -ms-transition: all 1 ease;
-  transition: all 1 ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .block-content .guild-block .guild-content {
   width: 100%;
@@ -2344,11 +2355,11 @@ h6 {
   -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .content-wrapper form .search-color:hover {
   background-color: #96110d;
@@ -2417,11 +2428,11 @@ h6 {
   -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
   box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .content-wrapper .media .media-body a.btn-read-more:hover {
   background-color: #96110d;
@@ -3005,11 +3016,11 @@ h6 {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-transition: all 0.3 ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-  -ms-transition: all 0.3 ease-out;
-  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 #review-section .btn-review:hover {
   -moz-opacity: 0.8;

@@ -38,8 +38,127 @@
   margin-bottom: 18px;
 }
 
+.product-content {
+  h5 {
+    color: #753989;
+    font-size: 15px;
+  }
+  .product-detail-name {
+    color: #753989;
+    font-size: 28px;
+    margin: 5px 0 20px;
+  }
+}
+
+.product-detail-pros {
+  margin-top: 50px;
+  > li {
+    display: inline-block;
+    &:first-child, &:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+  img {
+    margin: 0 auto;
+  }
+  span {
+    color: #543727;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.product-detail-menu {
+  > li {
+    display: block;
+    width: 100%;
+    &.current > a > i:before {
+      content: "\f0da";
+    }
+    > a {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      color: #fff;
+      background-color: @main-color;
+      border: 1px solid #96a4b0;
+      margin-bottom: 5px;
+      padding: 6px 30px;
+      font-weight: 700;
+      line-height: 1.42857143;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: middle;
+      .user-select();
+      .transition();
+      &:hover {
+        color: @main-color;
+        background-color: #fff;
+      }
+      > i {
+        position: absolute;
+        top: 6px;
+        right: 14px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.product-detail-menu-content {
+  border: 1px solid @main-color;
+  .border-radius(5px);
+  padding: 6px 12px;
+}
+
+#review-section {
+  .reviewer-image {
+    .border-radius(50px);
+  }
+  .reviewer-name, .reviewer-job {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  .reviewer-name {
+    color: #753989;
+    font-size: 15px;
+  }
+  .btn-review {
+    .horizontal-gradient(#bb2125, #f17922);
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin: 5px 0 0;
+    padding: 6px 30px;
+    border: none;
+    .border-radius(3px);
+    .transition(all, 0.3, ease-out);
+    &:hover {
+      .opacity(0.8);
+    }
+  }
+}
+
+#related-product-section {
+  .product-item {
+    border: none;
+  }
+}
+
 @media (max-width: 991px) {
   .galaxy-select {
     margin-bottom: 5px;
+  }
+  .product-detail-pros {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-content {
+    margin-top: 20px;
   }
 }

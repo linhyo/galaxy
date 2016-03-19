@@ -327,6 +327,14 @@ a:focus,
 a:active {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
 @font-face {
   font-family: 'iCiel Bambola';
   src: url('../fonts/iCielBambola.eot');
@@ -393,6 +401,9 @@ a:active {
 }
 .galaxy-icon-tool:before {
   content: "\e90b";
+}
+.row.top-gap {
+  margin-top: 20px;
 }
 #top-banner {
   position: relative;
@@ -463,14 +474,6 @@ a:active {
 .galaxy-select .dropdown-menu {
   right: 0;
 }
-.galaxy-select .caret {
-  position: absolute;
-  right: 12px;
-  top: 14px;
-  border-top: 8px solid;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
 .galaxy-button {
   background-color: #bf1411;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
@@ -494,6 +497,35 @@ a:active {
   transition: all 0.3 ease-out;
 }
 .galaxy-button:hover {
+  color: #fff;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+.galaxy-prev,
+.galaxy-next {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background-color: #ee7421;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee7421), to(#bf3315));
+  background-image: -webkit-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -moz-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -ms-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -o-linear-gradient(top, #ee7421, #bf3315);
+}
+.galaxy-prev > i,
+.galaxy-next > i {
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+}
+.galaxy-prev:hover,
+.galaxy-next:hover {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   -webkit-opacity: 0.8;
@@ -511,6 +543,18 @@ a:active {
   width: 100%;
   height: 7px;
   z-index: -1;
+}
+.galaxy-line.mix:before {
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
 }
 .galaxy-line.discovery:before {
   background-color: #4e1464;
@@ -583,6 +627,10 @@ a:active {
   background-image: -o-linear-gradient(left, #f4901e, #f6ea23);
   border-color: #f8e676;
   font-weight: 700;
+}
+.divider {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8b9aa7;
 }
 .navbar {
   position: relative;
@@ -1024,6 +1072,7 @@ a:active {
   border-top: 1px solid #eee;
 }
 .tab-inner {
+  background-color: transparent;
   padding: 30px 0;
 }
 .portlet .tabbable-line > .tab-content {
@@ -1532,26 +1581,12 @@ a:active {
 .galaxy-feature .product-slide .slide-control {
   position: absolute;
   top: 0;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  background-color: #ee7421;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee7421), to(#bf3315));
-  background-image: -webkit-linear-gradient(top, #ee7421, #bf3315);
-  background-image: -moz-linear-gradient(top, #ee7421, #bf3315);
-  background-image: -ms-linear-gradient(top, #ee7421, #bf3315);
-  background-image: -o-linear-gradient(top, #ee7421, #bf3315);
 }
 .galaxy-feature .product-slide .slide-control.left {
-  right: 34px;
+  right: 36px;
 }
 .galaxy-feature .product-slide .slide-control.right {
   right: 0;
-}
-.galaxy-feature .product-slide .slide-control i {
-  color: #fff;
-  font-size: 16px;
-  line-height: 32px;
 }
 .galaxy-feature .outstanding-news li {
   margin-top: 12px;
@@ -2563,8 +2598,153 @@ a:active {
   text-align: justify;
   margin-bottom: 18px;
 }
+.product-content h5 {
+  color: #753989;
+  font-size: 15px;
+}
+.product-content .product-detail-name {
+  color: #753989;
+  font-size: 28px;
+  margin: 5px 0 20px;
+}
+.product-detail-pros {
+  margin-top: 50px;
+}
+.product-detail-pros > li {
+  display: inline-block;
+}
+.product-detail-pros > li:first-child,
+.product-detail-pros > li:nth-child(2) {
+  margin-right: 20px;
+}
+.product-detail-pros img {
+  margin: 0 auto;
+}
+.product-detail-pros span {
+  color: #543727;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.product-detail-menu > li {
+  display: block;
+  width: 100%;
+}
+.product-detail-menu > li.current > a > i:before {
+  content: "\f0da";
+}
+.product-detail-menu > li > a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  background-color: #8b9aa7;
+  border: 1px solid #96a4b0;
+  margin-bottom: 5px;
+  padding: 6px 30px;
+  font-weight: 700;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.product-detail-menu > li > a:hover {
+  color: #8b9aa7;
+  background-color: #fff;
+}
+.product-detail-menu > li > a > i {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  font-size: 18px;
+}
+.product-detail-menu-content {
+  border: 1px solid #8b9aa7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 6px 12px;
+}
+#review-section .reviewer-image {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#review-section .reviewer-name,
+#review-section .reviewer-job {
+  display: inline-block;
+  margin: 10px 0;
+}
+#review-section .reviewer-name {
+  color: #753989;
+  font-size: 15px;
+}
+#review-section .btn-review {
+  background-color: #bb2125;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bb2125), to(#f17922));
+  background-image: -webkit-linear-gradient(left, #bb2125, #f17922);
+  background-image: -moz-linear-gradient(left, #bb2125, #f17922);
+  background-image: -ms-linear-gradient(left, #bb2125, #f17922);
+  background-image: -o-linear-gradient(left, #bb2125, #f17922);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  margin: 5px 0 0;
+  padding: 6px 30px;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.3 ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+  -ms-transition: all 0.3 ease-out;
+  transition: all 0.3 ease-out;
+}
+#review-section .btn-review:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+#related-product-section .product-item {
+  border: none;
+}
 @media (max-width: 991px) {
   .galaxy-select {
     margin-bottom: 5px;
+  }
+  .product-detail-pros {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .product-content {
+    margin-top: 20px;
   }
 }

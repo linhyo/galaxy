@@ -96,9 +96,17 @@
     e.preventDefault();
     var option = $(this).text();
     var btnDropdown = $(this).parents('ul.dropdown-menu').prev();
-    console.log(btnDropdown);
-    btnDropdown.find('.text-uppercase').remove();
+    btnDropdown.find('.dropdown-hint').remove();
     btnDropdown.find('.selected-value').text(option);
+  });
+
+  $('.product-detail-menu > li > a').on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().addClass('current');
+    $(this).parent().siblings().removeClass('current');
+    var tab = $(this).attr('href');
+    $('.product-detail-menu-content').not(tab).hide();
+    $(tab).fadeIn();
   });
 
 })();

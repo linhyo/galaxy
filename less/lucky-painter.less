@@ -10,8 +10,12 @@
     }
   }
   .tab-content {
+    #who-are-they, #lucky-painter {
+      &.tab-pane {
+        padding: 30px 0;
+      }
+    }
     .tab-pane {
-      padding: 30px 0;
       .avatar-company {
         display: block;
         width: 100%;
@@ -49,7 +53,7 @@
             .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #a54c5a, #f6e829);
           }
         }
-        a.btn-register{
+        a.btn-register {
           .gradient(#b80001, #ef7420);
           color: white;
           text-transform: uppercase;
@@ -61,7 +65,7 @@
           .border-radius(2px);
           margin-top: 10px;
         }
-        a.btn-suicide{
+        a.btn-suicide {
           padding: 20px 10px 20px 65px;
           background: #5d2075;
           .border-radius(8px);
@@ -73,8 +77,8 @@
           text-align: left;
           position: relative;
           margin-top: 10px;
-          &:after{
-            background: hsla(0, 0%, 0%, 0) url("../images/icon-contact.png") repeat scroll center center / cover ;
+          &:after {
+            background: hsla(0, 0%, 0%, 0) url("../images/icon-contact.png") repeat scroll center center / cover;
             content: "";
             height: 30px;
             left: 25px;
@@ -84,18 +88,18 @@
           }
         }
       }
-      .title-lucky-painter{
+      .title-lucky-painter {
         display: block;
         width: 100%;
-        h1{
+        h1 {
           padding: 0 0 10px 40px;
           color: #8b9aa7;
           position: relative;
           line-height: 30px;
           font-size: 18px;
           border-bottom: 1px solid #8b9aa7;
-          &:after{
-            background: hsla(0, 0%, 0%, 0) url("../images/icon-note.png") repeat scroll center center / cover ;
+          &:after {
+            background: hsla(0, 0%, 0%, 0) url("../images/icon-note.png") repeat scroll center center / cover;
             content: "";
             height: 30px;
             left: 0;
@@ -105,9 +109,13 @@
           }
         }
       }
-      .block-content{
-        .content-wrapper{
-          h1.title-block{
+      .block-content {
+        .content-wrapper {
+          padding: 30px 0 0;
+          &.project {
+            margin-top: 70px;
+          }
+          h1.title-block {
             background-color: hsl(0, 0%, 100%);
             color: hsl(208, 14%, 60%);
             display: block;
@@ -121,16 +129,176 @@
             top: 0;
             z-index: 1;
           }
-          &:after{
+          &:after {
             top: 14px;
           }
-          .thumb-image{
+          .thumb-image {
             display: block;
             width: 100%;
             margin: 25px 0;
             img {
               width: 100%;
               display: block;
+            }
+          }
+        }
+        .profile-lucky-painter {
+          border: 1px solid #c5ccd3;
+          .border-radius(8px);
+          padding: 10px 10px 30px;
+          display: block;
+          width: 100%;
+          position: relative;
+          margin-bottom: 10px;
+          .bg-profile {
+            width: 100%;
+            height: 230px;
+            background-position: center center;
+            background-size: cover;
+            display: block;
+            position: relative;
+            span {
+              color: white;
+              font-size: 16px;
+              background: rgba(0, 0, 0, 0.5);
+              font-weight: 600;
+              padding: 0 10px 3px;
+              position: absolute;
+              left: 50px;
+              bottom: 20px;
+              &:after {
+                background-size: cover;
+                content: "";
+                height: 47px;
+                left: -35px;
+                position: absolute;
+                top: -17px;
+                width: 42px;
+                background-image: url("../images/logo-sigle.png");
+              }
+            }
+          }
+          .info-lucky-painter {
+            display: block;
+            width: 100%;
+            margin: 10px 0 0;
+            p {
+              color: #a8b3bd;
+              white-space: nowrap;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .rate-lucky-painter {
+            bottom: 8px;
+            left: 10px;
+            position: absolute;
+            .light {
+              color: #ffcb00;
+            }
+            .dark {
+              color: #a8b3bd;
+            }
+          }
+        }
+        .step-guild {
+          padding-bottom: 5px;
+          border-bottom: 1px solid #c5ccd3;
+        }
+        .detail-lucky-painter {
+          padding: 40px 0 60px;
+          display: block;
+          position: relative;
+          width: 100%;
+          .avatar-lucky-painter {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            span {
+              position: absolute;
+              top: 0;
+              right: 0;
+              .border-radius(4px);
+              display: block;
+              border: 2px solid white;
+              background-position: center center;
+              background-size: cover;
+              width: 180px;
+              height: 195px;
+            }
+          }
+          @media (max-width: 360px) {
+            .avatar-lucky-painter {
+              height: 200px;
+              span {
+                left: 0;
+              }
+            }
+          }
+          .contact-to-lucky-painter {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            padding: 8px 15px;
+            background-color: #502466;
+            text-transform: uppercase;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            .border-radius(8px);
+          }
+        }
+        .project-preview {
+          overflow: hidden;
+          .border-radius(8px);
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+          .detail-project {
+            width: 100%;
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            height: 390px;
+            .info-preview {
+              display: block;
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              position: relative;
+              background-color: rgba(0, 0, 0, 0.5);
+              .transition-animation(all, 0.7s, ease-out);
+              .position-info {
+                text-align: center;
+                top: 50%;
+                width: 100%;
+                position: absolute;
+                margin-top: -50px;
+                p {
+                  color: white;
+                  font-size: 18px;
+                  padding: 5px 15px;
+                  width: 100%;
+                }
+                span.view-detail-project {
+                  color: white;
+                  text-decoration: underline;
+                  font-weight: 600;
+                }
+              }
+            }
+            &:hover {
+              .info-preview {
+                opacity: 1;
+                span.view-detail-project {
+                  &:hover {
+                    color: whitesmoke;
+                  }
+                }
+              }
             }
           }
         }

@@ -132,6 +132,14 @@
   transition: @prop @time @ease;
 }
 
+.transition-animation (@prop: all, @time: 0.2s, @ease: ease-out) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+}
+
 .transition-duration(@duration: 0.2s) {
   -moz-transition-duration: @duration;
   -webkit-transition-duration: @duration;

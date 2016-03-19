@@ -4,6 +4,9 @@
 @blue: #c5cddb;
 @blue-text: #829ccb;
 
+@orange: #fab436;
+@orange-text: white;
+
 @color-1: #c72129;
 @color-2: #f7c668;
 @color-3: #8fa96d;
@@ -22,159 +25,165 @@
   #painting-house {
     margin-bottom: 10px;
   }
-  .block-content {
-    position: relative;
+}
+
+.block-content {
+  position: relative;
+  display: block;
+  &.pink {
+    color: @pink-text;
+    background-color: @pink;
+  }
+  &.blue {
+    color: @blue-text;
+    background-color: @blue;
+  }
+  &.orange{
+    color: @orange-text;
+    background-color: @orange;
+  }
+  .guild-block {
+    width: 100%;
     display: block;
-    &.pink {
-      color: @pink-text;
-      background-color: @pink;
+    padding: 3px;
+    margin-top: 10px;
+    border: 1px solid #c0c8cf;
+    .border-radius(8px);
+    text-align: center;
+    position: relative;
+    span {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      background: #4f1566;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 8px;
+      .border-radius-custom(4px, 0, 4px, 0);
+      .transition(all, 0.3, ease-out);
     }
-    &.blue {
-      color: @blue-text;
-      background-color: @blue;
+    .img-guild {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      a.bg-guild {
+        position: relative;
+        width: 100%;
+        height: 210px;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        .transition(all, 1, ease);
+      }
     }
-    .guild-block {
+    .guild-content {
       width: 100%;
       display: block;
-      padding: 3px;
-      margin-top: 10px;
-      border: 1px solid #c0c8cf;
-      .border-radius(8px);
-      text-align: center;
-      position: relative;
-      span {
-        position: absolute;
-        right: 0;
-        top: 30px;
-        background: #4f1566;
-        color: white;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 5px 8px;
-        .border-radius-custom(4px, 0, 4px, 0);
-        .transition(all, 0.3, ease-out);
-      }
-      .img-guild {
-        display: block;
+      ul.action-content {
+        border: 1px solid #eceef0;
+        display: inline-block;
+        margin: 5px 0;
         width: 100%;
-        overflow: hidden;
-        a.bg-guild {
-          position: relative;
-          width: 100%;
-          height: 210px;
-          display: block;
-          background-size: cover;
-          background-position: center center;
-          .transition(all, 1, ease);
-        }
-      }
-      .guild-content {
-        width: 100%;
-        display: block;
-        ul.action-content {
-          border: 1px solid #eceef0;
-          display: inline-block;
-          margin: 5px 0;
-          width: 100%;
-          li {
-            border-left: 1px solid #eceef0;
-            display: inline;
-            float: left;
-            width: 50%;
+        li {
+          border-left: 1px solid #eceef0;
+          display: inline;
+          float: left;
+          width: 50%;
+          a {
+            display: block;
+            font-size: 20px;
+            color: #a8a8a8;
+            &:hover {
+              background: whitesmoke;
+            }
+          }
+          &:first-child {
+            border-left: 0;
+            text-align: right;
             a {
-              display: block;
-              font-size: 20px;
-              color: #a8a8a8;
-              &:hover {
-                background: whitesmoke;
-              }
+              padding: 0 30px 0 10px;
             }
-            &:first-child {
-              border-left: 0;
-              text-align: right;
-              a {
-                padding: 0 30px 0 10px;
-              }
-            }
-            &:last-child {
-              text-align: left;
-              a {
-                padding: 0 10px 0 30px;
-              }
+          }
+          &:last-child {
+            text-align: left;
+            a {
+              padding: 0 10px 0 30px;
             }
           }
         }
-        p {
-          text-align: left;
-          color: #acb7c0;
-          font-size: 15px;
-          margin-bottom: 10px;
-        }
-      }
-    }
-    .article {
-      width: 100%;
-      display: block;
-      margin-top: 10px;
-      border-right: 1px solid #e2e6e9;
-      padding-right: 10px;
-      padding-bottom: 20px;
-      .title-article {
-        color: #8b9aa7;
-        font-size: 22px;
-        font-weight: bold;
-        margin-bottom: 15px;
       }
       p {
-        color: #808082;
-        margin-bottom: 15px;
+        text-align: left;
+        color: #acb7c0;
+        font-size: 15px;
+        margin-bottom: 10px;
       }
     }
-    .step-guild {
-      margin: 20px 0;
-      display: block;
-      text-align: right;
-      li {
-        display: inline-block;
-        a {
-          .gradient(#ef7521, #c0371a);
-          color: white;
-          display: block;
-          font-size: 18px;
-          padding: 5px;
-          &:hover {
-            .gradient(#ca631c, #952b14);
-          }
-          i {
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            vertical-align: middle;
-            width: 25px;
-          }
-        }
-      }
-    }
-    .image-wrapper {
-      display: block;
-      width: 100%;
-      height: 100%;
-      margin: 10px 0;
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
-    h1.title-block {
+  }
+  .article {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border-right: 1px solid #e2e6e9;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    .title-article {
       color: #8b9aa7;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #808082;
+      margin-bottom: 15px;
+    }
+  }
+  .image-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    img {
+      width: 100%;
       display: block;
-      margin: 0;
-      padding: 0 15px 0 3px;
-      font-weight: 700;
-      font-size: 20px;
-      background-color: #fff;
-      position: absolute;
-      z-index: 1;
+    }
+  }
+  h1.title-block {
+    color: #8b9aa7;
+    display: block;
+    margin: 0;
+    padding: 0 15px 0 3px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.step-guild {
+  margin: 20px 0;
+  display: block;
+  text-align: right;
+  li {
+    display: inline-block;
+    a {
+      .gradient(#ef7521, #c0371a);
+      color: white;
+      display: block;
+      font-size: 18px;
+      padding: 5px;
+      &:hover {
+        .gradient(#ca631c, #952b14);
+      }
+      i {
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        vertical-align: middle;
+        width: 25px;
+      }
     }
   }
 }
@@ -186,7 +195,7 @@
   margin-top: 10px;
   padding: 30px 0 20px;
   &:after {
-    .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #a54c5a, #f6e829);
+    .border-gradient-left-to-right(0, 4px, 100%, #6b2b85, #a54c5a, #f6e829);
     content: '';
     position: absolute;
     left: 0;

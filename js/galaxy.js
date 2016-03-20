@@ -77,7 +77,7 @@
   });
 
 
-  // Change banner for each selected tab
+  // Change banner for each selected tab ( T? V?N TRANG TRÍ )
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     var target = $(e.target).attr("href");
     var banner = $('#top-banner');
@@ -107,6 +107,21 @@
     var tab = $(this).attr('href');
     $('.product-detail-menu-content').not(tab).hide();
     $(tab).fadeIn();
+  });
+
+  $('#support-page .galaxy-suggestion').on('click', function(e) {
+    e.preventDefault();
+    var tab = $(this).attr('href');
+    $('.support-tab-wrapper').not(tab).hide();
+    $(tab).fadeIn();
+
+    // Change banner for each selected tab ( H? TR? )
+    var banner = $('#top-banner');
+    if (tab == '#paint-calculator') {
+      banner.removeClass().addClass('paint-calculator-banner');
+    } else if (tab == '#nearest-agency') {
+      banner.removeClass().addClass('nearest-agency-banner');
+    }
   });
 
 })();

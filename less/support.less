@@ -1,4 +1,30 @@
 #support-page {
+  .support-tab-wrapper {
+    position: relative;
+    padding: 0 0 50px 0;
+    &:after {
+      content: '';
+      position: absolute;
+      top: -37px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid transparent;
+    }
+  }
+  #paint-calculator:after {
+    border-top-color: #934267;
+    left: 15%;
+  }
+  #color-blender:after {
+    border-top-color: #f07721;
+    left: 49%;
+  }
+  #nearest-agency:after {
+    border-top-color: #f4c622;
+    right: 15%;
+  }
   .galaxy-line {
     margin-bottom: 30px;
     &:before {
@@ -37,9 +63,6 @@
     margin-bottom: 14px;
     padding: 8px 12px 8px 20px;
     box-shadow: none;
-  }
-  .paint-calculator-wrapper {
-    padding: 0 0 50px 0;
   }
   .btn-count {
     display: block;

@@ -214,6 +214,52 @@ a.galaxy-button:hover {
   }
 }
 
+.galaxy-suggestion {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #fff;
+  &.paint-calculator {
+    .horizontal-gradient(#4e1464, #6b2b85);
+  }
+  &.color-blender {
+    .horizontal-gradient(#bd341a, #f07721);
+  }
+  &.nearest-agency {
+    .horizontal-gradient(#f4901e, #f6ea23);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    bottom: -7px;
+    left: -7px;
+    border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
+    -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
+    border-image: linear-gradient(to left, #f6ea23 0%, #6b2b85 100%);
+    border-image-slice: 1;
+  }
+  &:hover, &:focus, &:active {
+    color: #fff;
+  }
+  i {
+    display: inline-block;
+    float: left;
+  }
+  p {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  span {
+    display: block;
+  }
+  .large-text {
+    font-family: @import-font;
+  }
+}
+
 .divider {
   padding-bottom: 10px;
   border-bottom: 1px solid @main-color;

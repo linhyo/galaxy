@@ -684,6 +684,68 @@ a.galaxy-button:hover {
   border-color: #f8e676;
   font-weight: 700;
 }
+.galaxy-suggestion {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+.galaxy-suggestion.paint-calculator {
+  background-color: #4e1464;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4e1464), to(#6b2b85));
+  background-image: -webkit-linear-gradient(left, #4e1464, #6b2b85);
+  background-image: -moz-linear-gradient(left, #4e1464, #6b2b85);
+  background-image: -ms-linear-gradient(left, #4e1464, #6b2b85);
+  background-image: -o-linear-gradient(left, #4e1464, #6b2b85);
+}
+.galaxy-suggestion.color-blender {
+  background-color: #bd341a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd341a), to(#f07721));
+  background-image: -webkit-linear-gradient(left, #bd341a, #f07721);
+  background-image: -moz-linear-gradient(left, #bd341a, #f07721);
+  background-image: -ms-linear-gradient(left, #bd341a, #f07721);
+  background-image: -o-linear-gradient(left, #bd341a, #f07721);
+}
+.galaxy-suggestion.nearest-agency {
+  background-color: #f4901e;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f4901e), to(#f6ea23));
+  background-image: -webkit-linear-gradient(left, #f4901e, #f6ea23);
+  background-image: -moz-linear-gradient(left, #f4901e, #f6ea23);
+  background-image: -ms-linear-gradient(left, #f4901e, #f6ea23);
+  background-image: -o-linear-gradient(left, #f4901e, #f6ea23);
+}
+.galaxy-suggestion:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: -7px;
+  left: -7px;
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
+  border-image: linear-gradient(to left, #f6ea23 0%, #6b2b85 100%);
+  border-image-slice: 1;
+}
+.galaxy-suggestion:hover,
+.galaxy-suggestion:focus,
+.galaxy-suggestion:active {
+  color: #fff;
+}
+.galaxy-suggestion i {
+  display: inline-block;
+  float: left;
+}
+.galaxy-suggestion p {
+  display: inline-block;
+  white-space: nowrap;
+}
+.galaxy-suggestion span {
+  display: block;
+}
+.galaxy-suggestion .large-text {
+  font-family: 'iCiel Bambola', sans-serif;
+}
 .divider {
   padding-bottom: 10px;
   border-bottom: 1px solid #8b9aa7;
@@ -1480,13 +1542,16 @@ a.galaxy-button:hover {
   background: transparent url("../images/online-help.png") no-repeat center center;
   background-size: 80%;
 }
-#home-page .galaxy-suggestion {
+#home-page .content-row {
+  margin: 30px -15px 0;
+}
+.galaxy-suggestion {
   position: relative;
   display: block;
   width: 100%;
   color: #fff;
 }
-#home-page .galaxy-suggestion.paint-calculator {
+.galaxy-suggestion.paint-calculator {
   background-color: #4e1464;
   background-image: -webkit-gradient(linear, left top, right top, from(#4e1464), to(#6b2b85));
   background-image: -webkit-linear-gradient(left, #4e1464, #6b2b85);
@@ -1494,7 +1559,7 @@ a.galaxy-button:hover {
   background-image: -ms-linear-gradient(left, #4e1464, #6b2b85);
   background-image: -o-linear-gradient(left, #4e1464, #6b2b85);
 }
-#home-page .galaxy-suggestion.color-blender {
+.galaxy-suggestion.color-blender {
   background-color: #bd341a;
   background-image: -webkit-gradient(linear, left top, right top, from(#bd341a), to(#f07721));
   background-image: -webkit-linear-gradient(left, #bd341a, #f07721);
@@ -1502,7 +1567,7 @@ a.galaxy-button:hover {
   background-image: -ms-linear-gradient(left, #bd341a, #f07721);
   background-image: -o-linear-gradient(left, #bd341a, #f07721);
 }
-#home-page .galaxy-suggestion.nearest-agency {
+.galaxy-suggestion.nearest-agency {
   background-color: #f4901e;
   background-image: -webkit-gradient(linear, left top, right top, from(#f4901e), to(#f6ea23));
   background-image: -webkit-linear-gradient(left, #f4901e, #f6ea23);
@@ -1510,7 +1575,7 @@ a.galaxy-button:hover {
   background-image: -ms-linear-gradient(left, #f4901e, #f6ea23);
   background-image: -o-linear-gradient(left, #f4901e, #f6ea23);
 }
-#home-page .galaxy-suggestion:after {
+.galaxy-suggestion:after {
   content: '';
   position: absolute;
   top: 7px;
@@ -1523,34 +1588,34 @@ a.galaxy-button:hover {
   border-image: linear-gradient(to left, #f6ea23 0%, #6b2b85 100%);
   border-image-slice: 1;
 }
-#home-page .galaxy-suggestion:hover,
-#home-page .galaxy-suggestion:focus,
-#home-page .galaxy-suggestion:active {
+.galaxy-suggestion:hover,
+.galaxy-suggestion:focus,
+.galaxy-suggestion:active {
   color: #fff;
 }
-#home-page .galaxy-suggestion i {
+.galaxy-suggestion i {
   display: inline-block;
   float: left;
 }
-#home-page .galaxy-suggestion p {
+.galaxy-suggestion p {
   display: inline-block;
   white-space: nowrap;
 }
-#home-page .galaxy-suggestion span {
+.galaxy-suggestion span {
   display: block;
 }
-#home-page .galaxy-suggestion .large-text {
+.galaxy-suggestion .large-text {
   font-family: 'iCiel Bambola', sans-serif;
 }
-#home-page .galaxy-feature:before {
+.galaxy-feature:before {
   top: 8px;
   height: 5px;
 }
-#home-page .galaxy-feature h1 {
+.galaxy-feature h1 {
   font-size: 15px;
   margin-bottom: 30px;
 }
-#home-page .galaxy-feature .list-group-item {
+.galaxy-feature .list-group-item {
   background-color: #8b9aa7;
   border-top-color: #a7b2bc;
   border-bottom-color: #a7b2bc;
@@ -1561,8 +1626,8 @@ a.galaxy-button:hover {
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-#home-page .galaxy-feature .list-group-item:hover,
-#home-page .galaxy-feature .list-group-item:focus {
+.galaxy-feature .list-group-item:hover,
+.galaxy-feature .list-group-item:focus {
   color: #fff;
   background-color: #f4901e;
   background-image: -webkit-gradient(linear, left top, right top, from(#f4901e), to(#f6e929));
@@ -1573,8 +1638,8 @@ a.galaxy-button:hover {
   border-top-color: #fceeb3;
   border-bottom-color: #fceeb3;
 }
-#home-page .galaxy-feature .list-group-item:first-child,
-#home-page .galaxy-feature .list-group-item:last-child {
+.galaxy-feature .list-group-item:first-child,
+.galaxy-feature .list-group-item:last-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -1583,48 +1648,48 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-#home-page .galaxy-feature .list-group-item i,
-#home-page .galaxy-feature .list-group-item span {
+.galaxy-feature .list-group-item i,
+.galaxy-feature .list-group-item span {
   vertical-align: middle;
 }
-#home-page .galaxy-feature .list-group-item i {
+.galaxy-feature .list-group-item i {
   display: inline-block;
   width: 40px;
   font-size: 25px;
 }
-#home-page .galaxy-feature .list-group-item span {
+.galaxy-feature .list-group-item span {
   font-weight: 700;
 }
-#home-page .galaxy-feature .product-slide img {
+.galaxy-feature .product-slide img {
   height: 369px;
 }
-#home-page .galaxy-feature .product-slide .slide-control {
+.galaxy-feature .product-slide .slide-control {
   position: absolute;
   top: 0;
 }
-#home-page .galaxy-feature .product-slide .slide-control.left {
+.galaxy-feature .product-slide .slide-control.left {
   right: 36px;
 }
-#home-page .galaxy-feature .product-slide .slide-control.right {
+.galaxy-feature .product-slide .slide-control.right {
   right: 0;
 }
-#home-page .galaxy-feature .outstanding-news li {
+.galaxy-feature .outstanding-news li {
   margin-top: 12px;
 }
-#home-page .galaxy-feature .outstanding-news li:first-child {
+.galaxy-feature .outstanding-news li:first-child {
   margin: 0;
 }
-#home-page .galaxy-feature .outstanding-news .media-left {
+.galaxy-feature .outstanding-news .media-left {
   width: 34%;
 }
-#home-page .galaxy-feature .outstanding-news .news-image {
+.galaxy-feature .outstanding-news .news-image {
   width: 100%;
 }
-#home-page .galaxy-feature .outstanding-news .news-title {
+.galaxy-feature .outstanding-news .news-title {
   position: relative;
   margin-bottom: 18px;
 }
-#home-page .galaxy-feature .outstanding-news .news-title:after {
+.galaxy-feature .outstanding-news .news-title:after {
   content: '';
   position: absolute;
   top: 30px;
@@ -1634,52 +1699,49 @@ a.galaxy-button:hover {
   background-color: #8b9aa7;
 }
 @media (min-width: 1200px) {
-  #home-page .galaxy-suggestion {
+  .galaxy-suggestion {
     height: 185px;
     padding: 34px;
   }
-  #home-page .galaxy-suggestion i {
+  .galaxy-suggestion i {
     width: 40%;
     font-size: 115px;
   }
-  #home-page .galaxy-suggestion p {
+  .galaxy-suggestion p {
     width: 48%;
     margin: 10% 0 0 10%;
   }
-  #home-page .galaxy-suggestion .large-text {
+  .galaxy-suggestion .large-text {
     font-size: 40px;
   }
 }
 @media (max-width: 1199px) {
-  #home-page .galaxy-suggestion {
+  .galaxy-suggestion {
     height: 160px;
     padding: 34px 20px;
   }
-  #home-page .galaxy-suggestion i {
+  .galaxy-suggestion i {
     width: 40%;
     font-size: 100px;
   }
-  #home-page .galaxy-suggestion p {
+  .galaxy-suggestion p {
     width: 48%;
     margin: 8% 0 0 10%;
   }
-  #home-page .galaxy-suggestion .large-text {
+  .galaxy-suggestion .large-text {
     font-size: 34px;
   }
 }
 @media (max-width: 991px) {
-  #home-page .galaxy-suggestion i {
+  .galaxy-suggestion i {
     text-align: right;
   }
-  #home-page .galaxy-suggestion p {
+  .galaxy-suggestion p {
     margin: 3% 0 0 12%;
   }
-  #home-page .galaxy-feature.news {
+  .galaxy-feature.news {
     margin-top: 20px;
   }
-}
-#home-page .content-row {
-  margin: 30px -15px 0;
 }
 #design-consultancy {
   position: relative;
@@ -2477,19 +2539,16 @@ a.galaxy-button:hover {
 .tabs-left .tab-content .active {
   display: block;
 }
-#product-page .btn-grey > span {
-  font-weight: 700;
-}
-#product-page .product-item {
+.product-item {
   margin-top: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #8b9aa7;
 }
-#product-page .product-name {
+.product-item .product-name {
   position: relative;
   margin: 10px 0 18px;
 }
-#product-page .product-name:after {
+.product-item .product-name:after {
   content: '';
   position: absolute;
   top: 30px;
@@ -2498,9 +2557,11 @@ a.galaxy-button:hover {
   height: 4px;
   background-color: #8b9aa7;
 }
-#product-page .product-description {
-  text-align: justify;
+.product-item .product-description {
   margin-bottom: 18px;
+}
+#product-page .btn-grey > span {
+  font-weight: 700;
 }
 #product-page .product-content h5 {
   color: #753989;

@@ -1,0 +1,42 @@
+#contact-page {
+  padding: 15px 0 30px 0;
+  .contact-address {
+    border: 1px solid @main-color;
+    .border-radius(8px);
+    padding: 15px 10px 15px 110px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 40px;
+      width: 56px;
+      height: 74px;
+      background: transparent url("../images/icon/icon-location-big.png") no-repeat center center;
+      background-size: 80%;
+    }
+
+    h5 {
+      margin-bottom: 5px;
+    }
+  }
+
+  .contact-letter {
+    h2 {
+      display: inline-block;
+      background-color: #fff;
+      padding-right: 20px;
+    }
+  }
+
+  .contact-form {
+    label {
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .factory-address {
+      margin-top: 10px;
+    }
+  }
+}

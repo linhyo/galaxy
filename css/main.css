@@ -454,6 +454,9 @@ a:active {
 #top-banner.nearest-agency-banner {
   background-image: url("../images/banner/banner-10.jpg");
 }
+#top-banner.contact-banner {
+  background-image: url("../images/banner/banner-11.jpg");
+}
 .galaxy-select .dropdown-toggle {
   width: 100%;
   font-size: 13px;
@@ -599,7 +602,7 @@ a.galaxy-button:hover {
 }
 .galaxy-line.mix:before {
   border: 0;
-  height: 8px;
+  height: 6px;
   width: 100%;
   background: #6b2b85;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #f07721), color-stop(100%, #f6ea23));
@@ -3522,5 +3525,45 @@ a.galaxy-button:hover {
 @media (max-width: 767px) {
   #support-page .media-left {
     width: 40%;
+  }
+}
+#contact-page {
+  padding: 15px 0 30px 0;
+}
+#contact-page .contact-address {
+  border: 1px solid #8b9aa7;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 15px 10px 15px 110px;
+}
+#contact-page .contact-address:before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 40px;
+  width: 56px;
+  height: 74px;
+  background: transparent url("../images/icon/icon-location-big.png") no-repeat center center;
+  background-size: 80%;
+}
+#contact-page .contact-address h5 {
+  margin-bottom: 5px;
+}
+#contact-page .contact-letter h2 {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 20px;
+}
+#contact-page .contact-form label {
+  line-height: 26px;
+}
+@media (max-width: 767px) {
+  #contact-page .factory-address {
+    margin-top: 10px;
   }
 }

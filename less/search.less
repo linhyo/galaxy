@@ -1,28 +1,5 @@
 #search-page {
   padding: 30px 0;
-  .search-form {
-    .form-group {
-      width: 50%;
-      margin-right: 2%;
-    }
-    .search-term {
-      width: 100%;
-    }
-    .btn-search {
-      position: relative;
-      padding: 6px 12px 6px 42px;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 1px;
-        left: 10px;
-        width: 26px;
-        height: 30px;
-        background: transparent url("../images/icon/icon-search.png") no-repeat center center;
-        background-size: 80%;
-      }
-    }
-  }
 
   .product-item {
     padding: 0;
@@ -92,26 +69,33 @@
     }
   }
 
-  .post-item {
-    margin: 20px 0;
-    .media-left {
-      width: 38%;
-    }
-    .post-image {
-      width: 100%;
-    }
-    .post-time {
-      color: #736a68;
-      font-size: 11px;
-    }
-    .post-description {
-      margin-bottom: 5px;
-    }
-  }
-
   @media (max-width: 767px) {
     .search-form .form-group {
       width: 100%;
+    }
+  }
+}
+
+.search-form {
+  .form-group {
+    width: 50%;
+    margin-right: 2%;
+  }
+  .search-term {
+    width: 100%;
+  }
+  .btn-search {
+    position: relative;
+    padding: 6px 12px 6px 42px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 10px;
+      width: 26px;
+      height: 30px;
+      background: transparent url("../images/icon/icon-search.png") no-repeat center center;
+      background-size: 80%;
     }
   }
 }

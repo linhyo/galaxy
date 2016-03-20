@@ -109,6 +109,7 @@
 }
 
 .galaxy-button {
+  display: inline-block;
   .gradient(#bf1411, #f16e18);
   font-weight: 700;
   font-size: 13px;
@@ -181,7 +182,7 @@ a.galaxy-button:hover {
   color: @main-color;
   font-size: 20px;
   font-weight: 700;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .galaxy-heading {
@@ -189,6 +190,11 @@ a.galaxy-button:hover {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+  &.horizontal-line {
+    display: inline-block;
+    background-color: #fff;
+    padding-right: 20px;
+  }
 }
 
 .galaxy-pagination {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="vi">
-  <title>Galaxy - Liên hệ</title>
+  <title>Galaxy - Tìm kiếm</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -58,7 +58,7 @@
             <li><a href="lucky-painter.html">Lucky Painter</a></li>
             <li><a href="news.html">Tin tức</a></li>
             <li><a href="support.html">Hỗ trợ</a></li>
-            <li class="active"><a href="contact.html">Liên hệ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
           </ul>
         </div>
       </div>
@@ -72,36 +72,61 @@
 <section id="slider">
   <div class="container-fluid">
     <div class="row">
-      <div id="top-banner" class="contact-banner"></div>
+      <div id="top-banner" class="color-palette-banner"></div>
     </div>
   </div>
 </section>
 
-<main id="contact-page" role="main">
+<main id="search-page" role="main">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <img class="img-responsive" src="images/google-map.jpg">
+      <div class="col-xs-12 col-sm-10 col-md-8">
+        <form class="search-form form-inline" role="form">
+          <div class="form-group">
+            <label for="searchTerm" class="sr-only"></label>
+            <input id="searchTerm" class="form-control search-term" type="text">
+          </div>
+          <button class="galaxy-button" type="submit" role="button">Tìm kiếm</button>
+        </form>
       </div>
     </div>
 
     <div class="row top-gap">
-      <div class="col-xs-12 col-sm-6">
-        <div class="contact-address company-address">
-          <h5 class="galaxy-heading">Công ty cổ phần galaxy Việt Nam</h5>
-          <p>Địa chỉ: Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>
-            Điện thoại: (+84.4) 62 833 633 / Fax: (+84.4) 62 83 3 533<br>
-            Email: info@galaxy-paint.com.vn
-          </p>
+      <div class="col-xs-12">
+        <div class="galaxy-line mix">
+          <h1 class="galaxy-title">Kết quả cho sản phẩm</h1>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="contact-address factory-address">
-          <h5 class="galaxy-heading">Địa chỉ nhà máy</h5>
-          <p>Địa chỉ: Lô 48, KCN Quang Minh, Mê Linh, Hà Nội<br>
-            Điện thoại: (+84.4)38182 046 / Fax: (+84.4)38182 048<br>
-            Email: info@galaxy-paint.com.vn
-          </p>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-item">
+          <img class="product-image img-responsive" src="images/product/product-1.png">
+          <h2 class="galaxy-heading product-name">Sơn nội thất cao cấp Galaxy Lanmya</h2>
+          <p class="product-description text-justify">Sơn nội thất cao cấp Galaxy Lanmya được sản xuất theo tiêu chuẩn Nhật Bản Jis K 5663:2003 đặc biệt
+            kết hợp với Công nghệ màu sắc độc quyền của Galaxy.</p>
+          <a class="galaxy-button" href="product-detail.html">Chi tiết</a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-item">
+          <img class="product-image img-responsive" src="images/product/product-2.png">
+          <h2 class="galaxy-heading product-name">Sơn nội thất cao cấp Galaxy Lanmya</h2>
+          <p class="product-description text-justify">Sơn nội thất cao cấp Galaxy Lanmya được sản xuất theo tiêu chuẩn Nhật Bản Jis K 5663:2003 đặc biệt
+            kết hợp với Công nghệ màu sắc độc quyền của Galaxy.</p>
+          <a class="galaxy-button" href="product-detail.html">Chi tiết</a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-item">
+          <img class="product-image img-responsive" src="images/product/product-1.png">
+          <h2 class="galaxy-heading product-name">Sơn nội thất cao cấp Galaxy Lanmya</h2>
+          <p class="product-description text-justify">Sơn nội thất cao cấp Galaxy Lanmya được sản xuất theo tiêu chuẩn Nhật Bản Jis K 5663:2003 đặc biệt
+            kết hợp với Công nghệ màu sắc độc quyền của Galaxy.</p>
+          <a class="galaxy-button" href="product-detail.html">Chi tiết</a>
         </div>
       </div>
     </div>
@@ -109,50 +134,16 @@
     <div class="row top-gap">
       <div class="col-xs-12">
         <div class="galaxy-line mix">
-          <h2 class="galaxy-heading horizontal-line text-uppercase">Gửi thư cho chúng tôi</h2>
+          <h1 class="galaxy-title">Kết quả dự án</h1>
         </div>
       </div>
     </div>
 
     <div class="row top-gap">
-      <form class="contact-form" role="form">
-        <div class="col-xs-12 col-sm-6">
-          <div class="form-group">
-            <label for="name">Họ và tên</label>
-            <input id="name" class="form-control" type="text">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="form-group">
-            <label for="gender">Giới tính</label>
-            <input id="gender" class="form-control" type="text">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" class="form-control" type="text">
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="form-group">
-            <label for="phone">Số điện thoại</label>
-            <input id="phone" class="form-control" type="text">
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="form-group">
-            <label for="content">Nội dung</label>
-            <textarea id="content" class="form-control" rows="4"></textarea>
-          </div>
-        </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
 
-        <div class="col-xs-12 text-right">
-          <button class="galaxy-button text-uppercase" type="submit" role="button">Gửi thư</button>
-        </div>
-      </form>
+      </div>
     </div>
-
   </div>
 </main>
 

@@ -528,6 +528,7 @@ a:active {
   text-transform: inherit;
 }
 .galaxy-button {
+  display: inline-block;
   background-color: #bf1411;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bf1411), to(#f16e18));
   background-image: -webkit-linear-gradient(top, #bf1411, #f16e18);
@@ -642,13 +643,18 @@ a.galaxy-button:hover {
   color: #8b9aa7;
   font-size: 20px;
   font-weight: 700;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .galaxy-heading {
   color: #8b9aa7;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+}
+.galaxy-heading.horizontal-line {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 20px;
 }
 .galaxy-pagination {
   text-align: right;
@@ -1661,7 +1667,7 @@ a.galaxy-button:hover {
   font-weight: 700;
 }
 .galaxy-feature .product-slide img {
-  height: 369px;
+  min-height: 369px;
 }
 .galaxy-feature .product-slide .slide-control {
   position: absolute;
@@ -3625,11 +3631,6 @@ a.galaxy-button:hover {
 #contact-page .contact-address h5 {
   margin-bottom: 5px;
 }
-#contact-page .contact-letter h2 {
-  display: inline-block;
-  background-color: #fff;
-  padding-right: 20px;
-}
 #contact-page .contact-form label {
   line-height: 26px;
 }
@@ -3640,5 +3641,24 @@ a.galaxy-button:hover {
 @media (max-width: 767px) {
   #contact-page .factory-address {
     margin-top: 10px;
+  }
+}
+#search-page {
+  padding: 30px 0;
+}
+#search-page .search-form .form-group {
+  width: 50%;
+  margin-right: 2%;
+}
+#search-page .search-form .search-term {
+  width: 100%;
+}
+#search-page .product-item {
+  padding: 0;
+  border: none;
+}
+@media (max-width: 767px) {
+  #search-page .search-form .form-group {
+    width: 100%;
   }
 }

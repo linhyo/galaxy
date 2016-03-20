@@ -441,6 +441,9 @@ a:active {
 #top-banner.lucky-painter {
   background-image: url("../images/banner/banner-7.jpg");
 }
+#top-banner.news-banner {
+  background-image: url("../images/banner/banner-8.jpg");
+}
 .galaxy-select .dropdown-toggle {
   width: 100%;
   font-size: 13px;

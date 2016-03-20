@@ -25,6 +25,22 @@
     border-top-color: #f4c622;
     right: 15%;
   }
+  #paint-calculator {
+    .galaxy-select {
+      margin-bottom: 14px;
+      .dropdown-toggle {
+        height: 36px;
+        padding: 8px 12px 8px 20px;
+      }
+    }
+    .galaxy-input {
+      height: 36px;
+      border-color: #adb8c1;
+      margin-bottom: 14px;
+      padding: 8px 12px 8px 20px;
+      box-shadow: none;
+    }
+  }
   .galaxy-line {
     margin-bottom: 30px;
     &:before {
@@ -50,20 +66,6 @@
       padding-right: 40px;
     }
   }
-  .galaxy-select {
-    margin-bottom: 14px;
-    .dropdown-toggle {
-      height: 36px;
-      padding: 8px 12px 8px 20px;
-    }
-  }
-  .galaxy-input {
-    height: 36px;
-    border-color: #adb8c1;
-    margin-bottom: 14px;
-    padding: 8px 12px 8px 20px;
-    box-shadow: none;
-  }
   .btn-count {
     display: block;
     width: 100%;
@@ -76,6 +78,62 @@
     padding: 14px;
     &:hover {
       .opacity(0.8);
+    }
+  }
+  .support-image {
+    width: 100%;
+    .border-radius(8px);
+  }
+  .support-icon {
+    display: inline-block;
+    background: transparent no-repeat center center;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-size: 90%;
+    &.location-icon {
+      width: 16px;
+      height: 25px;
+      background-image: url('../images/icon/icon-location.png');
+    }
+    &.phone-icon {
+      width: 14px;
+      height: 22px;
+      background-image: url('../images/icon/icon-phone.png');
+    }
+    + span {
+      vertical-align: middle;
+    }
+  }
+  .agency-list {
+    h5 {
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 26px;
+    }
+    .agency-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .media-left {
+      width: 32%;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .media-left {
+      width: 40%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .media-left {
+      width: 45%;
+    }
+  }
+  @media (max-width: 767px) {
+    .media-left {
+      width: 40%;
     }
   }
 }

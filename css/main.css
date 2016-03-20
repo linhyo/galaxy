@@ -402,6 +402,9 @@ h6 {
 .galaxy-icon-tool:before {
   content: "\e90b";
 }
+.row.top-gap {
+  margin-top: 20px;
+}
 #top-banner {
   position: relative;
   width: 100%;
@@ -471,14 +474,6 @@ h6 {
 .galaxy-select .dropdown-menu {
   right: 0;
 }
-.galaxy-select .caret {
-  position: absolute;
-  right: 12px;
-  top: 14px;
-  border-top: 8px solid;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
 .group-filter {
   margin: 10px 0;
   display: inline-block;
@@ -528,6 +523,38 @@ h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+a.galaxy-button:hover {
+  color: #fff;
+}
+.galaxy-prev,
+.galaxy-next {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background-color: #ee7421;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee7421), to(#bf3315));
+  background-image: -webkit-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -moz-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -ms-linear-gradient(top, #ee7421, #bf3315);
+  background-image: -o-linear-gradient(top, #ee7421, #bf3315);
+  cursor: pointer;
+}
+.galaxy-prev > i,
+.galaxy-next > i {
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+}
+.galaxy-prev:hover,
+.galaxy-next:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 .galaxy-line {
   position: relative;
 }
@@ -538,6 +565,18 @@ h6 {
   width: 100%;
   height: 7px;
   z-index: -1;
+}
+.galaxy-line.mix:before {
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
 }
 .galaxy-line.discovery:before {
   background-color: #4e1464;
@@ -610,6 +649,10 @@ h6 {
   background-image: -o-linear-gradient(left, #f4901e, #f6ea23);
   border-color: #f8e676;
   font-weight: 700;
+}
+.divider {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8b9aa7;
 }
 .navbar {
   position: relative;

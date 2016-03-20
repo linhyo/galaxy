@@ -444,6 +444,9 @@ a:active {
 #top-banner.news-banner {
   background-image: url("../images/banner/banner-8.jpg");
 }
+#top-banner.support-banner {
+  background-image: url("../images/banner/banner-9.jpg");
+}
 .galaxy-select .dropdown-toggle {
   width: 100%;
   font-size: 13px;
@@ -1628,656 +1631,6 @@ a.galaxy-button:hover {
 .content-row {
   margin: 30px -15px 0;
 }
-#lucky-painter-page .tab-header .nav-tabs li,
-#news-page .tab-header .nav-tabs li {
-  margin: 0;
-}
-#lucky-painter-page .tab-header .nav-tabs li a,
-#news-page .tab-header .nav-tabs li a {
-  width: 100%;
-}
-#lucky-painter-page .tab-content #who-are-they.tab-pane,
-#news-page .tab-content #who-are-they.tab-pane,
-#lucky-painter-page .tab-content #lucky-painter.tab-pane,
-#news-page .tab-content #lucky-painter.tab-pane {
-  padding: 30px 0;
-}
-#lucky-painter-page .tab-content .tab-pane,
-#news-page .tab-content .tab-pane {
-  min-height: 560px;
-}
-#lucky-painter-page .btn-luckypainter,
-#news-page .btn-luckypainter {
-  background-color: #fff;
-  border-color: #adb8c1;
-  color: #8b9aa7;
-  text-align: left;
-}
-#lucky-painter-page .btn-luckypainter:hover,
-#news-page .btn-luckypainter:hover,
-#lucky-painter-page .btn-luckypainter:focus,
-#news-page .btn-luckypainter:focus {
-  box-shadow: none;
-}
-#lucky-painter-page .avatar-company,
-#news-page .avatar-company {
-  display: block;
-  width: 100%;
-}
-#lucky-painter-page .avatar-company img,
-#news-page .avatar-company img {
-  width: 100%;
-  display: block;
-}
-#lucky-painter-page .intro-company,
-#news-page .intro-company {
-  display: block;
-  width: 100%;
-  position: relative;
-}
-#lucky-painter-page .intro-company h1,
-#news-page .intro-company h1 {
-  font-size: 25px;
-  color: #8b9aa7;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-#lucky-painter-page .intro-company h3,
-#news-page .intro-company h3 {
-  font-size: 22px;
-  color: #8b9aa7;
-}
-#lucky-painter-page .intro-company p.content-intro,
-#news-page .intro-company p.content-intro {
-  padding: 22px 0 30px;
-  color: #78787b;
-  position: relative;
-  margin-top: 22px;
-}
-#lucky-painter-page .intro-company p.content-intro:after,
-#news-page .intro-company p.content-intro:after {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  border: 0;
-  height: 5px;
-  width: 60%;
-  background: #6b2b85;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
-  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-}
-#lucky-painter-page .intro-company a.btn-register,
-#news-page .intro-company a.btn-register {
-  background-color: #b80001;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
-  background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
-  background-image: -moz-linear-gradient(top, #b80001, #ef7420);
-  background-image: -ms-linear-gradient(top, #b80001, #ef7420);
-  background-image: -o-linear-gradient(top, #b80001, #ef7420);
-  color: white;
-  text-transform: uppercase;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-  margin-top: 10px;
-}
-#lucky-painter-page .intro-company a.btn-suicide,
-#news-page .intro-company a.btn-suicide {
-  padding: 20px 10px 20px 70px;
-  background: #5d2075;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  color: white;
-  text-transform: uppercase;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-  position: relative;
-  margin-top: 10px;
-}
-#lucky-painter-page .intro-company a.btn-suicide:after,
-#news-page .intro-company a.btn-suicide:after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 18px;
-  background: rgba(0, 0, 0, 0) url("../images/icon-contact.png") no-repeat scroll center center / 80%;
-  width: 43px;
-  height: 43px;
-}
-#lucky-painter-page .title-lucky-painter,
-#news-page .title-lucky-painter {
-  display: block;
-  width: 100%;
-}
-#lucky-painter-page .title-lucky-painter h1,
-#news-page .title-lucky-painter h1 {
-  padding: 0 0 10px 40px;
-  color: #8b9aa7;
-  position: relative;
-  line-height: 30px;
-  font-size: 15px;
-  border-bottom: 1px solid #8b9aa7;
-}
-#lucky-painter-page .title-lucky-painter h1:after,
-#news-page .title-lucky-painter h1:after {
-  background: rgba(0, 0, 0, 0) url("../images/icon-note.png") repeat scroll center center / cover;
-  content: "";
-  height: 30px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-#lucky-painter-page .block-content .content-wrapper,
-#news-page .block-content .content-wrapper {
-  padding: 30px 0 0;
-}
-#lucky-painter-page .block-content .content-wrapper.project,
-#news-page .block-content .content-wrapper.project {
-  margin-top: 70px;
-}
-#lucky-painter-page .block-content .content-wrapper h1.title-block,
-#news-page .block-content .content-wrapper h1.title-block {
-  display: block;
-  background-color: #ffffff;
-  color: #8b9aa7;
-  font-size: 15px;
-  font-weight: 600;
-  left: 0;
-  margin: 0;
-  padding: 0 15px 0 3px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-#lucky-painter-page .block-content .content-wrapper:after,
-#news-page .block-content .content-wrapper:after {
-  top: 7px;
-}
-#lucky-painter-page .block-content .content-wrapper .thumb-image,
-#news-page .block-content .content-wrapper .thumb-image {
-  display: block;
-  width: 100%;
-  margin: 25px 0;
-}
-#lucky-painter-page .block-content .content-wrapper .thumb-image img,
-#news-page .block-content .content-wrapper .thumb-image img {
-  width: 100%;
-  display: block;
-}
-#lucky-painter-page .profile-lucky-painter,
-#news-page .profile-lucky-painter {
-  border: 1px solid #c5ccd3;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 10px 10px 30px;
-  display: block;
-  width: 100%;
-  position: relative;
-  margin-bottom: 30px;
-}
-#lucky-painter-page .profile-lucky-painter .bg-profile,
-#news-page .profile-lucky-painter .bg-profile {
-  width: 100%;
-  height: 230px;
-  background-position: center center;
-  background-size: cover;
-  display: block;
-  position: relative;
-}
-#lucky-painter-page .profile-lucky-painter .bg-profile span,
-#news-page .profile-lucky-painter .bg-profile span {
-  color: white;
-  font-size: 14px;
-  background: rgba(0, 0, 0, 0.3);
-  font-weight: 600;
-  padding: 0 10px 3px;
-  position: absolute;
-  left: 50px;
-  bottom: 14px;
-}
-#lucky-painter-page .profile-lucky-painter .bg-profile span:after,
-#news-page .profile-lucky-painter .bg-profile span:after {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -35px;
-  width: 42px;
-  height: 47px;
-  background: transparent url("../images/logo-sigle.png") no-repeat center center / cover;
-}
-#lucky-painter-page .profile-lucky-painter .info-lucky-painter,
-#news-page .profile-lucky-painter .info-lucky-painter {
-  display: block;
-  width: 100%;
-  margin: 10px 0 0;
-}
-#lucky-painter-page .profile-lucky-painter .info-lucky-painter p,
-#news-page .profile-lucky-painter .info-lucky-painter p {
-  color: #8b9aa7;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#lucky-painter-page .profile-lucky-painter .rate-lucky-painter,
-#news-page .profile-lucky-painter .rate-lucky-painter {
-  bottom: 8px;
-  left: 10px;
-  position: absolute;
-}
-#lucky-painter-page .profile-lucky-painter .rate-lucky-painter .light,
-#news-page .profile-lucky-painter .rate-lucky-painter .light {
-  color: #ffcb00;
-}
-#lucky-painter-page .profile-lucky-painter .rate-lucky-painter .dark,
-#news-page .profile-lucky-painter .rate-lucky-painter .dark {
-  color: #a8b3bd;
-}
-#lucky-painter-page .step-guild,
-#news-page .step-guild {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #c5ccd3;
-}
-#lucky-painter-page .detail-lucky-painter,
-#news-page .detail-lucky-painter {
-  padding: 40px 0 60px;
-  display: block;
-  position: relative;
-  width: 100%;
-}
-#lucky-painter-page .detail-lucky-painter .avatar-lucky-painter,
-#news-page .detail-lucky-painter .avatar-lucky-painter {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-}
-#lucky-painter-page .detail-lucky-painter .avatar-lucky-painter span,
-#news-page .detail-lucky-painter .avatar-lucky-painter span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  display: block;
-  border: 2px solid white;
-  background-position: center center;
-  background-size: cover;
-  width: 180px;
-  height: 195px;
-}
-@media (max-width: 360px) {
-  #lucky-painter-page .detail-lucky-painter .avatar-lucky-painter,
-  #news-page .detail-lucky-painter .avatar-lucky-painter {
-    height: 200px;
-  }
-  #lucky-painter-page .detail-lucky-painter .avatar-lucky-painter span,
-  #news-page .detail-lucky-painter .avatar-lucky-painter span {
-    left: 0;
-  }
-}
-#lucky-painter-page .detail-lucky-painter .contact-to-lucky-painter,
-#news-page .detail-lucky-painter .contact-to-lucky-painter {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  padding: 8px 15px;
-  background-color: #502466;
-  text-transform: uppercase;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-#lucky-painter-page .detail-lucky-painter .contact-to-lucky-painter:hover,
-#news-page .detail-lucky-painter .contact-to-lucky-painter:hover {
-  background-color: #6e318d;
-}
-#lucky-painter-page .project-preview,
-#news-page .project-preview {
-  overflow: hidden;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-}
-#lucky-painter-page .project-preview .detail-project,
-#news-page .project-preview .detail-project {
-  width: 100%;
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  height: 390px;
-}
-#lucky-painter-page .project-preview .detail-project .info-preview,
-#news-page .project-preview .detail-project .info-preview {
-  display: block;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.7s ease-out;
-  -moz-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  -ms-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
-}
-#lucky-painter-page .project-preview .detail-project .info-preview .position-info,
-#news-page .project-preview .detail-project .info-preview .position-info {
-  text-align: center;
-  top: 50%;
-  width: 100%;
-  position: absolute;
-  margin-top: -50px;
-}
-#lucky-painter-page .project-preview .detail-project .info-preview .position-info p,
-#news-page .project-preview .detail-project .info-preview .position-info p {
-  color: white;
-  font-size: 18px;
-  padding: 5px 15px;
-  width: 100%;
-}
-#lucky-painter-page .project-preview .detail-project .info-preview .position-info span.view-detail-project,
-#news-page .project-preview .detail-project .info-preview .position-info span.view-detail-project {
-  color: white;
-  text-decoration: underline;
-  font-weight: 600;
-}
-#lucky-painter-page .project-preview .detail-project:hover .info-preview,
-#news-page .project-preview .detail-project:hover .info-preview {
-  opacity: 1;
-}
-#lucky-painter-page .project-preview .detail-project:hover .info-preview span.view-detail-project:hover,
-#news-page .project-preview .detail-project:hover .info-preview span.view-detail-project:hover {
-  color: whitesmoke;
-}
-#lucky-painter-page .content-lucky-painter,
-#news-page .content-lucky-painter {
-  display: block;
-  width: 100%;
-  margin-top: 70px;
-}
-#lucky-painter-page .content-lucky-painter .show-detail,
-#news-page .content-lucky-painter .show-detail {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  display: block;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic,
-#news-page .content-lucky-painter #carousel-example-generic {
-  display: inline-block;
-  /* Plugin styles */
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-indicators,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-indicators {
-  display: none;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-inner,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-inner {
-  display: block;
-  width: 100%;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-inner img,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-inner img {
-  width: 100%;
-  display: block;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-edit {
-  bottom: 35px;
-  position: absolute;
-  color: #c5ccd3;
-  border: 1px solid #c5ccd3;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit:hover,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-edit:hover {
-  color: #8a8f94;
-  border: 1px solid #8A8F94;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit span,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-edit span {
-  height: 25px;
-  width: 25px;
-  display: block;
-  font-size: 18px;
-  line-height: 25px;
-  vertical-align: middle;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit.left,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-edit.left {
-  left: -40px;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit.right,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-edit.right {
-  right: -40px;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action {
-  display: inline-block;
-  position: relative;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel {
-  padding: 5px 0 0 0;
-  margin: 0;
-  list-style-type: none;
-  text-align: center;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel .center,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel .center {
-  display: inline-block;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li {
-  margin-right: 5px;
-  float: left;
-  cursor: pointer;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li:last-child,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li:last-child {
-  margin-right: 0;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span {
-  width: 130px;
-  height: 90px;
-  display: block;
-  background-position: center center;
-  background-size: cover;
-}
-@media (max-width: 360px) {
-  #lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span,
-  #news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span {
-    width: 39px;
-    height: 27px;
-  }
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel.controls-background-reset,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel.controls-background-reset {
-  background: none !important;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action .active-thumbnail,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action .active-thumbnail {
-  opacity: 0.4;
-}
-#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action .indicators-fix,
-#news-page .content-lucky-painter #carousel-example-generic .carousel-action .indicators-fix {
-  bottom: 70px;
-}
-#lucky-painter-page .content-lucky-painter .title-detail-lucky-painter,
-#news-page .content-lucky-painter .title-detail-lucky-painter {
-  font-size: 16px;
-  font-weight: normal;
-  color: #8191a0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #8191a0;
-  margin-bottom: 20px;
-}
-#lucky-painter-page .content-lucky-painter .full-info-lucky-painter,
-#news-page .content-lucky-painter .full-info-lucky-painter {
-  text-align: left;
-  color: #8191a0;
-  padding-top: 10px;
-}
-@media (max-width: 767px) {
-  #lucky-painter-page .intro-company,
-  #news-page .intro-company {
-    margin-top: 20px;
-  }
-}
-#contact-lucky-painter .modal-header {
-  padding: 5px 0;
-  margin: 0 10px;
-  border-bottom: 0;
-  position: relative;
-}
-#contact-lucky-painter .modal-header .modal-title {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #8191a0;
-  font-weight: 600;
-}
-#contact-lucky-painter .modal-header:after {
-  border: 0;
-  height: 4px;
-  width: 100%;
-  background: #6b2b85;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
-  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-}
-#contact-lucky-painter .modal-body {
-  margin: 0 10px;
-  padding: 10px 0 0;
-  border-bottom: 0;
-  position: relative;
-}
-#contact-lucky-painter .modal-body h5.modal-body-title {
-  font-size: 14px;
-  color: #8191a0;
-  font-weight: 400;
-}
-#contact-lucky-painter .modal-body .send-message {
-  padding: 10px 10px 50px;
-  position: relative;
-  width: 100%;
-  display: block;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid #8191a0;
-}
-#contact-lucky-painter .modal-body .send-message textarea {
-  border: none;
-  overflow: auto;
-  outline: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-#contact-lucky-painter .modal-body .send-message .cmd-send {
-  bottom: 10px;
-  position: absolute;
-  right: 10px;
-}
-#contact-lucky-painter .modal-footer {
-  border-top: 0;
-  margin: 0 10px;
-  padding: 10px 0;
-}
-.lucky-painter-cover {
-  position: relative;
-}
-.lucky-painter-cover .cover-title {
-  position: absolute;
-  top: 60px;
-  right: 100px;
-  font-family: 'iCiel Bambola', sans-serif;
-  color: #e40c0c;
-  font-size: 55px;
-  font-weight: 400;
-}
-.lucky-painter-cover .cover-quote {
-  position: absolute;
-  top: 134px;
-  right: 100px;
-  font-size: 14px;
-  line-height: 24px;
-}
-.lucky-painter-cover .cover-author {
-  position: absolute;
-  top: 210px;
-  right: 100px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 #design-consultancy {
   position: relative;
   display: block;
@@ -3270,6 +2623,656 @@ a.galaxy-button:hover {
   #product-page .intro-company {
     margin-top: 20px;
   }
+}
+#lucky-painter-page .tab-header .nav-tabs li,
+#news-page .tab-header .nav-tabs li {
+  margin: 0;
+}
+#lucky-painter-page .tab-header .nav-tabs li a,
+#news-page .tab-header .nav-tabs li a {
+  width: 100%;
+}
+#lucky-painter-page .tab-content #who-are-they.tab-pane,
+#news-page .tab-content #who-are-they.tab-pane,
+#lucky-painter-page .tab-content #lucky-painter.tab-pane,
+#news-page .tab-content #lucky-painter.tab-pane {
+  padding: 30px 0;
+}
+#lucky-painter-page .tab-content .tab-pane,
+#news-page .tab-content .tab-pane {
+  min-height: 560px;
+}
+#lucky-painter-page .btn-luckypainter,
+#news-page .btn-luckypainter {
+  background-color: #fff;
+  border-color: #adb8c1;
+  color: #8b9aa7;
+  text-align: left;
+}
+#lucky-painter-page .btn-luckypainter:hover,
+#news-page .btn-luckypainter:hover,
+#lucky-painter-page .btn-luckypainter:focus,
+#news-page .btn-luckypainter:focus {
+  box-shadow: none;
+}
+#lucky-painter-page .avatar-company,
+#news-page .avatar-company {
+  display: block;
+  width: 100%;
+}
+#lucky-painter-page .avatar-company img,
+#news-page .avatar-company img {
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .intro-company,
+#news-page .intro-company {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#lucky-painter-page .intro-company h1,
+#news-page .intro-company h1 {
+  font-size: 25px;
+  color: #8b9aa7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#lucky-painter-page .intro-company h3,
+#news-page .intro-company h3 {
+  font-size: 22px;
+  color: #8b9aa7;
+}
+#lucky-painter-page .intro-company p.content-intro,
+#news-page .intro-company p.content-intro {
+  padding: 22px 0 30px;
+  color: #78787b;
+  position: relative;
+  margin-top: 22px;
+}
+#lucky-painter-page .intro-company p.content-intro:after,
+#news-page .intro-company p.content-intro:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  border: 0;
+  height: 5px;
+  width: 60%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+}
+#lucky-painter-page .intro-company a.btn-register,
+#news-page .intro-company a.btn-register {
+  background-color: #b80001;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
+  background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
+  background-image: -moz-linear-gradient(top, #b80001, #ef7420);
+  background-image: -ms-linear-gradient(top, #b80001, #ef7420);
+  background-image: -o-linear-gradient(top, #b80001, #ef7420);
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+#lucky-painter-page .intro-company a.btn-suicide,
+#news-page .intro-company a.btn-suicide {
+  padding: 20px 10px 20px 70px;
+  background: #5d2075;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  margin-top: 10px;
+}
+#lucky-painter-page .intro-company a.btn-suicide:after,
+#news-page .intro-company a.btn-suicide:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  background: rgba(0, 0, 0, 0) url("../images/icon-contact.png") no-repeat scroll center center / 80%;
+  width: 43px;
+  height: 43px;
+}
+#lucky-painter-page .title-lucky-painter,
+#news-page .title-lucky-painter {
+  display: block;
+  width: 100%;
+}
+#lucky-painter-page .title-lucky-painter h1,
+#news-page .title-lucky-painter h1 {
+  padding: 0 0 10px 40px;
+  color: #8b9aa7;
+  position: relative;
+  line-height: 30px;
+  font-size: 15px;
+  border-bottom: 1px solid #8b9aa7;
+}
+#lucky-painter-page .title-lucky-painter h1:after,
+#news-page .title-lucky-painter h1:after {
+  background: rgba(0, 0, 0, 0) url("../images/icon-note.png") repeat scroll center center / cover;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+#lucky-painter-page .block-content .content-wrapper,
+#news-page .block-content .content-wrapper {
+  padding: 30px 0 0;
+}
+#lucky-painter-page .block-content .content-wrapper.project,
+#news-page .block-content .content-wrapper.project {
+  margin-top: 70px;
+}
+#lucky-painter-page .block-content .content-wrapper h1.title-block,
+#news-page .block-content .content-wrapper h1.title-block {
+  display: block;
+  background-color: #ffffff;
+  color: #8b9aa7;
+  font-size: 15px;
+  font-weight: 600;
+  left: 0;
+  margin: 0;
+  padding: 0 15px 0 3px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+#lucky-painter-page .block-content .content-wrapper:after,
+#news-page .block-content .content-wrapper:after {
+  top: 7px;
+}
+#lucky-painter-page .block-content .content-wrapper .thumb-image,
+#news-page .block-content .content-wrapper .thumb-image {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+}
+#lucky-painter-page .block-content .content-wrapper .thumb-image img,
+#news-page .block-content .content-wrapper .thumb-image img {
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .profile-lucky-painter,
+#news-page .profile-lucky-painter {
+  border: 1px solid #c5ccd3;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px 10px 30px;
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+#lucky-painter-page .profile-lucky-painter .bg-profile,
+#news-page .profile-lucky-painter .bg-profile {
+  width: 100%;
+  height: 230px;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+#lucky-painter-page .profile-lucky-painter .bg-profile span,
+#news-page .profile-lucky-painter .bg-profile span {
+  color: white;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  padding: 0 10px 3px;
+  position: absolute;
+  left: 50px;
+  bottom: 14px;
+}
+#lucky-painter-page .profile-lucky-painter .bg-profile span:after,
+#news-page .profile-lucky-painter .bg-profile span:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  width: 42px;
+  height: 47px;
+  background: transparent url("../images/logo-sigle.png") no-repeat center center / cover;
+}
+#lucky-painter-page .profile-lucky-painter .info-lucky-painter,
+#news-page .profile-lucky-painter .info-lucky-painter {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+}
+#lucky-painter-page .profile-lucky-painter .info-lucky-painter p,
+#news-page .profile-lucky-painter .info-lucky-painter p {
+  color: #8b9aa7;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#lucky-painter-page .profile-lucky-painter .rate-lucky-painter,
+#news-page .profile-lucky-painter .rate-lucky-painter {
+  bottom: 8px;
+  left: 10px;
+  position: absolute;
+}
+#lucky-painter-page .profile-lucky-painter .rate-lucky-painter .light,
+#news-page .profile-lucky-painter .rate-lucky-painter .light {
+  color: #ffcb00;
+}
+#lucky-painter-page .profile-lucky-painter .rate-lucky-painter .dark,
+#news-page .profile-lucky-painter .rate-lucky-painter .dark {
+  color: #a8b3bd;
+}
+#lucky-painter-page .step-guild,
+#news-page .step-guild {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c5ccd3;
+}
+#lucky-painter-page .detail-lucky-painter,
+#news-page .detail-lucky-painter {
+  padding: 40px 0 60px;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+#lucky-painter-page .detail-lucky-painter .avatar-lucky-painter,
+#news-page .detail-lucky-painter .avatar-lucky-painter {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+#lucky-painter-page .detail-lucky-painter .avatar-lucky-painter span,
+#news-page .detail-lucky-painter .avatar-lucky-painter span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  border: 2px solid white;
+  background-position: center center;
+  background-size: cover;
+  width: 180px;
+  height: 195px;
+}
+@media (max-width: 360px) {
+  #lucky-painter-page .detail-lucky-painter .avatar-lucky-painter,
+  #news-page .detail-lucky-painter .avatar-lucky-painter {
+    height: 200px;
+  }
+  #lucky-painter-page .detail-lucky-painter .avatar-lucky-painter span,
+  #news-page .detail-lucky-painter .avatar-lucky-painter span {
+    left: 0;
+  }
+}
+#lucky-painter-page .detail-lucky-painter .contact-to-lucky-painter,
+#news-page .detail-lucky-painter .contact-to-lucky-painter {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  padding: 8px 15px;
+  background-color: #502466;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#lucky-painter-page .detail-lucky-painter .contact-to-lucky-painter:hover,
+#news-page .detail-lucky-painter .contact-to-lucky-painter:hover {
+  background-color: #6e318d;
+}
+#lucky-painter-page .project-preview,
+#news-page .project-preview {
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+#lucky-painter-page .project-preview .detail-project,
+#news-page .project-preview .detail-project {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  height: 390px;
+}
+#lucky-painter-page .project-preview .detail-project .info-preview,
+#news-page .project-preview .detail-project .info-preview {
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+#lucky-painter-page .project-preview .detail-project .info-preview .position-info,
+#news-page .project-preview .detail-project .info-preview .position-info {
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  margin-top: -50px;
+}
+#lucky-painter-page .project-preview .detail-project .info-preview .position-info p,
+#news-page .project-preview .detail-project .info-preview .position-info p {
+  color: white;
+  font-size: 18px;
+  padding: 5px 15px;
+  width: 100%;
+}
+#lucky-painter-page .project-preview .detail-project .info-preview .position-info span.view-detail-project,
+#news-page .project-preview .detail-project .info-preview .position-info span.view-detail-project {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#lucky-painter-page .project-preview .detail-project:hover .info-preview,
+#news-page .project-preview .detail-project:hover .info-preview {
+  opacity: 1;
+}
+#lucky-painter-page .project-preview .detail-project:hover .info-preview span.view-detail-project:hover,
+#news-page .project-preview .detail-project:hover .info-preview span.view-detail-project:hover {
+  color: whitesmoke;
+}
+#lucky-painter-page .content-lucky-painter,
+#news-page .content-lucky-painter {
+  display: block;
+  width: 100%;
+  margin-top: 70px;
+}
+#lucky-painter-page .content-lucky-painter .show-detail,
+#news-page .content-lucky-painter .show-detail {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic,
+#news-page .content-lucky-painter #carousel-example-generic {
+  display: inline-block;
+  /* Plugin styles */
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-indicators,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-indicators {
+  display: none;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-inner,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-inner {
+  display: block;
+  width: 100%;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-inner img,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-inner img {
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-edit {
+  bottom: 35px;
+  position: absolute;
+  color: #c5ccd3;
+  border: 1px solid #c5ccd3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit:hover,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-edit:hover {
+  color: #8a8f94;
+  border: 1px solid #8A8F94;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit span,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-edit span {
+  height: 25px;
+  width: 25px;
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit.left,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-edit.left {
+  left: -40px;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-edit.right,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-edit.right {
+  right: -40px;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action {
+  display: inline-block;
+  position: relative;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel {
+  padding: 5px 0 0 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel .center,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel .center {
+  display: inline-block;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li {
+  margin-right: 5px;
+  float: left;
+  cursor: pointer;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li:last-child,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li:last-child {
+  margin-right: 0;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span {
+  width: 130px;
+  height: 90px;
+  display: block;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 360px) {
+  #lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span,
+  #news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel li span {
+    width: 39px;
+    height: 27px;
+  }
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel.controls-background-reset,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action ul.thumbnails-carousel.controls-background-reset {
+  background: none !important;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action .active-thumbnail,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action .active-thumbnail {
+  opacity: 0.4;
+}
+#lucky-painter-page .content-lucky-painter #carousel-example-generic .carousel-action .indicators-fix,
+#news-page .content-lucky-painter #carousel-example-generic .carousel-action .indicators-fix {
+  bottom: 70px;
+}
+#lucky-painter-page .content-lucky-painter .title-detail-lucky-painter,
+#news-page .content-lucky-painter .title-detail-lucky-painter {
+  font-size: 16px;
+  font-weight: normal;
+  color: #8191a0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #8191a0;
+  margin-bottom: 20px;
+}
+#lucky-painter-page .content-lucky-painter .full-info-lucky-painter,
+#news-page .content-lucky-painter .full-info-lucky-painter {
+  text-align: left;
+  color: #8191a0;
+  padding-top: 10px;
+}
+@media (max-width: 767px) {
+  #lucky-painter-page .intro-company,
+  #news-page .intro-company {
+    margin-top: 20px;
+  }
+}
+#contact-lucky-painter .modal-header {
+  padding: 5px 0;
+  margin: 0 10px;
+  border-bottom: 0;
+  position: relative;
+}
+#contact-lucky-painter .modal-header .modal-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #8191a0;
+  font-weight: 600;
+}
+#contact-lucky-painter .modal-header:after {
+  border: 0;
+  height: 4px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #a54c5a), color-stop(100%, #f6e829));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  background: linear-gradient(left, #6b2b85 0%, #a54c5a 50%, #f6e829 100%);
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+#contact-lucky-painter .modal-body {
+  margin: 0 10px;
+  padding: 10px 0 0;
+  border-bottom: 0;
+  position: relative;
+}
+#contact-lucky-painter .modal-body h5.modal-body-title {
+  font-size: 14px;
+  color: #8191a0;
+  font-weight: 400;
+}
+#contact-lucky-painter .modal-body .send-message {
+  padding: 10px 10px 50px;
+  position: relative;
+  width: 100%;
+  display: block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #8191a0;
+}
+#contact-lucky-painter .modal-body .send-message textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+#contact-lucky-painter .modal-body .send-message .cmd-send {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+#contact-lucky-painter .modal-footer {
+  border-top: 0;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+.lucky-painter-cover {
+  position: relative;
+}
+.lucky-painter-cover .cover-title {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  font-family: 'iCiel Bambola', sans-serif;
+  color: #e40c0c;
+  font-size: 55px;
+  font-weight: 400;
+}
+.lucky-painter-cover .cover-quote {
+  position: absolute;
+  top: 134px;
+  right: 100px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.lucky-painter-cover .cover-author {
+  position: absolute;
+  top: 210px;
+  right: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 #project-processing {
   display: none;

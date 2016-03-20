@@ -1,0 +1,58 @@
+#support-page {
+  .galaxy-line {
+    margin-bottom: 30px;
+    &:before {
+      height: 5px;
+    }
+  }
+  .support-title {
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 14px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid @main-color;
+      z-index: -1;
+    }
+    h1 {
+      font-size: 18px;
+      padding-right: 40px;
+    }
+  }
+  .galaxy-select {
+    margin-bottom: 14px;
+    .dropdown-toggle {
+      height: 36px;
+      padding: 8px 12px 8px 20px;
+    }
+  }
+  .galaxy-input {
+    height: 36px;
+    border-color: #adb8c1;
+    margin-bottom: 14px;
+    padding: 8px 12px 8px 20px;
+    box-shadow: none;
+  }
+  .paint-calculator-wrapper {
+    padding: 0 0 50px 0;
+  }
+  .btn-count {
+    display: block;
+    width: 100%;
+    .gradient(#f4901e, #f6ea23);
+    .border-radius(4px);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px;
+    &:hover {
+      .opacity(0.8);
+    }
+  }
+}

@@ -23,8 +23,12 @@ body {
 }
 
 input, textarea, button, a {
-  font-family: @base-font;
-  font-size: 13px;
+  font-family: @base-font !important;
+}
+
+input, textarea {
+  color: @main-color !important;
+  font-size: 13px !important;
 }
 
 input[type=submit], input[type=text], input[type=password], input[type=button], textarea {

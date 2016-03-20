@@ -59,17 +59,30 @@
       vertical-align: middle;
     }
   }
+  .btn-white {
+    background-color: #fff;
+    border-color: #adb8c1;
+    color: @main-color;
+    text-align: left;
+    &:hover, &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-grey {
+    background-color: @main-color;
+    border-color: #d4dadf;
+    color: #fff;
+    text-align: left;
+    .border-radius(0px);
+    &:hover, &:focus {
+      background-color: #fff;
+      color: @main-color;
+      box-shadow: none;
+    }
+  }
   .dropdown-menu {
     right: 0;
   }
-  //.caret {
-  //  position: absolute;
-  //  right: 12px;
-  //  top: 14px;
-  //  border-top: 8px solid;
-  //  border-right: 6px solid transparent;
-  //  border-left: 6px solid transparent;
-  //}
 }
 
 .group-filter{

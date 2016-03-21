@@ -2941,6 +2941,15 @@ a.galaxy-button:hover {
   padding: 20px;
   margin-top: 10px;
 }
+#lucky-painter-page .intro-company a.btn-register:hover,
+#news-page .intro-company a.btn-register:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 #lucky-painter-page .intro-company a.btn-suicide,
 #news-page .intro-company a.btn-suicide {
   padding: 20px 10px 20px 70px;
@@ -2970,10 +2979,20 @@ a.galaxy-button:hover {
   width: 43px;
   height: 43px;
 }
+#lucky-painter-page .intro-company a.btn-suicide:hover,
+#news-page .intro-company a.btn-suicide:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 #lucky-painter-page .title-lucky-painter,
 #news-page .title-lucky-painter {
   display: block;
   width: 100%;
+  margin-bottom: 20px;
 }
 #lucky-painter-page .title-lucky-painter h1,
 #news-page .title-lucky-painter h1 {
@@ -2993,6 +3012,10 @@ a.galaxy-button:hover {
   position: absolute;
   top: 0;
   width: 30px;
+}
+#lucky-painter-page .luckypainter-signup,
+#news-page .luckypainter-signup {
+  position: relative;
 }
 #lucky-painter-page .block-content .content-wrapper,
 #news-page .block-content .content-wrapper {

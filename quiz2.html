@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+  <title>Galaxy - Trang chủ</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="cleartype" content="on">
+
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header id="header" role="banner">
+  <nav class="navbar" role="navigation">
+    <!--<div class="navbar-wrapper"></div>-->
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
+                aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-logo" href="index.html">
+          <img class="galaxy-logo img-responsive" src="images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation">
+        <div class="row navbar-toolbar">
+          <!-- Search form -->
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input id="search-keyword" class="form-control" placeholder="Tìm kiếm" type="text">
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="#">Sắc màu galaxy</a></li>
+            <li><a href="design-consultancy.html">Tư vấn trang trí</a></li>
+            <li><a href="product.html">Sản phẩm</a></li>
+            <li><a href="lucky-painter.html">Lucky Painter</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="support.html">Hỗ trợ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+</header>
+
+<main id="quiz2" role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#quiz2step1">Show quiz
+          2-1
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#quiz2step2">Show quiz
+          2-2
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#quiz2step3">Show quiz
+          2-3
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="footer" role="contentinfo">
+  <div class="container footer-wrapper">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <p class="copyright"><i class="fa fa-copyright"></i> 2016 Galaxy Paint. All rights reserved.</p>
+      </div>
+      <div class="col-xs-12 col-md-6 contact-now">
+        <div class="social-network">
+          <ul>
+            <li><a class="facebook" href="https://www.facebook.com/SonGalaxy" target="_blank">
+              <i class="fa fa-facebook"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/channel/UCjgxlWPkBRzT0oXo5TCnlxw" target="_blank">
+              <i class="fa fa-youtube-play"></i></a></li>
+            <li><a class="google-plus" href="https://plus.google.com/114747288091527278715" target="_blank">
+              <i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="input-group send-mail">
+          <input type="text" id="user-email" class="form-control" placeholder="Đăng ký nhận thư">
+          <span class="input-group-btn">
+            <button class="btn btn-send" type="button">Gửi</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="paint-roller"></div>
+    <div class="white-bg"></div>
+  </div>
+</footer>
+
+<!-- Quiz 2 Step 1 -->
+<div class="modal fade" id="quiz2step1" tabindex="-1" role="dialog" aria-labelledby="quiz21Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content quiz-dialog step1">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+        aria-hidden="true">&times;</span></button>
+      <form action="" class="step1-form">
+        <h1 class="title-step1">Sắc màu <br/> phong thủy học</h1>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="fullInputName">Họ tên</label>
+              <input type="email" class="form-control" id="fullInputName" placeholder="Họ tên">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="genderInput">Giới tính</label>
+
+              <div class="dropdown galaxy-select">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                  <span class="dropdown-hint">Giới tính</span> <span class="selected-value"></span>
+                </button>
+                <ul id="genderInput" class="dropdown-menu">
+                  <li><a href="#">Trai</a></li>
+                  <li><a href="#">Gái</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="dobInput">Ngày sinh</label>
+              <input type="email" class="form-control" id="dobInput" placeholder="Ngày sinh">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="phoneNumberInput">Số điện thoại</label>
+              <input type="email" class="form-control" id="phoneNumberInput" placeholder="Số điện thoại">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-move-step">Kiểm tra</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz 2 Step 2 -->
+<div class="modal fade" id="quiz2step2" tabindex="-1" role="dialog" aria-labelledby="quiz22Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content quiz-dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+        aria-hidden="true">&times;</span></button>
+      <div class="result-quiz2">
+        <div class="row">
+          <div class="col-lg-12">
+            <i class="element icon-Earth"></i>
+
+            <div class="electrolyte">
+              <h1 class="title-quiz">Màu sắc hợp phong thủy của bạn là <strong class="element-name">MỘC</strong></h1>
+
+              <p>Những người thuộc mệnh Mộc có tinh thần vị tha, năng động. Người mệnh Mộc nhiều ý tưởng, tính cách
+                hướng ngoại nhưng lại thiếu kiên nhẫn, dễ nổi giận. Màu sắc phù hợp với bạn là màu xanh lá, xanh lục
+                hoặc màu xanh kết hợp màu đen. Bạn nên tránh màu trắng hoặc sắc anh kim. </p>
+            </div>
+            <div class="electrolyte">
+              <h1 class="title-quiz">Màu sắc phù hợp với người mệnh <strong class="element-name">MỘC</strong> là:</h1>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 padding-auto">
+                  <div class="color-fit" style="background-color: #623605">
+                    <div class="info-color">
+                      <p>Observatory</p>
+
+                      <p>AB123</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 padding-auto">
+                  <div class="color-fit" style="background-color: #F5E78E">
+                    <div class="info-color">
+                      <p>Blue Lagoon</p>
+
+                      <p>AB123</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 padding-auto">
+                  <div class="color-fit" style="background-color: #6F2202">
+                    <div class="info-color">
+                      <p>Citrus</p>
+
+                      <p>AB123</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 padding-auto">
+                  <div class="color-fit" style="background-color: #DB9269">
+                    <div class="info-color">
+                      <p>LightGoldenRodYellow</p>
+
+                      <p>AB123</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-move-step">Chia sẻ ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz 2 Step 3 -->
+<div class="modal fade" id="quiz2step3" tabindex="-1" role="dialog" aria-labelledby="quiz23Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content confirm-dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+        aria-hidden="true">&times;</span></button>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sd-8 col-sd-offset-4 col-xs-8 col-xs-offset-4">
+          <div class="message-confirm">
+            <h1>Chúc mừng!</h1>
+            <p>Bạn đã chia sẻ thành công.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/galaxy.js"></script>
+</body>
+</html>

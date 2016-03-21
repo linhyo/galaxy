@@ -1653,6 +1653,7 @@ a.galaxy-button:hover {
 .galaxy-suggestion p {
   display: inline-block;
   white-space: nowrap;
+  color: #fff;
 }
 .galaxy-suggestion span {
   display: block;

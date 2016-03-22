@@ -120,7 +120,29 @@
 
   .luckypainter-signup {
     position: relative;
-    
+    h2 {
+      position: relative;
+      margin-top: 20px;
+      padding-right: 0;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 55px;
+        left: 0;
+        .border-gradient-left-to-right(0, 6px, 100%, #6b2b85, #f07721, #f6ea23);
+
+      }
+    }
+  }
+  .luckypainter-signup-form {
+    .galaxy-select {
+      .btn {
+        border-color: @main-color;
+      }
+      .dropdown-menu {
+        min-width: 100px;
+      }
+    }
   }
 
   .block-content {
@@ -425,9 +447,29 @@
     }
   }
 
+  @media (min-width: 768px) {
+    .luckypainter-signup-form {
+      .district {
+        padding: 0 10px 0 0;
+      }
+      .city {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+
   @media (max-width: 767px) {
     .intro-company {
       margin-top: 20px;
+    }
+    .luckypainter-signup-form {
+      .district {
+        padding: 0;
+      }
+      .city {
+        padding: 0;
+        margin: 15px 0 0 0;
+      }
     }
   }
 }

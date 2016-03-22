@@ -313,8 +313,13 @@ a {
 }
 input,
 textarea {
+  border-color: #8b9aa7 !important;
   color: #8b9aa7 !important;
   font-size: 13px !important;
+}
+input:focus,
+textarea:focus {
+  border-color: #66afe9 !important;
 }
 input[type=submit],
 input[type=text],
@@ -324,6 +329,10 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+textarea {
+  min-height: 50px;
+  resize: vertical;
 }
 a,
 a:hover,
@@ -600,6 +609,7 @@ a.galaxy-button:hover {
   content: '';
   position: absolute;
   top: 9px;
+  left: 0;
   width: 100%;
   height: 7px;
   z-index: -1;
@@ -755,9 +765,41 @@ a.galaxy-button:hover {
 .galaxy-suggestion .large-text {
   font-family: 'iCiel Bambola', sans-serif;
 }
+.galaxy-label {
+  color: #8b9aa7;
+  font-weight: 700;
+  line-height: 26px;
+}
 .divider {
   padding-bottom: 10px;
   border-bottom: 1px solid #8b9aa7;
+}
+.galaxy-btn-file {
+  position: relative;
+  overflow: hidden;
+  background-color: #8b9aa7;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.galaxy-btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
 }
 .block-content {
   position: relative;
@@ -1044,8 +1086,8 @@ a.galaxy-button:hover {
   display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
-  -ms-flex-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 #footer .social-network {
@@ -3017,6 +3059,37 @@ a.galaxy-button:hover {
 #news-page .luckypainter-signup {
   position: relative;
 }
+#lucky-painter-page .luckypainter-signup h2,
+#news-page .luckypainter-signup h2 {
+  position: relative;
+  margin-top: 20px;
+  padding-right: 0;
+}
+#lucky-painter-page .luckypainter-signup h2:after,
+#news-page .luckypainter-signup h2:after {
+  content: '';
+  position: absolute;
+  top: 55px;
+  left: 0;
+  border: 0;
+  height: 6px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #f07721), color-stop(100%, #f6ea23));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+}
+#lucky-painter-page .luckypainter-signup-form .galaxy-select .btn,
+#news-page .luckypainter-signup-form .galaxy-select .btn {
+  border-color: #8b9aa7;
+}
+#lucky-painter-page .luckypainter-signup-form .galaxy-select .dropdown-menu,
+#news-page .luckypainter-signup-form .galaxy-select .dropdown-menu {
+  min-width: 100px;
+}
 #lucky-painter-page .block-content .content-wrapper,
 #news-page .block-content .content-wrapper {
   padding: 30px 0 0;
@@ -3401,10 +3474,29 @@ a.galaxy-button:hover {
   color: #8191a0;
   padding-top: 10px;
 }
+@media (min-width: 768px) {
+  #lucky-painter-page .luckypainter-signup-form .district,
+  #news-page .luckypainter-signup-form .district {
+    padding: 0 10px 0 0;
+  }
+  #lucky-painter-page .luckypainter-signup-form .city,
+  #news-page .luckypainter-signup-form .city {
+    padding: 0 0 0 10px;
+  }
+}
 @media (max-width: 767px) {
   #lucky-painter-page .intro-company,
   #news-page .intro-company {
     margin-top: 20px;
+  }
+  #lucky-painter-page .luckypainter-signup-form .district,
+  #news-page .luckypainter-signup-form .district {
+    padding: 0;
+  }
+  #lucky-painter-page .luckypainter-signup-form .city,
+  #news-page .luckypainter-signup-form .city {
+    padding: 0;
+    margin: 15px 0 0 0;
   }
 }
 #contact-lucky-painter .modal-header {
@@ -3782,13 +3874,6 @@ a.galaxy-button:hover {
 #contact-page .contact-address h5 {
   margin-bottom: 5px;
 }
-#contact-page .contact-form label {
-  line-height: 26px;
-}
-#contact-page .contact-form textarea {
-  min-height: 50px;
-  resize: vertical;
-}
 @media (max-width: 767px) {
   #contact-page .factory-address {
     margin-top: 10px;
@@ -3854,8 +3939,8 @@ a.galaxy-button:hover {
   display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
-  -ms-flex-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -3863,14 +3948,13 @@ a.galaxy-button:hover {
   -webkit-justify-content: center;
   justify-content: center;
 }
-#search-page .project-item .project-content {
-  color: #fff;
-}
 #search-page .project-item .project-content .house-type {
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
 }
 #search-page .project-item .project-content .address {
+  color: #fff;
   font-size: 20px;
   margin: 10px 0;
 }

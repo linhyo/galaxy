@@ -27,14 +27,23 @@ input, textarea, button, a {
 }
 
 input, textarea {
+  border-color: @main-color !important;
   color: @main-color !important;
   font-size: 13px !important;
+  &:focus {
+    border-color: #66afe9 !important;
+  }
 }
 
 input[type=submit], input[type=text], input[type=password], input[type=button], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+textarea {
+  min-height: 50px;
+  resize: vertical;
 }
 
 a, a:hover, a:focus, a:active {

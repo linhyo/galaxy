@@ -127,7 +127,7 @@
                 <em>"Là một thợ sơn tôi luôn muốn đem lại vẻ đẹp và sức sống tơi mới đến ngôi nhà của bạn."</em>
               </div>
             </div>
-            <a class="contractor-contact text-uppercase" href="#" data-toggle="modal" data-target="#contact-lucky-painter">
+            <a class="contractor-contact text-uppercase" href="#" data-toggle="modal" data-target="#luckypainter-contact-dialog">
               Liên hệ lucky painter</a>
           </div>
         </div>
@@ -266,27 +266,27 @@
   <!-- /.tab-content -->
 </main>
 
-<!-- Modal -->
-<div class="modal fade galaxy-dialog" id="contact-lucky-painter" tabindex="-1" role="dialog"
-     aria-labelledby="contact-lucky-painterLabel">
+<!-- Contact Dialog -->
+<div class="modal fade galaxy-dialog" id="luckypainter-contact-dialog" tabindex="-1" role="dialog"
+     aria-labelledby="luckypainter-contact">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
           aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Liên hệ nhà thầu</h4>
+        <h4 class="modal-title">Liên hệ nhà thầu</h4>
       </div>
       <div class="modal-body">
-        <h5 class="modal-body-title">Để lại lời nhắn cho nhà thầu</h5>
+        <p>Để lại lời nhắn cho nhà thầu</p>
 
         <div class="send-message">
-          <label for="wmd-input"></label><textarea rows="5" cols="92" name="post-text" class="wmd-input"
-                                                   id="wmd-input"></textarea>
-          <button type="button" class="cmd-send galaxy-button">Gửi</button>
+          <label for="message"></label>
+          <textarea id="message" class="form-control" rows="5"></textarea>
+          <button type="button" class="btn-send galaxy-button text-uppercase">Gửi</button>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="galaxy-button">Gọi điện thoại ngay</button>
+        <button type="button" class="galaxy-button text-uppercase">Gọi điện thoại ngay</button>
       </div>
     </div>
   </div>

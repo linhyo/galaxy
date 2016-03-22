@@ -781,6 +781,16 @@ a.galaxy-button:hover {
   color: #fff;
   font-size: 13px;
   font-weight: 700;
+  border: 1px solid #8b9aa7;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.galaxy-btn-file:hover {
+  background-color: #fff;
+  color: #8b9aa7;
 }
 .galaxy-btn-file input[type=file] {
   position: absolute;
@@ -3732,11 +3742,6 @@ a.galaxy-button:hover {
   padding: 0;
   border: none;
 }
-@media (max-width: 767px) {
-  #search-page .search-form .form-group {
-    width: 100%;
-  }
-}
 .search-form .form-group {
   width: 50%;
   margin-right: 2%;
@@ -3758,17 +3763,27 @@ a.galaxy-button:hover {
   background: transparent url("../images/icon/icon-search.png") no-repeat center center;
   background-size: 80%;
 }
+@media (max-width: 767px) {
+  .search-form .form-group {
+    width: 100%;
+  }
+}
+.galaxy-dialog .modal-dialog {
+  margin: 100px auto;
+}
+.galaxy-dialog .modal-content {
+  padding: 10px 20px;
+}
 .galaxy-dialog .modal-header {
-  padding: 5px 0;
-  margin: 0 10px;
-  border-bottom: 0;
   position: relative;
+  border-bottom: 0;
+  padding: 5px 0;
 }
 .galaxy-dialog .modal-header .modal-title {
+  color: #8b9aa7;
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px;
-  color: #8191a0;
-  font-weight: 600;
 }
 .galaxy-dialog .modal-header:after {
   border: 0;
@@ -3787,50 +3802,48 @@ a.galaxy-button:hover {
   bottom: -4px;
 }
 .galaxy-dialog .modal-body {
-  margin: 0 10px;
   padding: 10px 0 0;
   border-bottom: 0;
   position: relative;
 }
-.galaxy-dialog .modal-body h5.modal-body-title {
-  font-size: 14px;
-  color: #8191a0;
-  font-weight: 400;
+.galaxy-dialog .modal-body p {
+  line-height: 24px;
 }
 .galaxy-dialog .modal-body .send-message {
-  padding: 10px 10px 50px;
   position: relative;
-  width: 100%;
   display: block;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #8b9aa7;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid #8191a0;
 }
 .galaxy-dialog .modal-body .send-message textarea {
   border: none;
-  overflow: auto;
   outline: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
 }
-.galaxy-dialog .modal-body .send-message .cmd-send {
-  bottom: 10px;
+.galaxy-dialog .modal-body .send-message .btn-send {
   position: absolute;
+  bottom: 10px;
   right: 10px;
 }
 .galaxy-dialog .modal-footer {
   border-top: 0;
-  margin: 0 10px;
   padding: 10px 0;
+}
+.galaxy-dialog .modal-footer .galaxy-btn-file {
+  margin-right: 5px;
+}
+#review-product-dialog .modal-dialog {
+  width: 900px;
 }
 .landing-page p {
   color: #d1d3d4;

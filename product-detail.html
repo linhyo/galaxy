@@ -211,7 +211,7 @@
             </p>
           </div>
           <div class="col-xs-12 text-right">
-            <button class="btn-review text-uppercase">Gửi đánh giá</button>
+            <button class="btn-review text-uppercase" data-toggle="modal" data-target="#review-product-dialog">Gửi đánh giá</button>
             <div class="divider"></div>
           </div>
         </div>
@@ -326,6 +326,60 @@
   </div>
   <!-- /.tab-content -->
 </main>
+
+<!-- Review Dialog -->
+<div class="modal fade galaxy-dialog" id="review-product-dialog" tabindex="-1" role="dialog"
+     aria-labelledby="luckypainter-contact">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Gửi cảm nhận về sản phẩm</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <form class="review-form" role="form">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label class="galaxy-label" for="name">Họ và tên</label>
+                <input id="name" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label class="galaxy-label" for="gender">Nghề nghiệp</label>
+                <input id="gender" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label class="galaxy-label" for="email">Email</label>
+                <input id="email" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label class="galaxy-label" for="phone">Số điện thoại</label>
+                <input id="phone" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group" style="margin: 0">
+                <label class="galaxy-label" for="content">Nội dung</label>
+                <textarea id="content" class="form-control" rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="btn galaxy-btn-file">Upload avatar<input type="file"></span>
+        <button class="galaxy-button text-uppercase" type="submit" role="button">Gửi</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer id="footer" role="contentinfo">
   <div class="container footer-wrapper">

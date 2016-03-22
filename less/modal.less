@@ -1,14 +1,19 @@
 .galaxy-dialog {
+  .modal-dialog {
+    margin: 100px auto;
+  }
+  .modal-content {
+    padding: 10px 20px;
+  }
   .modal-header {
-    padding: 5px 0;
-    margin: 0 10px;
-    border-bottom: 0;
     position: relative;
+    border-bottom: 0;
+    padding: 5px 0;
     .modal-title {
+      color: @main-color;
+      font-size: 16px;
+      font-weight: 700;
       text-transform: uppercase;
-      font-size: 18px;
-      color: #8191a0;
-      font-weight: 600;
     }
     &:after {
       .border-gradient-left-to-right(0, 4px, 100%, #6b2b85, #f07721, #f6ea23);
@@ -19,44 +24,42 @@
     }
   }
   .modal-body {
-    margin: 0 10px;
     padding: 10px 0 0;
     border-bottom: 0;
     position: relative;
-    h5.modal-body-title {
-      font-size: 14px;
-      color: #8191a0;
-      font-weight: 400;
+    p {
+      line-height: 24px;
     }
     .send-message {
-      padding: 10px 10px 50px;
       position: relative;
-      width: 100%;
       display: block;
-      .border-radius(8px);
-      border: 1px solid #8191a0;
+      width: 100%;
+      border: 1px solid @main-color;
+      .border-radius(4px);
       textarea {
         border: none;
-        overflow: auto;
         outline: none;
-
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
         width: 100%;
         min-width: 100%;
         max-width: 100%;
       }
-      .cmd-send {
-        bottom: 10px;
+      .btn-send {
         position: absolute;
+        bottom: 10px;
         right: 10px;
       }
     }
   }
   .modal-footer {
     border-top: 0;
-    margin: 0 10px;
     padding: 10px 0;
+    .galaxy-btn-file {
+      margin-right: 5px;
+    }
   }
+}
+
+#review-product-dialog .modal-dialog {
+  width: 900px;
 }

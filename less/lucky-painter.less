@@ -10,10 +10,13 @@
     }
   }
   .tab-content {
-    #who-are-they, #lucky-painter {
+    #who-are-they, #lucky-painter, #contractor {
       &.tab-pane {
         padding: 30px 0;
       }
+    }
+    #contractor-info {
+      padding:  0 0 30px;
     }
     .tab-pane {
       min-height: 560px;
@@ -179,32 +182,31 @@
     }
   }
 
-  .profile-lucky-painter {
-    border: 1px solid #c5ccd3;
-    .border-radius(8px);
-    padding: 10px 10px 30px;
+  .luckypainter-profile {
+    position: relative;
     display: block;
     width: 100%;
-    position: relative;
+    border: 1px solid @main-color;
+    .border-radius(8px);
     margin-bottom: 30px;
-    .bg-profile {
+    padding: 10px 10px 30px;
+    .profile-avatar {
+      position: relative;
+      display: block;
       width: 100%;
       height: 230px;
-      background-position: center center;
-      background-size: cover;
-      display: block;
-      position: relative;
+      background: transparent no-repeat center center / cover;
       span {
-        color: white;
-        font-size: 14px;
-        background: rgba(0, 0, 0, 0.3);
-        font-weight: 600;
-        padding: 0 10px 3px;
         position: absolute;
         left: 50px;
         bottom: 14px;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 10px 3px;
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: -20px;
           left: -35px;
@@ -214,76 +216,72 @@
         }
       }
     }
-    .info-lucky-painter {
+    .profile-info {
       display: block;
       width: 100%;
       margin: 10px 0 0;
       p {
-        color: @main-color;
         white-space: nowrap;
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
       }
     }
-    .rate-lucky-painter {
+    .profile-rating {
+      position: absolute;
       bottom: 8px;
       left: 10px;
-      position: absolute;
-      .light {
+      color: #a8b3bd;
+      .rated {
         color: #ffcb00;
-      }
-      .dark {
-        color: #a8b3bd;
       }
     }
   }
 
-  .detail-lucky-painter {
-    padding: 40px 0 60px;
-    display: block;
+  .contractor-detail {
     position: relative;
-    width: 100%;
-    .avatar-lucky-painter {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
+    display: block;
+    min-height: 180px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    .contractor-avatar {
+      display: inline-block;
+      width: 38%;
       span {
         position: absolute;
         top: 0;
-        right: 0;
-        .border-radius(4px);
+        left: 50px;
         display: block;
+        background: transparent no-repeat center center / cover;
         border: 2px solid white;
-        background-position: center center;
-        background-size: cover;
-        width: 180px;
-        height: 195px;
+        max-width: 180px;
+        width: 100%;
+        height: 180px;
+        .border-radius(4px);
       }
     }
-    @media (max-width: 360px) {
-      .avatar-lucky-painter {
-        height: 200px;
-        span {
-          left: 0;
-        }
-      }
+    .contract-information {
+      display: inline-block;
+      width: 60%;
+      color: #fff;
+      line-height: 24px;
+      padding: 30px 0 0 20px;
     }
-    .contact-to-lucky-painter {
+    .contractor-quote {
+      padding-top: 30px;
+    }
+    .contractor-contact {
       position: absolute;
       bottom: 20px;
-      right: 0;
-      padding: 8px 15px;
-      background-color: #502466;
-      text-transform: uppercase;
-      color: white;
-      font-size: 14px;
-      font-weight: 600;
+      right: 15px;
+      padding: 8px 26px;
+      .horizontal-gradient(#4e1464, #6b2b85);
+      color: #fff;
+      font-weight: 700;
       .border-radius(8px);
       .transition(all, 0.5s, ease-out);
       &:hover {
-        background-color: #6e318d;
+        .opacity(0.8);
       }
     }
   }
@@ -339,10 +337,12 @@
       }
     }
   }
-  .content-lucky-painter {
+  .contract-content {
     display: block;
     width: 100%;
-    margin-top: 70px;
+    p {
+      margin-top: 20px;
+    }
     .show-detail {
       text-align: center;
       position: relative;
@@ -432,19 +432,6 @@
         }
       }
     }
-    .title-detail-lucky-painter {
-      font-size: 16px;
-      font-weight: normal;
-      color: #8191a0;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #8191a0;
-      margin-bottom: 20px;
-    }
-    .full-info-lucky-painter {
-      text-align: left;
-      color: #8191a0;
-      padding-top: 10px;
-    }
   }
 
   @media (min-width: 768px) {
@@ -469,6 +456,58 @@
       .city {
         padding: 0;
         margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
+.project-item {
+  position: relative;
+  img {
+    width: 100%;
+    .border-radius(8px);
+  }
+  &:hover {
+    .project-mask {
+      .opacity(1);
+      .transition();
+    }
+  }
+  .project-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .border-radius(8px);
+    background-color: rgba(53, 69, 100, 0.8);
+    .opacity(0);
+
+    .flex();
+    // Centering Vertically
+    .align-items(center);
+    // Centering Horizontally
+    .justify-content(center);
+  }
+  .project-content {
+    .house-type {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .address {
+      color: #fff;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .view-detail {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: underline;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
       }
     }
   }

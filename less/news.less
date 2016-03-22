@@ -1,3 +1,56 @@
+.project-preview {
+  overflow: hidden;
+  .border-radius(8px);
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  .detail-project {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    height: 390px;
+    .info-preview {
+      display: block;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.5);
+      .transition-animation(all, 0.7s, ease-out);
+      .position-info {
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        position: absolute;
+        margin-top: -50px;
+        p {
+          color: white;
+          font-size: 18px;
+          padding: 5px 15px;
+          width: 100%;
+        }
+        span.view-detail-project {
+          color: white;
+          text-decoration: underline;
+          font-weight: 600;
+        }
+      }
+    }
+    &:hover {
+      .info-preview {
+        opacity: 1;
+        span.view-detail-project {
+          &:hover {
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
+
 #project-processing {
   display: none;
   width: 100%;

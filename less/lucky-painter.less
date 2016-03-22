@@ -148,40 +148,6 @@
     }
   }
 
-  .block-content {
-    .content-wrapper {
-      padding: 30px 0 0;
-      &.project {
-        margin-top: 70px;
-      }
-      h1.title-block {
-        display: block;
-        background-color: hsl(0, 0%, 100%);
-        color: hsl(208, 14%, 60%);
-        font-size: 15px;
-        font-weight: 600;
-        left: 0;
-        margin: 0;
-        padding: 0 15px 0 3px;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-      }
-      &:after {
-        top: 7px;
-      }
-      .thumb-image {
-        display: block;
-        width: 100%;
-        margin: 25px 0;
-        img {
-          width: 100%;
-          display: block;
-        }
-      }
-    }
-  }
-
   .luckypainter-profile {
     position: relative;
     display: block;
@@ -282,58 +248,6 @@
       .transition(all, 0.5s, ease-out);
       &:hover {
         .opacity(0.8);
-      }
-    }
-  }
-  .project-preview {
-    overflow: hidden;
-    .border-radius(8px);
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    .detail-project {
-      width: 100%;
-      display: block;
-      background-size: cover;
-      background-position: center center;
-      height: 390px;
-      .info-preview {
-        display: block;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.5);
-        .transition-animation(all, 0.7s, ease-out);
-        .position-info {
-          text-align: center;
-          top: 50%;
-          width: 100%;
-          position: absolute;
-          margin-top: -50px;
-          p {
-            color: white;
-            font-size: 18px;
-            padding: 5px 15px;
-            width: 100%;
-          }
-          span.view-detail-project {
-            color: white;
-            text-decoration: underline;
-            font-weight: 600;
-          }
-        }
-      }
-      &:hover {
-        .info-preview {
-          opacity: 1;
-          span.view-detail-project {
-            &:hover {
-              color: whitesmoke;
-            }
-          }
-        }
       }
     }
   }
@@ -510,69 +424,6 @@
         text-decoration: none;
       }
     }
-  }
-}
-
-#contact-lucky-painter {
-  .modal-header {
-    padding: 5px 0;
-    margin: 0 10px;
-    border-bottom: 0;
-    position: relative;
-    .modal-title {
-      text-transform: uppercase;
-      font-size: 18px;
-      color: #8191a0;
-      font-weight: 600;
-    }
-    &:after {
-      .border-gradient-left-to-right(0, 4px, 100%, #6b2b85, #f07721, #f6ea23);
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-    }
-  }
-  .modal-body {
-    margin: 0 10px;
-    padding: 10px 0 0;
-    border-bottom: 0;
-    position: relative;
-    h5.modal-body-title {
-      font-size: 14px;
-      color: #8191a0;
-      font-weight: 400;
-    }
-    .send-message {
-      padding: 10px 10px 50px;
-      position: relative;
-      width: 100%;
-      display: block;
-      .border-radius(8px);
-      border: 1px solid #8191a0;
-      textarea {
-        border: none;
-        overflow: auto;
-        outline: none;
-
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-      }
-      .cmd-send {
-        bottom: 10px;
-        position: absolute;
-        right: 10px;
-      }
-    }
-  }
-  .modal-footer {
-    border-top: 0;
-    margin: 0 10px;
-    padding: 10px 0;
   }
 }
 

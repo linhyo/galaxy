@@ -1038,22 +1038,26 @@ a.galaxy-button:hover {
   position: relative;
   height: 100%;
 }
-#footer .paint-roller {
+#footer .footer-wrapper:after {
+  content: "";
+  height: 78px;
   position: absolute;
-  bottom: 0;
-  right: -90px;
-  width: 123px;
-  height: 90px;
-  background: transparent url("../images/paint-roller.png") no-repeat center center;
-  z-index: 10;
+  right: -163px;
+  top: -8px;
+  width: 163px;
+  background: #ffffff url("../images/paint-roller-tesst.png") no-repeat;
 }
-#footer .white-bg {
-  position: absolute;
-  bottom: 0;
-  right: -89px;
-  width: 8%;
+#footer .footer-wrapper.isLanding:after {
+  background-color: transparent;
+}
+#footer .footer-wrapper.isLanding:before {
+  content: "";
   height: 70px;
-  background-color: #fff;
+  position: absolute;
+  right: -163px;
+  top: 0;
+  width: 163px;
+  background-color: #5b1e73;
 }
 #footer .copyright {
   color: #fff;
@@ -1543,17 +1547,26 @@ a.galaxy-button:hover {
   height: 135px;
   margin: 0 auto;
 }
-.confirm-dialog,
-.quiz-dialog {
-  color: #63300c;
-  background-color: #f2e583;
+.quiz-block {
+  background: url("../images/dialog/bg-step1-quiz2.png") no-repeat scroll center center / 100% 100%;
+}
+.quiz-block .quiz-dialog {
+  color: #755220;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-image: url("../images/dialog/border-step1-quiz2.png") 30 30 30 30;
+  border-style: solid;
+  border-width: 20px;
+  background: transparent;
   padding: 15px;
   position: relative;
   width: 100%;
   display: block;
 }
-.confirm-dialog.modal-content,
-.quiz-dialog.modal-content {
+.quiz-block .quiz-dialog.modal-content {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -1562,21 +1575,17 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.confirm-dialog .close,
-.quiz-dialog .close {
+.quiz-block .quiz-dialog .close {
+  background-color: #231f20;
+  border: 2px solid #ffffff;
+  height: 30px;
+  position: absolute;
   right: -15px;
   top: -15px;
-  position: absolute;
-  line-height: 25px;
-  font-size: 21px;
-  width: 25px;
-  height: 25px;
   vertical-align: middle;
-  background-color: white;
-  opacity: 0.6;
-  text-shadow: 0 1px 0 #ffffff;
-  font-weight: 700;
-  color: #FF0500;
+  width: 30px;
+  opacity: 1;
+  box-shadow: 0 2px 1px #231f20;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1590,51 +1599,50 @@ a.galaxy-button:hover {
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.confirm-dialog .close:hover,
-.quiz-dialog .close:hover {
-  opacity: 1;
+.quiz-block .quiz-dialog .close:after {
+  content: '';
+  background: url(../images/dialog/close.png) no-repeat center / 60% 60%;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
 }
-.quiz-dialog {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: rgba(0, 0, 0, 0);
-  border-image: url("../images/dialog/border-1.png") 30 30 30 30;
-  border-style: solid;
-  border-width: 20px;
+.quiz-block .quiz-dialog .close:hover {
+  background-color: #615658;
 }
-.quiz-dialog.step1 {
-  background: #f2e583 url("../images/dialog/bg-step1-quiz2.png") no-repeat scroll center center / 75% auto;
+.quiz-block .quiz-dialog.step1 {
+  background: rgba(0, 0, 0, 0) url("../images/dialog/bg-step1-quiz2-before.png") no-repeat scroll center center / 115% auto;
+  position: relative;
 }
-@media (max-width: 360px) {
-  .quiz-dialog .step1-form {
-    padding: 5px 10px;
-  }
-}
-.quiz-dialog .step1-form {
+.quiz-block .quiz-dialog .step1-form {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
-  color: #63300c;
+  color: #755220;
   padding: 45px 40px;
+  position: relative;
+  z-index: 1;
 }
-.quiz-dialog .step1-form .title-step1 {
+.quiz-block .quiz-dialog .step1-form .title-step1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.quiz-dialog .step1-form .form-group {
+.quiz-block .quiz-dialog .step1-form .form-group {
   text-align: left;
 }
-.quiz-dialog .step1-form .form-group label {
+.quiz-block .quiz-dialog .step1-form .form-group label {
   font-weight: 700;
   margin-bottom: 8px;
 }
-.quiz-dialog .step1-form .form-group input {
+.quiz-block .quiz-dialog .step1-form .form-group input {
   color: #333;
   background-color: rgba(255, 255, 255, 0.9);
   border: 0;
@@ -1647,7 +1655,7 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle {
+.quiz-block .quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -1658,47 +1666,85 @@ a.galaxy-button:hover {
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle .dropdown-hint {
+.quiz-block .quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle .dropdown-hint {
   display: block;
   text-align: left;
   width: 100%;
 }
-.quiz-dialog .result-quiz2 {
+@media (max-width: 360px) {
+  .quiz-block .quiz-dialog .step1-form {
+    padding: 5px;
+  }
+}
+.quiz-block .quiz-dialog .message-confirm {
+  position: relative;
+  text-transform: uppercase;
+  margin: 50px 0 25px;
+}
+.quiz-block .quiz-dialog .message-confirm h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.quiz-block .quiz-dialog .message-confirm p {
+  color: #755220;
+  font-weight: bold;
+  font-size: 16px;
+}
+.quiz-block .quiz-dialog .message-confirm:after {
+  background: rgba(0, 0, 0, 0) url("../images/dialog/icon-confirm.png") no-repeat scroll center center / 85% auto;
+  content: "";
+  height: 85px;
+  left: -95px;
+  position: absolute;
+  top: -15px;
+  width: 85px;
+}
+.quiz-block .quiz-dialog .brand-confirm {
+  width: 100%;
+  display: block;
+  border-top: 1px solid #755220;
+}
+.quiz-block .quiz-dialog .brand-confirm img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.quiz-block .quiz-dialog .result-quiz2 {
   display: block;
   width: 100%;
   text-align: center;
   height: 100%;
 }
-.quiz-dialog .result-quiz2 .electrolyte {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte {
   margin: 20px 0;
   display: block;
 }
-.quiz-dialog .result-quiz2 .electrolyte .padding-auto {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte .padding-auto {
   padding: 0 8px !important;
 }
-.quiz-dialog .result-quiz2 .electrolyte .title-quiz {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte .title-quiz {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 15px;
 }
-.quiz-dialog .result-quiz2 .electrolyte p {
-  color: #63300c;
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte p {
+  color: #755220;
   padding: 0 15px;
 }
-.quiz-dialog .result-quiz2 .electrolyte .color-fit {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte .color-fit {
   width: 100%;
   height: 85px;
   position: relative;
   border: 5px solid white;
   margin-top: 5px;
 }
-.quiz-dialog .result-quiz2 .electrolyte .color-fit .info-color {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte .color-fit .info-color {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 3px;
 }
-.quiz-dialog .result-quiz2 .electrolyte .color-fit .info-color p {
+.quiz-block .quiz-dialog .result-quiz2 .electrolyte .color-fit .info-color p {
   color: white;
   padding: 0;
   text-align: left;
@@ -1710,7 +1756,7 @@ a.galaxy-button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.quiz-dialog .btn-move-step {
+.quiz-block .quiz-dialog .btn-move-step {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -1719,42 +1765,16 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   background-color: white;
-  color: #63300c;
-  margin: 30px auto 0;
+  color: #755220;
+  margin: auto 0;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   min-width: 150px;
 }
-.confirm-dialog {
-  padding: 60px 15px;
-}
-.confirm-dialog .message-confirm {
-  position: relative;
-  text-transform: uppercase;
-}
-.confirm-dialog .message-confirm h1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-.confirm-dialog .message-confirm p {
-  color: #63300c;
-  font-weight: bold;
-  font-size: 16px;
-}
-.confirm-dialog .message-confirm:after {
-  background: rgba(0, 0, 0, 0) url("../images/dialog/icon-confirm.png") no-repeat scroll center center / 85% auto;
-  content: "";
-  height: 85px;
-  left: -95px;
-  position: absolute;
-  top: -15px;
-  width: 85px;
-}
-.confirm-dialog .close {
-  right: 5px;
-  top: 5px;
+.quiz-block .quiz-dialog .btn-move-step:hover {
+  background-color: whitesmoke;
 }
 .galaxy-banner {
   position: relative;
@@ -2458,13 +2478,15 @@ a.galaxy-button:hover {
 .guide-item .guide-control .guide-prev {
   border-left: 0;
 }
-.guide-item .guide-control .guide-prev > a {
+.guide-item .guide-control .guide-prev > i {
+  cursor: pointer;
   padding: 3px 30px 3px 10px;
 }
 .guide-item .guide-control .guide-next {
   border-left: 1px solid #d5d7d9;
 }
-.guide-item .guide-control .guide-next > a {
+.guide-item .guide-control .guide-next > i {
+  cursor: pointer;
   padding: 3px 10px 3px 30px;
 }
 .guide-item .guide-control > li {
@@ -2472,10 +2494,8 @@ a.galaxy-button:hover {
   float: left;
   width: 50%;
 }
-.guide-item .guide-control > li > a {
+.guide-item .guide-control > li > i {
   display: block;
-}
-.guide-item .guide-control > li > a > i {
   color: #a8a8a8;
   font-size: 20px;
 }

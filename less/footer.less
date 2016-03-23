@@ -5,24 +5,24 @@
   .footer-wrapper {
     position: relative;
     height: 100%;
+    &:after{
+      content: "";
+      height: 78px;
+      position: absolute;
+      right: -163px;
+      top: -8px;
+      width: 163px;
+      background: white url("../images/paint-roller-tesst.png") no-repeat;
+    }
   }
-  .paint-roller {
-    position: absolute;
-    bottom: 0;
-    right: -90px;
-    width: 123px;
-    height: 90px;
-    background: transparent url("../images/paint-roller.png") no-repeat center center;
-    z-index: 10;
-  }
-  .white-bg {
-    position: absolute;
-    bottom: 0;
-    right: -89px;
-    width: 8%;
-    height: 70px;
-    background-color: #fff;
-  }
+  //.white-bg {
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: -89px;
+  //  width: 8%;
+  //  height: 70px;
+  //  background-color: #fff;
+  //}
   .copyright {
     color: #fff;
   }

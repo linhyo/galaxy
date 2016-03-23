@@ -330,3 +330,10 @@
   background: -moz-radial-gradient(70% 45%, closest-corner, @star-color, @end-color); /* IE 10 */
   background: -ms-radial-gradient(70% 45%, closest-corner, @star-color, @end-color); /* Opera cannot do radial gradients yet */
 }
+
+.stitches-element(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+  margin: 0 auto;
+}

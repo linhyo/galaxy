@@ -1,12 +1,5 @@
-@quiz2-color: #63300C;
+@quiz2-color: #755220;
 @quiz2-background: #F2E583;
-
-.stitches-element(@x: 0, @y: 0, @width: 0, @height: 0) {
-  background-position: @x @y;
-  width: @width;
-  height: @height;
-  margin: 0 auto;
-}
 
 .element {
   background-image: url(../images/dialog/element.png);
@@ -33,184 +26,203 @@
     .stitches-element(-573px, -5px, 135px, 135px);
   }
 }
-
-.confirm-dialog, .quiz-dialog {
-  color: @quiz2-color;
-  background-color: @quiz2-background;
-  padding: 15px;
-  position: relative;
-  width: 100%;
-  display: block;
-  &.modal-content {
-    .border-radius(0);
-  }
-  .close {
-    right: -15px;
-    top: -15px;
-    position: absolute;
-    line-height: 25px;
-    font-size: 21px;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    background-color: white;
-    opacity: 0.6;
-    text-shadow: 0 1px 0 hsl(0, 0%, 100%);
-    font-weight: 700;
-    color: #FF0500;
-    .border-radius(50%);
-    .transition(all, 0.5s, ease-out);
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.quiz-dialog {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: hsla(0, 0%, 0%, 0);
-  border-image: url("../images/dialog/border-1.png") 30 30 30 30;
-  border-style: solid;
-  border-width: 20px;
-  &.step1 {
-    background: @quiz2-background url("../images/dialog/bg-step1-quiz2.png") no-repeat scroll center center / 75% auto;
-  }
-  @media (max-width: 360px) {
-    .step1-form {
-      padding: 5px 10px;
-    }
-  }
-  .step1-form {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.quiz-block{
+  background: url("../images/dialog/bg-step1-quiz2.png") no-repeat scroll center center / 100% 100%;
+  .quiz-dialog {
     color: @quiz2-color;
-    padding: 45px 40px;
-    .title-step1 {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 30px;
-      margin-bottom: 20px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: hsla(0, 0%, 0%, 0);
+    border-image: url("../images/dialog/border-step1-quiz2.png") 30 30 30 30;
+    border-style: solid;
+    border-width: 20px;
+    background: transparent;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    display: block;
+    &.modal-content {
+      .border-radius(0);
     }
-    .form-group {
-      text-align: left;
-      label {
-        font-weight: 700;
-        margin-bottom: 8px;
+    .close {
+      background-clip: padding-box;
+      background-color: hsl(345, 6%, 13%);
+      border: 2px solid hsl(0, 0%, 100%);
+      height: 30px;
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      vertical-align: middle;
+      width: 30px;
+      opacity: 1;
+      box-shadow: 0 2px 1px hsl(345, 6%, 13%);
+      .border-radius(50%);
+      .transition(all, 0.5s, ease-out);
+      &:after {
+        content: '';
+        background: url(../images/dialog/close.png) no-repeat center/ 60% 60%;
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        display: block;
       }
-      input {
-        color: #333;
-        background-color: rgba(255, 255, 255, 0.9);
-        border: 0;
-        box-shadow: 0;
-        .border-radius(0);
+      &:hover {
+        background-color: hsl(350, 6%, 36%);
       }
-      .galaxy-select {
-        .dropdown-toggle {
-          .border-radius(0);
-          line-height: 20px;
+    }
+    &.step1 {
+      background: hsla(0, 0%, 0%, 0) url("../images/dialog/bg-step1-quiz2-before.png") no-repeat scroll center center / 115% auto;
+      position: relative;
+    }
+    .step1-form {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: @quiz2-color;
+      padding: 45px 40px;
+      position: relative;
+      z-index: 1;
+      .title-step1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        text-align: left;
+        label {
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        input {
+          color: #333;
           background-color: rgba(255, 255, 255, 0.9);
-          .dropdown-hint {
-            display: block;
-            text-align: left;
-            width: 100%;
+          border: 0;
+          box-shadow: 0;
+          .border-radius(0);
+        }
+        .galaxy-select {
+          .dropdown-toggle {
+            .border-radius(0);
+            line-height: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            .dropdown-hint {
+              display: block;
+              text-align: left;
+              width: 100%;
+            }
           }
         }
       }
     }
-  }
-  .result-quiz2 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-    .electrolyte {
-      margin: 20px 0;
-      display: block;
-      .padding-auto {
-        padding: 0 8px !important;
+    @media (max-width: 360px) {
+      .step1-form {
+        padding: 5px;
       }
-      .title-quiz {
-        margin-bottom: 10px;
+    }
+    .message-confirm {
+      position: relative;
+      text-transform: uppercase;
+      margin: 50px 0 25px;
+      h1 {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 30px;
       }
       p {
         color: @quiz2-color;
-        padding: 0 15px;
+        font-weight: bold;
+        font-size: 16px;
       }
-      .color-fit {
-        width: 100%;
+      &:after {
+        background: hsla(0, 0%, 0%, 0) url("../images/dialog/icon-confirm.png") no-repeat scroll center center / 85% auto;
+        content: "";
         height: 85px;
-        position: relative;
-        border: 5px solid white;
-        margin-top: 5px;
-        .info-color {
-          position: absolute;
+        left: -95px;
+        position: absolute;
+        top: -15px;
+        width: 85px;
+      }
+    }
+    .brand-confirm{
+      width: 100%;
+      display: block;
+      border-top: 1px solid @quiz2-color;
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    .result-quiz2 {
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      .electrolyte {
+        margin: 20px 0;
+        display: block;
+        .padding-auto {
+          padding: 0 8px !important;
+        }
+        .title-quiz {
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 15px;
+        }
+        p {
+          color: @quiz2-color;
+          padding: 0 15px;
+        }
+        .color-fit {
           width: 100%;
-          bottom: 0;
-          left: 3px;
-          p {
-            color: white;
-            padding: 0;
-            text-align: left;
-            font-size: 10px;
-            white-space: nowrap;
+          height: 85px;
+          position: relative;
+          border: 5px solid white;
+          margin-top: 5px;
+          .info-color {
+            position: absolute;
             width: 100%;
-            font-weight: bold;
-            text-transform: uppercase;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            bottom: 0;
+            left: 3px;
+            p {
+              color: white;
+              padding: 0;
+              text-align: left;
+              font-size: 10px;
+              white-space: nowrap;
+              width: 100%;
+              font-weight: bold;
+              text-transform: uppercase;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
         }
       }
-    }
 
-  }
-  .btn-move-step {
-    .border-radius(0);
-    background-color: white;
-    color: @quiz2-color;
-    margin: 30px auto 0;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    min-width: 150px;
-  }
-}
-
-.confirm-dialog {
-  padding: 60px 15px;
-  .message-confirm {
-    position: relative;
-    text-transform: uppercase;
-    h1 {
-      font-weight: bold;
-      font-size: 30px;
     }
-    p {
+    .btn-move-step {
+      .border-radius(0);
+      background-color: white;
       color: @quiz2-color;
+      margin: auto 0;
+      font-size: 20px;
       font-weight: bold;
-      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      min-width: 150px;
+
+      &:hover {
+        background-color: whitesmoke;
+      }
     }
-    &:after {
-      background: hsla(0, 0%, 0%, 0) url("../images/dialog/icon-confirm.png") no-repeat scroll center center / 85% auto;
-      content: "";
-      height: 85px;
-      left: -95px;
-      position: absolute;
-      top: -15px;
-      width: 85px;
-    }
-  }
-  .close {
-    right: 5px;
-    top: 5px;
   }
 }

@@ -1,32 +1,44 @@
 #footer {
-  width: 100%;
+  display: block;
   height: 70px;
-  background-color: #5b1e73;
+  position: relative;
+  width: 100%;
+  &:after {
+    background-color: hsl(283, 59%, 28%);
+    content: "";
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+  }
+  &:before {
+    background-color: hsl(0, 0%, 100%);
+    content: "";
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+  &.isLanding {
+    margin-top: -70px;
+    &:before {
+      background-color: hsla(0, 0%, 100%, 0);
+    }
+  }
   .footer-wrapper {
     position: relative;
     height: 100%;
-    &:after{
+    background-color: hsl(283, 59%, 28%);
+    &:after {
       content: "";
       height: 78px;
       position: absolute;
       right: -163px;
       top: -8px;
       width: 163px;
-      background: white url("../images/paint-roller-tesst.png") no-repeat;
-    }
-    &.isLanding{
-      &:after{
-        background-color: transparent;
-      }
-      &:before{
-        content: "";
-        height: 70px;
-        position: absolute;
-        right: -163px;
-        top: 0;
-        width: 163px;
-        background-color: #5b1e73;
-      }
+      background: transparent url("../images/paint-roller-tesst.png") no-repeat;
     }
   }
   //.white-bg {
@@ -125,6 +137,7 @@
     .copyright {
       line-height: 70px;
     }
+
     .contact-now {
       height: 70px;
     }
@@ -139,13 +152,16 @@
     .contact-now {
       display: block;
     }
+
     .social-network {
       width: 100%;
       margin-bottom: 10px;
     }
+
     .send-mail {
       width: 96%;
     }
+
     .copyright {
       margin: 5px 0;
     }

@@ -1030,13 +1030,39 @@ a.galaxy-button:hover {
   }
 }
 #footer {
-  width: 100%;
+  display: block;
   height: 70px;
-  background-color: #5b1e73;
+  position: relative;
+  width: 100%;
+}
+#footer:after {
+  background-color: #5a1d72;
+  content: "";
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+#footer:before {
+  background-color: #ffffff;
+  content: "";
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+#footer.isLanding {
+  margin-top: -70px;
+}
+#footer.isLanding:before {
+  background-color: rgba(255, 255, 255, 0);
 }
 #footer .footer-wrapper {
   position: relative;
   height: 100%;
+  background-color: #5a1d72;
 }
 #footer .footer-wrapper:after {
   content: "";
@@ -1045,19 +1071,7 @@ a.galaxy-button:hover {
   right: -163px;
   top: -8px;
   width: 163px;
-  background: #ffffff url("../images/paint-roller-tesst.png") no-repeat;
-}
-#footer .footer-wrapper.isLanding:after {
-  background-color: transparent;
-}
-#footer .footer-wrapper.isLanding:before {
-  content: "";
-  height: 70px;
-  position: absolute;
-  right: -163px;
-  top: 0;
-  width: 163px;
-  background-color: #5b1e73;
+  background: transparent url("../images/paint-roller-tesst.png") no-repeat;
 }
 #footer .copyright {
   color: #fff;
@@ -1986,28 +2000,32 @@ a.galaxy-button:hover {
   min-height: 300px;
 }
 .rule-block .rule-dialog .background-rule .inputfile {
-  height: 0.1px;
+  height: 0;
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  width: 0.1px;
-  z-index: -1;
+  width: 0;
 }
 .rule-block .rule-dialog .background-rule .input-bg {
   display: block;
   width: 100%;
-  position: relative;
 }
-.rule-block .rule-dialog .background-rule .input-bg .input-avatar {
-  display: block;
-  width: 200px;
-  height: 200px;
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload {
   position: absolute;
-  margin-left: -100px;
-  left: 50%;
-  top: 70%;
-  margin-top: -100px;
-  background: url(../images/dialog/rule/input-avatar.png);
+  overflow: hidden;
+  margin: 10px;
+  z-index: 2;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .rule-block .rule-dialog.modal-content {
   -webkit-border-radius: 0;

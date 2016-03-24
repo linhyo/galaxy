@@ -337,3 +337,28 @@
   height: @height;
   margin: 0 auto;
 }
+
+.border-gradient-before(@width: 10px, @colorOne : #3acfd5, @colorTwo : #3a8ed5, @colorThree: #3a4ed5, @colorFour : #3a8ed5){
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% @width;
+  -moz-background-size: 100% @width;
+  background-size: 100% @width;
+  background-image: -webkit-linear-gradient(to right, @colorOne 0%, @colorTwo 100%), -webkit-linear-gradient(right, @colorThree 0%, @colorFour 100%);
+  background-image: -moz-linear-gradient(to right, @colorOne 0%, @colorTwo 100%), -moz-linear-gradient(right, @colorThree 0%, @colorFour 100%);
+  background-image: -o-linear-gradient(to right, @colorOne 0%, @colorTwo 100%), -o-linear-gradient(right,  @colorThree 0%, @colorFour 100%);
+  background-image: linear-gradient(to right, @colorOne 0%, @colorTwo 100%), linear-gradient(to left, @colorThree 0%, @colorFour 100%);
+}
+
+.border-gradient-after(@width : 10px, @colorOne : #3acfd5, @colorTwo : #3a8ed5, @colorThree: #3a4ed5, @colorFour : #3a8ed5){
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  -webkit-background-size: @width 100%;
+  -moz-background-size: @width 100%;
+  background-size: @width 100%;
+  top: 0;
+  background-image: -webkit-linear-gradient(top, @colorOne 0%, @colorTwo 100%), -webkit-linear-gradient(to top, @colorThree 0%, @colorFour 100%);
+  background-image: -moz-linear-gradient(top, @colorOne 0%, @colorTwo 100%), -moz-linear-gradient(to top, @colorThree 0%, @colorFour 100%);
+  background-image: -o-linear-gradient(top, @colorOne 0%, @colorTwo 100%), -o-linear-gradient(to top, @colorThree 0%, @colorFour 100%);
+  background-image: linear-gradient(to bottom, @colorOne 0%, @colorTwo 100%), linear-gradient(to top, @colorThree 0%, @colorFour 100%);
+}

@@ -1776,6 +1776,251 @@ a.galaxy-button:hover {
 .quiz-block .quiz-dialog .btn-move-step:hover {
   background-color: whitesmoke;
 }
+.rule-block {
+  background: #ffffff;
+}
+.rule-block .rule-dialog {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.rule-block .rule-dialog:before,
+.rule-block .rule-dialog:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rule-block .rule-dialog:before {
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 10px;
+  -moz-background-size: 100% 10px;
+  background-size: 100% 10px;
+  background-image: -webkit-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -webkit-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -moz-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -moz-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -o-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -o-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), linear-gradient(to left, #d2b4c4 0%, #d2b4c4 100%);
+}
+.rule-block .rule-dialog:after {
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  -webkit-background-size: 10px 100%;
+  -moz-background-size: 10px 100%;
+  background-size: 10px 100%;
+  top: 0;
+  background-image: -webkit-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -webkit-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -moz-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -moz-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -o-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -o-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: linear-gradient(to bottom, #f0b5b9 0%, #c9b3c7 100%), linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
+}
+.rule-block .rule-dialog .container-rule {
+  padding: 20px 15px;
+}
+.rule-block .rule-dialog .rule-title {
+  color: #333333;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+.rule-block .rule-dialog .image-rule {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.rule-block .rule-dialog .image-rule img {
+  width: 100%;
+  display: block;
+}
+.rule-block .rule-dialog .content-rule {
+  display: block;
+  width: 100%;
+}
+.rule-block .rule-dialog .content-rule p {
+  color: #333333;
+  margin-bottom: 10px;
+}
+.rule-block .rule-dialog .content-rule .message-confirm-rule {
+  margin-top: 50px;
+  position: relative;
+}
+.rule-block .rule-dialog .content-rule .message-confirm-rule:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../images/dialog/icon-confirm-rule.png);
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  top: -50px;
+}
+.rule-block .rule-dialog .btn-close-rule {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #b0b0b0;
+  color: #737373;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px auto;
+  min-width: 50px;
+  padding: 5px 26px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.rule-block .rule-dialog .btn-close-rule:hover {
+  background-color: rgba(223, 223, 223, 0.5);
+}
+.rule-block .rule-dialog .btn-close-rule.btn-pink {
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #f0b5b9;
+  background-color: #f0b5b9;
+  color: #ffffff;
+}
+.rule-block .rule-dialog .btn-close-rule.btn-pink:hover {
+  background-color: #ffc1c5;
+}
+.rule-block .rule-dialog .block-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 40px;
+  padding: 0 30px;
+}
+.rule-block .rule-dialog .block-content .title-share {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  background-color: #e7b5bc;
+  padding: 5px 15px 5px 27px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.rule-block .rule-dialog .block-content .form-group {
+  position: relative;
+}
+.rule-block .rule-dialog .block-content .form-group label {
+  margin-bottom: 8px;
+}
+.rule-block .rule-dialog .block-content .form-group input,
+.rule-block .rule-dialog .block-content .form-group textarea {
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.rule-block .rule-dialog .block-content .form-group i.note {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+}
+.rule-block .rule-dialog .block-content .form-group .btn-rule {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #b0b0b0;
+  color: #737373;
+  display: inline;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  min-width: 50px;
+  padding: 5px 26px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.rule-block .rule-dialog .block-content .form-group .btn-rule:hover {
+  background-color: rgba(223, 223, 223, 0.5);
+}
+.rule-block .rule-dialog .block-content .form-group .btn-rule.btn-pink {
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #f0b5b9;
+  background-color: #f0b5b9;
+  color: #ffffff;
+}
+.rule-block .rule-dialog .block-content .form-group .btn-rule.btn-pink:hover {
+  background-color: #ffc1c5;
+}
+.rule-block .rule-dialog .background-rule {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+.rule-block .rule-dialog .background-rule .inputfile {
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0.1px;
+  z-index: -1;
+}
+.rule-block .rule-dialog .background-rule .input-bg {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: -100px;
+  left: 50%;
+  top: 70%;
+  margin-top: -100px;
+  background: url(../images/dialog/rule/input-avatar.png);
+}
+.rule-block .rule-dialog.modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.rule-block.create-form .rule-dialog {
+  padding: 0;
+}
 .galaxy-banner {
   position: relative;
   width: 100%;

@@ -782,11 +782,11 @@ a.galaxy-button:hover {
   font-size: 13px;
   font-weight: 700;
   border: 1px solid #8b9aa7;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .galaxy-btn-file:hover {
   background-color: #fff;
@@ -1122,11 +1122,11 @@ a.galaxy-button:hover {
 #footer .social-network ul > li > a:hover {
   background-color: #753989;
   border-color: #fff;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #footer .social-network ul > li > a:hover > i {
   color: #fff;
@@ -1894,11 +1894,11 @@ a.galaxy-button:hover {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .rule-block .rule-dialog .btn-close-rule:hover {
   background-color: rgba(223, 223, 223, 0.5);
@@ -1973,11 +1973,11 @@ a.galaxy-button:hover {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .rule-block .rule-dialog .block-content .form-group .btn-rule:hover {
   background-color: rgba(223, 223, 223, 0.5);
@@ -2064,11 +2064,11 @@ a.galaxy-button:hover {
   width: 100%;
   height: 428px;
   background: transparent no-repeat top center / cover;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .flower-control {
   position: relative;
@@ -2465,11 +2465,11 @@ a.galaxy-button:hover {
   border-top-color: #a7b2bc;
   border-bottom-color: #a7b2bc;
   color: #fff;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .galaxy-feature .list-group-item:hover,
 .galaxy-feature .list-group-item:focus {
@@ -3215,11 +3215,11 @@ a.galaxy-button:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #product-page .product-detail-menu > li > a:hover {
   color: #8b9aa7;
@@ -3829,11 +3829,11 @@ a.galaxy-button:hover {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .project-item .project-mask {
   position: absolute;
@@ -4378,11 +4378,11 @@ a.galaxy-button:hover {
   width: 100%;
   height: 957px;
   background: transparent url("../images/landing/galaxy-main-bg.jpg") no-repeat top center / cover;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #galaxy-color .landing-banner .top-wrapper {
   position: relative;
@@ -4393,11 +4393,11 @@ a.galaxy-button:hover {
   width: 100%;
   height: 1135px;
   background: transparent url("../images/landing/galaxy-bottom-bg.jpg") no-repeat top center / cover;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #galaxy-color .landing-content .bottom-wrapper {
   position: relative;
@@ -4487,11 +4487,11 @@ a.galaxy-button:hover {
   border-image-slice: 1;
   margin-top: 20px;
   padding: 12px 38px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #galaxy-color .landing-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -4647,11 +4647,11 @@ a.galaxy-button:hover {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   z-index: 100;
 }
 #galaxy-discovery .btn-discovery:hover {
@@ -4691,11 +4691,11 @@ a.galaxy-button:hover {
   background-clip: padding-box;
   border: 1px solid #fff;
   padding: 12px 26px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #galaxy-discovery .color-game .btn-award-rule:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -4754,11 +4754,11 @@ a.galaxy-button:hover {
   background-clip: padding-box;
   border: 3px solid transparent;
   padding: 12px 26px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #galaxy-discovery .quiz-1 .quiz-title {
   color: #231F20;
@@ -4896,6 +4896,567 @@ a.galaxy-button:hover {
     margin-left: -64px !important;
   }
 }
+#galaxy-decoration .landing-background {
+  position: relative;
+  width: 100%;
+  height: 575px;
+  background: transparent url("../images/landing/firework-bg.jpg") no-repeat center center / cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+#galaxy-decoration .landing-background:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #676565;
+}
+#galaxy-decoration .landing-background .top-wrapper {
+  position: relative;
+  height: 100%;
+}
+#galaxy-decoration .landing-background .paint-roller {
+  position: absolute;
+  top: 110px;
+  left: -106px;
+  background: transparent url("../images/landing/paint-roller.png") no-repeat center center;
+}
+#galaxy-decoration .landing-background .banner-caption {
+  margin-top: 11%;
+}
+#galaxy-decoration .banner-story {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  left: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#galaxy-decoration .banner-story-reflection {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  left: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#galaxy-decoration .banner-story-reflection img {
+  -webkit-transform: scaleX(-1) rotate(180deg);
+  -moz-transform: scaleX(-1) rotate(180deg);
+  -o-transform: scaleX(-1) rotate(180deg);
+  -ms-transform: scaleX(-1) rotate(180deg);
+  transform: scaleX(-1) rotate(180deg);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -moz-opacity: 0.1;
+  -khtml-opacity: 0.1;
+  -webkit-opacity: 0.1;
+  opacity: 0.1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+  filter: alpha(opacity=10);
+}
+#galaxy-decoration .banner-story-reflection .person-1,
+#galaxy-decoration .banner-story-reflection .person-2,
+#galaxy-decoration .banner-story-reflection .person-3,
+#galaxy-decoration .banner-story-reflection .person-4 {
+  bottom: -65px !important;
+}
+#galaxy-decoration .banner-person {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+#galaxy-decoration .banner-person.active {
+  -webkit-transform: translate(0, 60px);
+  -moz-transform: translate(0, 60px);
+  -o-transform: translate(0, 60px);
+  -ms-transform: translate(0, 60px);
+  transform: translate(0, 60px);
+}
+#galaxy-decoration .banner-person.hidden-elm {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+#galaxy-decoration .person-1 {
+  position: absolute;
+  bottom: 0;
+  left: -16px;
+  width: 97%;
+}
+#galaxy-decoration .person-2 {
+  position: absolute;
+  bottom: 0;
+  right: 36px;
+  width: 60%;
+}
+#galaxy-decoration .person-3 {
+  position: absolute;
+  bottom: 0;
+  right: 36px;
+  width: 66%;
+}
+#galaxy-decoration .person-4 {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  width: 86%;
+}
+#galaxy-decoration .landing-story {
+  position: relative;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(0, 0, 0, 0.2)));
+  background-image: -webkit-linear-gradient(top, #ffffff, rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, #ffffff, rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, #ffffff, rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, #ffffff, rgba(0, 0, 0, 0.2));
+}
+#galaxy-decoration .landing-story:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  height: 8px;
+  width: 100%;
+  background: #6b2b85;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #6b2b85), color-stop(50%, #f07721), color-stop(100%, #f6ea23));
+  background: -webkit-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -moz-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -ms-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+}
+#galaxy-decoration .landing-story .middle-wrapper {
+  position: relative;
+  height: 100%;
+}
+#galaxy-decoration .landing-story .person-info {
+  position: relative;
+  padding: 0 65px 0 85px;
+  z-index: 11;
+}
+#galaxy-decoration .landing-story .person-info:before {
+  content: '';
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 69px;
+  height: 44px;
+  background: transparent url('../images/landing/double-quote-left.png') no-repeat center center;
+}
+#galaxy-decoration .landing-story .person-info:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55px;
+  height: 35px;
+  background: transparent url('../images/landing/double-quote-right.png') no-repeat center center;
+}
+#galaxy-decoration .landing-story .person-info h1,
+#galaxy-decoration .landing-story .person-info p {
+  color: #62368c;
+}
+#galaxy-decoration .landing-story .person-info .person-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 36%;
+}
+#galaxy-decoration .landing-story .person-info .person-job {
+  font-weight: 700;
+  margin: 5px 0 8px;
+}
+#galaxy-decoration .landing-story .person-image {
+  margin-top: 38px;
+}
+#galaxy-decoration .landing-story .person-image img {
+  display: inline-block;
+}
+#galaxy-decoration .landing-event {
+  background-color: #edb4ba;
+  background-image: -webkit-gradient(linear, left top, right top, from(#edb4ba), to(#7499cd));
+  background-image: -webkit-linear-gradient(left, #edb4ba, #7499cd);
+  background-image: -moz-linear-gradient(left, #edb4ba, #7499cd);
+  background-image: -ms-linear-gradient(left, #edb4ba, #7499cd);
+  background-image: -o-linear-gradient(left, #edb4ba, #7499cd);
+}
+#galaxy-decoration .landing-event .group-img {
+  margin-top: 50px;
+}
+#galaxy-decoration .landing-event h1,
+#galaxy-decoration .landing-event p {
+  color: #fff;
+}
+#galaxy-decoration .landing-event .event-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20%;
+}
+#galaxy-decoration .landing-event .event-desc {
+  margin: 14px 0 24px 0;
+}
+#galaxy-decoration .landing-event .btn-event {
+  width: 157px;
+  height: 48px;
+  background: transparent no-repeat center center;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#galaxy-decoration .landing-event .btn-event.btn-rule {
+  background-image: url('../images/landing/btn-rule.png');
+  margin-right: 25px;
+}
+#galaxy-decoration .landing-event .btn-event.btn-join {
+  background-image: url('../images/landing/btn-join.png');
+}
+#galaxy-decoration .landing-event .btn-event:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+#galaxy-decoration .landing-entry {
+  padding: 30px 0;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-prev,
+#galaxy-decoration .landing-entry .entry-slide .btn-next {
+  position: absolute;
+  bottom: 0;
+  background-color: #0e112a;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-prev > i,
+#galaxy-decoration .landing-entry .entry-slide .btn-next > i {
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-prev:hover,
+#galaxy-decoration .landing-entry .entry-slide .btn-next:hover {
+  background-color: #10154d;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-prev {
+  left: 0;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-next {
+  left: 7%;
+}
+#galaxy-decoration .landing-entry .entry-top {
+  margin-bottom: 15px;
+}
+#galaxy-decoration .landing-entry .entry-share {
+  position: relative;
+}
+#galaxy-decoration .landing-entry .entry-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#galaxy-decoration .landing-entry .entry-caption h1 {
+  color: #fff;
+  font-family: 'iCiel Bambola', sans-serif;
+}
+#galaxy-decoration .landing-entry .entry-caption h2 {
+  color: #fff;
+  font-weight: 700;
+}
+#galaxy-decoration .landing-entry .entry-caption p {
+  color: #fff;
+  margin-top: 5%;
+}
+#galaxy-decoration .landing-entry .entry-item {
+  margin: 15px 0;
+}
+#galaxy-decoration .landing-entry .entry-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+#galaxy-decoration .landing-entry .entry-wrapper img {
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: -moz-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: -o-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#galaxy-decoration .landing-entry .entry-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(95, 33, 121, 0.3);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+#galaxy-decoration .landing-entry .entry-wrapper:hover img {
+  -webkit-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  -o-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+#galaxy-decoration .landing-entry .entry-wrapper:hover::after {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+#galaxy-decoration .landing-entry .entry-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3% 5%;
+  color: #fff;
+  font-size: 16px;
+  background-color: #f0b5b9;
+  z-index: 10;
+}
+#galaxy-decoration .landing-entry .entry-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+#galaxy-decoration .landing-entry .entry-title > p {
+  display: block;
+  color: #fff;
+  font-family: 'iCiel Bambola', sans-serif;
+  font-size: 38px;
+  line-height: 35px;
+  background-color: rgba(121, 155, 203, 0.6);
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+#galaxy-decoration .landing-entry .entry-title > p:first-child {
+  width: 60%;
+  padding: 4% 0 1% 4%;
+}
+#galaxy-decoration .landing-entry .entry-title > p:last-child {
+  width: 72%;
+  padding: 1% 0 4% 4%;
+}
+#galaxy-decoration .landing-entry .slide-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1% 3%;
+  color: #fff;
+  font-size: 16px;
+  background-color: #f0b5b9;
+  z-index: 10;
+}
+#galaxy-decoration .landing-entry .slide-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 10;
+}
+#galaxy-decoration .landing-entry .slide-title > p {
+  float: right;
+  display: block;
+  color: #fff;
+  font-family: 'iCiel Bambola', sans-serif;
+  font-size: 38px;
+  line-height: 35px;
+  background-color: rgba(121, 155, 203, 0.6);
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-align: right;
+}
+#galaxy-decoration .landing-entry .slide-title > p:first-child {
+  width: 70%;
+  padding: 4% 4% 1% 0;
+}
+#galaxy-decoration .landing-entry .slide-title > p:last-child {
+  width: 55%;
+  padding: 1% 4% 4% 0;
+}
+#galaxy-decoration .landing-entry .btn-loadmore {
+  display: inline-block;
+  background-color: #d59fc1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #d59fc1;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 12px 26px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#galaxy-decoration .landing-entry .btn-loadmore:hover {
+  background-color: #fff;
+  color: #d59fc1;
+}
+@media (min-width: 1200px) {
+  #galaxy-decoration .paint-roller {
+    width: 566px;
+    height: 117px;
+  }
+  #galaxy-decoration .entry-caption {
+    padding: 5% 8%;
+  }
+  #galaxy-decoration .entry-caption h1 {
+    font-size: 60px;
+    margin-top: 22%;
+  }
+  #galaxy-decoration .entry-caption h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #galaxy-decoration .paint-roller {
+    width: 509px;
+    height: 105px;
+    background-size: 90% !important;
+  }
+  #galaxy-decoration .btn-prev,
+  #galaxy-decoration .btn-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #galaxy-decoration .btn-prev > i,
+  #galaxy-decoration .btn-next > i {
+    line-height: 40px !important;
+  }
+  #galaxy-decoration .entry-caption {
+    padding: 4% 7%;
+  }
+  #galaxy-decoration .entry-caption h1 {
+    font-size: 50px;
+    margin-top: 18%;
+  }
+  #galaxy-decoration .entry-caption h2 {
+    font-size: 30px;
+  }
+  #galaxy-decoration .entry-title > p {
+    font-size: 34px !important;
+  }
+  #galaxy-decoration .entry-title > p:first-child {
+    width: 70% !important;
+  }
+  #galaxy-decoration .entry-title > p:last-child {
+    width: 82% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-decoration .landing-background {
+    height: 475px;
+  }
+  #galaxy-decoration .paint-roller {
+    top: 90px !important;
+    width: 453px;
+    height: 94px;
+    background-size: 80% !important;
+  }
+  #galaxy-decoration .btn-prev,
+  #galaxy-decoration .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #galaxy-decoration .btn-prev > i,
+  #galaxy-decoration .btn-next > i {
+    line-height: 30px !important;
+  }
+  #galaxy-decoration .entry-caption {
+    padding: 3% 6%;
+  }
+  #galaxy-decoration .entry-caption h1 {
+    font-size: 40px;
+    margin-top: 14%;
+  }
+  #galaxy-decoration .entry-caption h2 {
+    font-size: 30px;
+  }
+  #galaxy-decoration .entry-title > p {
+    font-size: 30px !important;
+  }
+  #galaxy-decoration .entry-title > p:first-child {
+    width: 80% !important;
+  }
+  #galaxy-decoration .entry-title > p:last-child {
+    width: 92% !important;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-decoration .landing-background {
+    height: 375px;
+  }
+  #galaxy-decoration .paint-roller {
+    top: 10px !important;
+    width: 453px;
+    height: 94px;
+    background-size: 80% !important;
+  }
+  #galaxy-decoration .banner-caption {
+    margin-top: 14% !important;
+  }
+  #galaxy-decoration .landing-entry img {
+    width: 100%;
+  }
+  #galaxy-decoration .entry-caption {
+    padding: 5% 8%;
+  }
+  #galaxy-decoration .entry-caption h1 {
+    font-size: 60px;
+    margin-top: 22%;
+  }
+  #galaxy-decoration .entry-caption h2 {
+    font-size: 40px;
+  }
+}
 @-webkit-keyframes balloon1 {
   0%,
   100% {
@@ -4967,4 +5528,199 @@ a.galaxy-button:hover {
   50% {
     transform: translateY(-50px);
   }
+}
+.balloons {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.balloon {
+  display: block;
+  width: 70px;
+  height: 95px;
+  opacity: 0.8;
+  position: absolute;
+  -webkit-border-radius: 80%;
+  -moz-border-radius: 80%;
+  -ms-border-radius: 80%;
+  border-radius: 80%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: inset 0.8vw 0.6vw 1vw rgba(30, 30, 30, 0.2);
+  cursor: pointer;
+}
+.balloon:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  bottom: -5px;
+  content: "";
+  height: 0;
+  left: 45%;
+  position: absolute;
+  width: 0;
+}
+.balloon1:after,
+.balloon6:after,
+.balloon11:after {
+  border-bottom: 10px solid #D13848;
+}
+.balloon2:after,
+.balloon7:after,
+.balloon12:after {
+  border-bottom: 10px solid #20A8FF;
+}
+.balloon3:after,
+.balloon8:after,
+.balloon13:after {
+  border-bottom: 10px solid #F9B123;
+}
+.balloon4:after,
+.balloon9:after,
+.balloon14:after {
+  border-bottom: 10px solid #B02C8F;
+}
+.balloon5:after,
+.balloon10:after,
+.balloon15:after {
+  border-bottom: 10px solid #8F2CB0;
+}
+.balloon1 {
+  background-color: #D13848;
+  left: 1%;
+  animation: flyingBalloon 12s;
+  -webkit-animation: flyingBalloon 12s;
+}
+.balloon2 {
+  background-color: #20A8FF;
+  left: 6%;
+  animation: flyingBalloon 10s;
+  -webkit-animation: flyingBalloon 10s;
+}
+.balloon3 {
+  background-color: #F9B123;
+  left: 15%;
+  animation: flyingBalloon 17s;
+  -webkit-animation: flyingBalloon 17s;
+}
+.balloon4 {
+  background-color: #B02C8F;
+  left: 20%;
+  animation: flyingBalloon 14s;
+  -webkit-animation: flyingBalloon 14s;
+}
+.balloon5 {
+  background-color: #8F2CB0;
+  left: 22%;
+  animation: flyingBalloon 20s;
+  -webkit-animation: flyingBalloon 20s;
+}
+.balloon6 {
+  background-color: #D13848;
+  left: 30%;
+  animation: flyingBalloon 13s;
+  -webkit-animation: flyingBalloon 13s;
+}
+.balloon7 {
+  background-color: #20A8FF;
+  left: 37%;
+  animation: flyingBalloon 21s;
+  -webkit-animation: flyingBalloon 21s;
+}
+.balloon8 {
+  background-color: #F9B123;
+  left: 44%;
+  animation: flyingBalloon 9s;
+  -webkit-animation: flyingBalloon 9s;
+}
+.balloon9 {
+  background-color: #B02C8F;
+  left: 50%;
+  animation: flyingBalloon 17s;
+  -webkit-animation: flyingBalloon 17s;
+}
+.balloon10 {
+  background-color: #8F2CB0;
+  left: 56%;
+  animation: flyingBalloon 7s;
+  -webkit-animation: flyingBalloon 7s;
+}
+.balloon11 {
+  background-color: #D13848;
+  left: 63%;
+  animation: flyingBalloon 5s;
+  -webkit-animation: flyingBalloon 5s;
+}
+.balloon12 {
+  background-color: #20A8FF;
+  left: 72%;
+  animation: flyingBalloon 20s;
+  -webkit-animation: flyingBalloon 20s;
+}
+.balloon13 {
+  background-color: #F9B123;
+  left: 77%;
+  animation: flyingBalloon 10s;
+  -webkit-animation: flyingBalloon 10s;
+}
+.balloon14 {
+  background-color: #B02C8F;
+  left: 82%;
+  animation: flyingBalloon 9s;
+  -webkit-animation: flyingBalloon 9s;
+}
+.balloon15 {
+  background-color: #8F2CB0;
+  left: 90%;
+  animation: flyingBalloon 5s;
+  -webkit-animation: flyingBalloon 5s;
+}
+@-webkit-keyframes flyingBalloon {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+@-moz-keyframes flyingBalloon {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+@-ms-keyframes flyingBalloon {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+@-o-keyframes flyingBalloon {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+@keyframes flyingBalloon {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+.balloon {
+  position: absolute;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-delay: -120s;
+  -webkit-animation-delay: -120s;
 }

@@ -5198,6 +5198,7 @@ a.galaxy-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 #galaxy-discovery .landing-quiz {
+  position: relative;
   width: 100%;
   min-height: 1000px;
   background-color: #edb4ba;
@@ -5207,6 +5208,15 @@ a.galaxy-button:hover {
   background-image: -ms-linear-gradient(left, #edb4ba, #7499cd);
   background-image: -o-linear-gradient(left, #edb4ba, #7499cd);
   padding-bottom: 100px;
+}
+#galaxy-discovery .landing-quiz:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: transparent url('../images/landing/star.png') no-repeat center center / cover;
 }
 #galaxy-discovery .landing-quiz .quiz {
   margin-top: 50px;

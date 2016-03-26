@@ -380,10 +380,20 @@
     }
   }
   .landing-quiz {
+    position: relative;
     width: 100%;
     min-height: 1000px;
     .horizontal-gradient(#edb4ba, #7499cd);
     padding-bottom: 100px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: transparent url('../images/landing/star.png') no-repeat center center / cover;
+    }
     .quiz {
       margin-top: 50px;
     }

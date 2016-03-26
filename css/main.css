@@ -5256,6 +5256,7 @@ a.galaxy-button:hover {
 #galaxy-discovery .quiz-2 {
   position: relative;
   width: 100%;
+  z-index: 10;
 }
 #galaxy-discovery .quiz-1 img,
 #galaxy-discovery .quiz-2 img {
@@ -5445,7 +5446,6 @@ a.galaxy-button:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  overflow: hidden;
 }
 #galaxy-decoration .landing-background:after {
   content: '';
@@ -6069,9 +6069,10 @@ a.galaxy-button:hover {
   }
 }
 .balloons {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
+  overflow: hidden;
 }
 .balloon {
   display: block;

@@ -424,6 +424,7 @@
   .quiz-1, .quiz-2 {
     position: relative;
     width: 100%;
+    z-index: 10;
     img {
       display: inline-block;
     }
@@ -603,7 +604,6 @@
     height: 575px;
     background: transparent url("../images/landing/firework-bg.jpg") no-repeat center center / cover;
     .transition();
-    overflow: hidden;
     &:after {
       content: '';
       position: absolute;
@@ -1150,9 +1150,10 @@
 }
 
 .balloons {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
+  overflow: hidden;
 }
 
 .balloon {

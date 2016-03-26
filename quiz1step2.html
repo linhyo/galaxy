@@ -114,6 +114,8 @@
 <div class="modal fade" id="quiz1step2" tabindex="-1" role="dialog" aria-labelledby="quiz12Label">
   <div class="modal-dialog" role="document">
     <div class="modal-content question-dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+        aria-hidden="true">&times;</span></button>
       <form id="quiz1" action="">
         <ul class="step-process">
           <li data-id="step1"><span class="number"></span>
@@ -156,6 +158,7 @@
 
           <div class="root-item" id="root1">
             <h1 class="question-content">Bạn hãy chọn bức hình có màu sắc hấp dẫn bạn nhất?</h1>
+
             <div class="row">
               <div class="col-lg-4">
                 <div class="radio isImage">
@@ -217,7 +220,38 @@
         </div>
         <div class="step-content" id="step2">
           <div class="row">
-            <h1 class="title-step2"></h1>
+            <h1 class="title-step2">Bạn đã trả lời xong 10 câu hỏi. <br/>
+              Hãy điền thông tin cá nhân của bạn để được nhận kết quả nhé!</h1>
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="form-group">
+                <label for="fullName">Họ và tên:</label>
+                <input type="text" class="form-control done" id="fullName" placeholder="Họ và tên của bạn">
+              </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="form-group">
+                <label for="phoneNumber">Số điện thoại:</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Số điện thoại của bạn">
+              </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Email của bạn">
+              </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" class="form-control" id="address" placeholder="Địa chỉ của bạn">
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="submit-result">
+                <!--<button class="btn-result active"></button>-->
+                <button class="btn-result"></button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="step-content" id="step3"></div>
@@ -258,6 +292,12 @@
       }
       q++;
     });
+
+    $('.btn-result').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+    });
+
   });
 </script>
 </body>

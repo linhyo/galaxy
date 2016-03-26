@@ -2486,12 +2486,51 @@ a.galaxy-button:hover {
   padding: 0;
 }
 .question-dialog {
-  min-height: 940px;
+  min-height: 870px;
   background: #ffffff url("../images/dialog/bg-step1-quiz1-main.png") no-repeat scroll center bottom / 100% auto;
   width: 100%;
   height: 100%;
   display: block;
   position: relative;
+}
+.question-dialog .close {
+  background-color: #231f20;
+  border: 2px solid #ffffff;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  vertical-align: middle;
+  width: 30px;
+  opacity: 1;
+  box-shadow: 0 2px 1px #231f20;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.question-dialog .close:after {
+  content: '';
+  background: url(../images/dialog/close.png) no-repeat center / 60% 60%;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+}
+.question-dialog .close:hover {
+  background-color: #615658;
 }
 .question-dialog:before {
   content: '';
@@ -2677,21 +2716,29 @@ a.galaxy-button:hover {
   display: block;
   width: 100%;
 }
-.question-dialog #quiz1 .step-content .title-step {
+.question-dialog #quiz1 .step-content .title-step,
+.question-dialog #quiz1 .step-content .title-step2 {
   font-weight: bold;
   font-size: 24px;
+  padding: 0 15px;
   text-transform: uppercase;
   text-align: center;
   color: #231F20;
   line-height: 30px;
   margin-bottom: 15px;
 }
-.question-dialog #quiz1 .step-content .title-step span {
+.question-dialog #quiz1 .step-content .title-step span,
+.question-dialog #quiz1 .step-content .title-step2 span {
   font-weight: bold;
   display: inline-block;
   background-color: #231F20;
   color: white;
   padding: 2px 5px;
+}
+.question-dialog #quiz1 .step-content .title-step2 {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 600;
 }
 .question-dialog #quiz1 .step-content .sort-view {
   width: 100%;
@@ -2795,6 +2842,70 @@ a.galaxy-button:hover {
   color: #414042;
   margin: 0;
   font-size: 14px;
+}
+.question-dialog #quiz1 .step-content .form-group {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  color: #414042;
+}
+.question-dialog #quiz1 .step-content .form-group label {
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.question-dialog #quiz1 .step-content .form-group input {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #414042;
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(right, #c5c5c5 0%, #f4f4f4 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, #c5c5c5 0%, #f4f4f4 100%);
+  border-image: linear-gradient(to left, #c5c5c5 0%, #f4f4f4 100%);
+  border-image-slice: 1;
+}
+.question-dialog #quiz1 .step-content .form-group input.done {
+  background-color: white;
+  -moz-border-image: -moz-linear-gradient(right, #d36668 0%, #289ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, #d36668 0%, #289ed5 100%);
+  border-image: linear-gradient(to left, #d36668 0%, #289ed5 100%);
+  border-image-slice: 1;
+}
+.question-dialog #quiz1 .step-content .submit-result {
+  display: block;
+  padding-top: 45px;
+  width: 100%;
+  margin-top: 15px;
+  border-top: 1px solid #c5c5c5;
+  position: relative;
+  z-index: 1;
+}
+.question-dialog #quiz1 .step-content .submit-result .btn-result {
+  background: url(../images/dialog/btn-result.png) no-repeat center center / cover;
+  width: 187px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  cursor: inherit;
+  z-index: -1;
+  border: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.question-dialog #quiz1 .step-content .submit-result .btn-result.active {
+  cursor: pointer;
+  background: url(../images/dialog/btn-result-active.png) no-repeat center center / cover;
 }
 .galaxy-banner {
   position: relative;

@@ -369,3 +369,39 @@
   background-image: -o-linear-gradient(top, @colorOne 0%, @colorTwo 100%), -o-linear-gradient(to top, @colorThree 0%, @colorFour 100%);
   background-image: linear-gradient(to bottom, @colorOne 0%, @colorTwo 100%), linear-gradient(to top, @colorThree 0%, @colorFour 100%);
 }
+
+.gradient-text(@text, @background, @gradient) {
+  background: white;
+  color: black;
+  // Hide aliased edges caused by mixing blend modes. Will appear as a faint dark outline on certain backgrounds. Tweak to improve rendering
+  text-shadow: 1px 1px 0 @background,
+    1px -1px 0 @background,
+    -1px -1px 0 @background,
+  -1px 1px 0 @background;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // Make cursor ignore these, allowing text underneath to be clicked and selected
+    pointer-events: none;
+  }
+  &::before {
+    // Gradient
+    background: @gradient;
+    content: '';
+    display: block;
+    mix-blend-mode: screen;
+  }
+  // Everything below can be removed when using a #fff background. Ditto when using a black background, provided the mix-blend-modes, text, background color are reversed. (Screen to multiply, white to black)
+  &::after {
+    // Duplicate gradient text. Yes, it's ugly. Change the value below without changing the HTML for fun times.
+    content: @text;
+    background: @background;
+    color: white;
+    mix-blend-mode: multiply;
+  }
+}

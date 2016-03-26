@@ -1,14 +1,14 @@
 @question-color: #1C1C1C;
 @question-background: #ffffff;
 
-.question-dialog{
-  min-height: 960px;
+.question-dialog {
+  min-height: 940px;
   background: @question-background url("../images/dialog/bg-step1-quiz1-main.png") no-repeat scroll center bottom / 100% auto;
   width: 100%;
   height: 100%;
   display: block;
   position: relative;
-  &:before{
+  &:before {
     content: '';
     background: url("../images/dialog/bg-step1-quiz1.png") no-repeat scroll center bottom/ 100% auto;
     display: block;
@@ -18,9 +18,9 @@
     left: 0;
     bottom: 0;
   }
-  &:after{
+  &:after {
     content: '';
-    background: url("../images/dialog/bg-step1-quiz2-before.png") no-repeat scroll center bottom/ 100% auto;
+    //background: url("../images/dialog/bg-step1-quiz2-before.png") no-repeat scroll center bottom/ 100% auto;
     display: block;
     position: absolute;
     width: 100%;
@@ -31,4 +31,201 @@
   &.modal-content {
     .border-radius(0);
   }
+  #quiz1 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 30px 15px;
+    .step-process {
+      display: table;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      li {
+        display: table-cell;
+        position: relative;
+        &:after {
+          content: '';
+          height: 1px;
+          width: -moz-calc(~"100% - 50px");
+          width: -webkit-calc(~"100% - 50px");
+          width: calc(~"100% - 50px");
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          z-index: -1;
+          background-color: #D5D5D5;
+        }
+        p {
+          color: #AAAAAA;
+          font-weight: bold;
+          width: -moz-calc(~"100% - 50px");
+          width: -webkit-calc(~"100% - 50px");
+          width: calc(~"100% - 50px");
+          position: absolute;
+          right: 5px;
+          top: 0;
+          text-align: center;
+        }
+        span.number {
+          width: 37px;
+          height: 37px;
+          display: block;
+          background-color: #D5D5D5;
+          .border-radius(50%);
+          position: relative;
+          z-index: 0;
+          left: 0;
+          top: 0;
+          .transition();
+          span {
+            position: absolute;
+            display: block;
+            left: 1px;
+            top: 1px;
+            border: 1px solid white;
+            width: 35px;
+            height: 35px;
+            color: #AAAAAA;
+            line-height: 31px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #D5D5D5;
+            .border-radius(50%);
+            .transition();
+            z-index: 1;
+          }
+        }
+        &.active, &.done {
+          p {
+            .gradient-text('CSS Gradient Text', #fff, linear-gradient(to right, #289ED5, #289ED5, #D36668, #D36668, #D36668));
+          }
+          &:after {
+            .horizontal-gradient(#289ED5, #D36668);
+          }
+          span.number {
+            .horizontal-gradient(#289ED5, #D36668);
+            span {
+              color: white;
+              .horizontal-gradient(#289ED5, #D36668);
+            }
+          }
+        }
+      }
+    }
+    .step-content {
+      margin-top: 45px;
+      display: block;
+      width: 100%;
+      .title-step {
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #231F20;
+        line-height: 30px;
+        margin-bottom: 15px;
+        span {
+          font-weight: bold;
+          display: inline-block;
+          background-color: #231F20;
+          color: white;
+          padding: 2px 5px;
+        }
+      }
+      .sort-view {
+        width: 100%;
+        text-align: center;
+        color: #231F20;
+      }
+      .question-process {
+        display: table;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        li {
+          display: table-cell;
+          position: relative;
+          span {
+            position: absolute;
+            display: block;
+            left: 1px;
+            top: 1px;
+            border: 1px solid white;
+            width: 28px;
+            height: 28px;
+            color: #AAAAAA;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #D5D5D5;
+            .border-radius(50%);
+            .transition();
+            z-index: 1;
+          }
+          &.active, &.done {
+            span {
+              .horizontal-gradient(#289ED5, #D36668);
+              color: white;
+            }
+          }
+        }
+      }
+      .root-item{
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+        .question-content{
+          color: #414042;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        .radio{
+          &.isImage{
+            display: block;
+            width: 100%;
+            text-align: center;
+            label{
+              display: block;
+              padding: 0;
+              margin: 0;
+              img, input, span{
+                display: block;
+                margin: auto;
+                position: relative;
+                text-align: center;
+              }
+              input, span {
+                padding: 3px 10px;
+                color: #414042;
+                width: 100%;
+              }
+              input{
+                margin-top: 5px;
+              }
+            }
+          }
+          &.isQuestion{
+            display: block;
+            width: 100%;
+            label{
+              display: block;
+              color: #414042;
+              margin: 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

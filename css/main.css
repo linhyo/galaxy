@@ -1855,6 +1855,8 @@ a.galaxy-button:hover {
 }
 .rule-block .rule-dialog .container-rule {
   padding: 20px 15px;
+  position: relative;
+  z-index: 2;
 }
 .rule-block .rule-dialog .rule-title {
   color: #333333;
@@ -2059,13 +2061,18 @@ a.galaxy-button:hover {
   background-size: cover;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload {
-  background-position: center center;
-  background-size: cover;
   height: 175px;
+  width: 175px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.circle {
+  display: none;
   left: 13px;
   position: absolute;
   top: 12px;
-  width: 175px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.circle .circle-style {
+  background-position: center center;
+  background-size: cover;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -2073,6 +2080,59 @@ a.galaxy-button:hover {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.square {
+  display: none;
+  left: 13px;
+  position: absolute;
+  top: 12px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.square .square-style {
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.hexagon {
+  display: none;
+  height: 175px;
+  left: -100px;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  visibility: hidden;
+  width: 400px;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.hexagon .hexagon-style1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.hexagon .hexagon-style2 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  visibility: visible;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload {
   border: 1px dashed #ffffff;
@@ -2424,6 +2484,317 @@ a.galaxy-button:hover {
 }
 .rule-block.create-form .rule-dialog {
   padding: 0;
+}
+.question-dialog {
+  min-height: 940px;
+  background: #ffffff url("../images/dialog/bg-step1-quiz1-main.png") no-repeat scroll center bottom / 100% auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.question-dialog:before {
+  content: '';
+  background: url("../images/dialog/bg-step1-quiz1.png") no-repeat scroll center bottom / 100% auto;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
+.question-dialog:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
+.question-dialog.modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.question-dialog #quiz1 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 30px 15px;
+}
+.question-dialog #quiz1 .step-process {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.question-dialog #quiz1 .step-process li {
+  display: table-cell;
+  position: relative;
+}
+.question-dialog #quiz1 .step-process li:after {
+  content: '';
+  height: 1px;
+  width: -moz-calc(100% - 50px);
+  width: -webkit-calc(100% - 50px);
+  width: calc(100% - 50px);
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  z-index: -1;
+  background-color: #D5D5D5;
+}
+.question-dialog #quiz1 .step-process li p {
+  color: #AAAAAA;
+  font-weight: bold;
+  width: -moz-calc(100% - 50px);
+  width: -webkit-calc(100% - 50px);
+  width: calc(100% - 50px);
+  position: absolute;
+  right: 5px;
+  top: 0;
+  text-align: center;
+}
+.question-dialog #quiz1 .step-process li span.number {
+  width: 37px;
+  height: 37px;
+  display: block;
+  background-color: #D5D5D5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.question-dialog #quiz1 .step-process li span.number span {
+  position: absolute;
+  display: block;
+  left: 1px;
+  top: 1px;
+  border: 1px solid white;
+  width: 35px;
+  height: 35px;
+  color: #AAAAAA;
+  line-height: 31px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #D5D5D5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+.question-dialog #quiz1 .step-process li.active p,
+.question-dialog #quiz1 .step-process li.done p {
+  background: white;
+  color: black;
+  text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+}
+.question-dialog #quiz1 .step-process li.active p::before,
+.question-dialog #quiz1 .step-process li.done p::before,
+.question-dialog #quiz1 .step-process li.active p::after,
+.question-dialog #quiz1 .step-process li.done p::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.question-dialog #quiz1 .step-process li.active p::before,
+.question-dialog #quiz1 .step-process li.done p::before {
+  background: linear-gradient(to right, #289ed5, #289ed5, #d36668, #d36668, #d36668);
+  content: '';
+  display: block;
+  mix-blend-mode: screen;
+}
+.question-dialog #quiz1 .step-process li.active p::after,
+.question-dialog #quiz1 .step-process li.done p::after {
+  content: 'CSS Gradient Text';
+  background: #ffffff;
+  color: white;
+  mix-blend-mode: multiply;
+}
+.question-dialog #quiz1 .step-process li.active:after,
+.question-dialog #quiz1 .step-process li.done:after {
+  background-color: #289ed5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
+  background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
+  background-image: -moz-linear-gradient(left, #289ed5, #d36668);
+  background-image: -ms-linear-gradient(left, #289ed5, #d36668);
+  background-image: -o-linear-gradient(left, #289ed5, #d36668);
+}
+.question-dialog #quiz1 .step-process li.active span.number,
+.question-dialog #quiz1 .step-process li.done span.number {
+  background-color: #289ed5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
+  background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
+  background-image: -moz-linear-gradient(left, #289ed5, #d36668);
+  background-image: -ms-linear-gradient(left, #289ed5, #d36668);
+  background-image: -o-linear-gradient(left, #289ed5, #d36668);
+}
+.question-dialog #quiz1 .step-process li.active span.number span,
+.question-dialog #quiz1 .step-process li.done span.number span {
+  color: white;
+  background-color: #289ed5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
+  background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
+  background-image: -moz-linear-gradient(left, #289ed5, #d36668);
+  background-image: -ms-linear-gradient(left, #289ed5, #d36668);
+  background-image: -o-linear-gradient(left, #289ed5, #d36668);
+}
+.question-dialog #quiz1 .step-content {
+  margin-top: 45px;
+  display: block;
+  width: 100%;
+}
+.question-dialog #quiz1 .step-content .title-step {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #231F20;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.question-dialog #quiz1 .step-content .title-step span {
+  font-weight: bold;
+  display: inline-block;
+  background-color: #231F20;
+  color: white;
+  padding: 2px 5px;
+}
+.question-dialog #quiz1 .step-content .sort-view {
+  width: 100%;
+  text-align: center;
+  color: #231F20;
+}
+.question-dialog #quiz1 .step-content .question-process {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+.question-dialog #quiz1 .step-content .question-process li {
+  display: table-cell;
+  position: relative;
+}
+.question-dialog #quiz1 .step-content .question-process li span {
+  position: absolute;
+  display: block;
+  left: 1px;
+  top: 1px;
+  border: 1px solid white;
+  width: 28px;
+  height: 28px;
+  color: #AAAAAA;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #D5D5D5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+.question-dialog #quiz1 .step-content .question-process li.active span,
+.question-dialog #quiz1 .step-content .question-process li.done span {
+  background-color: #289ed5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
+  background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
+  background-image: -moz-linear-gradient(left, #289ed5, #d36668);
+  background-image: -ms-linear-gradient(left, #289ed5, #d36668);
+  background-image: -o-linear-gradient(left, #289ed5, #d36668);
+  color: white;
+}
+.question-dialog #quiz1 .step-content .root-item {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+}
+.question-dialog #quiz1 .step-content .root-item .question-content {
+  color: #414042;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isImage {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label img,
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label input,
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label span {
+  display: block;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label input,
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label span {
+  padding: 3px 10px;
+  color: #414042;
+  width: 100%;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isImage label input {
+  margin-top: 5px;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isQuestion {
+  display: block;
+  width: 100%;
+}
+.question-dialog #quiz1 .step-content .root-item .radio.isQuestion label {
+  display: block;
+  color: #414042;
+  margin: 0;
+  font-size: 14px;
 }
 .galaxy-banner {
   position: relative;

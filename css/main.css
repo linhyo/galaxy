@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600italic,700,300italic,600&subset=latin,vietnamese);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,800&subset=latin,vietnamese);
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -1052,6 +1052,7 @@ a.galaxy-button:hover {
   right: 0;
   top: 0;
   width: 50%;
+  z-index: -1;
 }
 #footer.isLanding {
   margin-top: -70px;
@@ -1563,6 +1564,12 @@ a.galaxy-button:hover {
   height: 135px;
   margin: 0 auto;
 }
+.icon-camera {
+  background: url(../images/dialog/rule/icon-camera.png) no-repeat;
+  display: block;
+  width: 38px;
+  height: 28px;
+}
 .quiz-block {
   background: url("../images/dialog/bg-step1-quiz2.png") no-repeat scroll center center / 100% 100%;
 }
@@ -1792,6 +1799,17 @@ a.galaxy-button:hover {
 .quiz-block .quiz-dialog .btn-move-step:hover {
   background-color: whitesmoke;
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.range-slider {
+  margin: 60px 0 0 0;
+}
+.range-slider {
+  width: 100%;
+}
 .rule-block {
   background: #ffffff;
 }
@@ -1821,6 +1839,7 @@ a.galaxy-button:hover {
   background-image: -moz-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -moz-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
   background-image: -o-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -o-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
   background-image: linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), linear-gradient(to left, #d2b4c4 0%, #d2b4c4 100%);
+  z-index: 1;
 }
 .rule-block .rule-dialog:after {
   background-position: left top, right top;
@@ -1901,6 +1920,8 @@ a.galaxy-button:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
 }
 .rule-block .rule-dialog .btn-close-rule:hover {
   background-color: rgba(223, 223, 223, 0.5);
@@ -1922,6 +1943,7 @@ a.galaxy-button:hover {
   position: relative;
   margin-top: 40px;
   padding: 0 30px;
+  z-index: 2;
 }
 .rule-block .rule-dialog .block-content .title-share {
   position: absolute;
@@ -1999,7 +2021,7 @@ a.galaxy-button:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 300px;
+  background-color: #aaaaaa;
 }
 .rule-block .rule-dialog .background-rule .inputfile {
   height: 0;
@@ -2010,24 +2032,386 @@ a.galaxy-button:hover {
 }
 .rule-block .rule-dialog .background-rule .input-bg {
   display: block;
+  padding-top: 200px;
   width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: inline-block;
+  height: 200px;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  z-index: 1;
+  background: no-repeat center;
+  background-size: cover;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload {
+  background-position: center center;
+  background-size: cover;
+  height: 175px;
+  left: 13px;
+  position: absolute;
+  top: 12px;
+  width: 175px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload {
-  position: absolute;
+  border: 1px dashed #ffffff;
+  height: 80px;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -70px;
   overflow: hidden;
-  margin: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  top: 50%;
+  width: 140px;
   z-index: 2;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload i,
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload span {
+  margin: auto;
+  text-align: center;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload span {
+  width: auto;
+  height: 100%;
+  display: block;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  margin: 5px auto;
+  text-align: center;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .fileUpload input.upload {
   position: absolute;
   top: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-size: 20px;
   cursor: pointer;
   opacity: 0;
   filter: alpha(opacity=0);
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -105%;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-out,
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-in {
+  position: absolute;
+  top: -5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #818181;
+  cursor: pointer;
+  line-height: 10px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-out:hover,
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-in:hover {
+  color: #415B76;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-out {
+  top: -7px;
+  left: -15px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage .zoom-in {
+  right: -15px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  width: 100%;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule {
+  background-color: #ffffff;
+  border: 1px solid #b0b0b0;
+  color: #737373;
+  display: inline-block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule:hover {
+  background-color: #dfdfdf;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule.btn-dark {
+  font-weight: 600;
+  border: 1px solid #818181;
+  background-color: #818181;
+  color: #ffffff;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule.btn-dark:hover {
+  background-color: #999999;
+}
+@media (max-width: 360px) {
+  .rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar {
+    bottom: 25%;
+  }
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0;
+  background: #818181;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #818181;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range::-webkit-slider-thumb:hover {
+  background: #2c3e50;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range:active::-webkit-slider-thumb {
+  background: #2c3e50;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: #818181;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range::-moz-range-thumb:hover {
+  background: #2c3e50;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range:active::-moz-range-thumb {
+  background: #2c3e50;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #ffffff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #818181;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #818181;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar ::-moz-range-track {
+  background: #818181;
+  border: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar input::-moz-focus-inner,
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar input::-moz-focus-outer {
+  border: 0;
+}
+@media (max-width: 360px) {
+  .rule-block .rule-dialog .background-rule .input-bg .input-avatar {
+    top: 43%;
+  }
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 95px;
+  background-color: white;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor:after {
+  background: rgba(0, 0, 0, 0) url("../images/dialog/rule/create-bg-rule.png") no-repeat top left / 100% auto;
+  content: "";
+  height: 95px;
+  left: 0;
+  position: absolute;
+  top: -80px;
+  width: 100%;
+}
+@media (max-width: 360px) {
+  .rule-block .rule-dialog .background-rule .input-bg .action-editor:after {
+    top: -40px;
+  }
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control {
+  display: block;
+  position: relative;
+  z-index: 2;
+  height: 65px;
+  padding: 5px 15px 0 30px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control p,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control p {
+  text-align: left;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control .item-background {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #8a8a8a;
+  background-position: center center;
+  background-size: cover;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 4px;
+  display: inline-block;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control .item-background.active,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control .item-background:hover {
+  box-shadow: 0 0 2px #8a8a8a inset;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-circle {
+  cursor: pointer;
+  background: url(../images/dialog/rule/icon-circle.png) no-repeat center center;
+  background-size: cover;
+  width: 29px;
+  height: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-circle.active,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-circle:hover {
+  background: url(../images/dialog/rule/icon-circle-active.png) no-repeat center center;
+  background-size: cover;
+  width: 25px;
+  height: 26px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-square {
+  cursor: pointer;
+  display: inline-block;
+  background: url(../images/dialog/rule/icon-square.png) no-repeat center center;
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-square.active,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-square:hover {
+  background: url(../images/dialog/rule/icon-square-active.png) no-repeat center center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-hexagon {
+  cursor: pointer;
+  display: inline-block;
+  background: url(../images/dialog/rule/icon-hexagon.png) no-repeat center center;
+  background-size: cover;
+  width: 29px;
+  height: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-hexagon.active,
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control .control-item .control-hexagon:hover {
+  background: url(../images/dialog/rule/icon-hexagon-active.png) no-repeat center center;
+  background-size: cover;
+  width: 27px;
+  height: 25px;
 }
 .rule-block .rule-dialog.modal-content {
   -webkit-border-radius: 0;
@@ -4682,6 +5066,7 @@ a.galaxy-button:hover {
 }
 #galaxy-discovery .landing-slide {
   position: relative;
+  overflow: hidden;
 }
 #galaxy-discovery .landing-slide:after {
   content: '';
@@ -4700,26 +5085,52 @@ a.galaxy-button:hover {
 }
 #galaxy-discovery .landing-slide h1 {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   color: #fff;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 800;
   margin-left: -163px;
   z-index: 100;
   line-height: 38px;
+  -webkit-animation: fadeOutUp 1s both;
+  -moz-animation: fadeOutUp 1s both;
+  -ms-animation: fadeOutUp 1s both;
+  animation: fadeOutUp 1s both;
 }
 #galaxy-discovery .landing-slide p {
   position: absolute;
-  top: 35%;
+  top: 28%;
   left: 50%;
   color: #fff;
   margin-left: -239px;
   z-index: 100;
+  -webkit-animation: fadeOutRight 1s both;
+  -moz-animation: fadeOutRight 1s both;
+  -ms-animation: fadeOutRight 1s both;
+  animation: fadeOutRight 1s both;
+}
+#galaxy-discovery .landing-slide .slick-active h1 {
+  -webkit-animation: fadeInDown 1s both 0.2s;
+  -moz-animation: fadeInDown 1s both 0.2s;
+  -ms-animation: fadeInDown 1s both 0.2s;
+  animation: fadeInDown 1s both 0.2s;
+}
+#galaxy-discovery .landing-slide .slick-active p {
+  -webkit-animation: fadeInLeft 1s both 0.2s;
+  -moz-animation: fadeInLeft 1s both 0.2s;
+  -ms-animation: fadeInLeft 1s both 0.2s;
+  animation: fadeInLeft 1s both 0.2s;
+}
+#galaxy-discovery .landing-slide .slick-active button {
+  -webkit-animation: fadeIn 1s both 0.5s;
+  -moz-animation: fadeIn 1s both 0.5s;
+  -ms-animation: fadeIn 1s both 0.5s;
+  animation: fadeIn 1s both 0.5s;
 }
 #galaxy-discovery .slide-img {
   position: relative;
-  background: transparent no-repeat scroll bottom center;
+  background: transparent no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4733,14 +5144,31 @@ a.galaxy-button:hover {
   width: 100%;
   height: 160px;
 }
+#galaxy-discovery .slider-nav .slick-current {
+  position: relative;
+}
+#galaxy-discovery .slider-nav .slick-current:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  border-bottom-width: 11px;
+  -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
+  border-image: linear-gradient(to left, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
+  border-image-slice: 1;
+}
 #galaxy-discovery .btn-discovery {
   position: absolute;
-  top: 55%;
+  top: 48%;
   left: 50%;
   background-color: #fff;
-  color: #412755;
+  color: #000;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -4750,7 +5178,7 @@ a.galaxy-button:hover {
   background-clip: padding-box;
   border: 1px solid #fff;
   margin-top: -24px;
-  margin-left: -85px;
+  margin-left: -95px;
   padding: 12px 26px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -4761,6 +5189,10 @@ a.galaxy-button:hover {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 100;
+  -webkit-animation: fadeOut 1s both 0.2s;
+  -moz-animation: fadeOut 1s both 0.2s;
+  -ms-animation: fadeOut 1s both 0.2s;
+  animation: fadeOut 1s both 0.2s;
 }
 #galaxy-discovery .btn-discovery:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -4774,11 +5206,13 @@ a.galaxy-button:hover {
   background-image: -moz-linear-gradient(left, #edb4ba, #7499cd);
   background-image: -ms-linear-gradient(left, #edb4ba, #7499cd);
   background-image: -o-linear-gradient(left, #edb4ba, #7499cd);
+  padding-bottom: 100px;
 }
 #galaxy-discovery .landing-quiz .quiz {
   margin-top: 50px;
 }
 #galaxy-discovery .color-game .color-game-desc {
+  color: #fff;
   margin-top: -18%;
 }
 #galaxy-discovery .color-game .color-game-desc + a {
@@ -4824,30 +5258,34 @@ a.galaxy-button:hover {
   font-size: 16px;
   font-weight: 700;
 }
-#galaxy-discovery .quiz-heading {
-  display: block;
+#galaxy-discovery .quiz-content {
   position: absolute;
   top: 46%;
-  left: 50%;
+  left: 0;
+  width: 98%;
+}
+#galaxy-discovery .quiz-heading {
+  display: block;
 }
 #galaxy-discovery .quiz-heading > span {
   display: inline-block;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 800;
   padding: 5px 10px;
   white-space: nowrap;
 }
 #galaxy-discovery .quiz-desc {
-  position: absolute;
-  top: 61%;
-  left: 7%;
-  width: 83%;
+  display: block;
+  width: 84%;
+  font-size: 13px;
+  margin: 4% auto;
+  padding: 0 5%;
+  max-height: 93px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #galaxy-discovery .btn-playnow {
   display: block;
-  position: absolute;
-  bottom: 12%;
-  left: 50%;
   width: 200px;
   height: 60px;
   background-color: transparent;
@@ -4867,12 +5305,10 @@ a.galaxy-button:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin: 0 auto;
 }
 #galaxy-discovery .quiz-1 .quiz-title {
   color: #231F20;
-}
-#galaxy-discovery .quiz-1 .quiz-heading {
-  margin-left: -162px;
 }
 #galaxy-discovery .quiz-1 .quiz-heading span:first-child {
   background-color: #231F20;
@@ -4890,7 +5326,6 @@ a.galaxy-button:hover {
   border-image: linear-gradient(to left, #d95555 0%, #53b7e3 50%, #d95555 100%);
   border-image-slice: 1;
   background: url("../images/landing/playnow-1.svg") no-repeat center center;
-  margin-left: -110px;
 }
 #galaxy-discovery .quiz-1 .btn-playnow:hover {
   -moz-border-image: -moz-linear-gradient(right, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
@@ -4913,13 +5348,8 @@ a.galaxy-button:hover {
 #galaxy-discovery .quiz-2 .btn-playnow {
   color: #764E24;
 }
-#galaxy-discovery .quiz-2 .quiz-heading {
-  margin-left: -135px;
-  color: #764E24;
-}
 #galaxy-discovery .quiz-2 .btn-playnow {
   background: #ffffff url("../images/landing/playnow-2.svg") no-repeat center center;
-  margin-left: -80px;
 }
 #galaxy-discovery .quiz-2 .btn-playnow:hover {
   -moz-opacity: 0.8;
@@ -4934,14 +5364,15 @@ a.galaxy-button:hover {
     width: 160px;
     height: 48px;
     background-size: 80% !important;
-    bottom: 9% !important;
   }
-  #galaxy-discovery .quiz-1 .btn-playnow {
-    margin-left: -90px !important;
-  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-discovery .five-elements {
     background-size: 50% auto !important;
     top: 8% !important;
+  }
+  #galaxy-discovery .quiz-heading > span {
+    font-size: 26px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4953,14 +5384,12 @@ a.galaxy-button:hover {
     font-size: 20px;
     padding: 5px;
   }
-  #galaxy-discovery .quiz-1 .quiz-heading {
-    margin-left: -122px;
-  }
-  #galaxy-discovery .quiz-2 .quiz-heading {
-    margin-left: -102px;
-  }
   #galaxy-discovery .quiz-desc {
     font-size: 12px;
+  }
+  #galaxy-discovery .five-elements {
+    background-size: 45% auto !important;
+    top: 3% !important;
   }
 }
 @media (max-width: 767px) {
@@ -4973,12 +5402,6 @@ a.galaxy-button:hover {
   }
   #galaxy-discovery .quiz-heading > span {
     font-size: 18px;
-  }
-  #galaxy-discovery .quiz-1 .quiz-heading {
-    margin-left: -109px;
-  }
-  #galaxy-discovery .quiz-2 .quiz-heading {
-    margin-left: -92px;
   }
   #galaxy-discovery .quiz-1 img,
   #galaxy-discovery .quiz-2 img {
@@ -5000,8 +5423,6 @@ a.galaxy-button:hover {
     width: 120px;
     height: 36px;
     background-size: 60% !important;
-    bottom: 9% !important;
-    margin-left: -64px !important;
   }
 }
 #galaxy-decoration .landing-background {

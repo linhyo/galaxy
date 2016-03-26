@@ -125,6 +125,13 @@
   animation: @name @duration @delay @ease;
 }
 
+.animation-custom (@argument) {
+  -webkit-animation: @argument;
+  -moz-animation: @argument;
+  -ms-animation: @argument;
+  animation: @argument;
+}
+
 .transition (@prop: all, @time: 0.2s, @ease: ease-in-out) {
   -webkit-transition: @prop @time @ease;
   -moz-transition: @prop @time @ease;

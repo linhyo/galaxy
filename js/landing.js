@@ -90,7 +90,7 @@
       a = Math.round(i * e[1] + step * s[1]),
       p = Math.round(i * e[2] + step * s[2]),
       u = "#" + (c << 16 | a << 8 | p).toString(16);
-    $(".landing-quiz").css({
+    $("#changeDynamicBg").css({
       background: "-webkit-gradient(linear, left top, right top, from(" + l + "), to(" + u + "))"
     }).css({
       background: "-moz-linear-gradient(left, " + l + " 0%, " + u + " 100%)"

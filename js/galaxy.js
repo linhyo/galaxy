@@ -124,26 +124,5 @@
       banner.removeClass().addClass('nearest-agency-banner');
     }
   });
-
-  //Slick for decor name
-  var listDecorName = ['painting1', 'painting2', 'painting3', 'painting4', 'painting5', 'painting6', 'painting7', 'painting8'];
-  var filterListDecor = function (name) {
-    $('#' + name).slick({
-      nextArrow: $('.'+ name +' .nextArrow'),
-      prevArrow: $('.'+ name +' .prevArrow')
-    });
-  };
-  _.forEach(listDecorName, function(name){
-    filterListDecor(name);
-  });
-  $('a[data-toggle=tab]').each(function () {
-    var $this = $(this);
-    $this.on('shown.bs.tab', function () {
-      _.forEach(listDecorName, function(name){
-        filterListDecor(name);
-      });
-    });
-  });
-
 })();
 

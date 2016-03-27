@@ -1093,7 +1093,9 @@ a.galaxy-button:hover {
   align-items: center;
 }
 #footer .social-network {
+  position: relative;
   width: 40%;
+  z-index: 10;
 }
 #footer .social-network ul > li {
   display: inline-block;
@@ -5303,6 +5305,15 @@ a.galaxy-button:hover {
   #landing-nav .nav-item .nav-label {
     font-size: 18px;
   }
+  #landing-nav .landing-menu > div:first-child {
+    padding-right: 7px;
+  }
+  #landing-nav .landing-menu > div:nth-child(2) {
+    padding: 0 7px;
+  }
+  #landing-nav .landing-menu > div:last-child {
+    padding-left: 7px;
+  }
 }
 .landing-page p {
   color: #d1d3d4;
@@ -5436,7 +5447,7 @@ a.galaxy-button:hover {
 }
 #galaxy-color .landing-product .product-img {
   position: relative;
-  padding: 0 0 18px;
+  padding: 0 0 10px;
 }
 #galaxy-color .landing-product .product-img img {
   position: relative;
@@ -5468,7 +5479,7 @@ a.galaxy-button:hover {
 #galaxy-color .landing-product .product-title:before {
   content: '';
   position: absolute;
-  top: 59%;
+  top: 60%;
   left: 0;
   right: 0;
   width: 100%;
@@ -5502,6 +5513,9 @@ a.galaxy-button:hover {
   #galaxy-color .landing-discovery > div {
     padding: 0 20px;
   }
+  #galaxy-color .product-intro {
+    padding: 0 40px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-color .landing-ball.ball-1 {
@@ -5521,15 +5535,23 @@ a.galaxy-button:hover {
     height: 255px;
     background-size: 80%;
     top: -2% !important;
+    right: 40px !important;
   }
   #galaxy-color .landing-ball.ball-2 {
     width: 400px;
     height: 370px;
     background-size: 80%;
     bottom: 8% !important;
+    left: 20px !important;
   }
   #galaxy-color .landing-title {
     height: 35px;
+  }
+  #galaxy-color .product-img {
+    padding: 0 !important;
+  }
+  #galaxy-color .product-img img {
+    width: 70% !important;
   }
 }
 @media (max-width: 767px) {
@@ -5538,12 +5560,16 @@ a.galaxy-button:hover {
     height: 223px;
     background-size: 70%;
     top: -4% !important;
+    right: 30px !important;
   }
   #galaxy-color .landing-ball.ball-2 {
     width: 350px;
     height: 324px;
     background-size: 70%;
     bottom: 20% !important;
+  }
+  #galaxy-color .product-img {
+    padding: 0 !important;
   }
 }
 #galaxy-discovery .landing-slide {
@@ -8673,7 +8699,7 @@ a.galaxy-button:hover {
 }
 @-webkit-keyframes twinkle {
   0% {
-    opacity: .5;
+    opacity: .2;
   }
   100% {
     opacity: 1;
@@ -8681,7 +8707,7 @@ a.galaxy-button:hover {
 }
 @keyframes twinkle {
   0% {
-    opacity: .5;
+    opacity: .2;
   }
   100% {
     opacity: 1;

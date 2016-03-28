@@ -636,10 +636,11 @@
       content: '';
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -6px;
       width: 100%;
       height: 6px;
       background-color: #676565;
+      z-index: 10;
     }
     .top-wrapper {
       position: relative;
@@ -666,6 +667,7 @@
     right: 15px;
     left: 15px;
     .transition();
+    z-index: 11;
   }
   .banner-story-reflection {
     position: absolute;
@@ -790,7 +792,6 @@
     .event-title {
       font-family: @import-font;
       font-size: 45px;
-      font-weight: 700;
       letter-spacing: 1px;
       margin-top: 12%;
     }

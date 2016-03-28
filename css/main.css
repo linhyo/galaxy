@@ -344,7 +344,7 @@ p {
   color: #808082;
 }
 @font-face {
-  font-family: 'iCiel Bambola';
+  font-family: 'iCielBambola';
   src: url('../fonts/iCielBambola.eot');
   src: url('../fonts/iCielBambola.eot?#iefix') format('embedded-opentype'), url('../fonts/iCielBambola.ttf') format('truetype'), url('../fonts/iCielBambola.otf') format("opentype"), url('../fonts/iCielBambola.woff') format('woff'), url('../fonts/iCielBambola.woff2') format('woff2'), url('../fonts/iCielBambola.svg#iCielBambola') format('svg');
   font-weight: normal;
@@ -763,7 +763,7 @@ a.galaxy-button:hover {
   display: block;
 }
 .galaxy-suggestion .large-text {
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
 }
 .galaxy-label {
   color: #8b9aa7;
@@ -3239,7 +3239,7 @@ a.galaxy-button:hover {
 }
 .banner-box .banner-text-2 {
   color: #753989;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 40px;
   line-height: 40px;
 }
@@ -3320,7 +3320,7 @@ a.galaxy-button:hover {
   display: block;
 }
 .galaxy-suggestion .large-text {
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
 }
 .galaxy-feature:before {
   top: 8px;
@@ -3642,7 +3642,7 @@ a.galaxy-button:hover {
   text-align: center;
 }
 .intro h1 {
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 32px;
   letter-spacing: 1px;
   margin: 0 0 10px;
@@ -4768,7 +4768,7 @@ a.galaxy-button:hover {
   position: absolute;
   top: 60px;
   right: 100px;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   color: #e40c0c;
   font-size: 55px;
   font-weight: 400;
@@ -5287,7 +5287,7 @@ a.galaxy-button:hover {
 }
 #landing-nav .nav-item .nav-label {
   color: #f1f2f3;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 26px;
   letter-spacing: 1px;
 }
@@ -5959,10 +5959,11 @@ a.galaxy-button:hover {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   width: 100%;
   height: 6px;
   background-color: #676565;
+  z-index: 10;
 }
 #galaxy-decoration .landing-background .top-wrapper {
   position: relative;
@@ -5991,6 +5992,7 @@ a.galaxy-button:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  z-index: 11;
 }
 #galaxy-decoration .banner-story-reflection {
   position: absolute;
@@ -6162,9 +6164,8 @@ a.galaxy-button:hover {
   color: #fff;
 }
 #galaxy-decoration .landing-event .event-title {
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 45px;
-  font-weight: 700;
   letter-spacing: 1px;
   margin-top: 12%;
 }
@@ -6249,7 +6250,7 @@ a.galaxy-button:hover {
 }
 #galaxy-decoration .landing-entry .entry-caption h1 {
   color: #fff;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
 }
 #galaxy-decoration .landing-entry .entry-caption h2 {
   color: #fff;
@@ -6327,7 +6328,7 @@ a.galaxy-button:hover {
 #galaxy-decoration .landing-entry .entry-title > p {
   display: block;
   color: #fff;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 38px;
   line-height: 35px;
   background-color: rgba(121, 155, 203, 0.6);
@@ -6363,7 +6364,7 @@ a.galaxy-button:hover {
   float: right;
   display: block;
   color: #fff;
-  font-family: 'iCiel Bambola', sans-serif;
+  font-family: 'iCielBambola', sans-serif;
   font-size: 38px;
   line-height: 35px;
   background-color: rgba(121, 155, 203, 0.6);

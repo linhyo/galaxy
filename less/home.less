@@ -271,6 +271,10 @@
     .news-title {
       position: relative;
       margin-bottom: 18px;
+      width: 228px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       &:after {
         content: '';
         position: absolute;
@@ -332,5 +336,11 @@
 
   .galaxy-feature.news {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .outstanding-news .news-title {
+    max-width: 465px !important;
   }
 }

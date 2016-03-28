@@ -529,10 +529,7 @@
       border-image-slice: 1;
       background: url("../images/landing/playnow-1.svg") no-repeat center center;
       &:hover {
-        -moz-border-image: -moz-linear-gradient(right, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-        -webkit-border-image: -webkit-linear-gradient(right, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-        border-image: linear-gradient(to left, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-        border-image-slice: 1;
+        background-color: #fae8e5;
       }
     }
   }
@@ -655,7 +652,7 @@
     .banner-caption {
       margin-top: 11%;
       p {
-        width: 80%;
+        width: 88%;
         margin: 0 auto;
       }
     }
@@ -729,6 +726,7 @@
       position: absolute;
       bottom: 0;
       .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #f07721, #f6ea23);
+      z-index: 21;
     }
     .middle-wrapper {
       position: relative;
@@ -736,12 +734,12 @@
     }
     .person-info {
       position: relative;
-      padding: 0 65px 0 85px;
+      padding: 0 65px 0 75px;
       z-index: 11;
       &:before {
         content: '';
         position: absolute;
-        top: 53px;
+        top: 50px;
         left: 0;
         width: 69px;
         height: 44px;
@@ -770,7 +768,9 @@
       }
     }
     .person-image {
+      position: relative;
       margin-top: 38px;
+      z-index: 20;
       img {
         display: inline-block;
         //width: 44%;
@@ -791,26 +791,39 @@
     }
     .event-title {
       font-family: @import-font;
-      font-size: 45px;
+      font-size: 50px;
       letter-spacing: 1px;
-      margin-top: 12%;
+      margin-top: 7%;
     }
     .event-desc {
       margin: 14px 0 24px 0;
+      > span {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .event-line {
+        display: block;
+        width: 84px;
+        height: 4px;
+        background-color: #fff;
+        margin: 30px auto 20px;
+      }
     }
     .btn-event {
       width: 150px;
       height: 50px;
       background-color: transparent;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
       .border-radius(0);
       .transition();
       color: #fff;
       font-size: 16px;
       font-weight: 800;
       text-align: center;
-      margin-right: 25px;
       padding: 0;
+      &.btn-rule {
+        margin-right: 25px;
+      }
       &:hover {
         background-color: #fff;
         &.btn-rule {
@@ -825,6 +838,7 @@
   .landing-entry {
     padding: 30px 0;
     .entry-slide {
+      margin-bottom: 15px;
       .btn-prev, .btn-next {
         position: absolute;
         bottom: 0;
@@ -850,11 +864,9 @@
         left: 7%;
       }
     }
-    .entry-top {
-      margin-bottom: 15px;
-    }
     .entry-share {
       position: relative;
+      margin-bottom: 15px;
     }
     .entry-caption {
       position: absolute;
@@ -865,6 +877,7 @@
       h1 {
         color: #fff;
         font-family: @import-font;
+        line-height: 45px;
       }
       h2 {
         color: #fff;
@@ -924,7 +937,7 @@
       width: 100%;
       z-index: 10;
       > p {
-        display: block;
+        display: inline-block;
         color: #fff;
         font-family: @import-font;
         font-size: 38px;
@@ -932,14 +945,7 @@
         background-color: rgba(121, 155, 203, 0.6);
         white-space: nowrap;
         letter-spacing: 1px;
-        &:first-child {
-          width: 60%;
-          padding: 4% 0 1% 4%;
-        }
-        &:last-child {
-          width: 72%;
-          padding: 1% 0 4% 4%;
-        }
+        padding: 4px 15px;
       }
     }
     .slide-time {
@@ -953,14 +959,13 @@
       z-index: 10;
     }
     .slide-title {
+      float: right;
       position: absolute;
       top: 0;
-      right: 0;
-      width: 50%;
+      right: -2px;
       z-index: 10;
       > p {
-        float: right;
-        display: block;
+        display: inline-block;
         color: #fff;
         font-family: @import-font;
         font-size: 38px;
@@ -969,14 +974,7 @@
         white-space: nowrap;
         letter-spacing: 1px;
         text-align: right;
-        &:first-child {
-          width: 70%;
-          padding: 4% 4% 1% 0;
-        }
-        &:last-child {
-          width: 55%;
-          padding: 1% 4% 4% 0;
-        }
+        padding: 4px 15px;
       }
     }
     .btn-loadmore {
@@ -1005,11 +1003,18 @@
       padding: 5% 8%;
       h1 {
         font-size: 60px;
-        margin-top: 22%;
+        margin-top: 30%;
       }
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
+    }
+  }
+  @media (max-width: 991px) {
+    .landing-event .btn-event {
+      width: 120px;
+      height: 40px;
+      font-size: 15px;
     }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -1031,7 +1036,7 @@
       padding: 4% 7%;
       h1 {
         font-size: 50px;
-        margin-top: 18%;
+        margin-top: 20%;
       }
       h2 {
         font-size: 30px;
@@ -1040,12 +1045,6 @@
 
     .entry-title > p {
       font-size: 34px !important;
-      &:first-child {
-        width: 70% !important;
-      }
-      &:last-child {
-        width: 82% !important;
-      }
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -1069,24 +1068,22 @@
     }
 
     .entry-caption {
-      padding: 3% 6%;
+      padding: 3% 8%;
       h1 {
         font-size: 40px;
         margin-top: 14%;
       }
       h2 {
-        font-size: 30px;
+        font-size: 25px;
       }
     }
 
     .entry-title > p {
       font-size: 30px !important;
-      &:first-child {
-        width: 80% !important;
-      }
-      &:last-child {
-        width: 92% !important;
-      }
+    }
+
+    .person-info {
+      margin-bottom: 10%;
     }
   }
   @media (max-width: 767px) {
@@ -1113,11 +1110,27 @@
       padding: 5% 8%;
       h1 {
         font-size: 60px;
-        margin-top: 22%;
+        margin-top: 26%;
       }
       h2 {
         font-size: 40px;
       }
+    }
+
+    #story-1 .person-name, #story-2 .person-name {
+      margin-top: 15% !important;
+    }
+
+    #story-3 .person-name, #story-4 .person-name {
+      margin-top: 10% !important;
+    }
+    #story-3 .person-info, #story-4 .person-info {
+      margin-bottom: 10%;
+    }
+  }
+  @media (max-width: 400px) {
+    .banner-caption {
+      margin-top: 33% !important;
     }
   }
 }

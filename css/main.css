@@ -1627,8 +1627,8 @@ a.galaxy-button:hover {
 .quiz-block .quiz-dialog .close:after {
   content: '';
   background: url(../images/dialog/close.png) no-repeat center / 60% 60%;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1649,7 +1649,7 @@ a.galaxy-button:hover {
   height: 100%;
   text-align: center;
   color: #755220;
-  padding: 45px 40px;
+  padding: 15px 40px;
   position: relative;
   z-index: 1;
 }
@@ -1665,11 +1665,11 @@ a.galaxy-button:hover {
 }
 .quiz-block .quiz-dialog .step1-form .form-group label {
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 .quiz-block .quiz-dialog .step1-form .form-group input {
   color: #333;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
   border: 0;
   box-shadow: 0;
   -webkit-border-radius: 0;
@@ -1680,6 +1680,9 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
+.quiz-block .quiz-dialog .step1-form .form-group input.isValue {
+  background-color: rgba(255, 255, 255, 0.85);
+}
 .quiz-block .quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1689,7 +1692,7 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   line-height: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .quiz-block .quiz-dialog .step1-form .form-group .galaxy-select .dropdown-toggle .dropdown-hint {
   display: block;
@@ -1791,12 +1794,12 @@ a.galaxy-button:hover {
   background-clip: padding-box;
   background-color: white;
   color: #755220;
-  margin: auto 0;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   min-width: 150px;
+  margin: 10px auto;
 }
 .quiz-block .quiz-dialog .btn-move-step:hover {
   background-color: whitesmoke;
@@ -1887,7 +1890,7 @@ a.galaxy-button:hover {
   margin-bottom: 10px;
 }
 .rule-block .rule-dialog .content-rule .message-confirm-rule {
-  margin-top: 50px;
+  margin-top: 75px;
   position: relative;
 }
 .rule-block .rule-dialog .content-rule .message-confirm-rule:after {
@@ -1909,7 +1912,7 @@ a.galaxy-button:hover {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  margin: 10px auto;
+  margin: 10px auto 20px;
   min-width: 50px;
   padding: 5px 26px;
   -webkit-border-radius: 0;
@@ -1953,6 +1956,7 @@ a.galaxy-button:hover {
   position: absolute;
   left: 0;
   top: -35px;
+  font-size: 12px;
   background-color: #e7b5bc;
   padding: 5px 15px 5px 27px;
   color: white;
@@ -2020,6 +2024,13 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .block-content .form-group .btn-rule.btn-pink:hover {
   background-color: #ffc1c5;
 }
+.rule-block .rule-dialog .block-content .form-group .btn-rule.btn-pink.disabled {
+  opacity: 0.3;
+}
+.rule-block .rule-dialog .block-content .form-group .btn-rule.btn-pink.disabled:hover {
+  opacity: 0.3;
+  background-color: #f0b5b9;
+}
 .rule-block .rule-dialog .background-rule {
   display: block;
   position: relative;
@@ -2043,13 +2054,6 @@ a.galaxy-button:hover {
   background-repeat: no-repeat;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
   display: inline-block;
   height: 200px;
   left: 50%;
@@ -2061,16 +2065,48 @@ a.galaxy-button:hover {
   z-index: 1;
   background: no-repeat center;
   background-size: cover;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eeeeee), to(#aaaaaa));
+  background-image: -webkit-linear-gradient(left, #eeeeee, #aaaaaa);
+  background-image: -moz-linear-gradient(left, #eeeeee, #aaaaaa);
+  background-image: -ms-linear-gradient(left, #eeeeee, #aaaaaa);
+  background-image: -o-linear-gradient(left, #eeeeee, #aaaaaa);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar:hover {
+  background-color: #fbfbfb;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#d2d2d2));
+  background-image: -webkit-linear-gradient(left, #fbfbfb, #d2d2d2);
+  background-image: -moz-linear-gradient(left, #fbfbfb, #d2d2d2);
+  background-image: -ms-linear-gradient(left, #fbfbfb, #d2d2d2);
+  background-image: -o-linear-gradient(left, #fbfbfb, #d2d2d2);
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar .cover-avatar {
+  border-radius: 50%;
+  display: block;
+  height: 180px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  background-size: cover;
+  background: #333333 no-repeat center;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload {
-  height: 175px;
-  width: 175px;
+  height: 180px;
+  width: 180px;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.circle {
   display: none;
-  left: 13px;
+  left: 0;
   position: absolute;
-  top: 12px;
+  top: 0;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload.circle .circle-style {
   background-position: center center;
@@ -2190,7 +2226,7 @@ a.galaxy-button:hover {
   height: 100%;
   position: absolute;
   left: 0;
-  bottom: -105%;
+  bottom: -110%;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .action-rage {
   display: block;
@@ -2252,12 +2288,12 @@ a.galaxy-button:hover {
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule.btn-dark {
   font-weight: 600;
-  border: 1px solid #818181;
-  background-color: #818181;
+  border: 1px solid #f0b5b9;
+  background-color: #f0b5b9;
   color: #ffffff;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar .submit-avatar .btn-rule.btn-dark:hover {
-  background-color: #999999;
+  background-color: #ffc1c5;
 }
 @media (max-width: 360px) {
   .rule-block .rule-dialog .background-rule .input-bg .input-avatar .action-avatar {
@@ -2267,7 +2303,7 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .range-slider__range {
   -webkit-appearance: none;
   width: 100%;
-  height: 0;
+  height: 2px;
   background: #818181;
   outline: none;
   padding: 0;
@@ -2522,8 +2558,8 @@ a.galaxy-button:hover {
 .question-dialog .close:after {
   content: '';
   background: url(../images/dialog/close.png) no-repeat center / 60% 60%;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2786,8 +2822,7 @@ a.galaxy-button:hover {
   transition: all 0.2s ease-in-out;
   z-index: 1;
 }
-.question-dialog #quiz1 .step-content .question-process li.active span,
-.question-dialog #quiz1 .step-content .question-process li.done span {
+.question-dialog #quiz1 .step-content .question-process li.active span {
   background-color: #289ed5;
   background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
   background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
@@ -2871,13 +2906,6 @@ a.galaxy-button:hover {
   -moz-border-image: -moz-linear-gradient(right, #c5c5c5 0%, #f4f4f4 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #c5c5c5 0%, #f4f4f4 100%);
   border-image: linear-gradient(to left, #c5c5c5 0%, #f4f4f4 100%);
-  border-image-slice: 1;
-}
-.question-dialog #quiz1 .step-content .form-group input.done {
-  background-color: white;
-  -moz-border-image: -moz-linear-gradient(right, #d36668 0%, #289ed5 100%);
-  -webkit-border-image: -webkit-linear-gradient(right, #d36668 0%, #289ed5 100%);
-  border-image: linear-gradient(to left, #d36668 0%, #289ed5 100%);
   border-image-slice: 1;
 }
 .question-dialog #quiz1 .step-content .submit-result {
@@ -3403,6 +3431,10 @@ a.galaxy-button:hover {
 .galaxy-feature .outstanding-news .news-title {
   position: relative;
   margin-bottom: 18px;
+  width: 228px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .galaxy-feature .outstanding-news .news-title:after {
   content: '';
@@ -3456,6 +3488,11 @@ a.galaxy-button:hover {
   }
   .galaxy-feature.news {
     margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .outstanding-news .news-title {
+    max-width: 465px !important;
   }
 }
 #decor-page {
@@ -5847,10 +5884,7 @@ a.galaxy-button:hover {
   background: url("../images/landing/playnow-1.svg") no-repeat center center;
 }
 #galaxy-discovery .quiz-1 .btn-playnow:hover {
-  -moz-border-image: -moz-linear-gradient(right, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-  -webkit-border-image: -webkit-linear-gradient(right, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-  border-image: linear-gradient(to left, #53b7e3 0%, #d95555 50%, #53b7e3 100%);
-  border-image-slice: 1;
+  background-color: #fae8e5;
 }
 #galaxy-discovery .quiz-2 .five-elements {
   position: absolute;
@@ -5979,7 +6013,7 @@ a.galaxy-button:hover {
   margin-top: 11%;
 }
 #galaxy-decoration .landing-background .banner-caption p {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
 }
 #galaxy-decoration .banner-story {
@@ -6097,6 +6131,7 @@ a.galaxy-button:hover {
   background: -ms-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
+  z-index: 21;
 }
 #galaxy-decoration .landing-story .middle-wrapper {
   position: relative;
@@ -6104,13 +6139,13 @@ a.galaxy-button:hover {
 }
 #galaxy-decoration .landing-story .person-info {
   position: relative;
-  padding: 0 65px 0 85px;
+  padding: 0 65px 0 75px;
   z-index: 11;
 }
 #galaxy-decoration .landing-story .person-info:before {
   content: '';
   position: absolute;
-  top: 53px;
+  top: 50px;
   left: 0;
   width: 69px;
   height: 44px;
@@ -6139,7 +6174,9 @@ a.galaxy-button:hover {
   margin: 5px 0 8px;
 }
 #galaxy-decoration .landing-story .person-image {
+  position: relative;
   margin-top: 38px;
+  z-index: 20;
 }
 #galaxy-decoration .landing-story .person-image img {
   display: inline-block;
@@ -6165,18 +6202,29 @@ a.galaxy-button:hover {
 }
 #galaxy-decoration .landing-event .event-title {
   font-family: 'iCielBambola', sans-serif;
-  font-size: 45px;
+  font-size: 50px;
   letter-spacing: 1px;
-  margin-top: 12%;
+  margin-top: 7%;
 }
 #galaxy-decoration .landing-event .event-desc {
   margin: 14px 0 24px 0;
+}
+#galaxy-decoration .landing-event .event-desc > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+#galaxy-decoration .landing-event .event-desc .event-line {
+  display: block;
+  width: 84px;
+  height: 4px;
+  background-color: #fff;
+  margin: 30px auto 20px;
 }
 #galaxy-decoration .landing-event .btn-event {
   width: 150px;
   height: 50px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -6193,8 +6241,10 @@ a.galaxy-button:hover {
   font-size: 16px;
   font-weight: 800;
   text-align: center;
-  margin-right: 25px;
   padding: 0;
+}
+#galaxy-decoration .landing-event .btn-event.btn-rule {
+  margin-right: 25px;
 }
 #galaxy-decoration .landing-event .btn-event:hover {
   background-color: #fff;
@@ -6207,6 +6257,9 @@ a.galaxy-button:hover {
 }
 #galaxy-decoration .landing-entry {
   padding: 30px 0;
+}
+#galaxy-decoration .landing-entry .entry-slide {
+  margin-bottom: 15px;
 }
 #galaxy-decoration .landing-entry .entry-slide .btn-prev,
 #galaxy-decoration .landing-entry .entry-slide .btn-next {
@@ -6235,11 +6288,9 @@ a.galaxy-button:hover {
 #galaxy-decoration .landing-entry .entry-slide .btn-next {
   left: 7%;
 }
-#galaxy-decoration .landing-entry .entry-top {
-  margin-bottom: 15px;
-}
 #galaxy-decoration .landing-entry .entry-share {
   position: relative;
+  margin-bottom: 15px;
 }
 #galaxy-decoration .landing-entry .entry-caption {
   position: absolute;
@@ -6251,6 +6302,7 @@ a.galaxy-button:hover {
 #galaxy-decoration .landing-entry .entry-caption h1 {
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
+  line-height: 45px;
 }
 #galaxy-decoration .landing-entry .entry-caption h2 {
   color: #fff;
@@ -6326,7 +6378,7 @@ a.galaxy-button:hover {
   z-index: 10;
 }
 #galaxy-decoration .landing-entry .entry-title > p {
-  display: block;
+  display: inline-block;
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
   font-size: 38px;
@@ -6334,14 +6386,7 @@ a.galaxy-button:hover {
   background-color: rgba(121, 155, 203, 0.6);
   white-space: nowrap;
   letter-spacing: 1px;
-}
-#galaxy-decoration .landing-entry .entry-title > p:first-child {
-  width: 60%;
-  padding: 4% 0 1% 4%;
-}
-#galaxy-decoration .landing-entry .entry-title > p:last-child {
-  width: 72%;
-  padding: 1% 0 4% 4%;
+  padding: 4px 15px;
 }
 #galaxy-decoration .landing-entry .slide-time {
   position: absolute;
@@ -6354,15 +6399,14 @@ a.galaxy-button:hover {
   z-index: 10;
 }
 #galaxy-decoration .landing-entry .slide-title {
+  float: right;
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50%;
+  right: -2px;
   z-index: 10;
 }
 #galaxy-decoration .landing-entry .slide-title > p {
-  float: right;
-  display: block;
+  display: inline-block;
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
   font-size: 38px;
@@ -6371,14 +6415,7 @@ a.galaxy-button:hover {
   white-space: nowrap;
   letter-spacing: 1px;
   text-align: right;
-}
-#galaxy-decoration .landing-entry .slide-title > p:first-child {
-  width: 70%;
-  padding: 4% 4% 1% 0;
-}
-#galaxy-decoration .landing-entry .slide-title > p:last-child {
-  width: 55%;
-  padding: 1% 4% 4% 0;
+  padding: 4px 15px;
 }
 #galaxy-decoration .landing-entry .btn-loadmore {
   display: inline-block;
@@ -6415,10 +6452,17 @@ a.galaxy-button:hover {
   }
   #galaxy-decoration .entry-caption h1 {
     font-size: 60px;
-    margin-top: 22%;
+    margin-top: 30%;
   }
   #galaxy-decoration .entry-caption h2 {
-    font-size: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 991px) {
+  #galaxy-decoration .landing-event .btn-event {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6441,19 +6485,13 @@ a.galaxy-button:hover {
   }
   #galaxy-decoration .entry-caption h1 {
     font-size: 50px;
-    margin-top: 18%;
+    margin-top: 20%;
   }
   #galaxy-decoration .entry-caption h2 {
     font-size: 30px;
   }
   #galaxy-decoration .entry-title > p {
     font-size: 34px !important;
-  }
-  #galaxy-decoration .entry-title > p:first-child {
-    width: 70% !important;
-  }
-  #galaxy-decoration .entry-title > p:last-child {
-    width: 82% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6476,23 +6514,20 @@ a.galaxy-button:hover {
     line-height: 30px !important;
   }
   #galaxy-decoration .entry-caption {
-    padding: 3% 6%;
+    padding: 3% 8%;
   }
   #galaxy-decoration .entry-caption h1 {
     font-size: 40px;
     margin-top: 14%;
   }
   #galaxy-decoration .entry-caption h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   #galaxy-decoration .entry-title > p {
     font-size: 30px !important;
   }
-  #galaxy-decoration .entry-title > p:first-child {
-    width: 80% !important;
-  }
-  #galaxy-decoration .entry-title > p:last-child {
-    width: 92% !important;
+  #galaxy-decoration .person-info {
+    margin-bottom: 10%;
   }
 }
 @media (max-width: 767px) {
@@ -6516,10 +6551,27 @@ a.galaxy-button:hover {
   }
   #galaxy-decoration .entry-caption h1 {
     font-size: 60px;
-    margin-top: 22%;
+    margin-top: 26%;
   }
   #galaxy-decoration .entry-caption h2 {
     font-size: 40px;
+  }
+  #galaxy-decoration #story-1 .person-name,
+  #galaxy-decoration #story-2 .person-name {
+    margin-top: 15% !important;
+  }
+  #galaxy-decoration #story-3 .person-name,
+  #galaxy-decoration #story-4 .person-name {
+    margin-top: 10% !important;
+  }
+  #galaxy-decoration #story-3 .person-info,
+  #galaxy-decoration #story-4 .person-info {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 400px) {
+  #galaxy-decoration .banner-caption {
+    margin-top: 33% !important;
   }
 }
 @-webkit-keyframes balloon1 {

@@ -110,7 +110,7 @@
       [240,181,185],
       [114,153,204]],
     colorIndices = [0, 1, 2, 3],
-    gradientSpeed = .002;
+    gradientSpeed = .008;
   setInterval(updateGradient, 10), document.write(unescape("")),
   function(t) {
       var o = {

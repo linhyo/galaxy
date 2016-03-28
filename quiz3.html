@@ -253,22 +253,24 @@
           <div class="col-xs-12">
             <div class="background-rule">
               <div class="input-bg">
-                <div class="input-avatar" style="background-image: url(images/dialog/rule/input-avatar.png)">
-                  <div class="result-upload"></div>
-                  <div class="fileUpload">
-                    <i class="icon icon-camera"></i>
-                    <span>Tải ảnh lên</span>
-                    <input type="file" class="upload"/>
-                  </div>
-                  <div class="action-avatar">
-                    <div class="action-rage">
-                      <span class="zoom-out">-</span>
-                      <span class="zoom-in">+</span>
-                      <input class="range-slider__range" type="range" value="100" min="0" max="100">
+                <div class="input-avatar">
+                  <div class="cover-avatar">
+                    <div class="result-upload"></div>
+                    <div class="fileUpload">
+                      <i class="icon icon-camera"></i>
+                      <span>Tải ảnh lên</span>
+                      <input type="file" class="upload"/>
                     </div>
-                    <div class="submit-avatar">
-                      <button class="btn-rule">Hủy</button>
-                      <button class="btn-rule btn-dark">Tải lên</button>
+                    <div class="action-avatar">
+                      <div class="action-rage">
+                        <span class="zoom-out">-</span>
+                        <span class="zoom-in">+</span>
+                        <input class="range-slider__range" type="range" value="100" min="0" max="100">
+                      </div>
+                      <div class="submit-avatar">
+                        <button class="btn-rule">Hủy</button>
+                        <button class="btn-rule btn-dark">Tải lên</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -277,7 +279,9 @@
                     <div class="col-lg-5">
                       <div class="background-control">
                         <p>Màu nền</p>
-                        <div class="item-background active" style="background-image: url(images/dialog/rule/bg1.png)"></div>
+
+                        <div class="item-background active"
+                             style="background-image: url(images/dialog/rule/bg1.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg2.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg3.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg4.png)"></div>
@@ -286,14 +290,12 @@
                     <div class="col-lg-4 col-lg-offset-3">
                       <div class="box-control">
                         <p>Khung avatar</p>
+
                         <div class="control-item">
                           <i class="control-circle active"></i>
                         </div>
                         <div class="control-item">
                           <i class="control-square"></i>
-                        </div>
-                        <div class="control-item">
-                          <i class="control-hexagon"></i>
                         </div>
                       </div>
                     </div>
@@ -377,7 +379,7 @@
             <div class="col-xs-12">
               <div class="form-group text-right">
                 <button type="button" class="btn-rule" data-dismiss="modal" aria-label="Close">Hủy</button>
-                <button type="button" class="btn-rule btn-pink" data-dismiss="modal" aria-label="Close">Hãy chia sẻ
+                <button type="button" class="btn-rule btn-pink disabled" disabled data-dismiss="modal" aria-label="Close">Hãy chia sẻ
                 </button>
               </div>
             </div>
@@ -398,32 +400,29 @@
           <div class="col-xs-12">
             <div class="background-rule">
               <div class="input-bg" style="background-image: url(images/dialog/rule/bg2-full.png)">
-                <div class="input-avatar" style="background-image: url(images/dialog/rule/input-avatar.png)">
-                  <div class="result-upload circle" style="display: block">
-                    <div class="circle-style" style="background-image: url(images/dialog/example/example1.png)"></div>
-                  </div>
-                  <div class="result-upload hexagon" style="display: none">
-                    <div class="hexagon-style1">
-                      <div class="hexagon-style2" style="background-image: url(/images/dialog/example/example1.png)"></div>
+                <div class="input-avatar">
+                  <div class="cover-avatar">
+                    <div class="result-upload circle" style="display: block">
+                      <div class="circle-style" style="background-image: url(images/dialog/example/example1.png)"></div>
                     </div>
-                  </div>
-                  <div class="result-upload square" style="display: none">
-                    <div class="square-style" style="background-image: url(images/dialog/example/example1.png)"></div>
-                  </div>
-                  <div class="fileUpload" style="display: none;">
-                    <i class="icon icon-camera"></i>
-                    <span>Tải ảnh lên</span>
-                    <input type="file" class="upload"/>
-                  </div>
-                  <div class="action-avatar" style="display: block">
-                    <div class="action-rage">
-                      <span class="zoom-out">-</span>
-                      <span class="zoom-in">+</span>
-                      <input class="range-slider__range" type="range" value="100" min="0" max="100">
+                    <div class="result-upload square" style="display: none">
+                      <div class="square-style" style="background-image: url(images/dialog/example/example1.png)"></div>
                     </div>
-                    <div class="submit-avatar">
-                      <button class="btn-rule">Hủy</button>
-                      <button class="btn-rule btn-dark">Tải lên</button>
+                    <div class="fileUpload" style="display: none;">
+                      <i class="icon icon-camera"></i>
+                      <span>Tải ảnh lên</span>
+                      <input type="file" class="upload"/>
+                    </div>
+                    <div class="action-avatar" style="display: block">
+                      <div class="action-rage">
+                        <span class="zoom-out">-</span>
+                        <span class="zoom-in">+</span>
+                        <input class="range-slider__range" type="range" value="100" min="0" max="100">
+                      </div>
+                      <div class="submit-avatar">
+                        <button class="btn-rule">Hủy</button>
+                        <button class="btn-rule btn-dark">Tải lên</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -432,7 +431,9 @@
                     <div class="col-lg-5">
                       <div class="background-control">
                         <p>Màu nền</p>
-                        <div class="item-background active" style="background-image: url(images/dialog/rule/bg1.png)"></div>
+
+                        <div class="item-background active"
+                             style="background-image: url(images/dialog/rule/bg1.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg2.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg3.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg4.png)"></div>
@@ -441,14 +442,12 @@
                     <div class="col-lg-4 col-lg-offset-3">
                       <div class="box-control">
                         <p>Khung avatar</p>
+
                         <div class="control-item">
                           <i class="control-circle active"></i>
                         </div>
                         <div class="control-item">
                           <i class="control-square"></i>
-                        </div>
-                        <div class="control-item">
-                          <i class="control-hexagon"></i>
                         </div>
                       </div>
                     </div>

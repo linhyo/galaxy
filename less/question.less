@@ -25,8 +25,8 @@
     &:after {
       content: '';
       background: url(../images/dialog/close.png) no-repeat center/ 60% 60%;
-      width: 21px;
-      height: 21px;
+      width: 20px;
+      height: 20px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -131,6 +131,7 @@
           }
         }
         &.active, &.done {
+        //&.active{
           p {
             .gradient-text('CSS Gradient Text', #fff, linear-gradient(to right, #289ED5, #289ED5, #D36668, #D36668, #D36668));
           }
@@ -205,7 +206,8 @@
             .transition();
             z-index: 1;
           }
-          &.active, &.done {
+          //&.active, &.done {
+          &.active {
             span {
               .horizontal-gradient(#289ED5, #D36668);
               color: white;
@@ -281,13 +283,13 @@
           -webkit-border-image: -webkit-linear-gradient(right, #c5c5c5 0%, #f4f4f4 100%);
           border-image: linear-gradient(to left, #c5c5c5 0%, #f4f4f4 100%);
           border-image-slice: 1;
-          &.done {
-            background-color: white;
-            -moz-border-image: -moz-linear-gradient(right, #D36668 0%, #289ED5 100%);
-            -webkit-border-image: -webkit-linear-gradient(right, #D36668 0%, #289ED5 100%);
-            border-image: linear-gradient(to left, #D36668 0%, #289ED5 100%);
-            border-image-slice: 1;
-          }
+          //&.done {
+          //  background-color: white;
+          //  -moz-border-image: -moz-linear-gradient(right, #D36668 0%, #289ED5 100%);
+          //  -webkit-border-image: -webkit-linear-gradient(right, #D36668 0%, #289ED5 100%);
+          //  border-image: linear-gradient(to left, #D36668 0%, #289ED5 100%);
+          //  border-image-slice: 1;
+          //}
         }
       }
       .submit-result{

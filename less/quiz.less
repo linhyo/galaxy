@@ -73,8 +73,8 @@
       &:after {
         content: '';
         background: url(../images/dialog/close.png) no-repeat center/ 60% 60%;
-        width: 21px;
-        height: 21px;
+        width: 20px;
+        height: 20px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -96,7 +96,7 @@
       height: 100%;
       text-align: center;
       color: @quiz2-color;
-      padding: 45px 40px;
+      padding: 15px 40px;
       position: relative;
       z-index: 1;
       .title-step1 {
@@ -110,20 +110,23 @@
         text-align: left;
         label {
           font-weight: 700;
-          margin-bottom: 8px;
+          margin-bottom: 2px;
         }
         input {
           color: #333;
-          background-color: rgba(255, 255, 255, 0.9);
+          background-color: rgba(255, 255, 255, 0.5);
           border: 0;
           box-shadow: 0;
           .border-radius(0);
+          &.isValue{
+            background-color: rgba(255, 255, 255, 0.85);
+          }
         }
         .galaxy-select {
           .dropdown-toggle {
             .border-radius(0);
             line-height: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.5);
             .dropdown-hint {
               display: block;
               text-align: left;
@@ -223,13 +226,12 @@
       .border-radius(0);
       background-color: white;
       color: @quiz2-color;
-      margin: auto 0;
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
       text-align: center;
       min-width: 150px;
-
+      margin: 10px auto;
       &:hover {
         background-color: whitesmoke;
       }
@@ -327,7 +329,7 @@
         margin-bottom: 10px;
       }
       .message-confirm-rule {
-        margin-top: 50px;
+        margin-top: 75px;
         position: relative;
         &:after {
           content: '';
@@ -351,7 +353,7 @@
       text-align: center;
       font-size: 16px;
       font-weight: 700;
-      margin: 10px auto;
+      margin: 10px auto 20px;
       min-width: 50px;
       padding: 5px 26px;
       .border-radius(0);
@@ -384,6 +386,7 @@
         position: absolute;
         left: 0;
         top: -35px;
+        font-size: 12px;
         background-color: #e7b5bc;
         padding: 5px 15px 5px 27px;
         color: white;
@@ -432,6 +435,13 @@
             &:hover {
               background-color: #ffc1c5;
             }
+            &.disabled{
+              opacity: 0.3;
+              &:hover{
+                opacity: 0.3;
+                background-color: #f0b5b9;
+              }
+            }
           }
         }
 
@@ -458,14 +468,40 @@
         background-position: center center;
         background-repeat: no-repeat;
         .input-avatar {
+          display: inline-block;
+          height: 200px;
+          left: 50%;
+          margin-left: -100px;
+          margin-top: -100px;
+          position: absolute;
+          top: 50%;
+          width: 200px;
+          z-index: 1;
+          background: no-repeat center;
+          background-size: cover;
+          .horizontal-gradient(#eeeeee,#aaaaaa);
+          &:hover{
+            .horizontal-gradient(#fbfbfb, #d2d2d2);
+          }
+          .cover-avatar{
+            border-radius: 50%;
+            display: block;
+            height: 180px;
+            left: 10px;
+            position: absolute;
+            top: 10px;
+            width: 180px;
+            background-size: cover;
+            background: #333 no-repeat center;
+          }
           .result-upload {
-            height: 175px;
-            width: 175px;
+            height: 180px;
+            width: 180px;
             &.circle {
               display: none;
-              left: 13px;
+              left: 0;
               position: absolute;
-              top: 12px;
+              top: 0;
               .circle-style{
                 background-position: center center;
                 background-size: cover;
@@ -527,17 +563,6 @@
             }
           }
           .border-radius(50%);
-          display: inline-block;
-          height: 200px;
-          left: 50%;
-          margin-left: -100px;
-          margin-top: -100px;
-          position: absolute;
-          top: 50%;
-          width: 200px;
-          z-index: 1;
-          background: no-repeat center;
-          background-size: cover;
           .fileUpload {
             border: 1px dashed hsl(0, 0%, 100%);
             height: 80px;
@@ -585,7 +610,7 @@
             height: 100%;
             position: absolute;
             left: 0;
-            bottom: -105%;
+            bottom: -110%;
             .action-rage {
               display: block;
               position: relative;
@@ -633,11 +658,11 @@
                 }
                 &.btn-dark {
                   font-weight: 600;
-                  border: 1px solid #818181;
-                  background-color: #818181;
+                  border: 1px solid #f0b5b9;
+                  background-color: #f0b5b9;
                   color: #ffffff;
                   &:hover {
-                    background-color: #999999;
+                    background-color: #ffc1c5;
                   }
                 }
               }
@@ -651,7 +676,7 @@
           .range-slider__range {
             -webkit-appearance: none;
             width: 100%;
-            height: @range-track-height;
+            height: 2px;
             background: @range-track-color;
             outline: none;
             padding: 0;
@@ -694,7 +719,6 @@
               background: @range-handle-color-hover;
             }
           }
-
           // Range Label
           .range-slider__value {
             display: inline-block;
@@ -720,13 +744,11 @@
               content: '';
             }
           }
-
           // Firefox Overrides
           ::-moz-range-track {
             background: @range-track-color;
             border: 0;
           }
-
           input::-moz-focus-inner,
           input::-moz-focus-outer {
             border: 0;

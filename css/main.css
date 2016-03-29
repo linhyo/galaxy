@@ -2553,6 +2553,9 @@ a.galaxy-button:hover {
   display: block;
   position: relative;
 }
+.question-dialog.medium {
+  min-height: 670px;
+}
 .question-dialog .close {
   background-color: #231f20;
   border: 2px solid #ffffff;
@@ -2961,6 +2964,48 @@ a.galaxy-button:hover {
 .question-dialog #quiz1 .step-content .submit-result .btn-result.active {
   cursor: pointer;
   background: url(../images/dialog/btn-result-active.png) no-repeat center center / cover;
+}
+.question-dialog .display-result {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 60px 80px;
+  text-align: center;
+}
+@media (max-width: 360px) {
+  .question-dialog .display-result {
+    padding: 30px 20px;
+  }
+}
+.question-dialog .display-result h1.title-result {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.question-dialog .display-result h1.title-result.color-orange {
+  color: #F78E1D;
+}
+.question-dialog .display-result p.content-result {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #414042;
+}
+.question-dialog .display-result a.btn-share-result {
+  margin: 20px auto;
+  display: block;
+  width: 186px;
+  height: 55px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.question-dialog .display-result a.btn-share-result:hover {
+  background-color: rgba(250, 232, 229, 0.8);
 }
 .galaxy-banner {
   position: relative;

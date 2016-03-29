@@ -4271,8 +4271,6 @@ a.galaxy-button:hover {
 #news-page .tab-header .nav-tabs li a {
   width: 100%;
 }
-#lucky-painter-page .tab-content #contractor-info,
-#news-page .tab-content #contractor-info,
 #lucky-painter-page .tab-content #lucky-painter,
 #news-page .tab-content #lucky-painter,
 #lucky-painter-page .tab-content #contractor,
@@ -4760,6 +4758,7 @@ a.galaxy-button:hover {
 }
 .project-item {
   position: relative;
+  margin-bottom: 30px;
 }
 .project-item img {
   width: 100%;

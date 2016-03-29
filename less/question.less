@@ -378,4 +378,55 @@
       }
     }
   }
+  .step-confirm{
+    display: block;
+    z-index: 2;
+    margin: 10px 25px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    &:first-child{
+      margin-top: 50px;
+    }
+    &:after{
+      height: 1px;
+      width: 100%;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .horizontal-gradient(#289ED5, #D36668);
+    }
+    &:last-child:after{
+      height: 0;
+    }
+    h1.intro-confirm{
+      color: #231F20;
+      text-align: center;
+      padding: 0;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    h2.name-intro{
+      color: #A06D2E;
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    a.btn-play-new-game {
+      margin: 20px auto;
+      display: block;
+      width: 186px;
+      height: 55px;
+      background-color: transparent;
+      .transition();
+      &:hover {
+        background-color: hsla(9, 68%, 94%, 0.8);
+      }
+    }
+  }
 }

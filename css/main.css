@@ -3027,6 +3027,66 @@ a.galaxy-button:hover {
 .question-dialog .display-result a.btn-share-result:hover {
   background-color: rgba(250, 232, 229, 0.8);
 }
+.question-dialog .step-confirm {
+  display: block;
+  z-index: 2;
+  margin: 10px 25px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.question-dialog .step-confirm:first-child {
+  margin-top: 50px;
+}
+.question-dialog .step-confirm:after {
+  height: 1px;
+  width: 100%;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #289ed5;
+  background-image: -webkit-gradient(linear, left top, right top, from(#289ed5), to(#d36668));
+  background-image: -webkit-linear-gradient(left, #289ed5, #d36668);
+  background-image: -moz-linear-gradient(left, #289ed5, #d36668);
+  background-image: -ms-linear-gradient(left, #289ed5, #d36668);
+  background-image: -o-linear-gradient(left, #289ed5, #d36668);
+}
+.question-dialog .step-confirm:last-child:after {
+  height: 0;
+}
+.question-dialog .step-confirm h1.intro-confirm {
+  color: #231F20;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.question-dialog .step-confirm h2.name-intro {
+  color: #A06D2E;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.question-dialog .step-confirm a.btn-play-new-game {
+  margin: 20px auto;
+  display: block;
+  width: 186px;
+  height: 55px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.question-dialog .step-confirm a.btn-play-new-game:hover {
+  background-color: rgba(250, 232, 229, 0.8);
+}
 .galaxy-banner {
   position: relative;
   width: 100%;

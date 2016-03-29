@@ -329,6 +329,9 @@
     position: relative;
     z-index: 2;
     padding: 60px 80px;
+    @media (max-width: 480px) {
+      padding: 40px 25px;
+    }
     @media (max-width: 360px) {
       padding: 30px 20px;
     }
@@ -341,6 +344,21 @@
       font-weight: bold;
       &.color-orange {
         color: #F78E1D;
+      }
+      &.color-gray {
+        color: #808285;
+      }
+      &.color-blue {
+        color: #588CB3;
+      }
+      &.color-purple {
+        color: #692981;
+      }
+      &.color-green {
+        color: #6F9F6A;
+      }
+      &.color-red {
+        color: #DA310A;
       }
     }
     p.content-result {

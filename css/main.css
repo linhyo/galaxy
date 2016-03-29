@@ -2972,6 +2972,11 @@ a.galaxy-button:hover {
   padding: 60px 80px;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .question-dialog .display-result {
+    padding: 40px 25px;
+  }
+}
 @media (max-width: 360px) {
   .question-dialog .display-result {
     padding: 30px 20px;
@@ -2986,6 +2991,21 @@ a.galaxy-button:hover {
 }
 .question-dialog .display-result h1.title-result.color-orange {
   color: #F78E1D;
+}
+.question-dialog .display-result h1.title-result.color-gray {
+  color: #808285;
+}
+.question-dialog .display-result h1.title-result.color-blue {
+  color: #588CB3;
+}
+.question-dialog .display-result h1.title-result.color-purple {
+  color: #692981;
+}
+.question-dialog .display-result h1.title-result.color-green {
+  color: #6F9F6A;
+}
+.question-dialog .display-result h1.title-result.color-red {
+  color: #DA310A;
 }
 .question-dialog .display-result p.content-result {
   margin: 10px 0;

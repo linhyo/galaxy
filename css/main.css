@@ -5939,6 +5939,11 @@ a.galaxy-button:hover {
   background-image: -o-linear-gradient(left, #edb4ba, #7499cd);
   padding-bottom: 100px;
 }
+@media (max-width: 480px) {
+  #galaxy-discovery .landing-quiz {
+    padding-bottom: 150px;
+  }
+}
 #galaxy-discovery .landing-quiz:after {
   content: '';
   position: absolute;

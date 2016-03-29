@@ -5812,8 +5812,10 @@ a.galaxy-button:hover {
   margin-top: -18%;
 }
 #galaxy-discovery .color-game .color-game-desc + a {
+  position: relative;
   display: inline-block;
   margin-top: 30px;
+  z-index: 10;
 }
 #galaxy-discovery .color-game .btn-award-rule {
   background-color: transparent;
@@ -5850,8 +5852,8 @@ a.galaxy-button:hover {
 }
 #galaxy-discovery .quiz-title {
   position: absolute;
-  top: 4%;
-  left: 7%;
+  top: 1%;
+  left: 4%;
   font-size: 16px;
   font-weight: 700;
 }
@@ -5859,7 +5861,7 @@ a.galaxy-button:hover {
   position: absolute;
   top: 46%;
   left: 0;
-  width: 98%;
+  width: 96%;
 }
 #galaxy-discovery .quiz-heading {
   display: block;
@@ -5874,12 +5876,8 @@ a.galaxy-button:hover {
 #galaxy-discovery .quiz-desc {
   display: block;
   width: 84%;
-  font-size: 13px;
-  margin: 4% auto;
-  padding: 0 5%;
-  max-height: 93px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin: 6% auto;
+  padding: 0 10%;
 }
 #galaxy-discovery .btn-playnow {
   display: block;
@@ -5927,15 +5925,6 @@ a.galaxy-button:hover {
 #galaxy-discovery .quiz-1 .btn-playnow:hover {
   background-color: #fae8e5;
 }
-#galaxy-discovery .quiz-2 .five-elements {
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  margin-left: -180px;
-  width: 350px;
-  height: 223px;
-  background: transparent url("../images/landing/wu-xing.png") no-repeat center center;
-}
 #galaxy-discovery .quiz-2 .quiz-title,
 #galaxy-discovery .quiz-2 .quiz-heading,
 #galaxy-discovery .quiz-2 .quiz-desc,
@@ -5971,12 +5960,11 @@ a.galaxy-button:hover {
     left: 25%;
     width: 50%;
   }
-  #galaxy-discovery .five-elements {
-    background-size: 50% auto !important;
-    top: 8% !important;
-  }
   #galaxy-discovery .quiz-heading > span {
     font-size: 26px !important;
+  }
+  #galaxy-discovery .quiz-desc {
+    margin: 5% auto !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5985,25 +5973,31 @@ a.galaxy-button:hover {
     width: 64%;
   }
   #galaxy-discovery .quiz-title {
-    left: 5%;
+    left: 3%;
     font-size: 14px;
   }
   #galaxy-discovery .quiz-heading > span {
     font-size: 20px;
     padding: 5px;
   }
-  #galaxy-discovery .quiz-desc {
-    font-size: 12px;
+  #galaxy-discovery .quiz-content {
+    top: 44% !important;
   }
-  #galaxy-discovery .five-elements {
-    background-size: 45% auto !important;
-    top: 3% !important;
+  #galaxy-discovery .quiz-desc {
+    display: block;
+    width: 88% !important;
+    margin: 4% auto !important;
+    padding: 0 5%  !important;
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
   #galaxy-discovery .slide-center {
     left: 10%;
     width: 80%;
+  }
+  #galaxy-discovery .quiz-content {
+    top: 44% !important;
   }
   #galaxy-discovery .quiz-title {
     left: 5%;
@@ -6013,23 +6007,26 @@ a.galaxy-button:hover {
     margin-top: 20px;
   }
   #galaxy-discovery .quiz-heading > span {
-    font-size: 18px;
+    font-size: 24px;
   }
   #galaxy-discovery .quiz-1 img,
   #galaxy-discovery .quiz-2 img {
     width: 100%;
   }
-  #galaxy-discovery .five-elements {
-    background-size: 60% auto !important;
-    top: 10% !important;
-  }
 }
 @media (max-width: 420px) {
   #galaxy-discovery .quiz-heading > span {
+    font-size: 18px !important;
     padding: 5px;
   }
+  #galaxy-discovery .quiz-content {
+    top: 40% !important;
+  }
+  #galaxy-discovery .quiz-title {
+    left: 2% !important;
+  }
   #galaxy-discovery .quiz-desc {
-    font-size: 10px;
+    font-size: 11px;
   }
   #galaxy-discovery .btn-playnow {
     width: 120px;

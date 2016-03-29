@@ -454,8 +454,10 @@
       color: #fff;
       margin-top: -18%;
       + a {
+        position: relative;
         display: inline-block;
         margin-top: 30px;
+        z-index: 10;
       }
     }
     .btn-award-rule {
@@ -482,8 +484,8 @@
   }
   .quiz-title {
     position: absolute;
-    top: 4%;
-    left: 7%;
+    top: 1%;
+    left: 4%;
     font-size: 16px;
     font-weight: 700;
   }
@@ -492,7 +494,7 @@
     position: absolute;
     top: 46%;
     left: 0;
-    width: 98%;
+    width: 96%;
   }
   .quiz-heading {
     display: block;
@@ -507,13 +509,8 @@
   .quiz-desc {
     display: block;
     width: 84%;
-    font-size: 13px;
-    margin: 4% auto;
-    padding: 0 5%;
-
-    max-height: 93px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 6% auto;
+    padding: 0 10%;
   }
   .btn-playnow {
     display: block;
@@ -557,15 +554,6 @@
     }
   }
   .quiz-2 {
-    .five-elements {
-      position: absolute;
-      top: 12%;
-      left: 50%;
-      margin-left: -180px;
-      width: 350px;
-      height: 223px;
-      background: transparent url("../images/landing/wu-xing.png") no-repeat center center;
-    }
     .quiz-title, .quiz-heading, .quiz-desc, .btn-playnow {
       color: #764E24;
     }
@@ -596,12 +584,11 @@
       left: 25%;
       width: 50%;
     }
-    .five-elements {
-      background-size: 50% auto !important;
-      top: 8% !important;
-    }
     .quiz-heading > span {
       font-size: 26px !important;
+    }
+    .quiz-desc {
+      margin: 5% auto !important;
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -610,25 +597,31 @@
       width: 64%;
     }
     .quiz-title {
-      left: 5%;
+      left: 3%;
       font-size: 14px;
     }
     .quiz-heading > span {
       font-size: 20px;
       padding: 5px;
     }
-    .quiz-desc {
-      font-size: 12px;
+    .quiz-content {
+      top: 44% !important;
     }
-    .five-elements {
-      background-size: 45% auto !important;
-      top: 3% !important;
+    .quiz-desc {
+      display: block;
+      width: 88% !important;
+      margin: 4% auto !important;
+      padding: 0 5%  !important;
+      font-size: 12px;
     }
   }
   @media (max-width: 767px) {
     .slide-center {
       left: 10%;
       width: 80%;
+    }
+    .quiz-content {
+      top: 44% !important;
     }
     .quiz-title {
       left: 5%;
@@ -638,22 +631,25 @@
       margin-top: 20px;
     }
     .quiz-heading > span {
-      font-size: 18px;
+      font-size: 24px;
     }
     .quiz-1 img, .quiz-2 img {
       width: 100%;
     }
-    .five-elements {
-      background-size: 60% auto !important;
-      top: 10% !important;
-    }
   }
   @media (max-width: 420px) {
     .quiz-heading > span {
+      font-size: 18px !important;
       padding: 5px;
     }
+    .quiz-content {
+      top: 40% !important;
+    }
+    .quiz-title {
+      left: 2% !important;
+    }
     .quiz-desc {
-      font-size: 10px;
+      font-size: 11px;
     }
     .btn-playnow {
       width: 120px;

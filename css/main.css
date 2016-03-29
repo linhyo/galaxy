@@ -5629,13 +5629,10 @@ a.galaxy-button:hover {
   background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
 }
 #galaxy-discovery .landing-slide h1 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
   color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
   font-size: 30px;
   font-weight: 800;
-  margin-left: -163px;
   z-index: 100;
   line-height: 38px;
   -webkit-animation: fadeOutUp 1s both;
@@ -5644,16 +5641,13 @@ a.galaxy-button:hover {
   animation: fadeOutUp 1s both;
 }
 #galaxy-discovery .landing-slide p {
-  position: absolute;
-  top: 28%;
-  left: 50%;
   color: #fff;
-  margin-left: -239px;
   z-index: 100;
   -webkit-animation: fadeOutRight 1s both;
   -moz-animation: fadeOutRight 1s both;
   -ms-animation: fadeOutRight 1s both;
   animation: fadeOutRight 1s both;
+  padding: 20px 0;
 }
 #galaxy-discovery .landing-slide .slick-active h1 {
   -webkit-animation: fadeInDown 1s both 0.2s;
@@ -5681,6 +5675,40 @@ a.galaxy-button:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+#galaxy-discovery .slide-text {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#galaxy-discovery .slide-text.center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#galaxy-discovery .slide-text.right .row {
+  margin-left: auto;
+}
+#galaxy-discovery .slide-center {
+  position: absolute;
+  top: 10%;
+}
+#galaxy-discovery .slide-center > p {
+  padding: 30px 0;
+}
+#galaxy-discovery .slide-content {
+  max-width: 380px;
+  width: 100%;
+}
 #galaxy-discovery .slider-for .slide-img {
   width: 100%;
   height: 580px;
@@ -5689,29 +5717,42 @@ a.galaxy-button:hover {
   width: 100%;
   height: 160px;
 }
-#galaxy-discovery .slider-nav .slick-current {
+#galaxy-discovery .slider-nav .slick-slide {
   position: relative;
 }
-#galaxy-discovery .slider-nav .slick-current:after {
+#galaxy-discovery .slider-nav .slick-slide:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid transparent;
+  border: 3px solid #000;
+  border-right: none;
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom-width: 11px;
+}
+#galaxy-discovery .slider-nav .slick-current {
+  position: relative;
+}
+#galaxy-discovery .slider-nav .slick-current:after {
+  border-right: 3px solid transparent !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
   -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
   border-image: linear-gradient(to left, #f6ea23 0%, #f07721 50%, #6b2b85 100%);
   border-image-slice: 1;
 }
 #galaxy-discovery .btn-discovery {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  background-color: #fff;
-  color: #000;
+  background-color: #be0200;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be0200), to(#f95700));
+  background-image: -webkit-linear-gradient(top, #be0200, #f95700);
+  background-image: -moz-linear-gradient(top, #be0200, #f95700);
+  background-image: -ms-linear-gradient(top, #be0200, #f95700);
+  background-image: -o-linear-gradient(top, #be0200, #f95700);
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
   font-size: 16px;
   font-weight: 800;
   -webkit-border-radius: 0;
@@ -5721,13 +5762,8 @@ a.galaxy-button:hover {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid #fff;
-  margin-top: -24px;
-  margin-left: -95px;
-  padding: 12px 26px;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+  padding: 14px 26px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5740,7 +5776,12 @@ a.galaxy-button:hover {
   animation: fadeOut 1s both 0.2s;
 }
 #galaxy-discovery .btn-discovery:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #f95700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f95700), to(#be0200));
+  background-image: -webkit-linear-gradient(top, #f95700, #be0200);
+  background-image: -moz-linear-gradient(top, #f95700, #be0200);
+  background-image: -ms-linear-gradient(top, #f95700, #be0200);
+  background-image: -o-linear-gradient(top, #f95700, #be0200);
 }
 #galaxy-discovery .landing-quiz {
   position: relative;
@@ -5912,6 +5953,12 @@ a.galaxy-button:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+@media (min-width: 1200px) {
+  #galaxy-discovery .slide-center {
+    left: 30%;
+    width: 40%;
+  }
+}
 @media (min-width: 421px) and (max-width: 1199px) {
   #galaxy-discovery .btn-playnow {
     width: 160px;
@@ -5920,6 +5967,10 @@ a.galaxy-button:hover {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #galaxy-discovery .slide-center {
+    left: 25%;
+    width: 50%;
+  }
   #galaxy-discovery .five-elements {
     background-size: 50% auto !important;
     top: 8% !important;
@@ -5929,6 +5980,10 @@ a.galaxy-button:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-discovery .slide-center {
+    left: 18%;
+    width: 64%;
+  }
   #galaxy-discovery .quiz-title {
     left: 5%;
     font-size: 14px;
@@ -5946,6 +6001,10 @@ a.galaxy-button:hover {
   }
 }
 @media (max-width: 767px) {
+  #galaxy-discovery .slide-center {
+    left: 10%;
+    width: 80%;
+  }
   #galaxy-discovery .quiz-title {
     left: 5%;
     font-size: 14px;

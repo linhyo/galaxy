@@ -2,7 +2,7 @@
 @question-background: #ffffff;
 
 .question-dialog {
-  min-height: 870px;
+  min-height: 920px;
   &.medium{
     min-height: 670px;
   }
@@ -153,7 +153,10 @@
       }
     }
     .step-content {
-      margin-top: 45px;
+      margin-top: 25px;
+      @media (max-width: 360px) {
+        margin-top: 45px;
+      }
       display: block;
       width: 100%;
       .title-step, .title-step2 {

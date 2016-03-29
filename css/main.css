@@ -3625,18 +3625,39 @@ a.galaxy-button:hover {
 .post-item .media-left {
   width: 38%;
 }
+.post-item .post-title {
+  line-height: 22px;
+  height: 44px;
+  overflow: hidden;
+}
 .post-item .post-image {
-  width: 100%;
+  width: 200px;
+  height: 150px;
+  background: transparent no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .post-item .post-time {
   color: #736a68;
   font-size: 11px;
 }
 .post-item .post-description {
-  margin-bottom: 10px;
+  height: 60px;
+  line-height: 20px;
+  /* Height / no. of lines to display */
+  overflow: hidden;
+  margin-bottom: 3px;
 }
 .post-item .galaxy-button {
   padding: 4px 22px;
+}
+@media (max-width: 400px) {
+  .post-item .post-image {
+    width: 120px;
+    height: 90px;
+  }
 }
 .guide-item {
   position: relative;

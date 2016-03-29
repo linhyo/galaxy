@@ -5567,6 +5567,9 @@ a.galaxy-button:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-color .landing-decor {
+    margin-top: 30% !important;
+  }
   #galaxy-color .landing-ball.ball-1 {
     width: 272px;
     height: 255px;
@@ -5578,7 +5581,7 @@ a.galaxy-button:hover {
     width: 400px;
     height: 370px;
     background-size: 80%;
-    bottom: 8% !important;
+    bottom: 14% !important;
     left: 20px !important;
   }
   #galaxy-color .landing-title {
@@ -5592,18 +5595,25 @@ a.galaxy-button:hover {
   }
 }
 @media (max-width: 767px) {
+  #galaxy-color .landing-discovery {
+    margin-top: 60% !important;
+  }
+  #galaxy-color .landing-decor {
+    margin-top: 70% !important;
+  }
   #galaxy-color .landing-ball.ball-1 {
     width: 238px;
     height: 223px;
     background-size: 70%;
     top: -4% !important;
-    right: 30px !important;
+    right: 10px !important;
   }
   #galaxy-color .landing-ball.ball-2 {
     width: 350px;
     height: 324px;
     background-size: 70%;
-    bottom: 20% !important;
+    bottom: 18% !important;
+    left: -10px !important;
   }
   #galaxy-color .product-img {
     padding: 0 !important;

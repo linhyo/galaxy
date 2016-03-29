@@ -1031,9 +1031,10 @@ a.galaxy-button:hover {
 }
 #footer {
   display: block;
-  height: 70px;
+  height: 78px;
   position: relative;
   width: 100%;
+  background: rgba(0, 0, 0, 0) url("../images/paint-roller.png") no-repeat scroll right -70px top 0;
 }
 #footer:after {
   background-color: #5a1d72;
@@ -1041,21 +1042,18 @@ a.galaxy-button:hover {
   height: 70px;
   position: absolute;
   left: 0;
-  top: 0;
-  width: 50%;
-}
-#footer:before {
-  background-color: #ffffff;
-  content: "";
-  height: 70px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  z-index: -1;
+  bottom: 0;
+  width: -moz-calc(100% - 93px);
+  width: -webkit-calc(100% - 93px);
+  width: calc(100% - 93px);
 }
 #footer.isLanding {
-  margin-top: -70px;
+  margin-top: -78px;
+}
+@media (max-width: 480px) {
+  #footer.isLanding {
+    margin-top: -150px;
+  }
 }
 #footer.isLanding:before {
   background-color: rgba(255, 255, 255, 0);
@@ -1063,24 +1061,16 @@ a.galaxy-button:hover {
 #footer .footer-wrapper {
   position: relative;
   height: 100%;
-  background-color: #5a1d72;
-}
-#footer .footer-wrapper:after {
-  content: "";
-  height: 78px;
-  position: absolute;
-  right: -163px;
-  top: -8px;
-  width: 163px;
-  background: transparent url("../images/paint-roller.png") no-repeat;
 }
 #footer .copyright {
   position: relative;
   color: #fff;
   z-index: 10;
+  margin-top: 8px;
 }
 #footer .contact-now {
   height: 70px;
+  margin-top: 8px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1096,6 +1086,7 @@ a.galaxy-button:hover {
   position: relative;
   width: 40%;
   z-index: 10;
+  margin-top: 8px;
 }
 #footer .social-network ul > li {
   display: inline-block;
@@ -1201,24 +1192,32 @@ a.galaxy-button:hover {
 @media (max-width: 992px) {
   #footer .contact-now {
     height: 50px;
+    margin-top: 0;
+  }
+  #footer .social-network {
+    margin-top: 0;
   }
 }
 @media (max-width: 480px) {
   #footer {
-    height: 120px;
+    height: 150px;
+  }
+  #footer:after {
+    height: 142px;
   }
   #footer .contact-now {
     display: block;
   }
   #footer .social-network {
     width: 100%;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   #footer .send-mail {
     width: 96%;
   }
   #footer .copyright {
-    margin: 5px 0;
+    margin: 15px 0 0;
   }
 }
 @charset "UTF-8";
@@ -2564,6 +2563,7 @@ a.galaxy-button:hover {
   vertical-align: middle;
   width: 30px;
   opacity: 1;
+  z-index: 3;
   box-shadow: 0 2px 1px #231f20;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2605,6 +2605,7 @@ a.galaxy-button:hover {
 }
 .question-dialog:after {
   content: '';
+  background: url("../images/dialog/bg-step1-quiz1-fade.png") no-repeat scroll center bottom / 100% auto;
   display: block;
   position: absolute;
   width: 100%;
@@ -2844,6 +2845,7 @@ a.galaxy-button:hover {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 1;
+  cursor: pointer;
 }
 .question-dialog #quiz1 .step-content .question-process li.active span {
   background-color: #289ed5;
@@ -5679,6 +5681,11 @@ a.galaxy-button:hover {
   }
   #galaxy-color .product-img {
     padding: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  #galaxy-color .landing-product {
+    margin-bottom: 180px;
   }
 }
 #galaxy-discovery .landing-slide {

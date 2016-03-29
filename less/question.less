@@ -19,6 +19,7 @@
     vertical-align: middle;
     width: 30px;
     opacity: 1;
+    z-index: 3;
     box-shadow: 0 2px 1px hsl(345, 6%, 13%);
     .border-radius(50%);
     .transition(all, 0.5s, ease-out);
@@ -50,7 +51,7 @@
   }
   &:after {
     content: '';
-    //background: url("../images/dialog/bg-step1-quiz2-before.png") no-repeat scroll center bottom/ 100% auto;
+    background: url("../images/dialog/bg-step1-quiz1-fade.png") no-repeat scroll center bottom/ 100% auto;
     display: block;
     position: absolute;
     width: 100%;
@@ -205,6 +206,7 @@
             .border-radius(50%);
             .transition();
             z-index: 1;
+            cursor: pointer;
           }
           //&.active, &.done {
           &.active {

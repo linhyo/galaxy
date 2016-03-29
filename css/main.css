@@ -1531,6 +1531,29 @@ a.galaxy-button:hover {
   background-color: transparent;
   padding: 30px 0;
 }
+.tab-description .tab-box {
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #efefef;
+  margin: 30px auto;
+  padding: 15px;
+}
+.tab-description .tab-title {
+  position: relative;
+  color: #8b9aa7;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.tab-description .tab-title:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #8b9aa7;
+}
 .element {
   background-image: url(../images/dialog/element.png);
   background-repeat: no-repeat;
@@ -3403,8 +3426,14 @@ a.galaxy-button:hover {
 .galaxy-feature .list-group-item span {
   font-weight: 700;
 }
-.galaxy-feature .product-slide img {
+.galaxy-feature .product-slide .slide-img {
+  width: 100%;
   min-height: 369px;
+  background: transparent no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .galaxy-feature .product-slide .slide-control {
   position: absolute;
@@ -3425,25 +3454,28 @@ a.galaxy-button:hover {
 .galaxy-feature .outstanding-news .media-left {
   width: 34%;
 }
+.galaxy-feature .outstanding-news .media-right p {
+  height: 60px;
+  line-height: 20px;
+  /* Height / no. of lines to display */
+  overflow: hidden;
+}
 .galaxy-feature .outstanding-news .news-image {
   width: 100%;
+  min-width: 112px;
+  height: 112px;
+  background: transparent no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .galaxy-feature .outstanding-news .news-title {
   position: relative;
-  margin-bottom: 18px;
-  width: 228px;
+  margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.galaxy-feature .outstanding-news .news-title:after {
-  content: '';
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 16px;
-  height: 4px;
-  background-color: #8b9aa7;
 }
 @media (min-width: 1200px) {
   .galaxy-suggestion {
@@ -3460,6 +3492,9 @@ a.galaxy-button:hover {
   }
   .galaxy-suggestion .large-text {
     font-size: 40px;
+  }
+  .news-title {
+    width: 228px;
   }
 }
 @media (max-width: 1199px) {
@@ -3490,9 +3525,22 @@ a.galaxy-button:hover {
     margin-top: 20px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .news-title {
+    width: 162px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .outstanding-news .news-title {
     max-width: 465px !important;
+  }
+}
+@media (max-width: 767px) {
+  #online-help {
+    display: none;
+  }
+  .news-title {
+    width: 66%;
   }
 }
 #decor-page {
@@ -3500,9 +3548,6 @@ a.galaxy-button:hover {
   display: block;
   width: 100%;
   padding-bottom: 30px;
-}
-#decor-page #painting-house {
-  padding-top: 30px;
 }
 #decor-page .decor-guide p {
   margin: 0 0 10px;
@@ -3692,7 +3737,6 @@ a.galaxy-button:hover {
 .sub-tabs .nav-tabs {
   border: none;
   display: block;
-  margin: 25px 0 0;
   padding: 0 15px;
 }
 .sub-tabs .nav-tabs li {
@@ -4227,16 +4271,14 @@ a.galaxy-button:hover {
 #news-page .tab-header .nav-tabs li a {
   width: 100%;
 }
-#lucky-painter-page .tab-content #who-are-they.tab-pane,
-#news-page .tab-content #who-are-they.tab-pane,
-#lucky-painter-page .tab-content #lucky-painter.tab-pane,
-#news-page .tab-content #lucky-painter.tab-pane,
-#lucky-painter-page .tab-content #contractor.tab-pane,
-#news-page .tab-content #contractor.tab-pane {
-  padding: 30px 0;
-}
 #lucky-painter-page .tab-content #contractor-info,
-#news-page .tab-content #contractor-info {
+#news-page .tab-content #contractor-info,
+#lucky-painter-page .tab-content #lucky-painter,
+#news-page .tab-content #lucky-painter,
+#lucky-painter-page .tab-content #contractor,
+#news-page .tab-content #contractor,
+#lucky-painter-page .tab-content #who-are-they,
+#news-page .tab-content #who-are-they {
   padding: 0 0 30px;
 }
 #lucky-painter-page .tab-content .tab-pane,
@@ -4897,7 +4939,7 @@ a.galaxy-button:hover {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
 #project-processing .news-current .news-preview {
   overflow: hidden;

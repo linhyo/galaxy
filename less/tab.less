@@ -64,3 +64,29 @@
   background-color: transparent;
   padding: 30px 0;
 }
+
+.tab-description {
+  .tab-box {
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #efefef;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  .tab-title {
+    position: relative;
+    color: @main-color;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background-color: @main-color;
+    }
+  }
+}

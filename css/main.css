@@ -4480,6 +4480,108 @@ a.galaxy-button:hover {
 #news-page .tab-content .tab-pane {
   min-height: 560px;
 }
+#lucky-painter-page .who-is-lucky-painter .row,
+#news-page .who-is-lucky-painter .row {
+  display: table;
+  width: 100%;
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"],
+#news-page .who-is-lucky-painter .row [class*="col-"] {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"],
+  #news-page .who-is-lucky-painter .row [class*="col-"] {
+    float: left;
+    display: block;
+  }
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter,
+  #news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter {
+    position: relative;
+  }
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register {
+  background-color: #b80001;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
+  background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
+  background-image: -moz-linear-gradient(top, #b80001, #ef7420);
+  background-image: -ms-linear-gradient(top, #b80001, #ef7420);
+  background-image: -o-linear-gradient(top, #b80001, #ef7420);
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register,
+  #news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register {
+    margin-left: 0;
+  }
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register:hover,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide {
+  padding: 20px 10px 20px 70px;
+  background: #5d2075;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  margin-top: 10px;
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:after,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  background: rgba(0, 0, 0, 0) url("../images/icon/icon-contact.png") no-repeat scroll center center / 80%;
+  width: 43px;
+  height: 43px;
+}
+#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:hover,
+#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
 #lucky-painter-page .avatar-company,
 #news-page .avatar-company {
   display: block;
@@ -4531,69 +4633,6 @@ a.galaxy-button:hover {
   background: -ms-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
-}
-#lucky-painter-page .intro-company a.btn-register,
-#news-page .intro-company a.btn-register {
-  background-color: #b80001;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
-  background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
-  background-image: -moz-linear-gradient(top, #b80001, #ef7420);
-  background-image: -ms-linear-gradient(top, #b80001, #ef7420);
-  background-image: -o-linear-gradient(top, #b80001, #ef7420);
-  color: white;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-  margin-top: 10px;
-}
-#lucky-painter-page .intro-company a.btn-register:hover,
-#news-page .intro-company a.btn-register:hover {
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
-}
-#lucky-painter-page .intro-company a.btn-suicide,
-#news-page .intro-company a.btn-suicide {
-  padding: 20px 10px 20px 70px;
-  background: #5d2075;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  color: white;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-  position: relative;
-  margin-top: 10px;
-}
-#lucky-painter-page .intro-company a.btn-suicide:after,
-#news-page .intro-company a.btn-suicide:after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 18px;
-  background: rgba(0, 0, 0, 0) url("../images/icon/icon-contact.png") no-repeat scroll center center / 80%;
-  width: 43px;
-  height: 43px;
-}
-#lucky-painter-page .intro-company a.btn-suicide:hover,
-#news-page .intro-company a.btn-suicide:hover {
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
 }
 #lucky-painter-page .title-lucky-painter,
 #news-page .title-lucky-painter {

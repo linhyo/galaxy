@@ -1050,27 +1050,29 @@ a.galaxy-button:hover {
 #footer.isLanding {
   margin-top: -78px;
 }
-@media (max-width: 480px) {
-  #footer.isLanding {
-    margin-top: -150px;
-  }
-}
-#footer.isLanding:before {
-  background-color: rgba(255, 255, 255, 0);
-}
 #footer .footer-wrapper {
   position: relative;
   height: 100%;
+  display: block;
+}
+#footer .footer-wrapper .footer-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 25px 0 0;
 }
 #footer .copyright {
   position: relative;
   color: #fff;
+  line-height: 32px;
   z-index: 10;
-  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  #footer .copyright {
+    line-height: 18px;
+  }
 }
 #footer .contact-now {
-  height: 70px;
-  margin-top: 8px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1084,13 +1086,18 @@ a.galaxy-button:hover {
 }
 #footer .social-network {
   position: relative;
-  width: 40%;
   z-index: 10;
-  margin-top: 8px;
+  display: block;
+  text-align: right;
 }
 #footer .social-network ul > li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
+}
+@media (max-width: 1024px) {
+  #footer .social-network ul > li {
+    margin-right: 0;
+  }
 }
 #footer .social-network ul > li > a {
   display: inline-block;
@@ -1106,6 +1113,11 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   text-align: center;
+}
+@media (max-width: 998px) {
+  #footer .social-network ul > li > a {
+    margin-right: 0;
+  }
 }
 #footer .social-network ul > li > a > i {
   color: #753989;
@@ -1126,9 +1138,6 @@ a.galaxy-button:hover {
 }
 #footer .social-network ul > li > a:hover > i {
   color: #fff;
-}
-#footer .send-mail {
-  width: 53%;
 }
 #footer .send-mail .btn-send {
   color: #fff;
@@ -1181,43 +1190,42 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box !important;
   background-clip: padding-box !important;
 }
-@media (min-width: 992px) {
-  #footer .copyright {
-    line-height: 70px;
-  }
-  #footer .contact-now {
-    height: 70px;
-  }
-}
-@media (max-width: 992px) {
-  #footer .contact-now {
-    height: 50px;
-    margin-top: 0;
-  }
-  #footer .social-network {
-    margin-top: 0;
-  }
-}
-@media (max-width: 480px) {
-  #footer {
-    height: 150px;
-  }
-  #footer:after {
-    height: 142px;
-  }
+@media (max-width: 760px) {
   #footer .contact-now {
     display: block;
   }
-  #footer .social-network {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  #footer .footer-wrapper .footer-content {
+    margin: 15px 0 0 0;
   }
-  #footer .send-mail {
-    width: 96%;
+  #footer .form-control {
+    height: 28px;
+    padding: 3px 12px;
+  }
+  #footer .send-mail .btn-send {
+    padding: 3px 30px;
+  }
+  #footer .social-network ul > li {
+    margin: 0 0 2px;
+  }
+  #footer .social-network ul > li > a {
+    width: 26px;
+    height: 26px;
+  }
+  #footer .social-network ul > li > a > i {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  #footer .social-network ul > li > a > i.fa-youtube-play {
+    font-size: 14px;
   }
   #footer .copyright {
-    margin: 15px 0 0;
+    font-size: 10px;
+    margin: 0 0 2px;
+  }
+}
+@media (max-width: 480px) {
+  #footer .footer-wrapper .footer-content {
+    margin: 10px 0 0 0;
   }
 }
 @charset "UTF-8";
@@ -1522,6 +1530,12 @@ a.galaxy-button:hover {
 .tab-header.product-tab .nav-tabs li {
   margin-right: 1%;
   min-width: 13%;
+}
+@media (max-width: 768px) {
+  .tab-header.product-tab .nav-tabs li {
+    margin-right: 0.5%;
+    min-width: 11%;
+  }
 }
 .tab-content {
   border: none;
@@ -2556,6 +2570,14 @@ a.galaxy-button:hover {
 .question-dialog.medium {
   min-height: 670px;
 }
+.question-dialog.confirm {
+  min-height: 920px;
+}
+@media (max-width: 360px) {
+  .question-dialog.confirm {
+    min-height: 640px;
+  }
+}
 .question-dialog .close {
   background-color: #231f20;
   border: 2px solid #ffffff;
@@ -2615,6 +2637,15 @@ a.galaxy-button:hover {
   height: 100%;
   left: 0;
   bottom: 0;
+}
+.question-dialog.confirm {
+  background: #ffffff url("../images/dialog/bg-quiz-1-confirm.jpg") no-repeat scroll center top / 100% auto;
+}
+.question-dialog.confirm:before {
+  background: none;
+}
+.question-dialog.confirm:after {
+  background: none;
 }
 .question-dialog.modal-content {
   -webkit-border-radius: 0;
@@ -3035,13 +3066,23 @@ a.galaxy-button:hover {
 .question-dialog .step-confirm {
   display: block;
   z-index: 2;
-  margin: 10px 25px;
-  padding: 15px;
+  margin: 0 25px;
+  padding: 10px 40px;
   text-align: center;
   position: relative;
 }
 .question-dialog .step-confirm:first-child {
-  margin-top: 50px;
+  margin-top: 305px;
+}
+@media (max-width: 480px) {
+  .question-dialog .step-confirm:first-child {
+    margin-top: 225px;
+  }
+}
+@media (max-width: 360px) {
+  .question-dialog .step-confirm:first-child {
+    margin-top: 175px;
+  }
 }
 .question-dialog .step-confirm:after {
   height: 1px;
@@ -5550,15 +5591,10 @@ a.galaxy-button:hover {
   color: #d1d3d4;
   font-size: 14px;
 }
-@media (max-width: 991px) {
-  .landing-page .landing-title {
-    width: 100%;
-  }
-}
 #galaxy-color .landing-wrapper {
   width: 100%;
   height: auto;
-  background: #240234 url("../images/landing/full-galaxy-bg.jpg") no-repeat top center / cover;
+  background: #240234 url("../images/landing/galaxy-bg.jpg") no-repeat top center / cover;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -5762,7 +5798,7 @@ a.galaxy-button:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-color .landing-decor {
-    margin-top: 30% !important;
+    margin-top: 40% !important;
   }
   #galaxy-color .landing-ball.ball-1 {
     width: 272px;
@@ -5775,7 +5811,7 @@ a.galaxy-button:hover {
     width: 400px;
     height: 370px;
     background-size: 80%;
-    bottom: 14% !important;
+    bottom: 18% !important;
     left: 20px !important;
   }
   #galaxy-color .landing-title {
@@ -5789,11 +5825,14 @@ a.galaxy-button:hover {
   }
 }
 @media (max-width: 767px) {
+  #galaxy-color .landing-title {
+    width: 100%;
+  }
   #galaxy-color .landing-discovery {
     margin-top: 60% !important;
   }
   #galaxy-color .landing-decor {
-    margin-top: 70% !important;
+    margin-top: 90% !important;
   }
   #galaxy-color .landing-ball.ball-1 {
     width: 238px;
@@ -5806,11 +5845,20 @@ a.galaxy-button:hover {
     width: 350px;
     height: 324px;
     background-size: 70%;
-    bottom: 18% !important;
+    bottom: 22% !important;
     left: -10px !important;
   }
   #galaxy-color .product-img {
     padding: 0 !important;
+  }
+  #galaxy-color .product-img img {
+    width: 80% !important;
+  }
+  #galaxy-color .product-name {
+    margin: 5px 0 !important;
+  }
+  #galaxy-color .product-description {
+    margin-bottom: 20px !important;
   }
 }
 @media (max-width: 480px) {
@@ -5917,6 +5965,18 @@ a.galaxy-button:hover {
 #galaxy-discovery .slide-content {
   max-width: 380px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  #galaxy-discovery .slide-content.text-left {
+    text-align: center !important;
+  }
+  #galaxy-discovery .slide-text {
+    -webkit-box-pack: center !important;
+    -moz-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    -webkit-justify-content: center !important;
+    justify-content: center !important;
+  }
 }
 #galaxy-discovery .slider-for .slide-img {
   width: 100%;
@@ -6474,7 +6534,6 @@ a.galaxy-button:hover {
   font-family: 'iCielBambola', sans-serif;
   font-size: 50px;
   letter-spacing: 1px;
-  margin-top: 7%;
 }
 #galaxy-decoration .landing-event .event-desc {
   margin: 14px 0 24px 0;
@@ -6727,12 +6786,52 @@ a.galaxy-button:hover {
   #galaxy-decoration .entry-caption h2 {
     font-size: 35px;
   }
+  #galaxy-decoration .event-intro {
+    margin: 45px 0;
+  }
 }
 @media (max-width: 991px) {
   #galaxy-decoration .landing-event .btn-event {
     width: 120px;
     height: 40px;
     font-size: 15px;
+  }
+  #galaxy-decoration .event-intro {
+    margin: 20px 0;
+  }
+  #galaxy-decoration .event-title {
+    font-size: 40px !important;
+  }
+  #galaxy-decoration .event-desc {
+    margin: 10px 0 20px 0 !important;
+  }
+  #galaxy-decoration .event-desc > span {
+    font-size: 16px !important;
+  }
+  #galaxy-decoration .event-line {
+    margin: 15px auto 10px !important;
+  }
+  #galaxy-decoration .person-info {
+    padding: 0 !important;
+  }
+  #galaxy-decoration .person-info:before {
+    top: 44px !important;
+    left: -5px !important;
+  }
+  #galaxy-decoration .person-info:after {
+    bottom: -14px !important;
+  }
+  #galaxy-decoration .person-info:before,
+  #galaxy-decoration .person-info:after {
+    width: 55px !important;
+    height: 35px !important;
+    background-size: 80% !important;
+  }
+  #galaxy-decoration .person-name {
+    margin-top: 22% !important;
+  }
+  #galaxy-decoration .person-quote {
+    text-indent: 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6762,6 +6861,15 @@ a.galaxy-button:hover {
   }
   #galaxy-decoration .entry-title > p {
     font-size: 34px !important;
+  }
+  #galaxy-decoration .event-intro {
+    margin: 30px 0;
+  }
+  #galaxy-decoration .event-title {
+    font-size: 45px !important;
+  }
+  #galaxy-decoration .event-desc > span {
+    font-size: 18px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6826,20 +6934,8 @@ a.galaxy-button:hover {
   #galaxy-decoration .entry-caption h2 {
     font-size: 40px;
   }
-  #galaxy-decoration #story-1 .person-name,
-  #galaxy-decoration #story-2 .person-name {
-    margin-top: 15% !important;
-  }
-  #galaxy-decoration #story-3 .person-name,
-  #galaxy-decoration #story-4 .person-name {
-    margin-top: 10% !important;
-  }
-  #galaxy-decoration #story-3 .person-info,
-  #galaxy-decoration #story-4 .person-info {
-    margin-bottom: 10%;
-  }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #galaxy-decoration .banner-caption {
     margin-top: 33% !important;
   }

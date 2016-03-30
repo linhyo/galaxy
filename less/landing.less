@@ -60,18 +60,13 @@
     color: #d1d3d4;
     font-size: 14px;
   }
-  @media (max-width: 991px) {
-    .landing-title {
-      width: 100%;
-    }
-  }
 }
 
 #galaxy-color {
   .landing-wrapper {
     width: 100%;
     height: auto;
-    background: #240234 url("../images/landing/full-galaxy-bg.jpg") no-repeat top center / cover;
+    background: #240234 url("../images/landing/galaxy-bg.jpg") no-repeat top center / cover;
     .transition();
     .top-wrapper, .middle-wrapper, .bottom-wrapper {
       position: relative;
@@ -183,7 +178,14 @@
         width: 90%;
         z-index: 10;
       }
+      //&:hover {
+      //  .paint-smear {
+      //    .opacity(1);
+      //    .animation-custom(fadeInLeft 1s linear 0.2s);
+      //  }
+      //}
       .paint-smear {
+        //.opacity(0);
         display: none;
         position: absolute;
         bottom: 0;
@@ -258,7 +260,7 @@
   }
   @media (min-width: 768px) and (max-width: 991px) {
     .landing-decor {
-      margin-top: 30% !important;
+      margin-top: 40% !important;
     }
     .landing-ball {
       &.ball-1 {
@@ -272,7 +274,7 @@
         width: 400px;
         height: 370px;
         background-size: 80%;
-        bottom: 14% !important;
+        bottom: 18% !important;
         left: 20px !important;
       }
     }
@@ -287,11 +289,14 @@
     }
   }
   @media (max-width: 767px) {
+    .landing-title {
+      width: 100%;
+    }
     .landing-discovery {
       margin-top: 60% !important;
     }
     .landing-decor {
-      margin-top: 70% !important;
+      margin-top: 90% !important;
     }
     .landing-ball {
       &.ball-1 {
@@ -305,13 +310,21 @@
         width: 350px;
         height: 324px;
         background-size: 70%;
-        bottom: 18% !important;
+        bottom: 22% !important;
         left: -10px !important;
       }
     }
-
     .product-img {
       padding: 0 !important;
+      img {
+        width: 80% !important;
+      }
+    }
+    .product-name {
+      margin: 5px 0 !important;
+    }
+    .product-description {
+      margin-bottom: 20px !important;
     }
   }
 
@@ -390,6 +403,14 @@
   .slide-content {
     max-width: 380px;
     width: 100%;
+  }
+  @media (max-width: 767px) {
+    .slide-content.text-left {
+      text-align: center !important;
+    }
+    .slide-text {
+      .justify-content(center) !important;
+    }
   }
   .slider-for {
     .slide-img {
@@ -849,7 +870,6 @@
       font-family: @import-font;
       font-size: 50px;
       letter-spacing: 1px;
-      margin-top: 7%;
     }
     .event-desc {
       margin: 14px 0 24px 0;
@@ -1054,7 +1074,6 @@
       width: 566px;
       height: 117px;
     }
-
     .entry-caption {
       padding: 5% 8%;
       h1 {
@@ -1065,12 +1084,52 @@
         font-size: 35px;
       }
     }
+    .event-intro {
+      margin: 45px 0;
+    }
   }
   @media (max-width: 991px) {
     .landing-event .btn-event {
       width: 120px;
       height: 40px;
       font-size: 15px;
+    }
+    .event-intro {
+      margin: 20px 0;
+    }
+    .event-title {
+      font-size: 40px !important;
+    }
+    .event-desc {
+      margin: 10px 0 20px 0 !important;
+      > span {
+        font-size: 16px !important;
+      }
+    }
+    .event-line {
+      margin: 15px auto 10px !important;
+    }
+
+    .person-info {
+      padding: 0 !important;
+      &:before {
+        top: 44px !important;
+        left: -5px !important;
+      }
+      &:after {
+        bottom: -14px !important;
+      }
+      &:before, &:after {
+        width: 55px !important;
+        height: 35px !important;
+        background-size: 80% !important;
+      }
+    }
+    .person-name {
+      margin-top: 22% !important;
+    }
+    .person-quote {
+      text-indent: 60px;
     }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -1079,7 +1138,6 @@
       height: 105px;
       background-size: 90% !important;
     }
-
     .btn-prev, .btn-next {
       width: 40px !important;
       height: 40px !important;
@@ -1087,7 +1145,6 @@
         line-height: 40px !important;
       }
     }
-
     .entry-caption {
       padding: 4% 7%;
       h1 {
@@ -1098,23 +1155,29 @@
         font-size: 30px;
       }
     }
-
     .entry-title > p {
       font-size: 34px !important;
+    }
+    .event-intro {
+      margin: 30px 0;
+    }
+    .event-title {
+      font-size: 45px !important;
+    }
+    .event-desc > span {
+        font-size: 18px !important;
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
     .landing-background {
       height: 475px;
     }
-
     .paint-roller {
       top: 90px !important;
       width: 453px;
       height: 94px;
       background-size: 80% !important;
     }
-
     .btn-prev, .btn-next {
       width: 30px !important;
       height: 30px !important;
@@ -1122,7 +1185,6 @@
         line-height: 30px !important;
       }
     }
-
     .entry-caption {
       padding: 3% 8%;
       h1 {
@@ -1133,11 +1195,9 @@
         font-size: 25px;
       }
     }
-
     .entry-title > p {
       font-size: 30px !important;
     }
-
     .person-info {
       margin-bottom: 10%;
     }
@@ -1146,22 +1206,18 @@
     .landing-background {
       height: 375px;
     }
-
     .paint-roller {
       top: 10px !important;
       width: 453px;
       height: 94px;
       background-size: 80% !important;
     }
-
     .banner-caption {
       margin-top: 14% !important;
     }
-
     .landing-entry img {
       width: 100%;
     }
-
     .entry-caption {
       padding: 5% 8%;
       h1 {
@@ -1172,19 +1228,8 @@
         font-size: 40px;
       }
     }
-
-    #story-1 .person-name, #story-2 .person-name {
-      margin-top: 15% !important;
-    }
-
-    #story-3 .person-name, #story-4 .person-name {
-      margin-top: 10% !important;
-    }
-    #story-3 .person-info, #story-4 .person-info {
-      margin-bottom: 10%;
-    }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .banner-caption {
       margin-top: 33% !important;
     }

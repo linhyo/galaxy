@@ -404,14 +404,6 @@
     max-width: 380px;
     width: 100%;
   }
-  @media (max-width: 767px) {
-    .slide-content.text-left {
-      text-align: center !important;
-    }
-    .slide-text {
-      .justify-content(center) !important;
-    }
-  }
   .slider-for {
     .slide-img {
       width: 100%;
@@ -655,10 +647,24 @@
       font-size: 12px;
     }
   }
+  @media (min-width: 768px) {
+    .slide-img.first-img {
+      background-image: url('../images/landing/slide-1.jpg');
+    }
+  }
   @media (max-width: 767px) {
+    .slide-img.first-img {
+      background-image: url('../images/landing/slide-1-mobile.jpg');
+    }
     .slide-center {
       left: 10%;
       width: 80%;
+    }
+    .slide-content.text-left {
+      text-align: center !important;
+    }
+    .slide-text {
+      .justify-content(center) !important;
     }
     .quiz-content {
       top: 44% !important;
@@ -915,15 +921,18 @@
     padding: 30px 0;
     .entry-slide {
       margin-bottom: 15px;
-      .btn-prev, .btn-next {
+      .slide-control {
         position: absolute;
         bottom: 0;
+      }
+      .btn-prev, .btn-next {
         background-color: #0e112a;
         display: inline-block;
         width: 50px;
         height: 50px;
         text-align: center;
         cursor: pointer;
+        margin-right: 3px;
         > i {
           color: #fff;
           font-size: 16px;
@@ -932,12 +941,6 @@
         &:hover {
           background-color: #10154d;
         }
-      }
-      .btn-prev {
-        left: 0;
-      }
-      .btn-next {
-        left: 7%;
       }
     }
     .entry-share {

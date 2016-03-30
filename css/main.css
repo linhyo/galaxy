@@ -5966,18 +5966,6 @@ a.galaxy-button:hover {
   max-width: 380px;
   width: 100%;
 }
-@media (max-width: 767px) {
-  #galaxy-discovery .slide-content.text-left {
-    text-align: center !important;
-  }
-  #galaxy-discovery .slide-text {
-    -webkit-box-pack: center !important;
-    -moz-box-pack: center !important;
-    -ms-flex-pack: center !important;
-    -webkit-justify-content: center !important;
-    justify-content: center !important;
-  }
-}
 #galaxy-discovery .slider-for .slide-img {
   width: 100%;
   height: 580px;
@@ -6265,10 +6253,28 @@ a.galaxy-button:hover {
     font-size: 12px;
   }
 }
+@media (min-width: 768px) {
+  #galaxy-discovery .slide-img.first-img {
+    background-image: url('../images/landing/slide-1.jpg');
+  }
+}
 @media (max-width: 767px) {
+  #galaxy-discovery .slide-img.first-img {
+    background-image: url('../images/landing/slide-1-mobile.jpg');
+  }
   #galaxy-discovery .slide-center {
     left: 10%;
     width: 80%;
+  }
+  #galaxy-discovery .slide-content.text-left {
+    text-align: center !important;
+  }
+  #galaxy-discovery .slide-text {
+    -webkit-box-pack: center !important;
+    -moz-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    -webkit-justify-content: center !important;
+    justify-content: center !important;
   }
   #galaxy-discovery .quiz-content {
     top: 44% !important;
@@ -6590,16 +6596,19 @@ a.galaxy-button:hover {
 #galaxy-decoration .landing-entry .entry-slide {
   margin-bottom: 15px;
 }
-#galaxy-decoration .landing-entry .entry-slide .btn-prev,
-#galaxy-decoration .landing-entry .entry-slide .btn-next {
+#galaxy-decoration .landing-entry .entry-slide .slide-control {
   position: absolute;
   bottom: 0;
+}
+#galaxy-decoration .landing-entry .entry-slide .btn-prev,
+#galaxy-decoration .landing-entry .entry-slide .btn-next {
   background-color: #0e112a;
   display: inline-block;
   width: 50px;
   height: 50px;
   text-align: center;
   cursor: pointer;
+  margin-right: 3px;
 }
 #galaxy-decoration .landing-entry .entry-slide .btn-prev > i,
 #galaxy-decoration .landing-entry .entry-slide .btn-next > i {
@@ -6610,12 +6619,6 @@ a.galaxy-button:hover {
 #galaxy-decoration .landing-entry .entry-slide .btn-prev:hover,
 #galaxy-decoration .landing-entry .entry-slide .btn-next:hover {
   background-color: #10154d;
-}
-#galaxy-decoration .landing-entry .entry-slide .btn-prev {
-  left: 0;
-}
-#galaxy-decoration .landing-entry .entry-slide .btn-next {
-  left: 7%;
 }
 #galaxy-decoration .landing-entry .entry-share {
   position: relative;

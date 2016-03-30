@@ -413,6 +413,9 @@ p {
 .row.top-gap {
   margin-top: 20px;
 }
+.row.double-gap {
+  margin-top: 40px;
+}
 #top-banner {
   position: relative;
   width: 100%;
@@ -6079,6 +6082,11 @@ a.galaxy-button:hover {
   margin-top: 30px;
   z-index: 10;
 }
+#galaxy-discovery .color-game .color-game-desc .prize {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 28px;
+}
 #galaxy-discovery .color-game .btn-award-rule {
   background-color: transparent;
   color: #fff;
@@ -6873,6 +6881,9 @@ a.galaxy-button:hover {
   }
   #galaxy-decoration .event-desc > span {
     font-size: 18px !important;
+  }
+  #galaxy-decoration #story-4 .person-info {
+    margin-top: -80px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

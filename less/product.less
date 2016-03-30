@@ -3,22 +3,51 @@
   padding-bottom: 20px;
   border-bottom: 1px solid @main-color;
   .product-image {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+    > div {
+      position:  absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+
+      background: transparent no-repeat scroll center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
   }
-  .product-name {
+  .product-title {
     position: relative;
     margin: 10px 0 18px;
     &:after {
       content: '';
       position: absolute;
-      top: 30px;
+      bottom: -8px;
       left: 0;
       width: 112px;
       height: 4px;
       background-color: @main-color;
     }
   }
+  .product-name {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+  }
   .product-description {
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
     margin-bottom: 18px;
   }
 }

@@ -1,6 +1,7 @@
 (function () {
   // Carousel Slider
   $('.carousel').carousel();
+  $('[data-toggle="tooltip"]').tooltip();
 
   var image = [
     {

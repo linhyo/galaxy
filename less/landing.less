@@ -324,7 +324,10 @@
       margin: 5px 0 !important;
     }
     .product-description {
-      margin-bottom: 20px !important;
+      margin-bottom: 30px !important;
+      &.last {
+        margin-bottom: 0 !important;
+      }
     }
   }
 
@@ -694,7 +697,7 @@
       padding: 5px;
     }
     .quiz-content {
-      top: 40% !important;
+      top: 42% !important;
     }
     .quiz-title {
       left: 2% !important;
@@ -706,6 +709,17 @@
       width: 120px;
       height: 36px;
       background-size: 60% !important;
+    }
+  }
+  @media (max-width: 359px) {
+    .quiz-content {
+      top: 38% !important;
+    }
+    .quiz-heading > span {
+      font-size: 16px !important;
+    }
+    .quiz-desc {
+      margin: 3% auto !important;
     }
   }
 }
@@ -1166,14 +1180,23 @@
     .entry-title > p {
       font-size: 34px !important;
     }
+    .group-img {
+      margin-top: 74px !important;
+    }
     .event-intro {
-      margin: 30px 0;
+      margin: 25px 0;
     }
     .event-title {
       font-size: 45px !important;
     }
-    .event-desc > span {
+    .event-desc {
+      margin: 10px 0 20px 0 !important;
+      > span {
         font-size: 18px !important;
+      }
+    }
+    .event-line {
+      margin: 20px auto 10px !important;
     }
     #story-4 .person-info {
       margin-top: -80px !important;
@@ -1188,6 +1211,9 @@
       width: 453px;
       height: 94px;
       background-size: 80% !important;
+    }
+    .person-image.last {
+      margin-top: 100px;
     }
     .btn-prev, .btn-next {
       width: 30px !important;
@@ -1243,6 +1269,9 @@
   @media (max-width: 500px) {
     .banner-caption {
       margin-top: 33% !important;
+    }
+    .event-title {
+      font-size: 36px !important;
     }
   }
 }

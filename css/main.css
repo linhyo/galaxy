@@ -1207,6 +1207,10 @@ a.galaxy-button:hover {
   #footer .send-mail .btn-send {
     padding: 3px 30px;
   }
+  #footer .social-network ul {
+    margin: 3px 0;
+    white-space: nowrap;
+  }
   #footer .social-network ul > li {
     margin: 0 0 2px;
   }
@@ -5900,7 +5904,10 @@ a.galaxy-button:hover {
     margin: 5px 0 !important;
   }
   #galaxy-color .product-description {
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  #galaxy-color .product-description.last {
+    margin-bottom: 0 !important;
   }
 }
 @media (max-width: 480px) {
@@ -6347,7 +6354,7 @@ a.galaxy-button:hover {
     padding: 5px;
   }
   #galaxy-discovery .quiz-content {
-    top: 40% !important;
+    top: 42% !important;
   }
   #galaxy-discovery .quiz-title {
     left: 2% !important;
@@ -6359,6 +6366,17 @@ a.galaxy-button:hover {
     width: 120px;
     height: 36px;
     background-size: 60% !important;
+  }
+}
+@media (max-width: 359px) {
+  #galaxy-discovery .quiz-content {
+    top: 38% !important;
+  }
+  #galaxy-discovery .quiz-heading > span {
+    font-size: 16px !important;
+  }
+  #galaxy-discovery .quiz-desc {
+    margin: 3% auto !important;
   }
 }
 #galaxy-decoration .landing-background {
@@ -6912,14 +6930,23 @@ a.galaxy-button:hover {
   #galaxy-decoration .entry-title > p {
     font-size: 34px !important;
   }
+  #galaxy-decoration .group-img {
+    margin-top: 74px !important;
+  }
   #galaxy-decoration .event-intro {
-    margin: 30px 0;
+    margin: 25px 0;
   }
   #galaxy-decoration .event-title {
     font-size: 45px !important;
   }
+  #galaxy-decoration .event-desc {
+    margin: 10px 0 20px 0 !important;
+  }
   #galaxy-decoration .event-desc > span {
     font-size: 18px !important;
+  }
+  #galaxy-decoration .event-line {
+    margin: 20px auto 10px !important;
   }
   #galaxy-decoration #story-4 .person-info {
     margin-top: -80px !important;
@@ -6934,6 +6961,9 @@ a.galaxy-button:hover {
     width: 453px;
     height: 94px;
     background-size: 80% !important;
+  }
+  #galaxy-decoration .person-image.last {
+    margin-top: 100px;
   }
   #galaxy-decoration .btn-prev,
   #galaxy-decoration .btn-next {
@@ -6991,6 +7021,9 @@ a.galaxy-button:hover {
 @media (max-width: 500px) {
   #galaxy-decoration .banner-caption {
     margin-top: 33% !important;
+  }
+  #galaxy-decoration .event-title {
+    font-size: 36px !important;
   }
 }
 @-webkit-keyframes balloon1 {

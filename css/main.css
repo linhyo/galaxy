@@ -4894,6 +4894,37 @@ a.galaxy-button:hover {
   width: 100%;
   display: block;
 }
+#lucky-painter-page .contract-content .show-detail .slider-for,
+#news-page .contract-content .show-detail .slider-for {
+  width: 560px;
+  margin: 0 auto;
+}
+@media (max-width: 560px) {
+  #lucky-painter-page .contract-content .show-detail .slider-for,
+  #news-page .contract-content .show-detail .slider-for {
+    width: 320px;
+  }
+}
+#lucky-painter-page .contract-content .show-detail .slider-for img,
+#news-page .contract-content .show-detail .slider-for img {
+  width: 100%;
+  display: block;
+}
+#lucky-painter-page .contract-content .show-detail .slider-nav,
+#news-page .contract-content .show-detail .slider-nav {
+  width: 560px;
+  margin: 0 auto;
+}
+@media (max-width: 560px) {
+  #lucky-painter-page .contract-content .show-detail .slider-nav,
+  #news-page .contract-content .show-detail .slider-nav {
+    width: 320px;
+  }
+}
+#lucky-painter-page .contract-content .show-detail .slider-nav .slick-current img,
+#news-page .contract-content .show-detail .slider-nav .slick-current img {
+  opacity: 0.5;
+}
 #lucky-painter-page .contract-content #carousel-example-generic,
 #news-page .contract-content #carousel-example-generic {
   display: inline-block;

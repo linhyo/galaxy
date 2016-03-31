@@ -288,6 +288,29 @@
       position: relative;
       width: 100%;
       display: block;
+      .slider-for{
+        width: 560px;
+        margin: 0 auto;
+        @media (max-width: 560px) {
+          width: 320px;
+        }
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+      .slider-nav{
+        width: 560px;
+        margin: 0 auto;
+        @media (max-width: 560px) {
+          width: 320px;
+        }
+        .slick-current{
+          img{
+            opacity: 0.5;
+          }
+        }
+      }
     }
     #carousel-example-generic {
       display: inline-block;

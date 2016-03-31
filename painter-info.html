@@ -145,49 +145,21 @@
           <div class="col-xs-12">
             <div class="show-detail">
               <!-- bootstrap carousel -->
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active srle">
-                    <img src="images/banner-change/1.png" alt="1.jpg" class="img-responsive">
-                  </div>
-                  <div class="item">
-                    <img src="images/banner-change/2.png" alt="2.jpg" class="img-responsive">
-                  </div>
-                  <div class="item">
-                    <img src="images/banner-change/3.png" alt="3.jpg" class="img-responsive">
-                  </div>
-                  <div class="item">
-                    <img src="images/banner-change/4.png" alt="4.jpg" class="img-responsive">
-                  </div>
-                  <div class="item">
-                    <img src="images/banner-change/5.png" alt="5.jpg" class="img-responsive">
-                  </div>
-                  <div class="item">
-                    <img src="images/banner-change/6.png" alt="6.jpg" class="img-responsive">
-                  </div>
-                </div>
-
-
-                <div class="carousel-action">
-                  <!-- Controls -->
-                  <a class="left carousel-edit" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="fa fa-angle-left"></span>
-                  </a>
-                  <a class="right carousel-edit" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                  <!-- Thumbnails -->
-                  <ul class="thumbnails-carousel">
-                    <li><span style="background-image: url(images/banner-change/1.png)"></span></li>
-                    <li><span style="background-image: url(images/banner-change/2.png)"></span></li>
-                    <li><span style="background-image: url(images/banner-change/3.png)"></span></li>
-                    <li><span style="background-image: url(images/banner-change/4.png)"></span></li>
-                    <li><span style="background-image: url(images/banner-change/5.png)"></span></li>
-                    <li><span style="background-image: url(images/banner-change/6.png)"></span></li>
-                  </ul>
-                </div>
-
+              <div class="slider slider-for">
+                <div><img class="guide-image img-responsive" src="images/guide/guide-1.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-2.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+              </div>
+              <div class="slider slider-nav">
+                <div><img class="guide-image img-responsive" src="images/guide/guide-1.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-2.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
+                <div><img class="guide-image img-responsive" src="images/guide/guide-3.jpg"></div>
               </div>
               <p class="text-justify">
                 Đối với những căn nhà sát biển thì việc lựa chọn sơn nào để sơn tường là phù hợp là công việc hết sức khó
@@ -321,8 +293,27 @@
 </footer>
 
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/lib/lodash.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
 <script type="text/javascript" src="js/galaxy.js"></script>
+<script type="text/javascript" src="js/select-color.js"></script>
+<script type="text/javascript">
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script>
 </body>
 </html>

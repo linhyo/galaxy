@@ -1,391 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head lang="vi">
-  <title>Galaxy - Sắc màu Galaxy</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
-  <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta http-equiv="cleartype" content="on">
-
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-
-  <!-- CSS Styles -->
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-<header id="header" role="banner">
-  <nav class="navbar" role="navigation">
-    <!--<div class="navbar-wrapper"></div>-->
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"
-                aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-logo" href="index.html">
-          <img class="galaxy-logo img-responsive" src="images/logo.png">
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navigation">
-        <div class="row navbar-toolbar">
-          <!-- Search form -->
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input id="search-keyword" class="form-control" placeholder="Tìm kiếm" type="text">
-            </div>
-          </form>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li class="active"><a href="landing-1.html">Sắc màu galaxy</a></li>
-            <li><a href="decor.html">Tư vấn trang trí</a></li>
-            <li><a href="product.html">Sản phẩm</a></li>
-            <li><a href="lucky-painter.html">Lucky Painter</a></li>
-            <li><a href="news.html">Tin tức</a></li>
-            <li><a href="support.html">Hỗ trợ</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- /.navbar-collapse -->
-
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-</header>
-
-<section id="landing-nav">
-  <div class="container">
-    <div class="row landing-menu">
-      <div class="col-xs-4">
-        <a class="nav-item text-center active" href="landing-1.html">
-          <p class="nav-label">Sắc màu Galaxy</p>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a class="nav-item text-center" href="landing-2.html">
-          <p class="nav-label">Khám phá sắc màu cùng năm tháng</p>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a class="nav-item text-center" href="landing-3.html">
-          <p class="nav-label">Điểm tô ngày trọng đại</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<main id="galaxy-color" class="landing-page" role="main">
-  <div class="landing-wrapper">
-    <div class='night-sky'>
-      <div class='star twinkle-star-1'></div>
-      <div class='star twinkle-star-2'></div>
-      <div class='star twinkle-star-3'></div>
-      <div class='star twinkle-star-4'></div>
-      <div class='star twinkle-star-5'></div>
-      <div class='star twinkle-star-6'></div>
-      <div class='star twinkle-star-7'></div>
-      <div class='star twinkle-star-8'></div>
-      <div class='star twinkle-star-9'></div>
-      <div class='star twinkle-star-10'></div>
-      <div class='star twinkle-star-11'></div>
-      <div class='star twinkle-star-12'></div>
-      <div class='star twinkle-star-13'></div>
-      <div class='star twinkle-star-14'></div>
-      <div class='star twinkle-star-15'></div>
-      <div class='star twinkle-star-16'></div>
-      <div class='star twinkle-star-17'></div>
-      <div class='star twinkle-star-18'></div>
-      <div class='star twinkle-star-19'></div>
-      <div class='star twinkle-star-20'></div>
-      <div class='star twinkle-star-21'></div>
-      <div class='star twinkle-star-22'></div>
-      <div class='star twinkle-star-23'></div>
-      <div class='star twinkle-star-24'></div>
-      <div class='star twinkle-star-25'></div>
-      <div class='star twinkle-star-26'></div>
-      <div class='star twinkle-star-27'></div>
-      <div class='star twinkle-star-28'></div>
-      <div class='star twinkle-star-29'></div>
-      <div class='star twinkle-star-30'></div>
-      <div class='star twinkle-star-31'></div>
-      <div class='star twinkle-star-32'></div>
-      <div class='star twinkle-star-33'></div>
-      <div class='star twinkle-star-34'></div>
-      <div class='star twinkle-star-35'></div>
-      <div class='star twinkle-star-36'></div>
-      <div class='star twinkle-star-37'></div>
-      <div class='star twinkle-star-38'></div>
-      <div class='star twinkle-star-39'></div>
-      <div class='star twinkle-star-40'></div>
-      <div class='star twinkle-star-41'></div>
-      <div class='star twinkle-star-42'></div>
-      <div class='star twinkle-star-43'></div>
-      <div class='star twinkle-star-44'></div>
-      <div class='star twinkle-star-45'></div>
-      <div class='star twinkle-star-46'></div>
-      <div class='star twinkle-star-47'></div>
-      <div class='star twinkle-star-48'></div>
-      <div class='star twinkle-star-49'></div>
-      <div class='star twinkle-star-50'></div>
-      <div class='star twinkle-star-51'></div>
-      <div class='star twinkle-star-52'></div>
-      <div class='star twinkle-star-53'></div>
-      <div class='star twinkle-star-54'></div>
-      <div class='star twinkle-star-55'></div>
-      <div class='star twinkle-star-56'></div>
-      <div class='star twinkle-star-57'></div>
-      <div class='star twinkle-star-58'></div>
-      <div class='star twinkle-star-59'></div>
-      <div class='star twinkle-star-60'></div>
-      <div class='star twinkle-star-61'></div>
-      <div class='star twinkle-star-62'></div>
-      <div class='star twinkle-star-63'></div>
-      <div class='star twinkle-star-64'></div>
-      <div class='star twinkle-star-65'></div>
-      <div class='star twinkle-star-66'></div>
-      <div class='star twinkle-star-67'></div>
-      <div class='star twinkle-star-68'></div>
-      <div class='star twinkle-star-69'></div>
-      <div class='star twinkle-star-70'></div>
-      <div class='star twinkle-star-71'></div>
-      <div class='star twinkle-star-72'></div>
-      <div class='star twinkle-star-73'></div>
-      <div class='star twinkle-star-74'></div>
-      <div class='star twinkle-star-75'></div>
-      <div class='star twinkle-star-76'></div>
-      <div class='star twinkle-star-77'></div>
-      <div class='star twinkle-star-78'></div>
-      <div class='star twinkle-star-79'></div>
-      <div class='star twinkle-star-80'></div>
-      <div class='star twinkle-star-81'></div>
-      <div class='star twinkle-star-82'></div>
-      <div class='star twinkle-star-83'></div>
-      <div class='star twinkle-star-84'></div>
-      <div class='star twinkle-star-85'></div>
-      <div class='star twinkle-star-86'></div>
-      <div class='star twinkle-star-87'></div>
-      <div class='star twinkle-star-88'></div>
-      <div class='star twinkle-star-89'></div>
-      <div class='star twinkle-star-90'></div>
-      <div class='star twinkle-star-91'></div>
-      <div class='star twinkle-star-92'></div>
-      <div class='star twinkle-star-93'></div>
-      <div class='star twinkle-star-94'></div>
-      <div class='star twinkle-star-95'></div>
-      <div class='star twinkle-star-96'></div>
-      <div class='star twinkle-star-97'></div>
-      <div class='star twinkle-star-98'></div>
-      <div class='star twinkle-star-99'></div>
-      <div class='star twinkle-star-100'></div>
-      <div class='star twinkle-star-101'></div>
-      <div class='star twinkle-star-102'></div>
-      <div class='star twinkle-star-103'></div>
-      <div class='star twinkle-star-104'></div>
-      <div class='star twinkle-star-105'></div>
-      <div class='star twinkle-star-106'></div>
-      <div class='star twinkle-star-107'></div>
-      <div class='star twinkle-star-108'></div>
-      <div class='star twinkle-star-109'></div>
-      <div class='star twinkle-star-110'></div>
-      <div class='star twinkle-star-111'></div>
-      <div class='star twinkle-star-112'></div>
-      <div class='star twinkle-star-113'></div>
-      <div class='star twinkle-star-114'></div>
-      <div class='star twinkle-star-115'></div>
-      <div class='star twinkle-star-116'></div>
-      <div class='star twinkle-star-117'></div>
-      <div class='star twinkle-star-118'></div>
-      <div class='star twinkle-star-119'></div>
-      <div class='star twinkle-star-120'></div>
-      <div class='star twinkle-star-121'></div>
-      <div class='star twinkle-star-122'></div>
-      <div class='star twinkle-star-123'></div>
-      <div class='star twinkle-star-124'></div>
-      <div class='star twinkle-star-125'></div>
-      <div class='star twinkle-star-126'></div>
-      <div class='star twinkle-star-127'></div>
-      <div class='star twinkle-star-128'></div>
-      <div class='star twinkle-star-129'></div>
-      <div class='star twinkle-star-130'></div>
-      <div class='star twinkle-star-131'></div>
-      <div class='star twinkle-star-132'></div>
-      <div class='star twinkle-star-133'></div>
-      <div class='star twinkle-star-134'></div>
-      <div class='star twinkle-star-135'></div>
-      <div class='star twinkle-star-136'></div>
-      <div class='star twinkle-star-137'></div>
-      <div class='star twinkle-star-138'></div>
-      <div class='star twinkle-star-139'></div>
-      <div class='star twinkle-star-140'></div>
-      <div class='star twinkle-star-141'></div>
-      <div class='star twinkle-star-142'></div>
-      <div class='star twinkle-star-143'></div>
-      <div class='star twinkle-star-144'></div>
-      <div class='star twinkle-star-145'></div>
-      <div class='star twinkle-star-146'></div>
-      <div class='star twinkle-star-147'></div>
-      <div class='star twinkle-star-148'></div>
-      <div class='star twinkle-star-149'></div>
-      <div class='star twinkle-star-150'></div>
-      <div class='star twinkle-star-151'></div>
-      <div class='star twinkle-star-152'></div>
-      <div class='star twinkle-star-153'></div>
-      <div class='star twinkle-star-154'></div>
-      <div class='star twinkle-star-155'></div>
-      <div class='star twinkle-star-156'></div>
-      <div class='star twinkle-star-157'></div>
-      <div class='star twinkle-star-158'></div>
-      <div class='star twinkle-star-159'></div>
-      <div class='star twinkle-star-160'></div>
-      <div class='star twinkle-star-161'></div>
-      <div class='star twinkle-star-162'></div>
-      <div class='star twinkle-star-163'></div>
-      <div class='star twinkle-star-164'></div>
-      <div class='star twinkle-star-165'></div>
-      <div class='star twinkle-star-166'></div>
-      <div class='star twinkle-star-167'></div>
-      <div class='star twinkle-star-168'></div>
-      <div class='star twinkle-star-169'></div>
-      <div class='star twinkle-star-170'></div>
-      <div class='star twinkle-star-171'></div>
-      <div class='star twinkle-star-172'></div>
-      <div class='star twinkle-star-173'></div>
-      <div class='star twinkle-star-174'></div>
-      <div class='star twinkle-star-175'></div>
-      <div class='star twinkle-star-176'></div>
-      <div class='star twinkle-star-177'></div>
-      <div class='star twinkle-star-178'></div>
-      <div class='star twinkle-star-179'></div>
-      <div class='star twinkle-star-180'></div>
-      <div class='star twinkle-star-181'></div>
-      <div class='star twinkle-star-182'></div>
-      <div class='star twinkle-star-183'></div>
-      <div class='star twinkle-star-184'></div>
-      <div class='star twinkle-star-185'></div>
-      <div class='star twinkle-star-186'></div>
-      <div class='star twinkle-star-187'></div>
-      <div class='star twinkle-star-188'></div>
-      <div class='star twinkle-star-189'></div>
-      <div class='star twinkle-star-190'></div>
-      <div class='star twinkle-star-191'></div>
-      <div class='star twinkle-star-192'></div>
-      <div class='star twinkle-star-193'></div>
-      <div class='star twinkle-star-194'></div>
-      <div class='star twinkle-star-195'></div>
-      <div class='star twinkle-star-196'></div>
-      <div class='star twinkle-star-197'></div>
-      <div class='star twinkle-star-198'></div>
-      <div class='star twinkle-star-199'></div>
-      <div class='star twinkle-star-200'></div>
-    </div>
-
-    <div class="container top-wrapper">
-      <div class="row landing-intro">
-        <div class="col-xs-12 col-sm-8 col-md-6">
-          <div class="landing-about-us">
-            <p class="text-justify">
-              Tất cả những sự vật, sự việc, niềm vui, hạnh phúc trong cuộc sống này đều bắt đầu từ những sự kiện.<br>
-              Khởi đầu từ sự kiện Big Bang mà thiên hà được sinh ra, trải qua quá trình hội tụ, lan tỏa mà trở nên
-              vĩnh hằng với thời gian.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-          <div class="landing-logo">
-            <img class="img-responsive center-block" src="images/landing/logo.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container middle-wrapper">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-2">
-          <div class="landing-discovery text-right">
-            <!--<h1>Khám phá sắc màu cùng năm tháng</h1>-->
-            <img class="img-responsive landing-title" src="images/landing/h1.svg">
-
-            <div>
-              <p>
-                Với niềm cảm hứng đến từ sắc màu thiên hà đã trải qua thời gian càng trở nên mạnh mẽ, bền vững hơn.
-                Galaxy kiến tạo cuộc sống đa sắc màu, tươi đẹp và hạnh phúc bền vững cùng năm tháng.
-              </p>
-              <a href="#">
-                <button class="btn landing-button text-uppercase">Khám phá ngay</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="landing-ball ball-1"></div>
-
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-5">
-          <div class="landing-decor">
-            <!--<h1>Điểm tô ngày trọng đại</h1>-->
-            <img class="img-responsive landing-title" src="images/landing/h2.svg">
-
-            <div class="text-justify">
-              <p>
-                Có những sự kiện trọng đại làm nên dấu ấn trong cuộc đời này.<br>
-                Hãy trân trọng và điểm tô cho khoảnh khắc đó để trở thành những kỉ niệm thuần khiết,
-                tươi đẹp nhất trong tim mỗi người.<br>
-                Cùng Galaxy điểm tô ngày trọng đại.
-              </p>
-              <a href="#">
-                <button class="btn landing-button text-uppercase">Xem thêm</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="landing-ball ball-2"></div>
-    </div>
-
-    <div class="container bottom-wrapper">
-      <div class="row">
-        <div class="landing-product">
-          <div class="product-title"><!-- Sản phẩm -->
-            <img class="img-responsive" src="images/landing/h3.svg">
-          </div>
-
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <p class="text-center product-intro">
-              Hình thành từ năm 1995, với sứ mệnh điểm tô sắc màu và đồng hành với từng sự kiện trọng đại
-              trong cuộc đời mỗi người, sơn Galaxy đã và đang kiến tạo nên những công trình bền vững đi cùng năm tháng.
-              Trải qua thời gian sự bền vững, thuần hiết, nguyên bản của thiên hà đã hình thành bộ
-              sản phẩm sơn Galaxy đa dạng, chất lượng
-            </p>
-          </div>
-
-          <div class="clearfix"></div>
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="product-img">
-              <svg>
-                <defs>
-                  <clipPath id="clip">
-                    <path d="M55.027,92.484c0.008-0.001,0.016-0.002,0.024-0.002C55.043,92.482,55.035,92.483,55.027,92.484
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="283.74px" height="94.344px" viewBox="0 0 283.74 94.344" enable-background="new 0 0 283.74 94.344" xml:space="preserve">
+<g display="none">
+	<defs>
+		<path id="SVGID_1_" d="M11.278,99.733c-0.09,0.143-0.181,0.286-0.201,0.272c-0.202,0.375-0.21,0.473-0.427,0.879
+			c0.081,0.003,0.441-0.671,0.82-1.377c0.009-0.035,0.009-0.051,0.002-0.051C11.45,99.457,11.364,99.596,11.278,99.733"/>
+	</defs>
+	<clipPath id="SVGID_2_" display="inline">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-95.708" y1="181.8652" x2="-94.708" y2="181.8652" gradientTransform="matrix(-0.8267 0 0 -0.8267 -67.6468 250.5233)">
+		<stop  offset="0" style="stop-color:#FF004D"/>
+		<stop  offset="0.1242" style="stop-color:#C31677"/>
+		<stop  offset="0.2602" style="stop-color:#882BA0"/>
+		<stop  offset="0.3917" style="stop-color:#583DC2"/>
+		<stop  offset="0.5153" style="stop-color:#324BDC"/>
+		<stop  offset="0.6291" style="stop-color:#1655EF"/>
+		<stop  offset="0.7294" style="stop-color:#065BFB"/>
+		<stop  offset="0.8058" style="stop-color:#005DFF"/>
+		<stop  offset="0.9898" style="stop-color:#6B00A1"/>
+		<stop  offset="1" style="stop-color:#6B00A1"/>
+	</linearGradient>
+	<rect x="10.65" y="99.457" display="inline" clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" width="0.829" height="1.431"/>
+</g>
+<g display="none">
+	<defs>
+		<path id="SVGID_4_" d="M11.288,101.043c-0.34,0.52-0.735,1.241-0.543,1.337c0.36-0.743,0.572-0.974,0.823-1.38
+			c0.145-0.34,0.175-0.474,0.135-0.474C11.651,100.526,11.48,100.751,11.288,101.043"/>
+	</defs>
+	<clipPath id="SVGID_5_" display="inline">
+		<use xlink:href="#SVGID_4_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-95.708" y1="181.8652" x2="-94.708" y2="181.8652" gradientTransform="matrix(-1.0246 0 0 -1.0246 -86.3449 287.7964)">
+		<stop  offset="0" style="stop-color:#FF004D"/>
+		<stop  offset="0.1242" style="stop-color:#C31677"/>
+		<stop  offset="0.2602" style="stop-color:#882BA0"/>
+		<stop  offset="0.3917" style="stop-color:#583DC2"/>
+		<stop  offset="0.5153" style="stop-color:#324BDC"/>
+		<stop  offset="0.6291" style="stop-color:#1655EF"/>
+		<stop  offset="0.7294" style="stop-color:#065BFB"/>
+		<stop  offset="0.8058" style="stop-color:#005DFF"/>
+		<stop  offset="0.9898" style="stop-color:#6B00A1"/>
+		<stop  offset="1" style="stop-color:#6B00A1"/>
+	</linearGradient>
+	<rect x="10.553" y="100.526" display="inline" clip-path="url(#SVGID_5_)" fill="url(#SVGID_6_)" width="1.19" height="1.854"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_7_" d="M55.027,92.484c0.008-0.001,0.016-0.002,0.024-0.002C55.043,92.482,55.035,92.483,55.027,92.484
 			 M207.175,52.651c-0.025-0.007-0.053-0.012-0.081-0.013C207.121,52.644,207.148,52.647,207.175,52.651 M268.382,41.528
 			c0.06-0.007,0.104-0.041,0.134-0.094C268.469,41.462,268.425,41.493,268.382,41.528 M228.91,37.503
 			c0.038-0.201,0.029-0.392-0.006-0.573C228.886,37.08,228.886,37.268,228.91,37.503 M45.9,11.54
@@ -1074,116 +740,25 @@
 			c0.273-0.562,0.509-1.026,0.686-1.091c0.068-0.385,0.307-0.853,0.864-1.749c-0.051-0.004-0.102-0.01,0.078-0.339
 			c-0.421,0.604-1.546,2.387-2.419,3.594c-0.892,1.22-1.431,1.823-0.562,0.257c0.661-0.868,1.07-1.57,1.778-2.691
 			c0.434-0.554,1.13-1.594,1.81-2.668C56.437,0.927,54.968,2.922,53.607,4.737"/>
-                  </clipPath>
-                </defs>
-              </svg>
-
-              <a href="product-detail.html">
-                <div class="ocean"></div>
-                <img class="img-responsive center-block" src="images/landing/paint-2.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <p class="product-name text-uppercase"><strong>Lanmya</strong></p>
-
-              <p class="product-description">
-                Sơn nội thất ứng dụng hiệu ứng lá sen, ưu việt trong khả năng giấu khiếm khuyết trên bề mặt tường, nhẹ
-                mùi và thân thiện môi trường
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="product-img">
-              <a href="product-detail.html">
-                <div class="ocean"></div>
-                <img class="img-responsive center-block" src="images/landing/paint-4.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <p class="product-name text-uppercase"><strong>Glite</strong></p>
-
-              <p class="product-description">
-                Sơn nội thất cao cấp với công thức tối ưu không APEO, Fomandehyt kết hợp phân tử Nano ưu việt chống bụi
-                bẩn và nấm mốc
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="product-img">
-              <a href="product-detail.html">
-                <div class="ocean"></div>
-                <img class="img-responsive center-block" src="images/landing/paint-3.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <p class="product-name text-uppercase"><strong>Glitter</strong></p>
-
-              <p class="product-description">
-                Sơn ngoại thất ứng dụng công nghệ tự làm sạch, giúp bề mặt sơn láng bóng, bền màu
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="product-img">
-              <a href="product-detail.html">
-                <div class="ocean"></div>
-                <img class="img-responsive center-block" src="images/landing/paint-1.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <p class="product-name text-uppercase"><strong>Lanshine</strong></p>
-
-              <p class="product-description">
-                Sơn ngoại thất tổng hợp từ vật liệu có cấu trúc tinh thể ngọc trai và polymer siêu chống thấm, chống tia
-                UV, nấm mốc
-              </p>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer id="footer" class="isLanding" role="contentinfo">
-  <div class="container footer-wrapper">
-    <div class="row">
-      <div class="footer-content">
-        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-5">
-          <p class="copyright">
-            <i class="fa fa-copyright"></i> 2016 Galaxy Paint. All rights reserved.
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-2 col-sm-3 col-xs-4">
-          <div class="social-network">
-            <ul>
-              <li><a class="facebook" href="https://www.facebook.com/SonGalaxy" target="_blank">
-                <i class="fa fa-facebook"></i></a></li>
-              <li><a class="youtube" href="https://www.youtube.com/channel/UCjgxlWPkBRzT0oXo5TCnlxw" target="_blank">
-                <i class="fa fa-youtube-play"></i></a></li>
-              <li><a class="google-plus" href="https://plus.google.com/114747288091527278715" target="_blank">
-                <i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-9">
-          <div class="input-group send-mail">
-            <input type="text" id="user-email" class="form-control" placeholder="Đăng ký nhận thư">
-          <span class="input-group-btn">
-            <button class="btn btn-send" type="button">Gửi</button>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
-<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/lib/slick.min.js"></script>
-<script type="text/javascript" src="js/galaxy.js"></script>
-<script type="text/javascript" src="js/landing.js"></script>
-</body>
-</html>
+	</defs>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="-95.708" y1="181.8145" x2="-94.708" y2="181.8145" gradientTransform="matrix(-258.7459 72.1823 -72.1823 -258.7459 -11417.3057 53976.9297)">
+		<stop  offset="0" style="stop-color:#FF004D"/>
+		<stop  offset="0.0672" style="stop-color:#FF004D"/>
+		<stop  offset="0.181" style="stop-color:#C31677"/>
+		<stop  offset="0.3057" style="stop-color:#882BA0"/>
+		<stop  offset="0.4263" style="stop-color:#583DC2"/>
+		<stop  offset="0.5396" style="stop-color:#324BDC"/>
+		<stop  offset="0.6438" style="stop-color:#1655EF"/>
+		<stop  offset="0.7358" style="stop-color:#065BFB"/>
+		<stop  offset="0.8058" style="stop-color:#005DFF"/>
+		<stop  offset="0.9898" style="stop-color:#6B00A1"/>
+		<stop  offset="1" style="stop-color:#6B00A1"/>
+	</linearGradient>
+	<polygon display="none" clip-path="url(#SVGID_8_)" fill="url(#SVGID_9_)" points="263.253,-73.439 -24.553,6.85 20.487,168.301 
+		308.293,88.012 	"/>
+</g>
+</svg>

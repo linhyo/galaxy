@@ -5813,50 +5813,46 @@ a.galaxy-button:hover {
   position: relative;
   padding: 0 0 10px;
 }
+#galaxy-color .landing-product .product-img svg {
+  display: block;
+  position: absolute;
+}
 #galaxy-color .landing-product .product-img img {
   position: relative;
   width: 90%;
   z-index: 10;
 }
-#galaxy-color .landing-product .product-img svg {
-  left: 30px;
-  position: absolute;
-  top: 105px;
-  z-index: 0;
+#galaxy-color .landing-product .product-img .ocean {
   display: none;
+  height: 94px;
+  width: 285px;
+  position: absolute;
+  left: 35px;
+  bottom: 0;
+  background: url("../images/landing/vet-son.png") no-repeat left 0 top 100%;
+  background-size: 100% 100%;
+  -webkit-clip-path: url(#clip);
+  clip-path: url(#clip);
+  -webkit-animation: wave 3s;
+  animation: wave 3s;
 }
-#galaxy-color .landing-product .product-img svg image {
-  width: 80%;
+#galaxy-color .landing-product .product-img a:hover .ocean {
   display: block;
 }
-#galaxy-color .landing-product .product-img a:hover svg {
-  display: block;
-}
-#galaxy-color .landing-product .product-img .c-mask-circle {
-  width: 100%;
-  height: 100%;
-  fill: white;
-  stroke: white;
-  -webkit-animation: stroke-width 3s;
-  animation: stroke-width 3s;
-  stroke-width: 80;
-  position: relative;
-  transform: translateX(0);
-}
-@-webkit-keyframes stroke-width {
+@-webkit-keyframes wave {
   0% {
-    stroke-width: 0;
+    background-position: left -285px top 100%;
   }
   100% {
-    stroke-width: 80;
+    background-position: left 0 top 100%;
   }
 }
-@keyframes stroke-width {
+@keyframes wave {
   0% {
-    stroke-width: 0;
+    background-position: left -285px top 100%;
   }
   100% {
-    stroke-width: 80;
+    background-position: left 0 top 100%;
   }
 }
 #galaxy-color .landing-product .product-img .paint-smear {

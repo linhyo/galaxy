@@ -760,6 +760,7 @@ a.galaxy-button:hover {
 }
 .galaxy-suggestion p {
   display: inline-block;
+  color: #fff;
   white-space: nowrap;
 }
 .galaxy-suggestion span {
@@ -767,6 +768,84 @@ a.galaxy-button:hover {
 }
 .galaxy-suggestion .large-text {
   font-family: 'iCielBambola', sans-serif;
+}
+@media (min-width: 1200px) {
+  .galaxy-suggestion {
+    height: 185px;
+    padding: 34px;
+  }
+  .galaxy-suggestion i {
+    width: 40%;
+    font-size: 115px;
+  }
+  .galaxy-suggestion p {
+    width: 48%;
+    margin: 10% 0 0 10%;
+  }
+  .galaxy-suggestion .large-text {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .galaxy-suggestion {
+    height: 160px;
+    padding: 34px 20px;
+  }
+  .galaxy-suggestion i {
+    width: 40%;
+    font-size: 100px;
+  }
+  .galaxy-suggestion p {
+    width: 48%;
+    margin: 8% 0 0 10%;
+  }
+  .galaxy-suggestion .large-text {
+    font-size: 34px;
+  }
+}
+@media (min-width: 600px) and (max-width: 991px) {
+  .galaxy-suggestion {
+    height: 140px;
+    padding: 34px 20px;
+  }
+  .galaxy-suggestion i {
+    width: 40%;
+    font-size: 80px;
+    text-align: right;
+  }
+  .galaxy-suggestion p {
+    width: 48%;
+    margin: 6% 0 0 10%;
+  }
+  .galaxy-suggestion .large-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 599px) {
+  .galaxy-suggestion {
+    height: 70px;
+    padding: 13px 0 13px 12%;
+  }
+  .galaxy-suggestion i {
+    display: none !important;
+  }
+  .galaxy-suggestion p {
+    margin: 0;
+  }
+  .galaxy-suggestion .large-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 599px) {
+  .galaxy-tool > div:first-child {
+    padding-right: 0 !important;
+  }
+  .galaxy-tool > div:nth-child(2) {
+    padding: 0 8px !important;
+  }
+  .galaxy-tool > div:last-child {
+    padding-left: 0 !important;
+  }
 }
 .galaxy-label {
   color: #8b9aa7;
@@ -3504,69 +3583,6 @@ a.galaxy-button:hover {
 #home-page .content-row {
   margin: 30px -15px 0;
 }
-.galaxy-suggestion {
-  position: relative;
-  display: block;
-  width: 100%;
-  color: #fff;
-}
-.galaxy-suggestion.paint-calculator {
-  background-color: #4e1464;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4e1464), to(#6b2b85));
-  background-image: -webkit-linear-gradient(left, #4e1464, #6b2b85);
-  background-image: -moz-linear-gradient(left, #4e1464, #6b2b85);
-  background-image: -ms-linear-gradient(left, #4e1464, #6b2b85);
-  background-image: -o-linear-gradient(left, #4e1464, #6b2b85);
-}
-.galaxy-suggestion.color-blender {
-  background-color: #bd341a;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bd341a), to(#f07721));
-  background-image: -webkit-linear-gradient(left, #bd341a, #f07721);
-  background-image: -moz-linear-gradient(left, #bd341a, #f07721);
-  background-image: -ms-linear-gradient(left, #bd341a, #f07721);
-  background-image: -o-linear-gradient(left, #bd341a, #f07721);
-}
-.galaxy-suggestion.nearest-agency {
-  background-color: #f4901e;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f4901e), to(#f6ea23));
-  background-image: -webkit-linear-gradient(left, #f4901e, #f6ea23);
-  background-image: -moz-linear-gradient(left, #f4901e, #f6ea23);
-  background-image: -ms-linear-gradient(left, #f4901e, #f6ea23);
-  background-image: -o-linear-gradient(left, #f4901e, #f6ea23);
-}
-.galaxy-suggestion:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  right: 7px;
-  bottom: -7px;
-  left: -7px;
-  border: 1px solid transparent;
-  -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
-  -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
-  border-image: linear-gradient(to left, #f6ea23 0%, #6b2b85 100%);
-  border-image-slice: 1;
-}
-.galaxy-suggestion:hover,
-.galaxy-suggestion:focus,
-.galaxy-suggestion:active {
-  color: #fff;
-}
-.galaxy-suggestion i {
-  display: inline-block;
-  float: left;
-}
-.galaxy-suggestion p {
-  display: inline-block;
-  white-space: nowrap;
-  color: #fff;
-}
-.galaxy-suggestion span {
-  display: block;
-}
-.galaxy-suggestion .large-text {
-  font-family: 'iCielBambola', sans-serif;
-}
 .galaxy-feature:before {
   top: 8px;
   height: 5px;
@@ -3672,49 +3688,11 @@ a.galaxy-button:hover {
   text-overflow: ellipsis;
 }
 @media (min-width: 1200px) {
-  .galaxy-suggestion {
-    height: 185px;
-    padding: 34px;
-  }
-  .galaxy-suggestion i {
-    width: 40%;
-    font-size: 115px;
-  }
-  .galaxy-suggestion p {
-    width: 48%;
-    margin: 10% 0 0 10%;
-  }
-  .galaxy-suggestion .large-text {
-    font-size: 40px;
-  }
   .news-title {
     width: 228px;
   }
 }
-@media (max-width: 1199px) {
-  .galaxy-suggestion {
-    height: 160px;
-    padding: 34px 20px;
-  }
-  .galaxy-suggestion i {
-    width: 40%;
-    font-size: 100px;
-  }
-  .galaxy-suggestion p {
-    width: 48%;
-    margin: 8% 0 0 10%;
-  }
-  .galaxy-suggestion .large-text {
-    font-size: 34px;
-  }
-}
 @media (max-width: 991px) {
-  .galaxy-suggestion i {
-    text-align: right;
-  }
-  .galaxy-suggestion p {
-    margin: 3% 0 0 12%;
-  }
   .galaxy-feature.news {
     margin-top: 20px;
   }

@@ -154,53 +154,6 @@
   }
 }
 
-.galaxy-suggestion {
-  position: relative;
-  display: block;
-  width: 100%;
-  color: #fff;
-  &.paint-calculator {
-    .horizontal-gradient(#4e1464, #6b2b85);
-  }
-  &.color-blender {
-    .horizontal-gradient(#bd341a, #f07721);
-  }
-  &.nearest-agency {
-    .horizontal-gradient(#f4901e, #f6ea23);
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    bottom: -7px;
-    left: -7px;
-    border: 1px solid transparent;
-    -moz-border-image: -moz-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
-    -webkit-border-image: -webkit-linear-gradient(right, #f6ea23 0%, #6b2b85 100%);
-    border-image: linear-gradient(to left, #f6ea23 0%, #6b2b85 100%);
-    border-image-slice: 1;
-  }
-  &:hover, &:focus, &:active {
-    color: #fff;
-  }
-  i {
-    display: inline-block;
-    float: left;
-  }
-  p {
-    display: inline-block;
-    white-space: nowrap;
-    color: #fff;
-  }
-  span {
-    display: block;
-  }
-  .large-text {
-    font-family: @import-font;
-  }
-}
-
 .galaxy-feature {
   &:before {
     top: 8px;
@@ -308,71 +261,25 @@
 }
 
 @media (min-width: 1200px) {
-  .galaxy-suggestion {
-    height: 185px;
-    padding: 34px;
-    i {
-      width: 40%;
-      font-size: 115px;
-    }
-    p {
-      width: 48%;
-      margin: 10% 0 0 10%;
-    }
-    .large-text {
-      font-size: 40px;
-    }
-  }
   .news-title {
     width: 228px;
   }
 }
-
-@media (max-width: 1199px) {
-  .galaxy-suggestion {
-    height: 160px;
-    padding: 34px 20px;
-    i {
-      width: 40%;
-      font-size: 100px;
-    }
-    p {
-      width: 48%;
-      margin: 8% 0 0 10%;
-    }
-    .large-text {
-      font-size: 34px;
-    }
-  }
-}
-
 @media (max-width: 991px) {
-  .galaxy-suggestion {
-    i {
-      text-align: right;
-    }
-    p {
-      margin: 3% 0 0 12%;
-    }
-  }
-
   .galaxy-feature.news {
     margin-top: 20px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .news-title {
     width: 162px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .outstanding-news .news-title {
     max-width: 465px !important;
   }
 }
-
 @media (max-width: 767px) {
   #online-help {
     display: none;

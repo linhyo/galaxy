@@ -1913,7 +1913,7 @@ a.galaxy-button:hover {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #ccc;
 }
 .rule-block .rule-dialog .image-rule {
   display: block;
@@ -1927,6 +1927,11 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .content-rule {
   display: block;
   width: 100%;
+}
+.rule-block .rule-dialog .content-rule h1 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
 }
 .rule-block .rule-dialog .content-rule p {
   color: #333333;
@@ -2450,6 +2455,12 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control p,
 .rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control p {
   text-align: left;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control {
+  text-align: center;
+}
+.rule-block .rule-dialog .background-rule .input-bg .action-editor .box-control p {
+  text-align: center;
 }
 .rule-block .rule-dialog .background-rule .input-bg .action-editor .background-control .item-background {
   cursor: pointer;

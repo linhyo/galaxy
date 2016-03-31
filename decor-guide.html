@@ -77,17 +77,36 @@
 <main id="decor-page" role="main">
   <div class="tab-header">
     <div class="container">
-      <ul class="nav nav-tabs" id="interest-tabs">
-        <li>
+      <!-- Media min-width: 600px -->
+      <ul class="nav nav-tabs">
+        <li class="active">
           <a href="#color-trends" data-toggle="tab">Xu hướng màu sắc</a>
         </li>
         <li>
           <a href="#color-palette" data-toggle="tab">Xem bảng màu và chọn màu yêu thích</a>
         </li>
-        <li class="active">
+        <li>
           <a href="#painting-house" data-toggle="tab">Hướng dẫn sơn nhà</a>
         </li>
       </ul>
+
+      <!-- Media max-width: 599px -->
+      <div class="dropdown nav-dropdown">
+        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          <span class="selected-value">Xu hướng màu sắc</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="active">
+            <a href="#color-trends">Xu hướng màu sắc</a>
+          </li>
+          <li>
+            <a href="#color-palette">Xem bảng màu và chọn màu yêu thích</a>
+          </li>
+          <li>
+            <a href="#painting-house">Hướng dẫn sơn nhà</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- /.tab-header -->

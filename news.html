@@ -76,16 +76,24 @@
 <main id="news-page" role="main">
   <div class="tab-header">
     <div class="container">
-      <div class="row">
-        <ul class="nav nav-tabs">
-          <li role="presentation" class="col-lg-3"><a href="#special-offer" data-toggle="tab">Chương trình ưu đãi</a>
-          </li>
-          <li role="presentation" class="col-lg-3"><a href="#operating-brands" data-toggle="tab">Hoạt động nhãn hàng</a>
-          </li>
-          <li role="presentation" class="active col-lg-3"><a href="#project-processing" class="show-news" data-toggle="tab">Dự án thực hiện</a>
-          </li>
-          <li role="presentation" class="col-lg-3"><a href="#career-opportunities" data-toggle="tab">Cơ hội nghề nghiệp</a>
-          </li>
+      <!-- Media min-width: 600px -->
+      <ul class="nav nav-tabs">
+        <li class="col-lg-3"><a href="#special-offer" data-toggle="tab">Chương trình ưu đãi</a></li>
+        <li class="col-lg-3"><a href="#operating-brands" data-toggle="tab">Hoạt động nhãn hàng</a></li>
+        <li class="active col-lg-3"><a href="#project-processing" class="show-news" data-toggle="tab">Dự án thực hiện</a></li>
+        <li class="col-lg-3"><a href="#career-opportunities" data-toggle="tab">Cơ hội nghề nghiệp</a></li>
+      </ul>
+
+      <!-- Media max-width: 599px -->
+      <div class="dropdown nav-dropdown">
+        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          <span class="selected-value">Họ là ai</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#special-offer">Chương trình ưu đãi</a></li>
+          <li><a href="#operating-brands">Hoạt động nhãn hàng</a></li>
+          <li class="active"><a href="#project-processing" class="show-news">Dự án thực hiện</a></li>
+          <li><a href="#career-opportunities">Cơ hội nghề nghiệp</a></li>
         </ul>
       </div>
     </div>

@@ -76,15 +76,32 @@
 <main id="product-page" role="main">
   <div class="tab-header product-tab">
     <div class="container">
+      <!-- Media min-width: 600px -->
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#interior-paint" data-toggle="tab">Sơn nội thất</a></li>
-        <li role="presentation"><a href="#exterior-paint" data-toggle="tab">Sơn ngoại thất</a></li>
-        <li role="presentation"><a href="#primer" data-toggle="tab">Sơn lót</a></li>
-        <li role="presentation"><a href="#special-paint" data-toggle="tab">Sơn đặc biệt</a></li>
-        <li role="presentation"><a href="#putty" data-toggle="tab">Bột bả</a></li>
-        <li role="presentation"><a href="#oil-paint" data-toggle="tab">Sơn dầu</a></li>
-        <li role="presentation"><a href="#oxide-metal-primer" data-toggle="tab">Sơn chống rỉ</a></li>
+        <li class="active"><a href="#interior-paint" data-toggle="tab">Sơn nội thất</a></li>
+        <li><a href="#exterior-paint" data-toggle="tab">Sơn ngoại thất</a></li>
+        <li><a href="#primer" data-toggle="tab">Sơn lót</a></li>
+        <li><a href="#special-paint" data-toggle="tab">Sơn đặc biệt</a></li>
+        <li><a href="#putty" data-toggle="tab">Bột bả</a></li>
+        <li><a href="#oil-paint" data-toggle="tab">Sơn dầu</a></li>
+        <li><a href="#oxide-metal-primer" data-toggle="tab">Sơn chống rỉ</a></li>
       </ul>
+
+      <!-- Media max-width: 599px -->
+      <div class="dropdown nav-dropdown">
+        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          <span class="selected-value">Sơn nội thất</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#interior-paint">Sơn nội thất</a></li>
+          <li><a href="#exterior-paint">Sơn ngoại thất</a></li>
+          <li><a href="#primer">Sơn lót</a></li>
+          <li><a href="#special-paint">Sơn đặc biệt</a></li>
+          <li><a href="#putty">Bột bả</a></li>
+          <li><a href="#oil-paint">Sơn dầu</a></li>
+          <li><a href="#oxide-metal-primer">Sơn chống rỉ</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- /.tab-header -->

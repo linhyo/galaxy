@@ -472,6 +472,11 @@ p {
 #top-banner.contact-banner {
   background-image: url("../images/banner/banner-11.jpg");
 }
+@media (max-width: 599px) {
+  #top-banner {
+    height: 150px !important;
+  }
+}
 .galaxy-select .dropdown-toggle {
   width: 100%;
   font-size: 13px;
@@ -1628,6 +1633,70 @@ a.galaxy-button:hover {
     margin-right: 0.5%;
     min-width: 11%;
   }
+}
+@media (min-width: 600px) {
+  .tab-header .nav-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .tab-header .nav-tabs {
+    display: none;
+  }
+  .tab-header .nav-dropdown {
+    display: block;
+  }
+}
+.nav-dropdown {
+  margin: 15px 0;
+}
+.nav-dropdown .dropdown-toggle {
+  width: 100%;
+  font-size: 13px;
+  box-shadow: none;
+  background-color: #fff;
+  border-color: #adb8c1;
+  text-align: left;
+}
+.nav-dropdown .dropdown-toggle:hover,
+.nav-dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+.nav-dropdown .dropdown-toggle:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  border-top: 8px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  vertical-align: middle;
+}
+.nav-dropdown .selected-value {
+  color: #8b9aa7;
+  font-weight: 600;
+}
+.nav-dropdown .dropdown-menu {
+  right: 0;
+  font-size: 13px;
+  background-color: #8b9aa7;
+}
+.nav-dropdown .dropdown-menu li > a {
+  color: #fff;
+  font-weight: 600;
+  padding: 7px 20px;
+}
+.nav-dropdown .dropdown-menu li > a:hover {
+  background-color: #636e79;
+}
+.nav-dropdown .dropdown-menu .active > a,
+.nav-dropdown .dropdown-menu .active > a:hover,
+.nav-dropdown .dropdown-menu .active > a:focus {
+  color: #fff;
+  background-color: #636e79;
 }
 .tab-content {
   border: none;
@@ -5185,33 +5254,6 @@ a.galaxy-button:hover {
 .project-item .project-content .view-detail:hover {
   color: #fff;
   text-decoration: none;
-}
-.lucky-painter-cover {
-  position: relative;
-}
-.lucky-painter-cover .cover-title {
-  position: absolute;
-  top: 60px;
-  right: 100px;
-  font-family: 'iCielBambola', sans-serif;
-  color: #e40c0c;
-  font-size: 55px;
-  font-weight: 400;
-}
-.lucky-painter-cover .cover-quote {
-  position: absolute;
-  top: 134px;
-  right: 100px;
-  font-size: 14px;
-  line-height: 24px;
-}
-.lucky-painter-cover .cover-author {
-  position: absolute;
-  top: 210px;
-  right: 100px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 .project-preview {
   overflow: hidden;

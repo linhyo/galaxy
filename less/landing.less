@@ -363,6 +363,9 @@
   }
 
   @media (max-width: 480px) {
+    .landing-logo {
+      margin-top: 120% !important;
+    }
     .landing-product{
       margin-bottom: 180px;
     }
@@ -897,6 +900,11 @@
         display: inline-block;
         //width: 44%;
       }
+      &.last {
+        img:last-child {
+          display: none;
+        }
+      }
     }
   }
   .landing-event {
@@ -1245,6 +1253,15 @@
     }
     .person-info {
       margin-bottom: 10%;
+    }
+    .person-image.last {
+      margin-top: 62px !important;
+    }
+    .person-image.last img:first-child {
+      display: none !important;
+    }
+    .person-image.last img:last-child {
+      display: inline-block !important;
     }
   }
   @media (max-width: 767px) {

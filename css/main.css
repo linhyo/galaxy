@@ -3708,6 +3708,50 @@ a.galaxy-button:hover {
   }
 }
 @media (max-width: 767px) {
+  .galaxy-banner,
+  #galaxyBanner {
+    height: 150px !important;
+  }
+  .flower-control {
+    height: 120px;
+    border: 1px dashed #8b9aa7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    margin: 10px;
+  }
+  .color-flower {
+    bottom: 20px !important;
+    left: 60px !important;
+  }
+  .color-flower .petal {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .banner-box {
+    top: 30px;
+    bottom: 0 !important;
+    left: 125px !important;
+    width: auto !important;
+    max-width: 200px;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  .banner-text-1 {
+    font-size: 13px !important;
+  }
+  .banner-text-2 {
+    font-size: 28px !important;
+  }
+  #home-page {
+    margin-top: 120px;
+  }
   #online-help {
     display: none;
   }

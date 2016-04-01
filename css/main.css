@@ -3851,13 +3851,14 @@ a.galaxy-button:hover {
   padding-bottom: 30px;
 }
 #decor-page .decor-guide p {
+  text-align: justify;
   margin: 0 0 10px;
 }
 #decor-page .decor-guide .decor-guide-title {
   margin-bottom: 10px;
 }
 #decor-page .decor-guide .decor-guide-img {
-  margin: 30px 0;
+  margin: 30px auto;
 }
 #decor-page .decor-guide .related-post h2 {
   margin-bottom: 10px;
@@ -5415,6 +5416,46 @@ a.galaxy-button:hover {
 }
 #project-processing .news-current .news-preview .detail-news:hover .info-preview .position-info {
   opacity: 1;
+}
+.news-detail {
+  margin-bottom: 50px;
+}
+.news-detail p {
+  text-align: justify;
+  margin: 0 0 10px;
+}
+.news-detail .news-detail-title {
+  margin-bottom: 10px;
+}
+.news-detail .news-detail-time {
+  color: #a1a1a1;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.news-detail .news-detail-time > i {
+  margin-right: 10px;
+}
+.news-detail .news-detail-img {
+  margin: 30px auto;
+}
+.news-detail .related-post {
+  border-left: 1px solid #8b9aa7;
+}
+.news-detail .post-item {
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #8b9aa7;
+}
+.news-detail .post-item .post-image {
+  width: 100%;
+}
+.news-detail .post-item .post-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.news-detail .post-item .post-time {
+  color: #a1a1a1;
+  margin: 5px 0 0;
 }
 #support-page .support-tab-wrapper {
   position: relative;

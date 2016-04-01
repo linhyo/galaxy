@@ -370,6 +370,14 @@
   background-image: linear-gradient(to bottom, @colorOne 0%, @colorTwo 100%), linear-gradient(to top, @colorThree 0%, @colorFour 100%);
 }
 
+.boder-gradient-paddle(@width: 1px, @left-color: #3acfd5, @right-color: #3a4ed5){
+  border: 1px solid transparent;
+  border-image-slice: 1;
+  -moz-border-image: -moz-linear-gradient(top left, @left-color 0%, @right-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, @left-color 0%, @right-color 100%);
+  border-image: linear-gradient(to bottom right, @left-color 0%, @right-color 100%);
+}
+
 .gradient-text(@text, @background, @gradient) {
   background: white;
   color: black;

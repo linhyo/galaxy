@@ -2037,10 +2037,10 @@ a.galaxy-button:hover {
   -webkit-background-size: 100% 10px;
   -moz-background-size: 100% 10px;
   background-size: 100% 10px;
-  background-image: -webkit-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -webkit-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: -moz-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -moz-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: -o-linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), -o-linear-gradient(right, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: linear-gradient(to right, #f0b5b9 0%, #c9b3c7 100%), linear-gradient(to left, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -webkit-linear-gradient(to right, #f0b5b9 0%, #c2b4c8 100%), -webkit-linear-gradient(right, #98b2d7 0%, #c4b4c8 100%);
+  background-image: -moz-linear-gradient(to right, #f0b5b9 0%, #c2b4c8 100%), -moz-linear-gradient(right, #98b2d7 0%, #c4b4c8 100%);
+  background-image: -o-linear-gradient(to right, #f0b5b9 0%, #c2b4c8 100%), -o-linear-gradient(right, #98b2d7 0%, #c4b4c8 100%);
+  background-image: linear-gradient(to right, #f0b5b9 0%, #c2b4c8 100%), linear-gradient(to left, #98b2d7 0%, #c4b4c8 100%);
   z-index: 1;
 }
 .rule-block .rule-dialog:after {
@@ -2050,10 +2050,10 @@ a.galaxy-button:hover {
   -moz-background-size: 10px 100%;
   background-size: 10px 100%;
   top: 0;
-  background-image: -webkit-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -webkit-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: -moz-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -moz-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: -o-linear-gradient(top, #f0b5b9 0%, #c9b3c7 100%), -o-linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
-  background-image: linear-gradient(to bottom, #f0b5b9 0%, #c9b3c7 100%), linear-gradient(to top, #d2b4c4 0%, #d2b4c4 100%);
+  background-image: -webkit-linear-gradient(top, #f0b5b9 0%, #c4b4c8 100%), -webkit-linear-gradient(to top, #98b2d7 0%, #c2b4c8 100%);
+  background-image: -moz-linear-gradient(top, #f0b5b9 0%, #c4b4c8 100%), -moz-linear-gradient(to top, #98b2d7 0%, #c2b4c8 100%);
+  background-image: -o-linear-gradient(top, #f0b5b9 0%, #c4b4c8 100%), -o-linear-gradient(to top, #98b2d7 0%, #c2b4c8 100%);
+  background-image: linear-gradient(to bottom, #f0b5b9 0%, #c4b4c8 100%), linear-gradient(to top, #98b2d7 0%, #c2b4c8 100%);
 }
 .rule-block .rule-dialog .container-rule {
   padding: 20px 15px;
@@ -2094,6 +2094,7 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .content-rule .message-confirm-rule {
   margin-top: 75px;
   position: relative;
+  color: #98b2d7;
 }
 .rule-block .rule-dialog .content-rule .message-confirm-rule:after {
   content: '';

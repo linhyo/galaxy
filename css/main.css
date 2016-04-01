@@ -1158,11 +1158,18 @@ a.galaxy-button:hover {
   position: relative;
   color: #fff;
   line-height: 32px;
+  width: auto;
   z-index: 10;
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   #footer .copyright {
     line-height: 18px;
+  }
+}
+@media (max-width: 480px) {
+  #footer .copyright {
+    width: 100px;
+    line-height: 14px;
   }
 }
 #footer .contact-now {
@@ -1283,12 +1290,9 @@ a.galaxy-button:hover {
   -moz-background-clip: padding-box !important;
   background-clip: padding-box !important;
 }
-@media (max-width: 760px) {
+@media (max-width: 998px) {
   #footer .contact-now {
     display: block;
-  }
-  #footer .footer-wrapper .footer-content {
-    margin: 15px 0 0 0;
   }
   #footer .form-control {
     height: 28px;
@@ -1318,6 +1322,11 @@ a.galaxy-button:hover {
   #footer .copyright {
     font-size: 10px;
     margin: 0 0 2px;
+  }
+}
+@media (max-width: 760px) {
+  #footer .footer-wrapper .footer-content {
+    margin: 15px 0 0 0;
   }
 }
 @media (max-width: 480px) {

@@ -185,17 +185,27 @@
       }
       .ocean {
         display: none;
-        height: 94px;
-        width: 285px;
+        height: 80px;
+        width: 241px;
         position: absolute;
         left: 30px;
         bottom: 0;
-        background: url("../images/landing/vet-son.png") no-repeat left 0 top 100%;
-        background-size: 85% 85%;
         -webkit-clip-path: url(#clip);
         clip-path: url(#clip);
-        -webkit-animation: wave 3s;
-        animation: wave 3s;
+        -webkit-animation: wave 1.5s;
+        animation: wave 1.5s;
+        &:after{
+          content: '';
+          height: 80px;
+          width: 241px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          -webkit-animation: wave 1.5s;
+          animation: wave 1.5s;
+          opacity: 0.5;
+          background: url("../images/landing/vet-son.png") no-repeat left 0 top 100%;
+        }
       }
       a:hover{
         .ocean{
@@ -204,18 +214,18 @@
       }
       @-webkit-keyframes wave {
         0% {
-          background-position: left -285px top 100%;
+          width: 0;
         }
         100% {
-          background-position: left 0 top 100%;
+          width: 241px;
         }
       }
       @keyframes wave {
         0% {
-          background-position: left -285px top 100%;
+          width: 0;
         }
         100% {
-          background-position: left 0 top 100%;
+          width: 241px;
         }
       }
 

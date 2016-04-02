@@ -972,7 +972,7 @@
         display: inline-block;
         //width: 44%;
       }
-      &.last {
+      &.change {
         img:last-child {
           display: none;
         }
@@ -1216,22 +1216,14 @@
       height: 40px;
       font-size: 15px;
     }
-    .event-intro {
-      margin: 20px 0;
-    }
     .event-title {
       font-size: 40px !important;
     }
     .event-desc {
-      margin: 10px 0 20px 0 !important;
       > span {
         font-size: 16px !important;
       }
     }
-    .event-line {
-      margin: 15px auto 10px !important;
-    }
-
     .person-info {
       padding: 0 !important;
       &:before {
@@ -1310,6 +1302,18 @@
         line-height: 30px !important;
       }
     }
+    .event-intro {
+      margin: 10px 0;
+    }
+    .event-desc {
+      margin: 5px 0 10px 0 !important;
+    }
+    .event-line {
+      margin: 10px auto !important;
+    }
+    .landing-event .group-img {
+      margin-top: 95px !important;
+    }
     .entry-caption {
       padding: 3% 8%;
       h1 {
@@ -1323,20 +1327,39 @@
     .entry-title > p {
       font-size: 30px !important;
     }
+    .story-detail {
+      height: 400px;
+      overflow: hidden;
+    }
     .person-info {
       margin-bottom: 10%;
     }
-    .person-image.last {
-      margin-top: 62px !important;
+    #story-1 img {
+      width: 70%;
     }
-    .person-image.last img:first-child {
+    #story-2 img {
+      width: 80%;
+    }
+    #story-4 img {
+      margin-top: 28px !important;
+    }
+    .person-image.change img:first-child {
       display: none !important;
     }
-    .person-image.last img:last-child {
+    .person-image.change img:last-child {
       display: inline-block !important;
     }
   }
   @media (max-width: 767px) {
+    .event-intro {
+      margin: 20px 0;
+    }
+    .event-desc {
+      margin: 10px 0 20px 0 !important;
+    }
+    .event-line {
+      margin: 15px auto 10px !important;
+    }
     .landing-background {
       height: 375px;
     }

@@ -49,10 +49,6 @@
     autoplaySpeed: 5000
   });
 
-  smoothScroll.init({
-    speed: 1000
-  });
-
   $('#galaxy-decoration .banner-person').on('click', function(e) {
     e.preventDefault();
     var tab = $(this).attr('href');
@@ -61,26 +57,6 @@
     $(tab).fadeIn();
     $(this).addClass('active').siblings().removeClass('active');
     $('[data-box="'+ tabName +'"]').removeClass('hidden-elm').siblings().addClass('hidden-elm');
-  });
-
-  //function fadeEffect(elm, effect) {
-  //  $(elm).addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-  //    $(elm).removeClass(effect + ' animated');
-  //  });
-  //}
-
-  $('.landing-product .product-img').hover(function () {
-    var smear = $(this).find('.paint-smear');
-    smear.fadeIn();
-    fadeEffect(smear, 'fadeInLeft');
-  }, function(){
-    var smear = $(this).find('.paint-smear');
-    fadeEffect(smear, 'fadeOutRight');
-    smear.fadeOut();
-
-    setTimeout(function () {
-      smear.removeClass('fadeOutRight animated');
-    }, 500);
   });
 
   // Change bg color

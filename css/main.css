@@ -3820,7 +3820,7 @@ a.btn-share-result:hover {
   right: 0;
 }
 .galaxy-feature .outstanding-news li {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 .galaxy-feature .outstanding-news li:first-child {
   margin: 0;
@@ -3937,6 +3937,7 @@ a.btn-share-result:hover {
   margin-bottom: 10px;
 }
 #decor-page .decor-guide .decor-guide-img {
+  width: 600px;
   margin: 30px auto;
 }
 #decor-page .decor-guide .related-post h2 {
@@ -4166,6 +4167,11 @@ a.btn-share-result:hover {
 }
 .guide-item .guide-image {
   width: 100%;
+}
+.guide-item .guide-content {
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
 }
 .guide-item .guide-control {
   display: inline-block;
@@ -7056,7 +7062,7 @@ a.btn-share-result:hover {
 #galaxy-decoration .landing-story .person-image img {
   display: inline-block;
 }
-#galaxy-decoration .landing-story .person-image.last img:last-child {
+#galaxy-decoration .landing-story .person-image.change img:last-child {
   display: none;
 }
 #galaxy-decoration .landing-event {
@@ -7341,20 +7347,11 @@ a.btn-share-result:hover {
     height: 40px;
     font-size: 15px;
   }
-  #galaxy-decoration .event-intro {
-    margin: 20px 0;
-  }
   #galaxy-decoration .event-title {
     font-size: 40px !important;
   }
-  #galaxy-decoration .event-desc {
-    margin: 10px 0 20px 0 !important;
-  }
   #galaxy-decoration .event-desc > span {
     font-size: 16px !important;
-  }
-  #galaxy-decoration .event-line {
-    margin: 15px auto 10px !important;
   }
   #galaxy-decoration .person-info {
     padding: 0 !important;
@@ -7439,6 +7436,18 @@ a.btn-share-result:hover {
   #galaxy-decoration .btn-next > i {
     line-height: 30px !important;
   }
+  #galaxy-decoration .event-intro {
+    margin: 10px 0;
+  }
+  #galaxy-decoration .event-desc {
+    margin: 5px 0 10px 0 !important;
+  }
+  #galaxy-decoration .event-line {
+    margin: 10px auto !important;
+  }
+  #galaxy-decoration .landing-event .group-img {
+    margin-top: 95px !important;
+  }
   #galaxy-decoration .entry-caption {
     padding: 3% 8%;
   }
@@ -7452,20 +7461,39 @@ a.btn-share-result:hover {
   #galaxy-decoration .entry-title > p {
     font-size: 30px !important;
   }
+  #galaxy-decoration .story-detail {
+    height: 400px;
+    overflow: hidden;
+  }
   #galaxy-decoration .person-info {
     margin-bottom: 10%;
   }
-  #galaxy-decoration .person-image.last {
-    margin-top: 62px !important;
+  #galaxy-decoration #story-1 img {
+    width: 70%;
   }
-  #galaxy-decoration .person-image.last img:first-child {
+  #galaxy-decoration #story-2 img {
+    width: 80%;
+  }
+  #galaxy-decoration #story-4 img {
+    margin-top: 28px !important;
+  }
+  #galaxy-decoration .person-image.change img:first-child {
     display: none !important;
   }
-  #galaxy-decoration .person-image.last img:last-child {
+  #galaxy-decoration .person-image.change img:last-child {
     display: inline-block !important;
   }
 }
 @media (max-width: 767px) {
+  #galaxy-decoration .event-intro {
+    margin: 20px 0;
+  }
+  #galaxy-decoration .event-desc {
+    margin: 10px 0 20px 0 !important;
+  }
+  #galaxy-decoration .event-line {
+    margin: 15px auto 10px !important;
+  }
   #galaxy-decoration .landing-background {
     height: 375px;
   }

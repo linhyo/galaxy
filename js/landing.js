@@ -59,11 +59,11 @@
     $('[data-box="'+ tabName +'"]').removeClass('hidden-elm').siblings().addClass('hidden-elm');
   });
 
-  function fadeEffect(elm, effect) {
-    $(elm).addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      $(elm).removeClass(effect + ' animated');
-    });
-  }
+  //function fadeEffect(elm, effect) {
+  //  $(elm).addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+  //    $(elm).removeClass(effect + ' animated');
+  //  });
+  //}
 
   $('.landing-product .product-img').hover(function () {
     var smear = $(this).find('.paint-smear');

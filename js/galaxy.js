@@ -3,6 +3,21 @@
   $('.carousel').carousel();
   $('[data-toggle="tooltip"]').tooltip();
 
+  $('.navbar-nav > li.navbar-dropdown').on('click', function () {
+    $(this).siblings().find('ul').hide();
+    $(this).toggleClass('show').find('ul').toggle();
+  });
+
+  var event = (navigator.userAgent.match(/iPad/i)) ? "touchend" : "mouseup";
+  $('body').on(event, function(e) {
+    var popup = $('.navbar-menu');
+
+    if (!$('.navbar-nav > li.navbar-dropdown').is(e.target) && !$('.navbar-nav > li.navbar-dropdown > a').is(e.target)
+      && !popup.is(e.target) && popup.has(e.target).length == 0) {
+      popup.hide();
+    }
+  });
+
   var image = [
     {
       id: 1,

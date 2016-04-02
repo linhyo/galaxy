@@ -1014,9 +1014,83 @@ a.galaxy-button:hover {
 .navbar-nav > .active > a {
   color: #fff;
 }
-.navbar-nav > .open > a {
-  color: #555;
-  background-color: #e7e7e7;
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.navbar-nav > li > .navbar-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  width: 200px;
+  margin: 26px 0 0;
+  list-style: none;
+  background-color: #220053;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-nav > li > .navbar-menu.event-menu {
+  left: -44px;
+}
+.navbar-nav > li > .navbar-menu.decor-menu {
+  left: -40px;
+}
+.navbar-nav > li > .navbar-menu.product-menu {
+  left: -62px;
+}
+.navbar-nav > li > .navbar-menu.lucky-menu {
+  left: -50px;
+}
+.navbar-nav > li > .navbar-menu.news-menu {
+  left: -68px;
+}
+.navbar-nav > li > .navbar-menu.support-menu {
+  left: -66px;
+}
+.navbar-nav > li > .navbar-menu > li {
+  border-bottom: 1px solid #818e9b;
+}
+.navbar-nav > li > .navbar-menu > li:last-child {
+  border: none;
+}
+.navbar-nav > li > .navbar-menu > li > a {
+  display: block;
+  color: #ccc;
+  line-height: 1.42857143;
+  padding: 8px 20px;
+  white-space: normal;
+  clear: both;
+}
+.navbar-nav > li > .navbar-menu > li > a:hover,
+.navbar-nav > li > .navbar-menu > li > a:focus {
+  color: #eee;
+  background-color: #1f0043;
+}
+.navbar-nav > li > .navbar-menu > li.active a,
+.navbar-nav > li > .navbar-menu > li.active a:focus,
+.navbar-nav > li > .navbar-menu > li.active a:hover {
+  color: #eee;
+  background-color: #1f0043;
+}
+@media (max-width: 767px) {
+  .navbar-nav > li > .navbar-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 .navbar-toggle {
   border-color: #ddd;

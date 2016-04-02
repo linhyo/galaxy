@@ -1,8 +1,22 @@
 @question-color: #1C1C1C;
 @question-background: #ffffff;
-
+a.btn-share-result {
+  margin: 20px auto;
+  display: block;
+  width: 186px;
+  height: 55px;
+  background-color: transparent;
+  .transition();
+  &.min-btn{
+    width: 178px;
+    height: 50px;
+  }
+  &:hover {
+    background-color: hsla(9, 68%, 94%, 0.8);
+  }
+}
 .question-dialog {
-  min-height: 920px;
+  min-height: 970px;
   &.medium{
     min-height: 670px;
   }
@@ -383,17 +397,6 @@
       margin: 10px 0;
       font-size: 14px;
       color: #414042;
-    }
-    a.btn-share-result {
-      margin: 20px auto;
-      display: block;
-      width: 186px;
-      height: 55px;
-      background-color: transparent;
-      .transition();
-      &:hover {
-        background-color: hsla(9, 68%, 94%, 0.8);
-      }
     }
   }
   .step-confirm{

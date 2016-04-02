@@ -2741,8 +2741,27 @@ a.galaxy-button:hover {
 .rule-block.create-form .rule-dialog {
   padding: 0;
 }
+a.btn-share-result {
+  margin: 20px auto;
+  display: block;
+  width: 186px;
+  height: 55px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.btn-share-result.min-btn {
+  width: 178px;
+  height: 50px;
+}
+a.btn-share-result:hover {
+  background-color: rgba(250, 232, 229, 0.8);
+}
 .question-dialog {
-  min-height: 920px;
+  min-height: 970px;
   background: #ffffff url("../images/dialog/bg-step1-quiz1-main.png") no-repeat scroll center bottom / 100% auto;
   width: 100%;
   height: 100%;
@@ -3229,21 +3248,6 @@ a.galaxy-button:hover {
   margin: 10px 0;
   font-size: 14px;
   color: #414042;
-}
-.question-dialog .display-result a.btn-share-result {
-  margin: 20px auto;
-  display: block;
-  width: 186px;
-  height: 55px;
-  background-color: transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.question-dialog .display-result a.btn-share-result:hover {
-  background-color: rgba(250, 232, 229, 0.8);
 }
 .question-dialog .step-confirm {
   display: block;
@@ -5987,8 +5991,8 @@ a.galaxy-button:hover {
   bottom: 0;
   -webkit-clip-path: url(#clip);
   clip-path: url(#clip);
-  -webkit-animation: wave 1.5s;
-  animation: wave 1.5s;
+  -webkit-animation: wave 0.7s;
+  animation: wave 0.7s;
 }
 @media (max-width: 998px) {
   #galaxy-color .landing-product .product-img .ocean {

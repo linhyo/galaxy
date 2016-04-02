@@ -49,6 +49,10 @@
     autoplaySpeed: 5000
   });
 
+  smoothScroll.init({
+    speed: 1000
+  });
+
   $('#galaxy-decoration .banner-person').on('click', function(e) {
     e.preventDefault();
     var tab = $(this).attr('href');

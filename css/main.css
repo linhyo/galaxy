@@ -1945,9 +1945,10 @@ a.galaxy-button:hover {
 }
 .quiz-block .quiz-dialog .result-quiz2 {
   display: block;
-  width: 100%;
+  width: 90%;
   text-align: center;
   height: 100%;
+  margin: 0 auto;
 }
 .quiz-block .quiz-dialog .result-quiz2 .electrolyte {
   margin: 20px 0;
@@ -2292,12 +2293,7 @@ a.galaxy-button:hover {
   background-clip: padding-box;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar:hover {
-  background-color: #fbfbfb;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#d2d2d2));
-  background-image: -webkit-linear-gradient(left, #fbfbfb, #d2d2d2);
-  background-image: -moz-linear-gradient(left, #fbfbfb, #d2d2d2);
-  background-image: -ms-linear-gradient(left, #fbfbfb, #d2d2d2);
-  background-image: -o-linear-gradient(left, #fbfbfb, #d2d2d2);
+  box-shadow: 0 0 5px #fff;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .cover-avatar {
   border-radius: 50%;

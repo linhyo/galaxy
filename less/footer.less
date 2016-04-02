@@ -175,9 +175,14 @@
       margin: 0 0 2px;
     }
   }
-  @media (max-width: 760px) {
+  @media (min-width: 768px) and (max-width: 991px) {
+    .copyright > span:last-child {
+      display: block;
+    }
+  }
+  @media (max-width: 767px) {
     .footer-wrapper{
-      .footer-content{
+      .footer-content {
         margin: 15px 0 0 0;
       }
     }

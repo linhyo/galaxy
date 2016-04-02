@@ -1398,7 +1398,12 @@ a.galaxy-button:hover {
     margin: 0 0 2px;
   }
 }
-@media (max-width: 760px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  #footer .copyright > span:last-child {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
   #footer .footer-wrapper .footer-content {
     margin: 15px 0 0 0;
   }
@@ -6032,22 +6037,22 @@ a.btn-share-result:hover {
   width: 340px;
   height: 319px;
   background: transparent url("../images/landing/ball-1.png") no-repeat center center;
-  -webkit-animation: balloon1 3s ease-in-out infinite;
-  -moz-animation: balloon1 3s ease-in-out infinite;
-  -ms-animation: balloon1 3s ease-in-out infinite;
-  animation: balloon1 3s ease-in-out infinite;
+  -webkit-animation: balloon2 6s ease-in-out infinite;
+  -moz-animation: balloon2 6s ease-in-out infinite;
+  -ms-animation: balloon2 6s ease-in-out infinite;
+  animation: balloon2 6s ease-in-out infinite;
 }
 #galaxy-color .landing-ball.ball-2 {
   position: absolute;
-  bottom: -24%;
+  bottom: -15%;
   left: 50px;
   width: 500px;
   height: 463px;
   background: transparent url("../images/landing/ball-2.png") no-repeat center center;
-  -webkit-animation: balloon2 3s ease-in-out infinite;
-  -moz-animation: balloon2 3s ease-in-out infinite;
-  -ms-animation: balloon2 3s ease-in-out infinite;
-  animation: balloon2 3s ease-in-out infinite;
+  -webkit-animation: balloon1 6s ease-in-out infinite;
+  -moz-animation: balloon1 6s ease-in-out infinite;
+  -ms-animation: balloon1 6s ease-in-out infinite;
+  animation: balloon1 6s ease-in-out infinite;
 }
 #galaxy-color .landing-about-us {
   position: relative;
@@ -6073,7 +6078,7 @@ a.btn-share-result:hover {
   background: transparent url('../images/landing/quote-right.png') no-repeat center center;
 }
 #galaxy-color .landing-logo {
-  margin-top: 38%;
+  margin-top: 62%;
 }
 #galaxy-color .landing-discovery {
   position: relative;
@@ -6120,7 +6125,7 @@ a.btn-share-result:hover {
   -webkit-border-image: -webkit-linear-gradient(right, #f27725 0%, #f8e632 50%, #f27725 100%);
   border-image: linear-gradient(to left, #f27725 0%, #f8e632 50%, #f27725 100%);
   border-image-slice: 1;
-  margin: 15% 0 13%;
+  margin: 15% 0;
   padding: 60px 15px;
 }
 #galaxy-color .landing-product .product-img {
@@ -6147,11 +6152,6 @@ a.btn-share-result:hover {
   clip-path: url(#clip);
   -webkit-animation: wave 0.7s;
   animation: wave 0.7s;
-}
-@media (max-width: 998px) {
-  #galaxy-color .landing-product .product-img .ocean {
-    left: 50px;
-  }
 }
 #galaxy-color .landing-product .product-img .ocean:after {
   content: '';
@@ -6236,6 +6236,15 @@ a.btn-share-result:hover {
 #galaxy-color .landing-product .product-description {
   padding: 0 3%;
 }
+#galaxy-color .discovery-text {
+  max-width: 509px;
+  width: 100%;
+  margin-left: auto;
+}
+#galaxy-color .decor-text {
+  max-width: 335px;
+  width: 100%;
+}
 @media (min-width: 1200px) {
   #galaxy-color .landing-discovery > img {
     padding-right: 20px;
@@ -6260,31 +6269,44 @@ a.btn-share-result:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-color .landing-logo {
+    margin-top: 72% !important;
+  }
   #galaxy-color .landing-decor {
     margin-top: 40% !important;
+  }
+  #galaxy-color .middle-wrapper {
+    margin-top: 50px;
   }
   #galaxy-color .landing-ball.ball-1 {
     width: 272px;
     height: 255px;
     background-size: 80%;
-    top: -2% !important;
+    top: -4% !important;
     right: 40px !important;
   }
   #galaxy-color .landing-ball.ball-2 {
     width: 400px;
     height: 370px;
     background-size: 80%;
-    bottom: 18% !important;
+    bottom: 22% !important;
     left: 20px !important;
   }
-  #galaxy-color .landing-title {
-    height: 35px;
+  #galaxy-color .landing-product {
+    padding: 60px 15px 20px;
   }
   #galaxy-color .product-img {
     padding: 0 !important;
   }
   #galaxy-color .product-img img {
     width: 70% !important;
+  }
+  #galaxy-color .product-description {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  #galaxy-color .ocean {
+    left: 72px !important;
   }
 }
 @media (max-width: 767px) {
@@ -6301,7 +6323,7 @@ a.btn-share-result:hover {
     width: 238px;
     height: 223px;
     background-size: 70%;
-    top: -4% !important;
+    top: -6% !important;
     right: 10px !important;
   }
   #galaxy-color .landing-ball.ball-2 {
@@ -6310,6 +6332,10 @@ a.btn-share-result:hover {
     background-size: 70%;
     bottom: 22% !important;
     left: -10px !important;
+  }
+  #galaxy-color .landing-button {
+    font-size: 14px !important;
+    padding: 10px 30px !important;
   }
   #galaxy-color .product-img {
     padding: 0 !important;
@@ -6323,13 +6349,17 @@ a.btn-share-result:hover {
   #galaxy-color .product-description {
     margin-bottom: 20px !important;
   }
+  #galaxy-color .ocean {
+    left: 50px !important;
+  }
 }
 @media (max-width: 480px) {
   #galaxy-color .landing-logo {
     margin-top: 120% !important;
   }
   #galaxy-color .landing-product {
-    margin-bottom: 180px;
+    margin-bottom: 130px;
+    padding: 60px 15px 20px;
   }
 }
 #galaxy-discovery .landing-slide {
@@ -7431,74 +7461,106 @@ a.btn-share-result:hover {
 }
 @-webkit-keyframes balloon1 {
   0%,
+  50%,
   100% {
-    -webkit-transform: translateY(-20px);
+    transform: translate(0, 0);
   }
-  50% {
-    -webkit-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 @-moz-keyframes balloon1 {
   0%,
+  50%,
   100% {
-    -moz-transform: translateY(-20px);
+    transform: translate(0, 0);
   }
-  50% {
-    -moz-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 @-o-keyframes balloon1 {
   0%,
+  50%,
   100% {
-    -o-transform: translateY(-20px);
+    transform: translate(0, 0);
   }
-  50% {
-    -o-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 @keyframes balloon1 {
   0%,
+  50%,
   100% {
-    transform: translateY(-20px);
+    transform: translate(0, 0);
   }
-  50% {
-    transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 @-webkit-keyframes balloon2 {
   0%,
+  50%,
   100% {
-    -webkit-transform: translateY(30px);
+    transform: translate(0, 0);
   }
-  50% {
-    -webkit-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 @-moz-keyframes balloon2 {
   0%,
+  50%,
   100% {
-    -moz-transform: translateY(30px);
+    transform: translate(0, 0);
   }
-  50% {
-    -moz-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 @-o-keyframes balloon2 {
   0%,
+  50%,
   100% {
-    -o-transform: translateY(30px);
+    transform: translate(0, 0);
   }
-  50% {
-    -o-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 @keyframes balloon2 {
   0%,
+  50%,
   100% {
-    transform: translateY(30px);
+    transform: translate(0, 0);
   }
-  50% {
-    transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 .balloons {

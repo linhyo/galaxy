@@ -88,17 +88,17 @@
       width: 340px;
       height: 319px;
       background: transparent url("../images/landing/ball-1.png") no-repeat center center;
-      .animation(balloon1, 3s, ease-in-out, infinite);
+      .animation(balloon2, 6s, ease-in-out, infinite);
     }
 
     &.ball-2 {
       position: absolute;
-      bottom: -24%;
+      bottom: -15%;
       left: 50px;
       width: 500px;
       height: 463px;
       background: transparent url("../images/landing/ball-2.png") no-repeat center center;
-      .animation(balloon2, 3s, ease-in-out, infinite);
+      .animation(balloon1, 6s, ease-in-out, infinite);
     }
   }
 
@@ -127,7 +127,7 @@
   }
 
   .landing-logo {
-    margin-top: 38%;
+    margin-top: 62%;
   }
 
   .landing-discovery {
@@ -168,7 +168,7 @@
     -webkit-border-image: -webkit-linear-gradient(right, #F27725 0%, #F8E632 50%, #F27725 100%);
     border-image: linear-gradient(to left, #F27725 0%, #F8E632 50%, #F27725 100%);
     border-image-slice: 1;
-    margin: 15% 0 13%;
+    margin: 15% 0;
     padding: 60px 15px;
     .product-img {
       position: relative;
@@ -194,9 +194,6 @@
         clip-path: url(#clip);
         -webkit-animation: wave 0.7s;
         animation: wave 0.7s;
-        @media (max-width: 998px) {
-          left: 50px;
-        }
         &:after{
           content: '';
           height: 80px;
@@ -278,6 +275,16 @@
     }
   }
 
+  .discovery-text {
+    max-width: 509px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .decor-text {
+    max-width: 335px;
+    width: 100%;
+  }
+
   @media (min-width: 1200px) {
     .landing-discovery > img {
       padding-right: 20px;
@@ -306,33 +313,46 @@
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .landing-logo {
+      margin-top: 72% !important;
+    }
     .landing-decor {
       margin-top: 40% !important;
+    }
+    .middle-wrapper {
+      margin-top: 50px;
     }
     .landing-ball {
       &.ball-1 {
         width: 272px;
         height: 255px;
         background-size: 80%;
-        top: -2% !important;
+        top: -4% !important;
         right: 40px !important;
       }
       &.ball-2 {
         width: 400px;
         height: 370px;
         background-size: 80%;
-        bottom: 18% !important;
+        bottom: 22% !important;
         left: 20px !important;
       }
     }
-    .landing-title {
-      height: 35px;
+    .landing-product {
+      padding: 60px 15px 20px;
     }
     .product-img {
       padding: 0 !important;
       img {
         width: 70% !important;
       }
+    }
+    .product-description {
+      height: 120px;
+      margin-bottom: 30px;
+    }
+    .ocean {
+      left: 72px !important;
     }
   }
   @media (max-width: 767px) {
@@ -350,7 +370,7 @@
         width: 238px;
         height: 223px;
         background-size: 70%;
-        top: -4% !important;
+        top: -6% !important;
         right: 10px !important;
       }
       &.ball-2 {
@@ -360,6 +380,10 @@
         bottom: 22% !important;
         left: -10px !important;
       }
+    }
+    .landing-button {
+      font-size: 14px !important;
+      padding: 10px 30px !important;
     }
     .product-img {
       padding: 0 !important;
@@ -373,14 +397,18 @@
     .product-description {
       margin-bottom: 20px !important;
     }
+    .ocean {
+      left: 50px !important;
+    }
   }
 
   @media (max-width: 480px) {
     .landing-logo {
       margin-top: 120% !important;
     }
-    .landing-product{
-      margin-bottom: 180px;
+    .landing-product {
+      margin-bottom: 130px;
+      padding: 60px 15px 20px;
     }
   }
 }
@@ -1312,76 +1340,102 @@
 }
 
 @-webkit-keyframes balloon1 {
-  0%, 100% {
-    -webkit-transform: translateY(-20px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -webkit-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 
 @-moz-keyframes balloon1 {
-  0%, 100% {
-    -moz-transform: translateY(-20px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -moz-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 
 @-o-keyframes balloon1 {
-  0%, 100% {
-    -o-transform: translateY(-20px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -o-transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 
 @keyframes balloon1 {
-  0%, 100% {
-    transform: translateY(-20px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    transform: translateY(20px);
+  25% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 30px);
   }
 }
 
 @-webkit-keyframes balloon2 {
-  0%, 100% {
-    -webkit-transform: translateY(30px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -webkit-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 
 @-moz-keyframes balloon2 {
-  0%, 100% {
-    -moz-transform: translateY(30px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -moz-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 
 @-o-keyframes balloon2 {
-  0%, 100% {
-    -o-transform: translateY(30px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    -o-transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
 
 @keyframes balloon2 {
-  0%, 100% {
-    transform: translateY(30px);
+  0%, 50%, 100% {
+    transform: translate(0, 0);
   }
-  50% {
-    transform: translateY(-50px);
+  25% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 30px);
   }
 }
+
+
 
 .balloons {
   position: absolute;

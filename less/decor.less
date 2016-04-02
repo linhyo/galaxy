@@ -128,20 +128,78 @@
   .guide-cover {
     max-height: 210px;
     overflow: hidden;
-  }
-  .view-guide {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    .horizontal-gradient(#4e1464, #6b2b85);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    .border-left-radius(4px);
-    padding: 6px 12px;
-    > i {
-      font-size: 15px;
-      margin-left: 5px;
+    position: relative;
+    .view-guide {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      opacity: 1;
+      .transition();
+      .horizontal-gradient(#4e1464, #6b2b85);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      .border-left-radius(4px);
+      padding: 6px 12px;
+      > i {
+        font-size: 15px;
+        margin-left: 5px;
+      }
+      &.hide-item{
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+      }
+    }
+    .decor-block{
+      position: relative;
+      display: block;
+      height: auto;
+      .decor-content{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        &.hide-item{
+          height: 0;
+        }
+        p{
+          background: white;
+          opacity: 1;
+          .transition();
+          padding: 10px;
+          &.hide-item{
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
+          }
+        }
+        a.expand-image{
+          display: block;
+          position: absolute;
+          .border-radius-custom(4px, 0, 0, 0);
+          top: -28px;
+          right: 0;
+          background: hsla(0, 0%, 0%, 0.6) none repeat scroll 0 0;
+          height: 28px;
+          padding: 2px 0 0;
+          text-align: center;
+          width: 30px;
+          cursor: pointer;
+          .transition();
+          &.hide-item{
+            top: none;
+          }
+          &:hover{
+            background: hsla(0, 0%, 45%, 0.6) none repeat scroll 0 0;
+          }
+          i{
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+          }
+        }
+      }
     }
   }
   .guide-image {
@@ -155,15 +213,13 @@
     .guide-prev {
       border-left: 0;
       > i {
-        cursor: pointer;
         padding: 3px 30px 3px 10px;
       }
     }
     .guide-next {
       border-left: 1px solid #d5d7d9;
       > i {
-        cursor: pointer;
-        padding: 3px 10px 3px 30px;
+        padding: 3px 10px 6px 30px;
       }
     }
     > li {
@@ -171,9 +227,20 @@
       float: left;
       width: 50%;
       > i {
+        cursor: pointer;
+        color: #464646;
         display: block;
-        color: #a8a8a8;
         font-size: 20px;
+        &:hover{
+          color: #6b2b85;
+        }
+        &.slick-disabled{
+          color: #a8a8a8;
+          cursor: default;
+          &:hover{
+            color: #a8a8a8;
+          }
+        }
       }
     }
   }

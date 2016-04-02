@@ -3983,11 +3983,18 @@ a.btn-share-result:hover {
 .guide-item .guide-cover {
   max-height: 210px;
   overflow: hidden;
+  position: relative;
 }
-.guide-item .view-guide {
+.guide-item .guide-cover .view-guide {
   position: absolute;
   top: 30px;
   right: 0;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #4e1464;
   background-image: -webkit-gradient(linear, left top, right top, from(#4e1464), to(#6b2b85));
   background-image: -webkit-linear-gradient(left, #4e1464, #6b2b85);
@@ -4006,9 +4013,77 @@ a.btn-share-result:hover {
   background-clip: padding-box;
   padding: 6px 12px;
 }
-.guide-item .view-guide > i {
+.guide-item .guide-cover .view-guide > i {
   font-size: 15px;
   margin-left: 5px;
+}
+.guide-item .guide-cover .view-guide.hide-item {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.guide-item .guide-cover .decor-block {
+  position: relative;
+  display: block;
+  height: auto;
+}
+.guide-item .guide-cover .decor-block .decor-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.guide-item .guide-cover .decor-block .decor-content.hide-item {
+  height: 0;
+}
+.guide-item .guide-cover .decor-block .decor-content p {
+  background: white;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+.guide-item .guide-cover .decor-block .decor-content p.hide-item {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.guide-item .guide-cover .decor-block .decor-content a.expand-image {
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  top: -28px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  height: 28px;
+  padding: 2px 0 0;
+  text-align: center;
+  width: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.guide-item .guide-cover .decor-block .decor-content a.expand-image.hide-item {
+  top: none;
+}
+.guide-item .guide-cover .decor-block .decor-content a.expand-image:hover {
+  background: rgba(115, 115, 115, 0.6) none repeat scroll 0 0;
+}
+.guide-item .guide-cover .decor-block .decor-content a.expand-image i {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
 }
 .guide-item .guide-image {
   width: 100%;
@@ -4023,15 +4098,13 @@ a.btn-share-result:hover {
   border-left: 0;
 }
 .guide-item .guide-control .guide-prev > i {
-  cursor: pointer;
   padding: 3px 30px 3px 10px;
 }
 .guide-item .guide-control .guide-next {
   border-left: 1px solid #d5d7d9;
 }
 .guide-item .guide-control .guide-next > i {
-  cursor: pointer;
-  padding: 3px 10px 3px 30px;
+  padding: 3px 10px 6px 30px;
 }
 .guide-item .guide-control > li {
   display: inline;
@@ -4039,9 +4112,20 @@ a.btn-share-result:hover {
   width: 50%;
 }
 .guide-item .guide-control > li > i {
+  cursor: pointer;
+  color: #464646;
   display: block;
-  color: #a8a8a8;
   font-size: 20px;
+}
+.guide-item .guide-control > li > i:hover {
+  color: #6b2b85;
+}
+.guide-item .guide-control > li > i.slick-disabled {
+  color: #a8a8a8;
+  cursor: default;
+}
+.guide-item .guide-control > li > i.slick-disabled:hover {
+  color: #a8a8a8;
 }
 .intro {
   display: block;

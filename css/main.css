@@ -5990,6 +5990,11 @@ a.galaxy-button:hover {
   -webkit-animation: wave 1.5s;
   animation: wave 1.5s;
 }
+@media (max-width: 998px) {
+  #galaxy-color .landing-product .product-img .ocean {
+    left: 50px;
+  }
+}
 #galaxy-color .landing-product .product-img .ocean:after {
   content: '';
   height: 80px;

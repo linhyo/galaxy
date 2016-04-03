@@ -8,6 +8,13 @@
     $(this).toggleClass('show').find('ul').toggle();
   });
 
+  $('.expand-image').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('hide-item');
+    $(this).closest('.slick-track').find('.view-guide').toggleClass('hide-item');
+    $(this).closest('.slick-track').find('.decor-content').toggleClass('hide-item').find('p').toggleClass('hide-item');
+  });
+
   var event = (navigator.userAgent.match(/iPad/i)) ? "touchend" : "mouseup";
   $('body').on(event, function(e) {
     var popup = $('.navbar-menu');

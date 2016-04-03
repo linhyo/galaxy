@@ -6,13 +6,11 @@
   .decor-guide {
     p {
       text-align: justify;
-      margin: 0 0 10px;
     }
     .decor-guide-title {
       margin-bottom: 10px;
     }
     .decor-guide-img {
-      width: 600px;
       margin: 30px auto;
     }
     .related-post h2 {
@@ -155,7 +153,26 @@
     .decor-block{
       position: relative;
       display: block;
-      height: auto;
+      background-color: #080808;
+      text-align: center;
+      img{
+        height: 100%;
+        width: auto;
+        max-height: none;
+      }
+      span.nextArrow, span.prevArrow{
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+      }
+      span.nextArrow{
+        right: 0;
+      }
+      span.prevArrow{
+        left: 0;
+      }
       .decor-content{
         position: absolute;
         width: 100%;
@@ -205,6 +222,11 @@
   }
   .guide-image {
     width: 100%;
+  }
+  p.guide-content{
+    font-weight: bold;
+    line-height: 16px;
+    height: auto;
   }
   .guide-content {
     line-height: 24px;

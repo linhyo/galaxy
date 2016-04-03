@@ -3931,13 +3931,11 @@ a.btn-share-result:hover {
 }
 #decor-page .decor-guide p {
   text-align: justify;
-  margin: 0 0 10px;
 }
 #decor-page .decor-guide .decor-guide-title {
   margin-bottom: 10px;
 }
 #decor-page .decor-guide .decor-guide-img {
-  width: 600px;
   margin: 30px auto;
 }
 #decor-page .decor-guide .related-post h2 {
@@ -4105,7 +4103,27 @@ a.btn-share-result:hover {
 .guide-item .guide-cover .decor-block {
   position: relative;
   display: block;
-  height: auto;
+  background-color: #080808;
+  text-align: center;
+}
+.guide-item .guide-cover .decor-block img {
+  height: 100%;
+  width: auto;
+  max-height: none;
+}
+.guide-item .guide-cover .decor-block span.nextArrow,
+.guide-item .guide-cover .decor-block span.prevArrow {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+}
+.guide-item .guide-cover .decor-block span.nextArrow {
+  right: 0;
+}
+.guide-item .guide-cover .decor-block span.prevArrow {
+  left: 0;
 }
 .guide-item .guide-cover .decor-block .decor-content {
   position: absolute;
@@ -4167,6 +4185,11 @@ a.btn-share-result:hover {
 }
 .guide-item .guide-image {
   width: 100%;
+}
+.guide-item p.guide-content {
+  font-weight: bold;
+  line-height: 16px;
+  height: auto;
 }
 .guide-item .guide-content {
   line-height: 24px;

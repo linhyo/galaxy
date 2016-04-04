@@ -16,7 +16,7 @@
   });
 
   var event = (navigator.userAgent.match(/iPad/i)) ? "touchend" : "mouseup";
-  $('body').on(event, function(e) {
+  $('body').on(event, function (e) {
     var popup = $('.navbar-menu');
 
     if (!$('.navbar-nav > li.navbar-dropdown').is(e.target) && !$('.navbar-nav > li.navbar-dropdown > a').is(e.target)
@@ -28,75 +28,70 @@
   var image = [
     {
       id: 1,
-      src: "images/banner-change/10.png"
+      color: "#1b87c0"
     },
     {
       id: 2,
-      src: "images/banner-change/9.png"
+      color: "#013eae"
     },
     {
       id: 3,
-      src: "images/banner-change/8.png"
+      color: "#6340a8"
     },
     {
       id: 4,
-      src: "images/banner-change/7.png"
+      color: "#9764a2"
     },
     {
       id: 5,
-      src: "images/banner-change/6.png"
+      color: "#ab3066"
     },
     {
       id: 6,
-      src: "images/banner-change/5.png"
+      color: "#ea5e91"
     },
     {
       id: 7,
-      src: "images/banner-change/4.png"
+      color: "#ea2627"
     },
     {
       id: 8,
-      src: "images/banner-change/3.png"
+      color: "#f17d1d"
     },
     {
       id: 9,
-      src: "images/banner-change/2.png"
+      color: "#fff176"
     },
     {
       id: 10,
-      src: "images/banner-change/13.png"
+      color: "#a6cf0b"
     },
     {
       id: 11,
-      src: "images/banner-change/12.png"
+      color: "#50c308"
     },
     {
       id: 12,
-      src: "images/banner-change/11.png"
+      color: "#75c2e8"
     }
   ];
 
   // Homepage: Petal effect (Click each petal to change wall paint color)
   function anim(effect) {
-    $('#galaxyBanner').removeClass().addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $('#galaxyBanner').removeClass().addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
       $(this).removeClass();
     });
   }
 
   $('.color-flower .petal').on('click', function () {
     var petalId = $(this).attr('id');
-    console.log(petalId);
-    var src = '';
+    var color = '';
     for (var i = 0; i < image.length; i++) {
       if (petalId == image[i].id) {
-        src = image[i].src;
+        color = image[i].color;
       }
     }
-
-    setTimeout(function () {
-      $('#galaxyBanner').css('background-image', 'url(' + src + ')');
-      anim('fadeIn')
-    }, 100);
+    $('#galaxyBanner').css('background-color', color);
   });
 
 
@@ -115,7 +110,7 @@
   });
 
   // Select event
-  $('.dropdown-menu > li > a').on('click', function(e) {
+  $('.dropdown-menu > li > a').on('click', function (e) {
     e.preventDefault();
     var option = $(this).text();
     var btnDropdown = $(this).parents('ul.dropdown-menu').prev();
@@ -123,7 +118,7 @@
     btnDropdown.find('.selected-value').text(option);
   });
 
-  $('.product-detail-menu > li > a').on('click', function(e) {
+  $('.product-detail-menu > li > a').on('click', function (e) {
     e.preventDefault();
     $(this).parent().addClass('current');
     $(this).parent().siblings().removeClass('current');
@@ -132,7 +127,7 @@
     $(tab).fadeIn();
   });
 
-  $('#support-page .galaxy-suggestion').on('click', function(e) {
+  $('#support-page .galaxy-suggestion').on('click', function (e) {
     e.preventDefault();
     var tab = $(this).attr('href');
     console.log(tab);

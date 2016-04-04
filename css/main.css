@@ -3400,13 +3400,14 @@ a.btn-share-result:hover {
 .galaxy-banner {
   position: relative;
   width: 100%;
-  height: 428px;
+  height: auto;
   background-color: #fff;
 }
 .galaxy-banner:after {
   content: '';
+  left: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   border: 0;
   height: 8px;
   width: 100%;
@@ -3418,15 +3419,38 @@ a.btn-share-result:hover {
   background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
 }
-#galaxyBanner {
+.groupBanner {
   width: 100%;
-  height: 428px;
-  background: transparent no-repeat top center / cover;
+  height: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.groupBanner #galaxyBanner {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  background: url("../images/banner/banner-after.png") no-repeat top right / 100% auto;
+  background-blend-mode: multiply;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 0;
+}
+.groupBanner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .flower-control {
   position: relative;
@@ -3716,6 +3740,7 @@ a.btn-share-result:hover {
   left: 166px;
   width: 430px;
   height: 78px;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(117, 57, 137, 0.5);
   border-left: none;
@@ -3872,9 +3897,11 @@ a.btn-share-result:hover {
   }
 }
 @media (max-width: 767px) {
-  .galaxy-banner,
-  #galaxyBanner {
-    height: 150px !important;
+  #home-page {
+    margin-top: 20px !important;
+  }
+  .galaxy-banner::after {
+    bottom: -14px;
   }
   .flower-control {
     height: 120px;

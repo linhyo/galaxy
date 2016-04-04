@@ -1,21 +1,42 @@
 .galaxy-banner {
   position: relative;
   width: 100%;
-  height: 428px;
+  height: auto;
   background-color: #fff;
   &:after {
     content: '';
+    left: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     .border-gradient-left-to-right(0, 8px, 100%, #6b2b85, #f07721, #f6ea23);
   }
 }
 
-#galaxyBanner {
+.groupBanner {
   width: 100%;
-  height: 428px;
-  background: transparent no-repeat top center / cover;
+  height: 100%;
   .transition();
+  position: relative;
+  #galaxyBanner {
+    .transition();
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    background: url("../images/banner/banner-after.png") no-repeat top right / 100% auto;
+    background-blend-mode: multiply;
+    right: 0;
+    top: 0;
+    display: block;
+    z-index: 0;
+  }
+
+  img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 }
 
 .flower-control {
@@ -119,6 +140,7 @@
   left: 166px;
   width: 430px;
   height: 78px;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(117, 57, 137, 0.5);
   border-left: none;
@@ -265,31 +287,41 @@
     width: 228px;
   }
 }
+
 @media (max-width: 991px) {
   .galaxy-feature.news {
     margin-top: 20px;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .news-title {
     width: 162px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .outstanding-news .news-title {
     max-width: 465px !important;
   }
 }
+
 @media (max-width: 767px) {
-  .galaxy-banner, #galaxyBanner {
-    height: 150px !important;
+  #home-page {
+    margin-top: 20px !important;
   }
+
+  .galaxy-banner::after{
+    bottom: -14px;
+  }
+
   .flower-control {
     height: 120px;
     border: 1px dashed @main-color;
     .border-radius(5px);
     margin: 10px;
   }
+
   .color-flower {
     bottom: 20px !important;
     left: 60px !important;
@@ -298,6 +330,7 @@
       height: 40px !important;
     }
   }
+
   .banner-box {
     top: 30px;
     bottom: 0 !important;
@@ -309,18 +342,23 @@
     border: none !important;
     padding: 0 !important;
   }
+
   .banner-text-1 {
     font-size: 13px !important;
   }
+
   .banner-text-2 {
     font-size: 28px !important;
   }
+
   #home-page {
     margin-top: 120px;
   }
+
   #online-help {
     display: none;
   }
+
   .news-title {
     width: 194px;
   }

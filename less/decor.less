@@ -156,7 +156,6 @@
       background-color: #080808;
       text-align: center;
       img{
-        height: 100%;
         width: auto;
         max-height: none;
       }
@@ -166,6 +165,7 @@
         width: 50%;
         height: 100%;
         top: 0;
+        z-index: 2;
       }
       span.nextArrow{
         right: 0;
@@ -195,6 +195,7 @@
         a.expand-image{
           display: block;
           position: absolute;
+          z-index: 3;
           .border-radius-custom(4px, 0, 0, 0);
           top: -28px;
           right: 0;

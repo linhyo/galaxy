@@ -4107,7 +4107,6 @@ a.btn-share-result:hover {
   text-align: center;
 }
 .guide-item .guide-cover .decor-block img {
-  height: 100%;
   width: auto;
   max-height: none;
 }
@@ -4118,6 +4117,7 @@ a.btn-share-result:hover {
   width: 50%;
   height: 100%;
   top: 0;
+  z-index: 2;
 }
 .guide-item .guide-cover .decor-block span.nextArrow {
   right: 0;
@@ -4152,6 +4152,7 @@ a.btn-share-result:hover {
 .guide-item .guide-cover .decor-block .decor-content a.expand-image {
   display: block;
   position: absolute;
+  z-index: 3;
   -webkit-border-radius: 4px 0 0 0;
   -moz-border-radius: 4px 0 0 0;
   border-radius: 4px 0 0 0;

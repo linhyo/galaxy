@@ -1,4 +1,9 @@
 (function () {
+
+  $(window).load(function() {
+    $(".overlay").fadeOut(3500);
+  });
+
   // Carousel Slider
   $('.carousel').carousel();
   $('[data-toggle="tooltip"]').tooltip();

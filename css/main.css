@@ -2894,6 +2894,20 @@ a.galaxy-button:hover {
   position: relative;
   padding-top: 20px;
 }
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+@media (max-width: 767px) {
+  .no-padding-right {
+    padding-right: 15px !important;
+  }
+  .no-padding-left {
+    padding-left: 15px !important;
+  }
+}
 a.btn-share-result {
   margin: 20px auto;
   display: block;

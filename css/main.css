@@ -581,6 +581,9 @@ p {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+.galaxy-button:focus {
+  color: #fff !important;
+}
 a.galaxy-button:hover {
   color: #fff;
 }
@@ -4086,6 +4089,10 @@ a.btn-share-result:hover {
 }
 #decor-page .decor-guide p {
   text-align: justify;
+  margin: 0 0 1em;
+}
+#decor-page .decor-guide h2 {
+  margin: 0 0 1em;
 }
 #decor-page .decor-guide .decor-guide-title {
   margin-bottom: 10px;
@@ -7398,7 +7405,10 @@ a.btn-share-result:hover {
   position: relative;
   overflow: hidden;
 }
-#galaxy-decoration .landing-entry .entry-wrapper img {
+#galaxy-decoration .landing-entry .entry-wrapper .entry-img {
+  width: 100%;
+  height: 250px;
+  background: transparent no-repeat scroll center center / cover;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: -moz-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: -o-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -7424,7 +7434,7 @@ a.btn-share-result:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
 }
-#galaxy-decoration .landing-entry .entry-wrapper:hover img {
+#galaxy-decoration .landing-entry .entry-wrapper:hover .entry-img {
   -webkit-transform: scale(1.25, 1.25);
   -moz-transform: scale(1.25, 1.25);
   -o-transform: scale(1.25, 1.25);
@@ -7445,7 +7455,7 @@ a.btn-share-result:hover {
   left: 0;
   padding: 3% 5%;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #f0b5b9;
   z-index: 10;
 }
@@ -7457,15 +7467,16 @@ a.btn-share-result:hover {
   z-index: 10;
 }
 #galaxy-decoration .landing-entry .entry-title > p {
-  display: inline-block;
+  display: block;
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
-  font-size: 38px;
+  font-size: 30px;
   line-height: 35px;
   background-color: rgba(121, 155, 203, 0.6);
   white-space: nowrap;
   letter-spacing: 1px;
   padding: 4px 15px;
+  overflow: hidden;
 }
 #galaxy-decoration .landing-entry .slide-time {
   position: absolute;
@@ -7601,7 +7612,7 @@ a.btn-share-result:hover {
     font-size: 30px;
   }
   #galaxy-decoration .entry-title > p {
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
   #galaxy-decoration .event-intro {
     margin: 30px 0;
@@ -7658,7 +7669,7 @@ a.btn-share-result:hover {
     font-size: 25px;
   }
   #galaxy-decoration .entry-title > p {
-    font-size: 30px !important;
+    font-size: 26px !important;
   }
   #galaxy-decoration .story-detail {
     height: 400px;

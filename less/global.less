@@ -54,3 +54,23 @@ a, a:hover, a:focus, a:active {
 p {
   color: @text-color;
 }
+
+input.has-error {
+  background-color: #e2787a !important;
+  color: #fff !important;
+  &::-webkit-input-placeholder {
+    color: whitesmoke !important;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: whitesmoke !important;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: whitesmoke !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: whitesmoke !important;
+  }
+}

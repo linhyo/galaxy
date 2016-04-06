@@ -344,6 +344,24 @@ a:active {
 p {
   color: #808082;
 }
+input.has-error {
+  background-color: #e2787a !important;
+  color: #fff !important;
+}
+input.has-error::-webkit-input-placeholder {
+  color: whitesmoke !important;
+}
+input.has-error:-moz-placeholder {
+  /* Firefox 18- */
+  color: whitesmoke !important;
+}
+input.has-error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: whitesmoke !important;
+}
+input.has-error:-ms-input-placeholder {
+  color: whitesmoke !important;
+}
 @font-face {
   font-family: 'iCielBambola';
   src: url('../fonts/iCielBambola.eot');
@@ -3394,7 +3412,7 @@ a.btn-share-result:hover {
   display: block;
   position: relative;
   z-index: 2;
-  padding: 60px 80px;
+  padding: 60px 90px;
   text-align: center;
 }
 @media (max-width: 480px) {
@@ -3433,7 +3451,7 @@ a.btn-share-result:hover {
   color: #DA310A;
 }
 .question-dialog .display-result p.content-result {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 14px;
   color: #414042;
 }
@@ -4309,6 +4327,7 @@ a.btn-share-result:hover {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   padding: 10px;
+  margin: 0 !important;
 }
 .guide-item .guide-cover .decor-block .decor-content p.hide-item {
   opacity: 0;

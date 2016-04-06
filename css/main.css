@@ -304,7 +304,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   overflow-x: hidden;
-  cursor: url("../images/paint.png"), default;
+  cursor: url("../images/paint-hover.png"), default;
 }
 input,
 textarea,
@@ -2387,6 +2387,15 @@ a.galaxy-button:hover {
   width: 180px;
   background-size: cover;
   background: #333333 no-repeat center;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar.square-active {
+  border-radius: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar.square-active .cover-avatar {
+  border-radius: 0;
+}
+.rule-block .rule-dialog .background-rule .input-bg .input-avatar.square-active .cover-avatar .cr-boundary {
+  border-radius: 0;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar .result-upload {
   height: 180px;

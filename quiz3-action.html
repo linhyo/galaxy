@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+  <link rel="stylesheet" type="text/css" href="css/croppie.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -73,197 +74,16 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep1">
-          Thể lệ tham gia
-        </button>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep1">
-          Thể lệ giải thưởng
-        </button>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep2">
-          Thể lệ giải thưởng
-        </button>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep3">
-          Tham gia Popup Close
-        </button>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep4">
           Tham gia Popup Open
         </button>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep5">
           Tham gia Popup Preview
         </button>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ruleStep6">
-          Result Popup Preview
-        </button>
       </div>
     </div>
   </div>
 </main>
-
-<footer id="footer" role="contentinfo">
-  <div class="container footer-wrapper">
-    <div class="row">
-      <div class="footer-content">
-        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-5">
-          <p class="copyright">
-            <i class="fa fa-copyright"></i> 2016 Galaxy Paint. All rights reserved.
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-2 col-sm-3 col-xs-4">
-          <div class="social-network">
-            <ul>
-              <li><a class="facebook" href="https://www.facebook.com/SonGalaxy" target="_blank">
-                <i class="fa fa-facebook"></i></a></li>
-              <li><a class="youtube" href="https://www.youtube.com/channel/UCjgxlWPkBRzT0oXo5TCnlxw" target="_blank">
-                <i class="fa fa-youtube-play"></i></a></li>
-              <li><a class="google-plus" href="https://plus.google.com/114747288091527278715" target="_blank">
-                <i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-9">
-          <div class="input-group send-mail">
-            <input type="text" id="user-email" class="form-control" placeholder="Đăng ký nhận thư">
-          <span class="input-group-btn">
-            <button class="btn btn-send" type="button">Gửi</button>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Quiz 1 Step 1 -->
-<div class="modal fade" id="ruleStep1" tabindex="-1" role="dialog" aria-labelledby="ruleStep1Label">
-  <div class="modal-dialog rule-block" role="document">
-    <div class="modal-content rule-dialog">
-      <div class="container-rule">
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <h1 class="rule-title">
-              Thể lệ tham gia
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <div class="image-rule">
-              <img src="images/dialog/the-le-tham-gia_pop-up.jpg" alt=""/>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <button type="button" class="btn-close-rule" data-dismiss="modal" aria-label="Close">Đóng</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="ruleStep11" tabindex="-1" role="dialog" aria-labelledby="ruleStep1Label">
-  <div class="modal-dialog rule-block" role="document">
-    <div class="modal-content rule-dialog">
-      <div class="container-rule">
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <h1 class="rule-title">
-              Thể lệ giải thưởng
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <div class="image-rule">
-              <img src="images/dialog/the-le-giai-thuong_pop-up.jpg" alt=""/>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <button type="button" class="btn-close-rule" data-dismiss="modal" aria-label="Close">Đóng</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Quiz 1 Step 2 -->
-<div class="modal fade" id="ruleStep2" tabindex="-1" role="dialog" aria-labelledby="ruleStep2Label">
-  <div class="modal-dialog rule-block" role="document">
-    <div class="modal-content rule-dialog">
-      <div class="container-rule">
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <h1 class="rule-title">
-              Thể lệ giải thưởng
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <div class="image-rule">
-              <img src="images/dialog/example/example1.png" alt=""/>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <div class="content-rule">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis metus id felis consequat, sit
-                amet
-                suscipit dolor aliquam. Suspendisse ut nulla at turpis molestie consectetur at et dui. Nulla facilisi.
-                Duis eget elementum nulla, non elementum velit. Praesent tincidunt dolor ac turpis tincidunt, vitae
-                mollis
-                libero vehicula.</p>
-
-              <p>Nam sit amet condimentum est. Maecenas at nibh at augue elementum rutrum. Vestibulum pretium rutrum
-                orci,
-                eu varius neque convallis quis. Duis sit amet eros sit amet risus ultrices tristique. Vestibulum
-                dignissim
-                justo ut justo euismod, in pretium metus rhoncus. Donec eleifend, tortor ut fringilla rhoncus, felis
-                magna
-                suscipit sem, ac venenatis sapien est non lorem.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
-            <button type="button" class="btn-close-rule" data-dismiss="modal" aria-label="Close">Đóng</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Quiz 1 Step 3 -->
-<div class="modal fade bs-example-modal-sm in" id="ruleStep3" tabindex="-1" role="dialog"
-     aria-labelledby="ruleStep3Label">
-  <div class="modal-dialog modal-sm rule-block" role="document">
-    <div class="modal-content rule-dialog">
-      <div class="container-rule">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="content-rule">
-              <p class="message-confirm-rule text-center">Cám ơn ban đã chia sẻ câu chuyện. <br/> Bài đăng đang được
-                duyệt.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <button type="button" class="btn-close-rule btn-pink" data-dismiss="modal" aria-label="Close">Đóng</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Quiz 3 Step 4 -->
 <div class="modal fade" id="ruleStep4" tabindex="-1" role="dialog" aria-labelledby="ruleStep4Label">
   <div class="modal-dialog rule-block create-form" role="document">
@@ -275,21 +95,16 @@
               <div class="input-bg">
                 <div class="input-avatar">
                   <div class="cover-avatar">
-                    <div class="result-upload"></div>
+                    <div id="upload-demo"></div>
                     <div class="fileUpload">
                       <i class="icon icon-camera"></i>
                       <span>Tải ảnh lên</span>
-                      <input type="file" class="upload"/>
+                      <input id="upload" type="file" class="upload"/>
                     </div>
                     <div class="action-avatar">
-                      <div class="action-rage">
-                        <span class="zoom-out">-</span>
-                        <span class="zoom-in">+</span>
-                        <input class="range-slider__range" type="range" value="100" min="0" max="100">
-                      </div>
                       <div class="submit-avatar">
-                        <button class="btn-rule">Hủy</button>
-                        <button class="btn-rule btn-dark">Tải lên</button>
+                        <a href="#" class="btn-rule btn-cancel">Hủy</a>
+                        <a href="#" class="btn-rule btn-dark upload-result">Tải lên</a>
                       </div>
                     </div>
                   </div>
@@ -300,11 +115,14 @@
                       <div class="background-control">
                         <p>Màu nền</p>
 
-                        <div class="item-background active"
+                        <div class="item-background" data-background="images/dialog/rule/bg1.png"
                              style="background-image: url(images/dialog/rule/bg1.png)"></div>
-                        <div class="item-background" style="background-image: url(images/dialog/rule/bg2.png)"></div>
-                        <div class="item-background" style="background-image: url(images/dialog/rule/bg3.png)"></div>
-                        <div class="item-background" style="background-image: url(images/dialog/rule/bg4.png)"></div>
+                        <div class="item-background" data-background="images/dialog/rule/bg2.png"
+                             style="background-image: url(images/dialog/rule/bg2.png)"></div>
+                        <div class="item-background" data-background="images/dialog/rule/bg3.png"
+                             style="background-image: url(images/dialog/rule/bg3.png)"></div>
+                        <div class="item-background" data-background="images/dialog/rule/bg4.png"
+                             style="background-image: url(images/dialog/rule/bg4.png)"></div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-lg-offset-3">
@@ -453,8 +271,7 @@
                       <div class="background-control">
                         <p>Màu nền</p>
 
-                        <div class="item-background active"
-                             style="background-image: url(images/dialog/rule/bg1.png)"></div>
+                        <div class="item-background" style="background-image: url(images/dialog/rule/bg1.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg2.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg3.png)"></div>
                         <div class="item-background" style="background-image: url(images/dialog/rule/bg4.png)"></div>
@@ -564,93 +381,84 @@
   </div>
 </div>
 
-<!--Quiz 3 Step 5-->
-<div class="modal fade" id="ruleStep6" tabindex="-1" role="dialog" aria-labelledby="ruleStep5Label">
-  <div class="modal-dialog modal-lg rule-block create-form" role="document">
-    <div class="row">
-      <div class="col-lg-8 no-padding-right">
-        <div class="rule-dialog">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="background-rule">
-                <div class="input-bg" style="background-image: url(images/dialog/rule/bg2-full.png)">
-                  <div class="input-avatar" style="background-image: url(images/dialog/rule/bg2-full.png)">
-                    <div class="cover-avatar">
-                      <div class="result-upload circle" style="display: block">
-                        <div class="circle-style" style="background-image: url(images/dialog/example/example1.png)"></div>
-                      </div>
-                      <div class="result-upload square" style="display: none">
-                        <div class="square-style" style="background-image: url(images/dialog/example/example1.png)"></div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="action-editor result-post">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="post-block">
-                          <h1 class="title-post">Câu chuyện của con gái</h1>
-
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis metus id felis consequat,
-                            sit amet suscipit dolor aliquam. Suspendisse ut nulla at turpis molestie consectetur at et dui.
-                            Nulla facilisi. Duis eget elementum nulla, non elementum velit. Praesent tincidunt dolor ac turpis
-                            tincidunt, vitae mollis libero vehicula.
-                          </p>
-
-                          <p> Nam sit amet condimentum est. Maecenas at nibh at augue elementum rutrum. Vestibulum pretium
-                            rutrum orci, eu varius neque convallis quis. Duis sit amet eros sit amet risus ultrices tristique.
-                            Vestibulum dignissim justo ut justo euismod, in pretium metus rhoncus. Donec eleifend, tortor ut
-                            fringilla rhoncus, felis magna suscipit sem, ac venenatis sapien est non lorem.
-                          </p>
-
-                          <div class="post-info">
-                            <span class="person-post">Thị Trang, Gò Vấp</span>
-                            <span class="date-post">10/03/2016</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 no-padding-left">
-        <div class="box-conversation">
-          <div class="conversation-logo">
-            <img src="images/logo-color.png" alt=""/>
-          </div>
-          <div class="conversation-content">
-            <img src="images/cmt-fb.png" alt=""/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/lib/lodash.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
+<script type="text/javascript" src="js/lib/croppie.js"></script>
 <script type="text/javascript" src="js/galaxy.js"></script>
 <script type="text/javascript" src="js/landing.js"></script>
 <script type="text/javascript">
-  $uploadCrop = $('#upload-demo').croppie({
-    exif: true,
-    viewport: {
-      width: 200,
-      height: 200,
-      type: 'circle'
-    },
-    boundary: {
-      width: 300,
-      height: 300
+  $(document).ready(function () {
+    var $uploadCrop;
+
+    function readFile(input) {
+      $('.fileUpload').hide();
+      $('.action-avatar').show();
+
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $uploadCrop.croppie('bind', {
+            url: e.target.result
+          });
+          $('.upload-demo').addClass('ready');
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
     }
+
+    $uploadCrop = '';
+
+    $('.cr-slider-wrap').css('display', 'none');
+    $('#upload').on('change', function () {
+      $uploadCrop = $('#upload-demo').croppie({
+        viewport: {
+          width: 180,
+          height: 180
+        },
+        boundary: {
+          width: 180,
+          height: 180
+        }
+      });
+      readFile(this);
+      $('.cr-slider-wrap').css('display', 'block');
+    });
+    $('.upload-result').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $uploadCrop.croppie('result', {
+        type: 'canvas',
+        size: 'original'
+      }).then(function (resp) {
+        console.log(resp);
+        e.stopPropagation();
+      });
+    });
+
+    $('.btn-cancel').on('click', function () {
+      $uploadCrop = '';
+      $('#upload-demo').html('');
+      $('.fileUpload').show();
+      $('.action-avatar').hide();
+    });
+
+    $('.box-control .control-item i').click(function () {
+      $('.box-control .control-item i').removeClass('active');
+      $(this).addClass('active');
+      $('.input-avatar').toggleClass('square-active');
+    });
+
+    $('.background-control .item-background').click(function () {
+      $('.background-control .item-background').removeClass('active');
+      $(this).addClass('active');
+
+      var dataImage = $(this).attr('data-background');
+
+      $('.input-bg').css('background-image', 'url(' + dataImage + ')');
+      $('.input-avatar').css('background-image', 'url(' + dataImage + ')');
+    });
   });
 </script>
 

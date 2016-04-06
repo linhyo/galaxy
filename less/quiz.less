@@ -486,6 +486,7 @@
           z-index: 1;
           background: no-repeat center;
           background-size: cover;
+          border-radius: 50%;
           .horizontal-gradient(#eeeeee,#aaaaaa);
           &:hover{
             box-shadow: 0 0 5px #fff;
@@ -500,6 +501,15 @@
             width: 180px;
             background-size: cover;
             background: #333 no-repeat center;
+          }
+          &.square-active{
+            border-radius: 0;
+            .cover-avatar{
+              border-radius: 0;
+              .cr-boundary{
+                border-radius: 0;
+              }
+            }
           }
           .result-upload {
             height: 180px;

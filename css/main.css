@@ -2360,6 +2360,11 @@ a.galaxy-button:hover {
   z-index: 1;
   background: no-repeat center;
   background-size: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left top, right top, from(#eeeeee), to(#aaaaaa));
   background-image: -webkit-linear-gradient(left, #eeeeee, #aaaaaa);
@@ -4340,7 +4345,7 @@ a.btn-share-result:hover {
 .guide-item p.guide-content {
   font-weight: bold;
   line-height: 16px;
-  height: auto;
+  height: 40px;
 }
 .guide-item .guide-content {
   line-height: 24px;

@@ -1266,10 +1266,8 @@
   $('.expand-image').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('hide-item');
-//    $(this).parent().toggleClass('hide-item');
-//    $(this).next().toggleClass('hide-item');
-    $(this).closest('.slick-track').find('.view-guide').toggleClass('hide-item');
-    $(this).closest('.slick-track').find('.decor-content').toggleClass('hide-item').find('p').toggleClass('hide-item');
+    $(this).closest('.slick-track').find('.view-guide').toggleClass('.hide-item');
+    $(this).closest('.slick-track').find('.decor-content').toggleClass('.hide-item').find('p').toggleClass('.hide-item');
   })
 
 </script>

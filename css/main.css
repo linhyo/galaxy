@@ -3319,7 +3319,9 @@ a.btn-share-result:hover {
   width: 100%;
 }
 .question-dialog #quiz1 .step-content .root-item .radio.isImage label input {
-  margin-top: 5px;
+  height: 20px;
+  margin: 5px auto 0;
+  width: 20px;
 }
 .question-dialog #quiz1 .step-content .root-item .radio.isQuestion {
   display: block;
@@ -4168,6 +4170,7 @@ a.btn-share-result:hover {
   border-top-color: #8b9aa7 !important;
 }
 .post-item {
+  padding-bottom: 5px;
   margin: 20px 0;
 }
 .post-item .media-left {

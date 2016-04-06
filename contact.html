@@ -126,8 +126,8 @@
     <div class="row">
       <div class="col-xs-12">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-        <div style='overflow:hidden;height:400px;width:100%;'>
-          <div id='gmap_canvas' style='height:400px;width:1440px;'></div>
+        <div class="google-maps-wrapper">
+          <div id='gmap_canvas' style='height:100%;width:100%;'></div>
           <div><small><a href="http://www.autohuren.world/">autohuren</a></small></div>
           <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
         <script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(21.0197702,105.82317450000005),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(21.0197702,105.82317450000005)});infowindow = new google.maps.InfoWindow({content:'<strong>Công ty cổ phần galaxy Việt Nam</strong><br>Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>

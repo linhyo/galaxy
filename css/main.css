@@ -5980,6 +5980,11 @@ a.btn-share-result:hover {
 #contact-page .contact-address h5 {
   margin-bottom: 5px;
 }
+#contact-page .google-maps-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   #contact-page .factory-address {
     margin-top: 10px;

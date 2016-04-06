@@ -4260,6 +4260,7 @@ a.btn-share-result:hover {
   display: block;
   background-color: #080808;
   text-align: center;
+  height: 210px;
 }
 .guide-item .guide-cover .decor-block img {
   width: auto;

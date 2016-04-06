@@ -526,6 +526,8 @@ p {
   box-shadow: none;
 }
 .galaxy-select .dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
   right: 0;
   font-size: 13px;
 }
@@ -5791,6 +5793,7 @@ a.btn-share-result:hover {
 }
 #support-page .support-tab-wrapper {
   position: relative;
+  min-height: 400px;
   padding: 0 0 50px 0;
 }
 #support-page .support-tab-wrapper:after {

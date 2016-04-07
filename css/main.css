@@ -3455,6 +3455,39 @@ a.btn-share-result:hover {
   font-size: 14px;
   color: #414042;
 }
+.question-dialog .ava-confirm {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.question-dialog .ava-confirm img {
+  left: 50%;
+  top: -175px;
+  position: absolute;
+  margin-left: -75px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 0 0 15px #ffffff;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+}
+.question-dialog .ava-confirm:after {
+  background: rgba(0, 0, 0, 0) url("../images/dialog/bg-avatar.png") no-repeat scroll center center / cover;
+  content: "";
+  height: 261px;
+  left: 50%;
+  margin-left: -163px;
+  position: absolute;
+  top: -175px;
+  width: 326px;
+  z-index: 0;
+}
 .question-dialog .step-confirm {
   display: block;
   z-index: 2;

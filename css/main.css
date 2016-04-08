@@ -344,22 +344,27 @@ a:active {
 p {
   color: #808082;
 }
-input.has-error {
+input.has-error,
+textarea.has-error {
   background-color: #e2787a !important;
   color: #fff !important;
 }
-input.has-error::-webkit-input-placeholder {
+input.has-error::-webkit-input-placeholder,
+textarea.has-error::-webkit-input-placeholder {
   color: whitesmoke !important;
 }
-input.has-error:-moz-placeholder {
+input.has-error:-moz-placeholder,
+textarea.has-error:-moz-placeholder {
   /* Firefox 18- */
   color: whitesmoke !important;
 }
-input.has-error::-moz-placeholder {
+input.has-error::-moz-placeholder,
+textarea.has-error::-moz-placeholder {
   /* Firefox 19+ */
   color: whitesmoke !important;
 }
-input.has-error:-ms-input-placeholder {
+input.has-error:-ms-input-placeholder,
+textarea.has-error:-ms-input-placeholder {
   color: whitesmoke !important;
 }
 @font-face {

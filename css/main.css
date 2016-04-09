@@ -2133,6 +2133,46 @@ a.galaxy-button:hover {
 .rule-block {
   background: #ffffff;
 }
+.rule-block .close {
+  background-color: #231f20;
+  border: 2px solid #ffffff;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  vertical-align: middle;
+  width: 30px;
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 2px 1px #231f20;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.rule-block .close:after {
+  content: '';
+  background: url(../images/dialog/close.png) no-repeat center / 60% 60%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+}
+.rule-block .close:hover {
+  background-color: #615658;
+}
 .rule-block .rule-dialog {
   position: relative;
   width: 100%;
@@ -2185,12 +2225,41 @@ a.galaxy-button:hover {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
   border-bottom: 1px solid #ccc;
 }
 .rule-block .rule-dialog .image-rule {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+}
+.rule-block .rule-dialog .image-rule .carousel-inner {
+  padding-bottom: 30px;
+}
+.rule-block .rule-dialog .image-rule .carousel-indicators {
+  margin-left: -32%;
+  bottom: 15px;
+}
+.rule-block .rule-dialog .image-rule .carousel-indicators li {
+  margin-left: 15px;
+  border: 1px solid #a3a3a3;
+}
+.rule-block .rule-dialog .image-rule .carousel-indicators li.active {
+  background-color: #a3a3a3;
+}
+.rule-block .rule-dialog .image-rule .carousel-caption {
+  bottom: 0;
+  color: #333333;
+  height: 100%;
+  left: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  right: 0;
+  text-align: left;
+  text-shadow: none;
+  width: 100%;
+  z-index: 10;
 }
 .rule-block .rule-dialog .image-rule img {
   width: 100%;
@@ -2755,7 +2824,7 @@ a.galaxy-button:hover {
 }
 .rule-block .rule-dialog .background-rule .input-bg .action-editor.result-post .post-block p,
 .rule-block .rule-dialog .background-rule .input-bg .action-editor.result-post .post-block .post-info {
-  max-width: 350px;
+  max-width: 450px;
   margin: 0 auto 10px;
   color: #333333;
 }
@@ -10256,7 +10325,7 @@ a.btn-share-result:hover {
   overflow: hidden;
 }
 .quiz3-detail .post-block {
-  margin-top: 360px;
+  margin-top: 460px;
   display: block;
   height: 100%;
   padding: 5px 30px 30px;

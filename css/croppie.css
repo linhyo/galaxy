@@ -58,15 +58,18 @@
 .cr-slider {
     -webkit-appearance: none;/*removes default webkit styles*/
     /*border: 1px solid white; *//*fix for FF unable to apply focus style bug */
-    width: 300px;/*required for proper track sizing in FF*/
+    width: 400px;/*required for proper track sizing in FF*/
+    height: 15px;
+    display: block;
+    background-color: transparent;
     max-width: 100%;
 }
 .cr-slider::-webkit-slider-runnable-track {
     width: 100%;
-    height: 3px;
+    height: 1px;
     background: rgba(0, 0, 0, 0.5);
     border: 0;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 .cr-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -88,10 +91,10 @@
 
 .cr-slider::-moz-range-track {
     width: 100%;
-    height: 3px;
+    height: 1px;
     background: rgba(0, 0, 0, 0.5);
     border: 0;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 .cr-slider::-moz-range-thumb {
     border: none;

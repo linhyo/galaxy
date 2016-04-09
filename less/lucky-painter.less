@@ -17,72 +17,74 @@
       min-height: 560px;
     }
   }
-  .who-is-lucky-painter{
-    .row {
-      display: table;
-      width: 100%;
 
-      [class*="col-"] {
-        float: none;
-        display: table-cell;
-        vertical-align: top;
-        position: relative;
+  .who-is-lucky-painter {
+    display: table;
+    width: 100%;
+
+    [class*="col-"] {
+      float: none;
+      display: table-cell;
+      vertical-align: top;
+      position: relative;
+      @media (max-width: 768px) {
+        float: left;
+        display: block;
+      }
+      .contact-lucky-painter{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
         @media (max-width: 768px) {
-          float: left;
-          display: block;
+          position: relative;
         }
-        .contact-lucky-painter{
-          position: absolute;
-          left: 0;
-          width: 100%;
-          bottom: 0;
+        a.btn-register {
+          .gradient(#b80001, #ef7420);
+          color: white;
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
+          padding: 20px;
+          margin-top: 10px;
+          margin-left: 15px;
           @media (max-width: 768px) {
-            position: relative;
+            margin-left: 0;
           }
-          a.btn-register {
-            .gradient(#b80001, #ef7420);
-            color: white;
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            text-align: center;
-            padding: 20px;
-            margin-top: 10px;
-            margin-left: 15px;
-            @media (max-width: 768px) {
-              margin-left: 0;
-            }
-            &:hover {
-              .opacity(0.8);
-            }
+          &:hover {
+            .opacity(0.8);
           }
-          a.btn-suicide {
-            padding: 20px 10px 20px 70px;
-            background: #5d2075;
-            .border-radius(8px);
-            color: white;
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            text-align: left;
-            position: relative;
-            margin-top: 10px;
-            &:after {
-              content: "";
-              position: absolute;
-              top: 9px;
-              left: 18px;
-              background: hsla(0, 0%, 0%, 0) url("../images/icon/icon-contact.png") no-repeat scroll center center / 80%;
-              width: 43px;
-              height: 43px;
-            }
-            &:hover {
-              .opacity(0.8);
-            }
+        }
+        a.btn-suicide {
+          padding: 20px 10px 20px 70px;
+          background: #5d2075;
+          .border-radius(8px);
+          color: white;
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: left;
+          position: relative;
+          margin-top: 10px;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 18px;
+            background: hsla(0, 0%, 0%, 0) url("../images/icon/icon-contact.png") no-repeat scroll center center / 80%;
+            width: 43px;
+            height: 43px;
+          }
+          &:hover {
+            .opacity(0.8);
           }
         }
       }
     }
+  }
+  .who-is-lucky-painter {
+
   }
 
   .avatar-company {

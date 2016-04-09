@@ -95,8 +95,15 @@
     > li {
       display: block;
       width: 100%;
-      &.current > a > i:before {
-        content: "\f0da";
+      &.current {
+        > a {
+          color: #fff;
+          .horizontal-gradient(#f4901e, #f6e929);
+          border-color: #fceeb3;
+          > i:before {
+            content: "\f0da";
+          }
+        }
       }
       > a {
         position: relative;
@@ -116,7 +123,8 @@
         .transition();
         &:hover {
           color: @main-color;
-          background-color: #fff;
+          background: #fff none;
+          border-color: #96a4b0;
         }
         > i {
           position: absolute;

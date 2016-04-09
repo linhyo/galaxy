@@ -479,6 +479,7 @@ textarea.has-error:-ms-input-placeholder {
   background-image: url("../images/banner/banner-5.jpg");
 }
 #top-banner.product-banner {
+  height: 400px !important;
   background-image: url("../images/banner/product-banner.png");
 }
 #top-banner.lucky-painter {
@@ -4999,6 +5000,16 @@ a.btn-share-result:hover {
   display: block;
   width: 100%;
 }
+#product-page .product-detail-menu > li.current > a {
+  color: #fff;
+  background-color: #f4901e;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f4901e), to(#f6e929));
+  background-image: -webkit-linear-gradient(left, #f4901e, #f6e929);
+  background-image: -moz-linear-gradient(left, #f4901e, #f6e929);
+  background-image: -ms-linear-gradient(left, #f4901e, #f6e929);
+  background-image: -o-linear-gradient(left, #f4901e, #f6e929);
+  border-color: #fceeb3;
+}
 #product-page .product-detail-menu > li.current > a > i:before {
   content: "\f0da";
 }
@@ -5028,7 +5039,8 @@ a.btn-share-result:hover {
 }
 #product-page .product-detail-menu > li > a:hover {
   color: #8b9aa7;
-  background-color: #fff;
+  background: #fff none;
+  border-color: #96a4b0;
 }
 #product-page .product-detail-menu > li > a > i {
   position: absolute;
@@ -5137,40 +5149,40 @@ a.btn-share-result:hover {
 #news-page .tab-content .tab-pane {
   min-height: 560px;
 }
-#lucky-painter-page .who-is-lucky-painter .row,
-#news-page .who-is-lucky-painter .row {
+#lucky-painter-page .who-is-lucky-painter,
+#news-page .who-is-lucky-painter {
   display: table;
   width: 100%;
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"],
-#news-page .who-is-lucky-painter .row [class*="col-"] {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"],
+#news-page .who-is-lucky-painter [class*="col-"] {
   float: none;
   display: table-cell;
   vertical-align: top;
   position: relative;
 }
 @media (max-width: 768px) {
-  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"],
-  #news-page .who-is-lucky-painter .row [class*="col-"] {
+  #lucky-painter-page .who-is-lucky-painter [class*="col-"],
+  #news-page .who-is-lucky-painter [class*="col-"] {
     float: left;
     display: block;
   }
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter {
   position: absolute;
   left: 0;
   width: 100%;
   bottom: 0;
 }
 @media (max-width: 768px) {
-  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter,
-  #news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter {
+  #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter,
+  #news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter {
     position: relative;
   }
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register {
   background-color: #b80001;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b80001), to(#ef7420));
   background-image: -webkit-linear-gradient(top, #b80001, #ef7420);
@@ -5187,13 +5199,13 @@ a.btn-share-result:hover {
   margin-left: 15px;
 }
 @media (max-width: 768px) {
-  #lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register,
-  #news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register {
+  #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register,
+  #news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register {
     margin-left: 0;
   }
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register:hover,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-register:hover {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register:hover,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register:hover {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   -webkit-opacity: 0.8;
@@ -5201,8 +5213,8 @@ a.btn-share-result:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide {
   padding: 20px 10px 20px 70px;
   background: #5d2075;
   -webkit-border-radius: 8px;
@@ -5220,8 +5232,8 @@ a.btn-share-result:hover {
   position: relative;
   margin-top: 10px;
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:after,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:after {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:after,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:after {
   content: "";
   position: absolute;
   top: 9px;
@@ -5230,8 +5242,8 @@ a.btn-share-result:hover {
   width: 43px;
   height: 43px;
 }
-#lucky-painter-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:hover,
-#news-page .who-is-lucky-painter .row [class*="col-"] .contact-lucky-painter a.btn-suicide:hover {
+#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:hover,
+#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:hover {
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   -webkit-opacity: 0.8;

@@ -6389,10 +6389,10 @@ a.btn-share-result:hover {
   width: 340px;
   height: 319px;
   background: transparent url("../images/landing/ball-1.png") no-repeat center center;
-  -webkit-animation: balloon2 6s ease-in-out infinite;
-  -moz-animation: balloon2 6s ease-in-out infinite;
-  -ms-animation: balloon2 6s ease-in-out infinite;
-  animation: balloon2 6s ease-in-out infinite;
+  -webkit-animation: balloon2 10s ease-in-out infinite;
+  -moz-animation: balloon2 10s ease-in-out infinite;
+  -ms-animation: balloon2 10s ease-in-out infinite;
+  animation: balloon2 10s ease-in-out infinite;
 }
 #galaxy-color .landing-ball.ball-2 {
   position: absolute;
@@ -6401,10 +6401,10 @@ a.btn-share-result:hover {
   width: 500px;
   height: 463px;
   background: transparent url("../images/landing/ball-2.png") no-repeat center center;
-  -webkit-animation: balloon1 6s ease-in-out infinite;
-  -moz-animation: balloon1 6s ease-in-out infinite;
-  -ms-animation: balloon1 6s ease-in-out infinite;
-  animation: balloon1 6s ease-in-out infinite;
+  -webkit-animation: balloon1 10s ease-in-out infinite;
+  -moz-animation: balloon1 10s ease-in-out infinite;
+  -ms-animation: balloon1 10s ease-in-out infinite;
+  animation: balloon1 10s ease-in-out infinite;
 }
 #galaxy-color .landing-about-us {
   position: relative;
@@ -6477,7 +6477,7 @@ a.btn-share-result:hover {
   -webkit-border-image: -webkit-linear-gradient(right, #f27725 0%, #f8e632 50%, #f27725 100%);
   border-image: linear-gradient(to left, #f27725 0%, #f8e632 50%, #f27725 100%);
   border-image-slice: 1;
-  margin: 15% 0;
+  margin: 13% 0;
   padding: 60px 15px;
 }
 #galaxy-color .landing-product .product-img {
@@ -6502,8 +6502,8 @@ a.btn-share-result:hover {
   bottom: 0;
   -webkit-clip-path: url(#clip);
   clip-path: url(#clip);
-  -webkit-animation: wave 0.7s;
-  animation: wave 0.7s;
+  -webkit-animation: wave 0.2s;
+  animation: wave 0.2s;
 }
 #galaxy-color .landing-product .product-img .ocean:after {
   content: '';
@@ -6512,8 +6512,8 @@ a.btn-share-result:hover {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-animation: wave 1.5s;
-  animation: wave 1.5s;
+  -webkit-animation: wave 1s;
+  animation: wave 1s;
   opacity: 0.5;
   background: url("../images/landing/vet-son.png") no-repeat left 0 top 100%;
 }
@@ -6587,6 +6587,7 @@ a.btn-share-result:hover {
 }
 #galaxy-color .landing-product .product-description {
   padding: 0 3%;
+  text-align: justify;
 }
 #galaxy-color .discovery-text {
   max-width: 509px;
@@ -7895,10 +7896,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
   75% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
 }
 @-moz-keyframes balloon1 {
@@ -7908,10 +7909,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
   75% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
 }
 @-o-keyframes balloon1 {
@@ -7921,10 +7922,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
   75% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
 }
 @keyframes balloon1 {
@@ -7934,10 +7935,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
   75% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
 }
 @-webkit-keyframes balloon2 {
@@ -7947,10 +7948,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
   75% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
 }
 @-moz-keyframes balloon2 {
@@ -7960,10 +7961,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
   75% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
 }
 @-o-keyframes balloon2 {
@@ -7973,10 +7974,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
   75% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
 }
 @keyframes balloon2 {
@@ -7986,10 +7987,10 @@ a.btn-share-result:hover {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(30px, 30px);
+    transform: translate(15px, 15px);
   }
   75% {
-    transform: translate(-30px, 30px);
+    transform: translate(-15px, 15px);
   }
 }
 .balloons {

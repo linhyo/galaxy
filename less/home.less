@@ -195,7 +195,17 @@
   }
 
   .content-row {
-    margin: 30px -15px 0;
+    margin: 35px -15px 0;
+  }
+
+  .view-more {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    color: @text-color;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -206,7 +216,7 @@
   }
   h1 {
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .list-group-item {
@@ -255,6 +265,9 @@
       }
       &.right {
         right: 0;
+        > i:before {
+          padding-left: 3px;
+        }
       }
     }
   }

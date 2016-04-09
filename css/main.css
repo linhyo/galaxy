@@ -4028,7 +4028,16 @@ a.btn-share-result:hover {
   background-size: 80%;
 }
 #home-page .content-row {
-  margin: 30px -15px 0;
+  margin: 35px -15px 0;
+}
+#home-page .view-more {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  color: #808082;
+}
+#home-page .view-more:hover {
+  text-decoration: underline;
 }
 .galaxy-feature:before {
   top: 8px;
@@ -4036,7 +4045,7 @@ a.btn-share-result:hover {
 }
 .galaxy-feature h1 {
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .galaxy-feature .list-group-item {
   background-color: #8b9aa7;
@@ -4101,6 +4110,9 @@ a.btn-share-result:hover {
 }
 .galaxy-feature .product-slide .slide-control.right {
   right: 0;
+}
+.galaxy-feature .product-slide .slide-control.right > i:before {
+  padding-left: 3px;
 }
 .galaxy-feature .outstanding-news li {
   margin-top: 16px;

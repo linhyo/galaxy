@@ -501,6 +501,9 @@ textarea.has-error:-ms-input-placeholder {
   #top-banner {
     height: 150px !important;
   }
+  #top-banner.product-banner {
+    height: 150px !important;
+  }
 }
 .galaxy-select .dropdown-toggle {
   width: 100%;
@@ -5706,6 +5709,25 @@ a.btn-share-result:hover {
   #lucky-painter-page .img-mobile,
   #news-page .img-mobile {
     display: block;
+  }
+}
+.luckypainter-text {
+  margin-top: 65px;
+  text-align: right;
+}
+.luckypainter-text .luckypainter-title {
+  color: #E40C0C;
+  font-family: 'iCielBambola', sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 599px) {
+  .luckypainter-text {
+    margin-top: 10px;
+  }
+  .luckypainter-text .luckypainter-title {
+    font-size: 30px;
+    margin-bottom: 0;
   }
 }
 .project-item {

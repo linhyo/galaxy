@@ -100,7 +100,7 @@
   });
 
 
-  // Change banner for each selected tab ( T? V?N TRANG TR� )
+  // Change banner for each selected tab
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     var target = $(e.target).attr("href");
     var banner = $('#top-banner');
@@ -147,5 +147,54 @@
       banner.removeClass().addClass('nearest-agency-banner');
     }
   });
+
+  var map, marker, infowindow;
+  var content1 = '<strong>Công ty cổ phần Galaxy Việt Nam</strong><br>Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>';
+  var content2 = '<strong>Địa chỉ nhà máy</strong><br>Lô 48, KCN Quang Minh, Mê Linh, Hà Nội<br>';
+  var content3 = '<strong>Chi nhánh thành phố Hồ Chí Minh</strong><br>Tòa nhà Viễn Đông, 14 Phan Tôn, Phường Đa Kao, quận 1, Tp. Hồ Chí Minh<br>';
+  var content4 = '<strong>Chi nhánh Đà Nẵng</strong><br>115 Đỗ Quang, quận Thanh Khê, Tp. Đà Nẵng<br>';
+
+  function initMap(lat, long, cont) {
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), {
+      zoom: 17,
+      center: new google.maps.LatLng(lat, long),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    marker = new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(lat, long)
+    });
+
+    infowindow = new google.maps.InfoWindow({
+      content: cont
+    });
+
+    marker.addListener('click', function() {
+      infowindow.open(marker.get('map'), marker);
+    });
+
+    infowindow.open(map, marker);
+  }
+
+  // Init
+  google.maps.event.addDomListener(window, 'load', initMap(21.0197702, 105.82317450000005, content1));
+
+  $("#address-1").on('click', function () {
+    google.maps.event.addDomListener(window, 'load', initMap(21.0197702, 105.82317450000005, content1));
+  });
+
+  $("#address-2").on('click', function () {
+    google.maps.event.addDomListener(window, 'load', initMap(21.1601408, 105.7380511, content2));
+  });
+
+  $("#address-3").on('click', function () {
+    google.maps.event.addDomListener(window, 'load', initMap(10.790240628237548, 106.69598562392525, content3));
+  });
+
+  $("#address-4").on('click', function () {
+    google.maps.event.addDomListener(window, 'load', initMap(10.79018859122332, 106.69604798528485, content4));
+  });
+
 })();
 

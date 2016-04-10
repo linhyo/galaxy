@@ -128,15 +128,13 @@
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div class="google-maps-wrapper">
           <div id='gmap_canvas' style='height:100%;width:100%;'></div>
-          <div><small><a href="http://www.autohuren.world/">autohuren</a></small></div>
-          <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
-        <script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(21.0197702,105.82317450000005),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(21.0197702,105.82317450000005)});infowindow = new google.maps.InfoWindow({content:'<strong>Công ty cổ phần galaxy Việt Nam</strong><br>Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
       </div>
     </div>
 
     <div class="row top-gap">
       <div class="col-xs-12 col-sm-6">
-        <div class="contact-address company-address">
+        <div id="address-1" class="contact-address company-address">
           <h5 class="galaxy-heading">Công ty cổ phần Galaxy Việt Nam</h5>
           <p><strong>Địa chỉ:</strong> Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>
             <strong>Điện thoại:</strong> (+84.4) 62 833 633 / Fax: (+84.4) 62 83 3 533<br>
@@ -145,7 +143,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="contact-address factory-address">
+        <div id="address-2" class="contact-address factory-address">
           <h5 class="galaxy-heading">Địa chỉ nhà máy</h5>
           <p><strong>Địa chỉ:</strong> Lô 48, KCN Quang Minh, Mê Linh, Hà Nội<br>
             <strong>Điện thoại:</strong> (+84.4)38182 046 / Fax: (+84.4)38182 048<br>
@@ -157,7 +155,7 @@
 
     <div class="row top-gap">
       <div class="col-xs-12 col-sm-6">
-        <div class="contact-address company-address">
+        <div id="address-3" class="contact-address branch-address">
           <h5 class="galaxy-heading">Chi nhánh thành phố Hồ Chí Minh</h5>
           <p><strong>Địa chỉ:</strong> Tòa nhà Viễn Đông, 14 Phan Tôn, Phường Đa Kao, quận 1, Tp. Hồ Chí Minh<br>
             <strong>Điện thoại:</strong> 08. 3820 4971/ Fax: 08. 3820 4972<br>
@@ -166,7 +164,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="contact-address factory-address">
+        <div id="address-4" class="contact-address branch-address">
           <h5 class="galaxy-heading">Chi nhánh Đà Nẵng</h5>
           <p><strong>Địa chỉ:</strong> 115 Đỗ Quang, quận Thanh Khê, Tp. Đà Nẵng<br>
             <strong>Điện thoại:</strong> 0511 3691 778/ Fax: 0511 3692 434<br>

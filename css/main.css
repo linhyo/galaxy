@@ -5303,6 +5303,14 @@ a.btn-share-result:hover {
   background: -o-linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
   background: linear-gradient(left, #6b2b85 0%, #f07721 50%, #f6ea23 100%);
 }
+#lucky-painter-page .img-desktop,
+#news-page .img-desktop {
+  display: block;
+}
+#lucky-painter-page .img-mobile,
+#news-page .img-mobile {
+  display: none;
+}
 #lucky-painter-page .title-lucky-painter,
 #news-page .title-lucky-painter {
   display: block;
@@ -5690,6 +5698,14 @@ a.btn-share-result:hover {
   #news-page .luckypainter-signup-form .city {
     padding: 0;
     margin: 15px 0 0 0;
+  }
+  #lucky-painter-page .img-desktop,
+  #news-page .img-desktop {
+    display: none;
+  }
+  #lucky-painter-page .img-mobile,
+  #news-page .img-mobile {
+    display: block;
   }
 }
 .project-item {

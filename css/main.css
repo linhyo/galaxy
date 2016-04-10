@@ -3703,8 +3703,8 @@ a.btn-share-result:hover {
   background-color: transparent;
   background: url("../images/banner/banner-after.png") no-repeat top right / 100% auto;
   background-blend-mode: multiply;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
   display: block;
   z-index: 0;
 }

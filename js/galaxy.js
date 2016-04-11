@@ -132,22 +132,6 @@
     $(tab).fadeIn();
   });
 
-  $('#support-page .galaxy-suggestion').on('click', function (e) {
-    e.preventDefault();
-    var tab = $(this).attr('href');
-    console.log(tab);
-    $('.support-tab-wrapper').not(tab).hide();
-    $(tab).fadeIn();
-
-    // Change banner for each selected tab ( H? TR? )
-    var banner = $('#top-banner');
-    if (tab == '#paint-calculator') {
-      banner.removeClass().addClass('paint-calculator-banner');
-    } else if (tab == '#nearest-agency') {
-      banner.removeClass().addClass('nearest-agency-banner');
-    }
-  });
-
   var map, marker, infowindow;
   var content1 = '<strong>Công ty cổ phần Galaxy Việt Nam</strong><br>Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>';
   var content2 = '<strong>Địa chỉ nhà máy</strong><br>Lô 48, KCN Quang Minh, Mê Linh, Hà Nội<br>';

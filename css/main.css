@@ -504,6 +504,9 @@ textarea.has-error:-ms-input-placeholder {
   #top-banner.product-banner {
     height: 150px !important;
   }
+  #top-banner.lucky-painter {
+    background-position: left center !important;
+  }
 }
 .galaxy-select .dropdown-toggle {
   width: 100%;
@@ -1219,14 +1222,18 @@ a.galaxy-button:hover {
     background-color: #5a1d71;
   }
   .navbar-form {
-    top: 15px;
-    right: 46%;
+    position: absolute;
+    top: 10px;
+    left: 60px;
     box-shadow: none;
     padding: 0;
     margin: 0;
   }
   .navbar-form:after {
     right: 8px;
+  }
+  .navbar-form input {
+    max-width: 100%;
   }
 }
 #footer {
@@ -4033,7 +4040,7 @@ a.btn-share-result:hover {
   background-size: 80%;
 }
 #home-page .content-row {
-  margin: 35px -15px 0;
+  margin: 25px -15px 0;
 }
 #home-page .view-more {
   position: absolute;
@@ -4173,7 +4180,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #home-page {
-    margin-top: 20px !important;
+    margin-top: 10px !important;
   }
   .galaxy-banner::after {
     bottom: -14px;
@@ -5727,11 +5734,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 599px) {
   .luckypainter-text {
-    margin-top: 10px;
-  }
-  .luckypainter-text .luckypainter-title {
-    font-size: 30px;
-    margin-bottom: 0;
+    display: none;
   }
 }
 .project-item {
@@ -6208,8 +6211,9 @@ a.btn-share-result:hover {
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  #contact-page .factory-address {
-    margin-top: 10px;
+  #contact-page #address-2,
+  #contact-page #address-4 {
+    margin-top: 20px;
   }
 }
 #search-page {
@@ -6318,9 +6322,6 @@ a.btn-share-result:hover {
 }
 .galaxy-dialog .modal-footer .galaxy-btn-file {
   margin-right: 5px;
-}
-#review-product-dialog .modal-dialog {
-  width: 900px;
 }
 #landing-nav {
   position: relative;
@@ -7700,7 +7701,7 @@ a.btn-share-result:hover {
   top: 0;
   left: 0;
   padding: 1% 3%;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   background-color: #f0b5b9;
   z-index: 10;
@@ -7932,6 +7933,20 @@ a.btn-share-result:hover {
   }
   #galaxy-decoration .banner-caption {
     margin-top: 14% !important;
+  }
+  #galaxy-decoration .entry-slide .slide-title > p {
+    font-size: 30px !important;
+    padding: 0 15px !important;
+  }
+  #galaxy-decoration .entry-slide .btn-prev,
+  #galaxy-decoration .entry-slide .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #galaxy-decoration .entry-slide .btn-prev > i,
+  #galaxy-decoration .entry-slide .btn-next > i {
+    font-size: 12px !important;
+    line-height: 30px !important;
   }
   #galaxy-decoration .landing-entry img {
     width: 100%;
@@ -10404,7 +10419,7 @@ a.btn-share-result:hover {
   display: block;
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
-  font-size: 30px;
+  font-size: 38px;
   line-height: 35px;
   background-color: rgba(121, 155, 203, 0.6);
   white-space: nowrap;

@@ -484,5 +484,22 @@
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/galaxy.js"></script>
+<script>
+  $('#support-page .galaxy-suggestion').on('click', function (e) {
+    e.preventDefault();
+    var tab = $(this).attr('href');
+    console.log(tab);
+    $('.support-tab-wrapper').not(tab).hide();
+    $(tab).fadeIn();
+
+    // Change banner for each selected tab ( H? TR? )
+    var banner = $('#top-banner');
+    if (tab == '#paint-calculator') {
+      banner.removeClass().addClass('paint-calculator-banner');
+    } else if (tab == '#nearest-agency') {
+      banner.removeClass().addClass('nearest-agency-banner');
+    }
+  });
+</script>
 </body>
 </html>

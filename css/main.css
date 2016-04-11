@@ -2073,6 +2073,7 @@ a.galaxy-button:hover {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 15px;
+  line-height: 18px;
 }
 .quiz-block .quiz-dialog .result-quiz2 .electrolyte p {
   color: #755220;
@@ -3703,8 +3704,8 @@ a.btn-share-result:hover {
   background-color: transparent;
   background: url("../images/banner/banner-after.png") no-repeat top right / 100% auto;
   background-blend-mode: multiply;
-  right: 1px;
-  top: 1px;
+  right: 0;
+  top: 0;
   display: block;
   z-index: 0;
 }

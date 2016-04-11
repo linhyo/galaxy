@@ -1763,7 +1763,7 @@ a.galaxy-button:hover {
   }
 }
 @media (min-width: 600px) {
-  .tab-header .nav-dropdown {
+  .tab-header .submenu-dropdown {
     display: none;
   }
 }
@@ -1771,14 +1771,15 @@ a.galaxy-button:hover {
   .tab-header .nav-tabs {
     display: none;
   }
-  .tab-header .nav-dropdown {
+  .tab-header .submenu-dropdown {
     display: block;
   }
 }
-.nav-dropdown {
+.submenu-dropdown {
+  position: relative;
   margin: 15px 0;
 }
-.nav-dropdown .dropdown-toggle {
+.submenu-dropdown .submenu-button {
   width: 100%;
   font-size: 13px;
   box-shadow: none;
@@ -1786,11 +1787,7 @@ a.galaxy-button:hover {
   border-color: #adb8c1;
   text-align: left;
 }
-.nav-dropdown .dropdown-toggle:hover,
-.nav-dropdown .dropdown-toggle:focus {
-  box-shadow: none;
-}
-.nav-dropdown .dropdown-toggle:after {
+.submenu-dropdown .submenu-button:after {
   content: '';
   display: inline-block;
   width: 0;
@@ -1803,26 +1800,48 @@ a.galaxy-button:hover {
   border-left: 6px solid transparent;
   vertical-align: middle;
 }
-.nav-dropdown .selected-value {
+.submenu-dropdown .submenu-button .selected-value {
   color: #8b9aa7;
   font-weight: 600;
 }
-.nav-dropdown .dropdown-menu {
+.submenu-dropdown .submenu-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
   right: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
   font-size: 13px;
+  text-align: left;
+  list-style: none;
   background-color: #8b9aa7;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
-.nav-dropdown .dropdown-menu li > a {
+.submenu-dropdown .submenu-list li > a {
+  display: block;
   color: #fff;
+  line-height: 1.42857143;
   font-weight: 600;
   padding: 7px 20px;
+  clear: both;
+  white-space: nowrap;
 }
-.nav-dropdown .dropdown-menu li > a:hover {
-  background-color: #636e79;
-}
-.nav-dropdown .dropdown-menu .active > a,
-.nav-dropdown .dropdown-menu .active > a:hover,
-.nav-dropdown .dropdown-menu .active > a:focus {
+.submenu-dropdown .submenu-list li.active > a,
+.submenu-dropdown .submenu-list li:hover > a {
   color: #fff;
   background-color: #636e79;
 }

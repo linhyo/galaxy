@@ -4264,11 +4264,14 @@ a.btn-share-result:hover {
 #decor-page .decor-guide h2 {
   margin: 0 0 1em;
 }
+#decor-page .decor-guide img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+}
 #decor-page .decor-guide .decor-guide-title {
   margin-bottom: 10px;
-}
-#decor-page .decor-guide .decor-guide-img {
-  margin: 30px auto;
 }
 #decor-page .decor-guide .related-post h2 {
   margin-bottom: 10px;
@@ -5230,6 +5233,7 @@ a.btn-share-result:hover {
   padding: 20px;
   margin-top: 10px;
   margin-left: 15px;
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register,
@@ -5264,6 +5268,7 @@ a.btn-share-result:hover {
   text-align: left;
   position: relative;
   margin-top: 10px;
+  white-space: nowrap;
 }
 #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:after,
 #news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-suicide:after {
@@ -5997,6 +6002,12 @@ a.btn-share-result:hover {
   text-align: justify;
   margin: 0 0 10px;
 }
+.news-detail img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 10px auto;
+}
 .news-detail .news-detail-title {
   margin-bottom: 10px;
 }
@@ -6007,9 +6018,6 @@ a.btn-share-result:hover {
 }
 .news-detail .news-detail-time > i {
   margin-right: 10px;
-}
-.news-detail .news-detail-img {
-  margin: 30px auto;
 }
 .news-detail .related-post {
   border-left: 1px solid #8b9aa7;

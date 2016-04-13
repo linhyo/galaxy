@@ -2473,6 +2473,7 @@ a.galaxy-button:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
 }
 .rule-block .rule-dialog .background-rule .input-bg .input-avatar {
   display: inline-block;
@@ -2815,11 +2816,16 @@ a.galaxy-button:hover {
 .rule-block .rule-dialog .background-rule .input-bg .action-editor:after {
   background: rgba(0, 0, 0, 0) url("../images/dialog/rule/create-bg-rule.png") no-repeat top left / 100% auto;
   content: "";
-  height: 95px;
+  height: 350px;
   left: 0;
   position: absolute;
-  top: -80px;
+  top: -285px;
   width: 100%;
+}
+@media (max-width: 480px) {
+  .rule-block .rule-dialog .background-rule .input-bg .action-editor:after {
+    top: -190px;
+  }
 }
 .rule-block .rule-dialog .background-rule .input-bg .action-editor.result-post:before {
   background: rgba(0, 0, 0, 0) url("../images/landing/paint-roller.png") no-repeat scroll center top / 100% auto;
@@ -10242,7 +10248,7 @@ a.btn-share-result:hover {
   position: absolute;
   width: 280px;
   height: 280px;
-  top: 50px;
+  top: 195px;
   z-index: 2;
 }
 .quiz3-detail .avatar-quiz3:before {
@@ -10260,6 +10266,7 @@ a.btn-share-result:hover {
   .quiz3-detail .avatar-quiz3 {
     margin-left: -110px;
     width: 220px;
+    top: 95px;
     height: 220px;
   }
 }
@@ -10268,6 +10275,7 @@ a.btn-share-result:hover {
     margin-left: -90px;
     width: 180px;
     height: 180px;
+    top: 125px;
   }
 }
 .quiz3-detail .avatar-quiz3 img {
@@ -10455,7 +10463,7 @@ a.btn-share-result:hover {
   overflow: hidden;
 }
 .quiz3-detail .post-block {
-  margin-top: 460px;
+  margin-top: 540px;
   display: block;
   height: 100%;
   padding: 5px 30px 30px;
@@ -10463,6 +10471,11 @@ a.btn-share-result:hover {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid #afafaf;
+}
+@media (max-width: 768px) {
+  .quiz3-detail .post-block {
+    margin-top: 355px;
+  }
 }
 @media (max-width: 480px) {
   .quiz3-detail .post-block {

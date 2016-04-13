@@ -3958,7 +3958,7 @@
     position: absolute;
     width: 280px;
     height: 280px;
-    top: 50px;
+    top: 195px;
     z-index: 2;
     &:before {
       background: hsla(0, 0%, 0%, 0) url("../images/landing/paint-roller.png") no-repeat scroll center top / 100% auto;
@@ -3974,12 +3974,14 @@
     @media (max-width: 768px) {
       margin-left: -110px;
       width: 220px;
+      top: 95px;
       height: 220px;
     }
     @media (max-width: 480px) {
       margin-left: -90px;
       width: 180px;
       height: 180px;
+      top: 125px;
     }
     img {
       max-width: auto;
@@ -4135,13 +4137,16 @@
     }
   }
   .post-block {
-    margin-top: 460px;
+    margin-top: 540px;
     display: block;
     height: 100%;
     padding: 5px 30px 30px;
     position: relative;
     width: 100%;
     z-index: 2;
+    @media (max-width: 768px) {
+      margin-top: 355px;
+    }
     @media (max-width: 480px) {
       margin-top: 280px;
     }

@@ -536,6 +536,8 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        position: relative;
+
         .input-avatar {
           display: inline-block;
           height: 200px;
@@ -551,6 +553,7 @@
           border-radius: 50%;
           .transition();
           .horizontal-gradient(#eeeeee, #aaaaaa);
+
           &:hover {
             box-shadow: 0 0 5px #fff;
           }
@@ -848,12 +851,14 @@
           &:after {
             background: hsla(0, 0%, 0%, 0) url("../images/dialog/rule/create-bg-rule.png") no-repeat top left / 100% auto;
             content: "";
-            height: 95px;
+            height: 350px;
             left: 0;
             position: absolute;
-            top: -80px;
+            top: -285px;
             width: 100%;
-
+            @media (max-width: 480px) {
+              top: -190px;
+            }
           }
           &.result-post {
             &:before {

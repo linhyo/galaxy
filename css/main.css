@@ -10521,7 +10521,7 @@ a.btn-share-result:hover {
   z-index: 2;
   border-bottom: 1px solid #afafaf;
 }
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .quiz3-detail .post-block {
     margin-top: 250px;
   }

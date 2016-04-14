@@ -1,6 +1,7 @@
 .row.top-gap {
   margin-top: 20px;
 }
+
 .row.double-gap {
   margin-top: 40px;
 }
@@ -53,6 +54,7 @@
     &.product-banner {
       height: 150px !important;
     }
+
     &.lucky-painter {
       background-position: left center !important;
     }
@@ -107,15 +109,15 @@
   }
 }
 
-.group-filter{
+.group-filter {
   margin: 10px 0;
   display: inline-block;
   width: 100%;
-  .product-btn{
+  .product-btn {
     background-color: white;
     color: hsl(208, 14%, 60%);
     .border-radius(4px);
-    .text-uppercase{
+    .text-uppercase {
       text-transform: inherit;
     }
   }
@@ -139,6 +141,7 @@
     color: #fff !important;
   }
 }
+
 a.galaxy-button:hover {
   color: #fff;
 }
@@ -290,10 +293,12 @@ a.galaxy-button:hover {
       width: 40%;
       font-size: 115px;
     }
+
     p {
       width: 48%;
       margin: 10% 0 0 10%;
     }
+
     .large-text {
       font-size: 40px;
     }
@@ -305,10 +310,12 @@ a.galaxy-button:hover {
       width: 40%;
       font-size: 100px;
     }
+
     p {
       width: 48%;
       margin: 8% 0 0 10%;
     }
+
     .large-text {
       font-size: 34px;
     }
@@ -321,10 +328,12 @@ a.galaxy-button:hover {
       font-size: 80px;
       text-align: right;
     }
+
     p {
       width: 48%;
       margin: 6% 0 0 10%;
     }
+
     .large-text {
       font-size: 30px;
     }
@@ -338,16 +347,32 @@ a.galaxy-button:hover {
       bottom: -3px !important;
       left: -3px !important;
     }
+
     i {
       display: none !important;
     }
+
     p {
       margin: 0;
     }
+
     .large-text {
       font-size: 24px;
     }
   }
+}
+
+#wrap {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+#iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 599px) {
@@ -419,7 +444,7 @@ a.galaxy-button:hover {
       color: @blue-text;
     }
   }
-  &.orange{
+  &.orange {
     color: @orange-text;
     background-color: @orange;
   }

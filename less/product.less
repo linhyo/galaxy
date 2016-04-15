@@ -148,7 +148,15 @@
 
   #review-section {
     .reviewer-image {
-      .border-radius(50px);
+      margin: 10px 0;
+      > div {
+        width: 60%;
+        height: 0;
+        .border-radius(50%);
+        background: transparent no-repeat scroll center center / cover;
+        margin: 0 auto;
+        padding-bottom: 60%;
+      }
     }
     .reviewer-name, .reviewer-job {
       display: inline-block;

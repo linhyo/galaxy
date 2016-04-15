@@ -186,7 +186,7 @@
   });
 
   $("#address-4").on('click', function () {
-    google.maps.event.addDomListener(window, 'load', initMap(10.79018859122332, 106.69604798528485, content4));
+    google.maps.event.addDomListener(window, 'load', initMap(16.0583439, 108.21232129999999, content4));
   });
 
 })();

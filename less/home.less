@@ -266,7 +266,7 @@
       position: absolute;
       top: 0;
       &.left {
-        right: 36px;
+        right: 34px;
       }
       &.right {
         right: 0;
@@ -278,10 +278,20 @@
   }
 
   .outstanding-news {
-    li {
+    > li {
       margin-top: 16px;
       &:first-child {
         margin: 0;
+      }
+      > a {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        &:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
       }
     }
     .media-left {
@@ -344,6 +354,13 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .outstanding-news .news-title {
     max-width: 465px !important;
+  }
+  #galaxy-product-slide {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .slide-img {
+    min-height: 700px;
   }
 }
 

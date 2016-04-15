@@ -4236,7 +4236,7 @@ a.btn-share-result:hover {
   top: 0;
 }
 .galaxy-feature .product-slide .slide-control.left {
-  right: 36px;
+  right: 34px;
 }
 .galaxy-feature .product-slide .slide-control.right {
   right: 0;
@@ -4244,11 +4244,21 @@ a.btn-share-result:hover {
 .galaxy-feature .product-slide .slide-control.right > i:before {
   padding-left: 3px;
 }
-.galaxy-feature .outstanding-news li {
+.galaxy-feature .outstanding-news > li {
   margin-top: 16px;
 }
-.galaxy-feature .outstanding-news li:first-child {
+.galaxy-feature .outstanding-news > li:first-child {
   margin: 0;
+}
+.galaxy-feature .outstanding-news > li > a {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.galaxy-feature .outstanding-news > li > a:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 .galaxy-feature .outstanding-news .media-left {
   width: 34%;
@@ -4294,6 +4304,13 @@ a.btn-share-result:hover {
 @media (min-width: 768px) and (max-width: 991px) {
   .outstanding-news .news-title {
     max-width: 465px !important;
+  }
+  #galaxy-product-slide {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .slide-img {
+    min-height: 700px;
   }
 }
 @media (max-width: 767px) {
@@ -5201,13 +5218,21 @@ a.btn-share-result:hover {
   padding: 6px 12px;
 }
 #product-page #review-section .reviewer-image {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
+  margin: 10px 0;
+}
+#product-page #review-section .reviewer-image > div {
+  width: 60%;
+  height: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+  background: transparent no-repeat scroll center center / cover;
+  margin: 0 auto;
+  padding-bottom: 60%;
 }
 #product-page #review-section .reviewer-name,
 #product-page #review-section .reviewer-job {

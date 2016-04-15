@@ -322,11 +322,10 @@ input:focus,
 textarea:focus {
   border-color: #66afe9 !important;
 }
-input[type=submit],
-input[type=text],
-input[type=password],
-input[type=button],
-textarea {
+input,
+textarea,
+button,
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -914,6 +913,9 @@ a.galaxy-button:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid #8b9aa7;
 }
+.divider.bottom-gap {
+  margin-bottom: 15px;
+}
 .galaxy-btn-file {
   position: relative;
   overflow: hidden;
@@ -1215,6 +1217,9 @@ a.galaxy-button:hover {
   }
 }
 @media (max-width: 767px) {
+  .navbar-toolbar {
+    padding: 15px 0;
+  }
   .navbar-nav {
     margin: 40px 0 0 60px !important;
   }
@@ -1234,7 +1239,7 @@ a.galaxy-button:hover {
   }
   .navbar-form {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 60px;
     box-shadow: none;
     padding: 0;
@@ -4491,10 +4496,10 @@ a.btn-share-result:hover {
 .post-item .galaxy-button {
   padding: 4px 22px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .post-item .post-image {
-    width: 120px;
-    height: 90px;
+    width: 140px;
+    height: 120px;
   }
 }
 .guide-item {
@@ -5315,10 +5320,12 @@ a.btn-share-result:hover {
 #news-page .tab-content .tab-pane {
   min-height: 560px;
 }
-#lucky-painter-page .who-is-lucky-painter,
-#news-page .who-is-lucky-painter {
-  display: table;
-  width: 100%;
+@media (min-width: 992px) {
+  #lucky-painter-page .who-is-lucky-painter,
+  #news-page .who-is-lucky-painter {
+    display: table;
+    width: 100%;
+  }
 }
 #lucky-painter-page .who-is-lucky-painter [class*="col-"],
 #news-page .who-is-lucky-painter [class*="col-"] {
@@ -5327,24 +5334,20 @@ a.btn-share-result:hover {
   vertical-align: top;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #lucky-painter-page .who-is-lucky-painter [class*="col-"],
   #news-page .who-is-lucky-painter [class*="col-"] {
     float: left;
     display: block;
   }
 }
-#lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter,
-#news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  bottom: 0;
-}
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter,
   #news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter {
-    position: relative;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
   }
 }
 #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register,
@@ -5361,14 +5364,12 @@ a.btn-share-result:hover {
   font-weight: 600;
   text-align: center;
   padding: 20px;
-  margin-top: 10px;
-  margin-left: 15px;
   white-space: nowrap;
 }
-@media (max-width: 768px) {
+@media (min-width: 992px) {
   #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register,
   #news-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register {
-    margin-left: 0;
+    margin: 10px 0 0 15px;
   }
 }
 #lucky-painter-page .who-is-lucky-painter [class*="col-"] .contact-lucky-painter a.btn-register:hover,
@@ -5453,6 +5454,7 @@ a.btn-share-result:hover {
   color: #78787b;
   position: relative;
   margin-top: 22px;
+  text-align: justify;
 }
 #lucky-painter-page .intro-company p.content-intro:after,
 #news-page .intro-company p.content-intro:after {
@@ -5508,10 +5510,13 @@ a.btn-share-result:hover {
 #news-page .luckypainter-signup {
   position: relative;
 }
+#lucky-painter-page .luckypainter-signup img,
+#news-page .luckypainter-signup img {
+  margin: 20px auto;
+}
 #lucky-painter-page .luckypainter-signup h2,
 #news-page .luckypainter-signup h2 {
   position: relative;
-  margin-top: 20px;
   padding-right: 0;
 }
 #lucky-painter-page .luckypainter-signup h2:after,
@@ -5538,6 +5543,19 @@ a.btn-share-result:hover {
 #lucky-painter-page .luckypainter-signup-form .galaxy-select .dropdown-menu,
 #news-page .luckypainter-signup-form .galaxy-select .dropdown-menu {
   min-width: 100px;
+}
+#lucky-painter-page .luckypainter-signup-form .luckypainter-project,
+#news-page .luckypainter-signup-form .luckypainter-project {
+  padding-right: 0 !important;
+}
+#lucky-painter-page .luckypainter-signup-form i.add-project,
+#news-page .luckypainter-signup-form i.add-project {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/plus.png") no-repeat center center;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 #lucky-painter-page .luckypainter-profile,
 #news-page .luckypainter-profile {
@@ -6294,11 +6312,8 @@ a.btn-share-result:hover {
 #support-page .support-icon + span {
   vertical-align: middle;
 }
-#support-page .agency-list h5 {
-  margin-bottom: 10px;
-}
 #support-page .agency-list p {
-  line-height: 26px;
+  line-height: 24px;
 }
 #support-page .agency-list .agency-item {
   margin-bottom: 15px;
@@ -6314,15 +6329,24 @@ a.btn-share-result:hover {
   #support-page .media-left {
     width: 32%;
   }
+  #support-page .agency-list .agency-item {
+    height: 130px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #support-page .media-left {
     width: 40%;
   }
+  #support-page .agency-list .agency-item {
+    height: 140px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #support-page .media-left {
     width: 45%;
+  }
+  #support-page .agency-list .agency-item {
+    height: 140px;
   }
 }
 @media (max-width: 767px) {

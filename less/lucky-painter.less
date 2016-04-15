@@ -19,25 +19,27 @@
   }
 
   .who-is-lucky-painter {
-    display: table;
-    width: 100%;
+    @media (min-width: 992px) {
+      display: table;
+      width: 100%;
+    }
 
     [class*="col-"] {
       float: none;
       display: table-cell;
       vertical-align: top;
       position: relative;
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         float: left;
         display: block;
       }
       .contact-lucky-painter{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: 0;
-        @media (max-width: 768px) {
-          position: relative;
+
+        @media (min-width: 1200px) {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          bottom: 0;
         }
         a.btn-register {
           .gradient(#b80001, #ef7420);
@@ -47,12 +49,10 @@
           font-weight: 600;
           text-align: center;
           padding: 20px;
-          margin-top: 10px;
-          margin-left: 15px;
           white-space: nowrap;
-          @media (max-width: 768px) {
-            margin-left: 0;
-          }
+          @media (min-width: 992px) {
+            margin: 10px 0 0 15px;
+        }
           &:hover {
             .opacity(0.8);
           }
@@ -117,6 +117,7 @@
       color: #78787b;
       position: relative;
       margin-top: 22px;
+      text-align: justify;
       &:after {
         content: '';
         position: absolute;
@@ -159,9 +160,11 @@
 
   .luckypainter-signup {
     position: relative;
+    img {
+      margin: 20px auto;
+    }
     h2 {
       position: relative;
-      margin-top: 20px;
       padding-right: 0;
       &:after {
         content: '';
@@ -181,6 +184,17 @@
       .dropdown-menu {
         min-width: 100px;
       }
+    }
+    .luckypainter-project {
+      padding-right: 0 !important;
+    }
+    i.add-project {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url("../images/plus.png") no-repeat center center;
+      margin-right: 5px;
+      vertical-align: middle;
     }
   }
 

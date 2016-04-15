@@ -2888,7 +2888,7 @@ a.galaxy-button:hover {
 }
 @media (max-width: 480px) {
   .rule-block .rule-dialog .background-rule .input-bg .action-editor:after {
-    top: -240px;
+    top: -220px;
   }
 }
 @media (max-width: 360px) {
@@ -10624,9 +10624,11 @@ a.btn-share-result:hover {
 }
 .quiz3-detail .entry-title > p {
   display: block;
+  width: 100%;
+  text-overflow: ellipsis;
   color: #fff;
   font-family: 'iCielBambola', sans-serif;
-  font-size: 38px;
+  font-size: 30px;
   line-height: 35px;
   background-color: rgba(121, 155, 203, 0.6);
   white-space: nowrap;

@@ -52,6 +52,11 @@
     top: 0;
     display: block;
     z-index: 0;
+    @media (max-width: 480px) {
+      height: -moz-calc(~"100% - 5px");
+      height: -webkit-calc(~"100% - 5px");
+      height: calc(~"100% - 5px");
+    }
   }
 
   img{
@@ -355,7 +360,7 @@
     height: 120px;
     border: 1px dashed @main-color;
     .border-radius(5px);
-    margin: 10px;
+    margin: 0 10px 10px;
   }
 
   .color-flower {

@@ -488,7 +488,11 @@
         .nav-tabs {
           padding: 0;
           background-color: #d3e1ea;
+          border-bottom: 1px solid #d3e1ea;
           min-height: 615px;
+          @media (max-width: 480px) {
+            min-height: auto;
+          }
           li {
             a {
               padding: 15px 25px;

@@ -3827,6 +3827,13 @@ a.btn-share-result:hover {
   display: block;
   z-index: 0;
 }
+@media (max-width: 480px) {
+  .groupBanner #galaxyBanner {
+    height: -moz-calc(100% - 5px);
+    height: -webkit-calc(100% - 5px);
+    height: calc(100% - 5px);
+  }
+}
 .groupBanner img {
   position: relative;
   width: 100%;
@@ -4306,7 +4313,7 @@ a.btn-share-result:hover {
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
     background-clip: padding-box;
-    margin: 10px;
+    margin: 0 10px 10px;
   }
   .color-flower {
     bottom: 20px !important;
@@ -4933,7 +4940,13 @@ a.btn-share-result:hover {
 .tabs-left .tab-content .tab-pane .sub-level .nav-tabs {
   padding: 0;
   background-color: #d3e1ea;
+  border-bottom: 1px solid #d3e1ea;
   min-height: 615px;
+}
+@media (max-width: 480px) {
+  .tabs-left .tab-content .tab-pane .sub-level .nav-tabs {
+    min-height: auto;
+  }
 }
 .tabs-left .tab-content .tab-pane .sub-level .nav-tabs li a {
   padding: 15px 25px;

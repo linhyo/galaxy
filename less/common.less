@@ -403,6 +403,37 @@ a.galaxy-button:hover {
   }
 }
 
+.bottom-divider {
+  border-bottom: 1px solid #b2bcc4;
+  margin: 15px 0;
+}
+
+#bottom-nav {
+  p {
+    font-size: 11px;
+    text-align: center;
+  }
+  ul {
+    margin: 15px auto;
+    > li {
+      display: inline-block;
+      padding: 0 20px;
+      border-right: 1px solid @main-color;
+      &:last-child {
+        border: none;
+      }
+      > a {
+        color: @main-color;
+        font-weight: 600;
+        text-transform: capitalize;
+        &:hover {
+          color: #7e8d9a;
+        }
+      }
+    }
+  }
+}
+
 .galaxy-btn-file {
   position: relative;
   overflow: hidden;

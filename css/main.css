@@ -916,6 +916,33 @@ a.galaxy-button:hover {
 .divider.bottom-gap {
   margin-bottom: 15px;
 }
+.bottom-divider {
+  border-bottom: 1px solid #b2bcc4;
+  margin: 15px 0;
+}
+#bottom-nav p {
+  font-size: 11px;
+  text-align: center;
+}
+#bottom-nav ul {
+  margin: 15px auto;
+}
+#bottom-nav ul > li {
+  display: inline-block;
+  padding: 0 20px;
+  border-right: 1px solid #8b9aa7;
+}
+#bottom-nav ul > li:last-child {
+  border: none;
+}
+#bottom-nav ul > li > a {
+  color: #8b9aa7;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#bottom-nav ul > li > a:hover {
+  color: #7e8d9a;
+}
 .galaxy-btn-file {
   position: relative;
   overflow: hidden;

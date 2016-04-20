@@ -228,12 +228,45 @@
       widgetFavoriteColor += templateFavoriteColor.format(favoriteColor[i].colorCode, favoriteColor[i].colorName);
     }
 
-    if(favoriteColor.length){
+    if (favoriteColor.length) {
       $('#favorite_color .row').html('').append(widgetFavoriteColor);
-    }else{
+    } else {
       $('#favorite_color .row').html('<div class="col-lg-12"><p class="no-result">Nh?n " <i class="fa fa-heart btn-love isLove"></i> " ?? thêm màu b?n thích.</p></div>');
     }
   };
+
+  var templateSearchResultColor = '';
+  templateSearchResultColor += '<div class="col-xs-12 col-sm-6 col-md-3">';
+  templateSearchResultColor += ' <div class="result-color" id="{2}" data-color-code="{0}" data-color-name="{0}">';
+  templateSearchResultColor += '  <span style="background-color: {0}"></span>';
+  templateSearchResultColor += '  <p class="name-color">';
+  templateSearchResultColor += '  {1} - {0}';
+  templateSearchResultColor += '  </p>';
+  templateSearchResultColor += ' </div>';
+  templateSearchResultColor += '</div>';
+
+  $('#searchColor').keypress(function (event) {
+    if (event.which == 13) {
+      event.preventDefault();
+      var resultColor = [];
+      _.forEach(list_color, function (value) {
+        _.forEach(value.listId, function (colors) {
+          _.forEach(colors.listColor, function (color) {
+            console.log(color.colorName.indexOf($('#searchColor').val()));
+            if(color.colorName.indexOf($('#searchColor').val()) >= 0){
+              resultColor.push(color);
+            }
+          });
+        });
+      });
+      var widgetTemplateSearchResultColor = '';
+      for (var i = 0; i < resultColor.length; i++) {
+        widgetTemplateSearchResultColor += templateSearchResultColor.format(resultColor[i].colorId, resultColor[i].colorName, resultColor[i].id);
+      }
+
+      $('.show-search-result').html('').append(widgetTemplateSearchResultColor);
+    }
+  });
 
   $('.btn-love').click(function () {
     var dataColorCode = $(this).parent().attr('data-color-code');
@@ -241,7 +274,7 @@
 
     if ($(this).hasClass('isLove')) {
       $(this).removeClass('isLove');
-      _.remove(colorFavorite, {colorCode : dataColorCode});
+      _.remove(colorFavorite, {colorCode: dataColorCode});
     } else {
       $(this).addClass('isLove');
       colorFavorite.push({

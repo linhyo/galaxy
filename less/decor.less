@@ -586,4 +586,37 @@
   }
 }
 
+.show-search-result{
+  .result-color {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    span {
+      width: 70px;
+      height: 70px;
+      .border-radius(8px);
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .name-color {
+      color: #7c8d9d;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    i {
+      cursor: pointer;
+      color: #7c8d9d;
+      font-size: 16px;
+      line-height: 20px;
+      &.isLove {
+        color: #e12500;
+      }
+    }
+    &:first-child {
+      display: block;
+    }
+  }
+}
+
 

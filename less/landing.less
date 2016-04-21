@@ -1207,6 +1207,15 @@
         overflow: hidden;
       }
     }
+    .slide-pic {
+      width: 100%;
+      height: 360px;
+      background: transparent no-repeat scroll 50% 30%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
     .slide-time {
       position: absolute;
       top: 0;
@@ -1359,6 +1368,10 @@
     #story-4 .person-info {
       margin-top: -80px !important;
     }
+
+    .slide-pic {
+      height: 294px !important;
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) {
     .landing-background {
@@ -1407,8 +1420,12 @@
       }
     }
 
-    .entry-title > p {
+    .entry-title > p, .slide-title > p {
       font-size: 26px !important;
+    }
+
+    .slide-title > p {
+      padding: 0 15px !important;
     }
 
     .story-detail {
@@ -1438,6 +1455,10 @@
 
     .person-image.change img:last-child {
       display: inline-block !important;
+    }
+
+    .slide-pic {
+      height: 220px !important;
     }
   }
   @media (max-width: 767px) {

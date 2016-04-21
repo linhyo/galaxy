@@ -4341,7 +4341,7 @@ a.btn-share-result:hover {
     width: 60%;
     margin: 0 auto;
   }
-  .slide-img {
+  .product-slide .slide-img {
     min-height: 700px;
   }
 }
@@ -6449,6 +6449,9 @@ a.btn-share-result:hover {
 #contact-page .contact-address h5 {
   margin-bottom: 5px;
 }
+#contact-page .contact-address p {
+  line-height: 24px;
+}
 #contact-page .google-maps-wrapper {
   width: 100%;
   height: 400px;
@@ -7940,6 +7943,15 @@ a.btn-share-result:hover {
   padding: 4px 15px;
   overflow: hidden;
 }
+#galaxy-decoration .landing-entry .slide-pic {
+  width: 100%;
+  height: 360px;
+  background: transparent no-repeat scroll 50% 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #galaxy-decoration .landing-entry .slide-time {
   position: absolute;
   top: 0;
@@ -8088,6 +8100,9 @@ a.btn-share-result:hover {
   #galaxy-decoration #story-4 .person-info {
     margin-top: -80px !important;
   }
+  #galaxy-decoration .slide-pic {
+    height: 294px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-decoration .landing-background {
@@ -8130,8 +8145,12 @@ a.btn-share-result:hover {
   #galaxy-decoration .entry-caption h2 {
     font-size: 25px;
   }
-  #galaxy-decoration .entry-title > p {
+  #galaxy-decoration .entry-title > p,
+  #galaxy-decoration .slide-title > p {
     font-size: 26px !important;
+  }
+  #galaxy-decoration .slide-title > p {
+    padding: 0 15px !important;
   }
   #galaxy-decoration .story-detail {
     height: 400px;
@@ -8154,6 +8173,9 @@ a.btn-share-result:hover {
   }
   #galaxy-decoration .person-image.change img:last-child {
     display: inline-block !important;
+  }
+  #galaxy-decoration .slide-pic {
+    height: 220px !important;
   }
 }
 @media (max-width: 767px) {

@@ -129,10 +129,10 @@
   templateMainContent += '<div class="tab-pane" id="{0}">';
   templateMainContent += '  <div class="sub-level">';
   templateMainContent += '  <div class="row">';
-  templateMainContent += '  <div class="col-lg-3">';
+  templateMainContent += '  <div class="col-xs-3">';
   templateMainContent += '  <ul class="nav nav-tabs"></ul>';
   templateMainContent += '  </div>';
-  templateMainContent += '  <div class="col-lg-9">';
+  templateMainContent += '  <div class="col-xs-9">';
   templateMainContent += '  <div class="tab-content"></div>';
   templateMainContent += '  </div>';
   templateMainContent += '  </div>';
@@ -231,7 +231,7 @@
     if (favoriteColor.length) {
       $('#favorite_color .row').html('').append(widgetFavoriteColor);
     } else {
-      $('#favorite_color .row').html('<div class="col-lg-12"><p class="no-result">Nh?n " <i class="fa fa-heart btn-love isLove"></i> " ?? th�m m�u b?n th�ch.</p></div>');
+      $('#favorite_color .row').html('<div class="col-xs-12"><p class="no-result">Nhấn " <i class="fa fa-heart btn-love isLove"></i> " để thêm màu bạn thích.</p></div>');
     }
   };
 

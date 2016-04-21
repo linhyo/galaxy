@@ -145,7 +145,7 @@
   var content1 = '<strong>Công ty cổ phần Galaxy Việt Nam</strong><br>Tầng 6 – Tòa nhà Viễn Đông, 36 Hoàng Cầu, Đống Đa, Hà Nội<br>';
   var content2 = '<strong>Địa chỉ nhà máy</strong><br>Lô 48, KCN Quang Minh, Mê Linh, Hà Nội<br>';
   var content3 = '<strong>Chi nhánh thành phố Hồ Chí Minh</strong><br>Tòa nhà Viễn Đông, 14 Phan Tôn, Phường Đa Kao, quận 1, Tp. Hồ Chí Minh<br>';
-  var content4 = '<strong>Chi nhánh Đà Nẵng</strong><br>115 Đỗ Quang, quận Thanh Khê, Tp. Đà Nẵng<br>';
+  var content4 = '<strong>Chi nhánh Đà Nẵng</strong><br>29 Hoàng Văn Thái - Q. Liên Chiểu - TP. Đà Nẵng<br>';
 
   function initMap(lat, long, cont) {
     map = new google.maps.Map(document.getElementById('gmap_canvas'), {
@@ -186,7 +186,7 @@
   });
 
   $("#address-4").on('click', function () {
-    google.maps.event.addDomListener(window, 'load', initMap(16.0583439, 108.21232129999999, content4));
+    google.maps.event.addDomListener(window, 'load', initMap(16.0539471, 108.158773, content4));
   });
 
 })();

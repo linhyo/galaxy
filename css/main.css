@@ -322,7 +322,9 @@ input:focus,
 textarea:focus {
   border-color: #66afe9 !important;
 }
-input,
+input[type=text],
+input[type=button],
+input[type=email],
 textarea,
 button,
 select {

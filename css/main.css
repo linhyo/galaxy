@@ -6797,8 +6797,6 @@ a.btn-share-result:hover {
   position: absolute;
   left: 30px;
   bottom: 0;
-  -webkit-clip-path: url(#clip);
-  clip-path: url(#clip);
   -webkit-animation: wave 0.2s;
   animation: wave 0.2s;
 }

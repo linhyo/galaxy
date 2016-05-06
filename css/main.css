@@ -1164,10 +1164,13 @@ a.galaxy-button:hover {
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
+    background-color: #6e2087;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+  }
+  .navbar-nav > li > .navbar-menu > li {
+    border-color: #5a1d71 !important;
   }
 }
 .navbar-toggle {
@@ -1250,7 +1253,8 @@ a.galaxy-button:hover {
     padding: 15px 0;
   }
   .navbar-nav {
-    margin: 40px 0 0 60px !important;
+    width: 80%;
+    margin: 40px 100px 0 60px !important;
   }
   .navbar-toggle {
     margin-top: 30px;
@@ -4182,15 +4186,6 @@ a.btn-share-result:hover {
   position: relative;
   padding: 25px 0;
 }
-#home-page #online-help {
-  position: absolute;
-  right: -10px;
-  top: 55%;
-  width: 96px;
-  height: 93px;
-  background: transparent url("../images/online-help.png") no-repeat center center;
-  background-size: 80%;
-}
 #home-page .content-row {
   margin: 25px -15px 0;
 }
@@ -4393,9 +4388,6 @@ a.btn-share-result:hover {
   }
   #home-page {
     margin-top: 120px;
-  }
-  #online-help {
-    display: none;
   }
   .news-title {
     width: 194px;

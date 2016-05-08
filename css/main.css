@@ -6564,6 +6564,227 @@ a.btn-share-result:hover {
 .galaxy-dialog .modal-footer .galaxy-btn-file {
   margin-right: 5px;
 }
+@media (min-width: 768px) {
+  #stepsDialog .modal-dialog {
+    width: 525px;
+    margin: 100px auto;
+  }
+}
+#stepsDialog .modal-content {
+  background-color: #773b8b;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px;
+}
+#stepsDialog .dialog-header {
+  padding: 2px 0 12px;
+}
+#stepsDialog .dialog-header h2 {
+  color: #fff;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #stepsDialog .dialog-header h2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .dialog-header h2 {
+    font-size: 13px;
+  }
+}
+#stepsDialog .dialog-body #step-tab {
+  width: 505px;
+  border: none;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  #stepsDialog .dialog-body #step-tab {
+    display: none !important;
+  }
+}
+#stepsDialog .dialog-body #step-tab > li {
+  margin-bottom: 0;
+}
+#stepsDialog .dialog-body #step-tab > li > a {
+  color: #fff;
+  background-color: #8b9aa7;
+  border-color: #fff;
+  border-right: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0;
+  padding: 5px 14px;
+}
+#stepsDialog .dialog-body #step-tab > li:nth-child(7) > a {
+  border-right: 1px solid #fff;
+}
+#stepsDialog .dialog-body #step-tab > li.active > a {
+  background-color: #bd341a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd341a), to(#f07721));
+  background-image: -webkit-linear-gradient(left, #bd341a, #f07721);
+  background-image: -moz-linear-gradient(left, #bd341a, #f07721);
+  background-image: -ms-linear-gradient(left, #bd341a, #f07721);
+  background-image: -o-linear-gradient(left, #bd341a, #f07721);
+}
+#stepsDialog .dialog-body .tab-background {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #stepsDialog .dialog-body .tab-background {
+    height: 220px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .dialog-body .tab-background {
+    height: 150px;
+  }
+}
+#stepsDialog .dialog-body .tab-background.landscape {
+  background: #ffffff url("../images/6-steps-bg.png") no-repeat center bottom / cover;
+}
+#stepsDialog .dialog-body .tab-background.purple {
+  background: #ffffff url("../images/purple-bg.png") no-repeat center center / cover;
+}
+#stepsDialog .dialog-body .tab-background.finish {
+  background: #ffffff url("../images/completed-bg.png") no-repeat center bottom / cover;
+}
+#stepsDialog .dialog-body .btn-step {
+  position: absolute;
+  left: 50%;
+  background-color: #bd341a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bd341a), to(#f07721));
+  background-image: -webkit-linear-gradient(left, #bd341a, #f07721);
+  background-image: -moz-linear-gradient(left, #bd341a, #f07721);
+  background-image: -ms-linear-gradient(left, #bd341a, #f07721);
+  background-image: -o-linear-gradient(left, #bd341a, #f07721);
+  border-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 20px;
+}
+#stepsDialog .dialog-body .btn-step:hover {
+  background-color: #f07721;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f07721), to(#bd341a));
+  background-image: -webkit-linear-gradient(left, #f07721, #bd341a);
+  background-image: -moz-linear-gradient(left, #f07721, #bd341a);
+  background-image: -ms-linear-gradient(left, #f07721, #bd341a);
+  background-image: -o-linear-gradient(left, #f07721, #bd341a);
+}
+#stepsDialog .dialog-body .btn-step.start {
+  top: 46%;
+  margin-left: -51px;
+}
+#stepsDialog .dialog-body .btn-step.end {
+  top: 50%;
+  margin-left: -109px;
+}
+#stepsDialog .dialog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: url("../images/close-button.png") no-repeat center center;
+  border: none;
+  z-index: 100;
+}
+#stepsDialog .tab-background.purple .btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  border: none;
+}
+@media (min-width: 768px) {
+  #stepsDialog .tab-background.purple .btn {
+    width: 45px;
+    height: 46px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .tab-background.purple .btn {
+    width: 32px;
+    height: 33px;
+  }
+}
+#stepsDialog .next-step {
+  background: url("../images/next-button.png") no-repeat center center / 100% auto;
+}
+@media (min-width: 768px) {
+  #stepsDialog .next-step {
+    right: 55px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .next-step {
+    right: 25px;
+  }
+}
+#stepsDialog .prev-step {
+  background: url("../images/prev-button.png") no-repeat center center / 100% auto;
+}
+@media (min-width: 768px) {
+  #stepsDialog .prev-step {
+    left: 55px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .prev-step {
+    left: 25px;
+  }
+}
+#stepsDialog .step-number {
+  display: inline-block;
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #773b8b;
+  font-family: 'iCielBambola', sans-serif;
+  font-size: 24px;
+  padding: 5px 18px;
+}
+@media (min-width: 768px) {
+  #stepsDialog .step-number {
+    margin-top: 66px;
+  }
+}
+@media (max-width: 767px) {
+  #stepsDialog .step-number {
+    margin-top: 40px;
+  }
+}
+#stepsDialog .step-content {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
 #landing-nav {
   position: relative;
   width: 100%;

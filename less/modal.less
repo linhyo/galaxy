@@ -59,3 +59,170 @@
     }
   }
 }
+
+#stepsDialog {
+  .modal-dialog {
+    @media (min-width: 768px) {
+      width: 525px;
+      margin: 100px auto;
+    }
+  }
+  .modal-content {
+    background-color: #773b8b;
+    .border-radius(10px);
+    padding: 10px;
+  }
+  .dialog-header {
+    padding: 2px 0 12px;
+    h2 {
+      color: #fff;
+      font-weight: 700;
+      @media (min-width: 768px) {
+        font-size: 15px;
+      }
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .dialog-body {
+    #step-tab {
+      width: 505px;
+      border: none;
+      white-space: nowrap;
+      @media (max-width: 767px) {
+        display: none !important;
+      }
+      > li {
+        margin-bottom: 0;
+        > a {
+          color: #fff;
+          background-color: @main-color;
+          border-color: #fff;
+          border-right: none;
+          .border-radius(0);
+          margin: 0;
+          padding: 5px 14px;
+        }
+        &:nth-child(7) {
+          > a {
+            border-right: 1px solid #fff;
+          }
+        }
+        &.active {
+          > a {
+            .horizontal-gradient(#bd341a, #f07721);
+          }
+        }
+      }
+    }
+    .tab-background {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      @media (min-width: 768px) {
+        height: 220px;
+      }
+      @media (max-width: 767px) {
+        height: 150px;
+      }
+      &.landscape {
+        background: #fff url("../images/6-steps-bg.png") no-repeat center bottom / cover;
+      }
+      &.purple {
+        background: #fff url("../images/purple-bg.png") no-repeat center center / cover;
+      }
+      &.finish {
+        background: #fff url("../images/completed-bg.png") no-repeat center bottom / cover;
+      }
+    }
+    .btn-step {
+      position: absolute;
+      left: 50%;
+      .horizontal-gradient(#bd341a, #f07721);
+      border-color: #fff;
+      .border-radius(6px);
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 4px 20px;
+      &:hover {
+        .horizontal-gradient(#f07721, #bd341a);
+      }
+      &.start {
+        top: 46%;
+        margin-left: -51px;
+      }
+      &.end {
+        top: 50%;
+        margin-left: -109px;
+      }
+    }
+  }
+  .dialog-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/close-button.png") no-repeat center center;
+    border: none;
+    z-index: 100;
+  }
+  .tab-background.purple {
+    .btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      border: none;
+      @media (min-width: 768px) {
+        width: 45px;
+        height: 46px;
+      }
+      @media (max-width: 767px) {
+        width: 32px;
+        height: 33px;
+      }
+    }
+  }
+  .next-step {
+    background: url("../images/next-button.png") no-repeat center center / 100% auto;
+    @media (min-width: 768px) {
+      right: 55px;
+    }
+    @media (max-width: 767px) {
+      right: 25px;
+    }
+  }
+  .prev-step {
+    background: url("../images/prev-button.png") no-repeat center center / 100% auto;
+    @media (min-width: 768px) {
+      left: 55px;
+    }
+    @media (max-width: 767px) {
+      left: 25px;
+    }
+  }
+  .step-number {
+    display: inline-block;
+    background-color: #fff;
+    .border-radius(20px);
+    color: #773b8b;
+    font-family: @import-font;
+    font-size: 24px;
+    padding: 5px 18px;
+    @media (min-width: 768px) {
+      margin-top: 66px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  .step-content {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+}

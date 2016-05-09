@@ -6628,6 +6628,9 @@ a.btn-share-result:hover {
   }
 }
 #stepsDialog .dialog-body #step-tab > li {
+  width: -moz-calc(14.284% - 0.3px);
+  width: -webkit-calc(14.284% - 0.3px);
+  width: calc(14.284% - 0.3px);
   margin-bottom: 0;
 }
 #stepsDialog .dialog-body #step-tab > li > a {

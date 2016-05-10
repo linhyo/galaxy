@@ -10988,7 +10988,7 @@ a.btn-share-result:hover {
   width: 100%;
   z-index: 10;
 }
-.quiz3-detail .entry-title > p {
+.quiz3-detail .entry-title > p a {
   display: block;
   width: 100%;
   text-overflow: ellipsis;

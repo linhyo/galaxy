@@ -4634,7 +4634,13 @@ a.btn-share-result:hover {
 }
 .guide-item .guide-cover .decor-block .decor-content p {
   background: white;
-  opacity: 1;
+  color: #000;
+  -moz-opacity: 0.65;
+  -khtml-opacity: 0.65;
+  -webkit-opacity: 0.65;
+  opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+  filter: alpha(opacity=65);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;

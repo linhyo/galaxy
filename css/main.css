@@ -8005,7 +8005,7 @@ a.btn-share-result:hover {
 #galaxy-decoration .landing-event .btn-event {
   width: 150px;
   height: 50px;
-  background-color: transparent;
+  background-color: #7299cc;
   border: 2px solid #fff;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -8031,9 +8031,7 @@ a.btn-share-result:hover {
 #galaxy-decoration .landing-event .btn-event:hover {
   background-color: #fff;
 }
-#galaxy-decoration .landing-event .btn-event:hover.btn-rule {
-  color: #f0b5b9;
-}
+#galaxy-decoration .landing-event .btn-event:hover.btn-rule,
 #galaxy-decoration .landing-event .btn-event:hover.btn-join {
   color: #7299cc;
 }

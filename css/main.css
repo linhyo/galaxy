@@ -941,6 +941,9 @@ a.galaxy-button:hover {
   border-bottom: 1px solid #b2bcc4;
   margin: 15px 0;
 }
+#bottom-nav .isLanding {
+  display: none;
+}
 #bottom-nav p {
   font-size: 11px;
   text-align: center;

@@ -1024,6 +1024,10 @@ a.galaxy-button:hover {
   color: #ffffff;
   background-color: #fab436;
 }
+.block-content.gray {
+  color: #5a1d72;
+  background-color: #ebebed;
+}
 .navbar {
   position: relative;
   width: 100%;
@@ -5747,7 +5751,7 @@ a.btn-share-result:hover {
 #news-page .contractor-detail .contract-information {
   display: inline-block;
   width: 60%;
-  color: #fff;
+  color: #5a1d72;
   line-height: 24px;
   padding: 30px 0 0 20px;
 }
@@ -5984,10 +5988,13 @@ a.btn-share-result:hover {
   text-align: right;
 }
 .luckypainter-text .luckypainter-title {
-  color: #E40C0C;
+  color: #450774;
   font-family: 'iCielBambola', sans-serif;
   font-size: 50px;
   margin-bottom: 20px;
+}
+.luckypainter-text .luckypainter-caption {
+  color: #fff;
 }
 @media (max-width: 599px) {
   .luckypainter-text {

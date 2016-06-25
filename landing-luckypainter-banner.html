@@ -231,55 +231,28 @@
 <section id="lucky-painter-header-register" class="header-banner">
   <figure>
     <img class="banner-landing" src="images/landing-header/banner-landing2.jpg" alt=""/>
+    <img class="paint-block-landing" src="images/landing-header/paint-block2.png" alt=""/>
   </figure>
   <div class="block-header-content">
     <div class="wrapper-block">
-      <a class="btn-prev-block1" href="#"><i class="prev-icon"></i></a>
+      <a class="btn-prev-block2" href="#"><i class="prev-icon"></i></a>
 
       <h1 class="title-wrapper-header">Đăng ký <br/> <span> lucky painter</span></h1>
 
-      <div class="block-content-1">
-        <div class="scroll-block">
+      <div class="block-content-2">
+        <div class="register-block">
+          <form action="" name="register">
 
+          </form>
+          <div class="register-success">
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<footer id="footer" role="contentinfo">
-  <div class="container footer-wrapper">
-    <div class="row">
-      <div class="footer-content">
-        <div class="col-lg-5 col-md-5 col-sm-3 col-xs-5">
-          <p class="copyright">
-            <i class="fa fa-copyright"></i> <span>2016 Galaxy Paint.</span> <span>All rights reserved.</span>
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-2 col-sm-3 col-xs-4">
-          <div class="social-network">
-            <ul>
-              <li><a class="facebook" href="https://www.facebook.com/SonGalaxy" target="_blank">
-                <i class="fa fa-facebook"></i></a></li>
-              <li><a class="youtube" href="https://www.youtube.com/channel/UCt7KxYpGi16XaLf2RMPaoFg" target="_blank">
-                <i class="fa fa-youtube-play"></i></a></li>
-              <li><a class="google-plus" href="https://plus.google.com/114747288091527278715" target="_blank">
-                <i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-9">
-          <div class="input-group send-mail">
-            <input type="text" id="user-email" class="form-control" placeholder="Đăng ký nhận thư">
-          <span class="input-group-btn">
-            <button class="btn btn-send" type="button">Gửi</button>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
@@ -345,7 +318,7 @@
       }, '500');
     });
 
-    tab3.find('.btn-prev-block1').click(function (e) {
+    tab3.find('.btn-prev-block2').click(function (e) {
       e.preventDefault();
       $(this).parents('#lucky-painter-header-register').animate({width: "100%", left: '3%'}, '500')
         .animate({left: '-95%'}, '500');

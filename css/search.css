@@ -1,0 +1,33 @@
+#search-page {
+  padding: 30px 0;
+}
+#search-page .product-item {
+  padding: 0;
+  border: none;
+}
+.search-form .form-group {
+  width: 50%;
+  margin-right: 2%;
+}
+.search-form .search-term {
+  width: 100%;
+}
+.search-form .btn-search {
+  position: relative;
+  padding: 6px 12px 6px 42px;
+}
+.search-form .btn-search:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  width: 26px;
+  height: 30px;
+  background: transparent url("../images/icon/icon-search.png") no-repeat center center;
+  background-size: 80%;
+}
+@media (max-width: 767px) {
+  .search-form .form-group {
+    width: 100%;
+  }
+}

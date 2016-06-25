@@ -124,6 +124,76 @@
   </nav>
 </header>
 
+<section id="lucky-painter-header-1" class="header-banner">
+  <figure>
+    <img class="banner-landing" src="images/landing-header/banner-landing.jpg" alt=""/>
+    <img class="paint-block-landing" src="images/landing-header/paint-block.png" alt=""/>
+  </figure>
+  <div class="action-content">
+    <div class="container">
+      <div class="block-action">
+        <h2 class="lending-title">Galaxy <br/> Lucky Painter</h2>
+
+        <p class="intro-action">
+          Lucky Painter là những thợ sơn chuyên nghiệp, tận tâm và yêu nghề. Chúng tôi hân hoan trong mỗi khoảnh khắc
+          chào
+          đón không gian mới. Chúng tôi chia sẻ niềm vui và là cầu nối may mắn đến mọi gia đình. Điểm tô sắc màu hạnh
+          phúc cho mái ấm của bạn
+          chính là sứ mệnh của chúng tôi!
+        </p>
+        <a class="btn-register"><span>Đăng ký ngay</span></a>
+        <a class="btn-content-event"><span>Nội dung chương trình</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="lucky-painter-header-2" class="header-banner">
+  <figure>
+    <img class="banner-landing" src="images/landing-header/banner-landing.jpg" alt=""/>
+    <img class="paint-block-landing" src="images/landing-header/paint-block.png" alt=""/>
+  </figure>
+  <div class="action-content">
+    <div class="container">
+      <div class="block-action">
+        <h2 class="lending-title">Galaxy <br/> Lucky Painter</h2>
+
+        <p class="intro-action">
+          Lucky Painter là những thợ sơn chuyên nghiệp, tận tâm và yêu nghề. Chúng tôi hân hoan trong mỗi khoảnh khắc
+          chào
+          đón không gian mới. Chúng tôi chia sẻ niềm vui và là cầu nối may mắn đến mọi gia đình. Điểm tô sắc màu hạnh
+          phúc cho mái ấm của bạn
+          chính là sứ mệnh của chúng tôi!
+        </p>
+        <a class="btn-register"><span>Đăng ký ngay</span></a>
+        <a class="btn-content-event"><span>Nội dung chương trình</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="lucky-painter-header-3" class="header-banner">
+  <figure>
+    <img class="banner-landing" src="images/landing-header/banner-landing.jpg" alt=""/>
+    <img class="paint-block-landing" src="images/landing-header/paint-block.png" alt=""/>
+  </figure>
+  <div class="action-content">
+    <div class="container">
+      <div class="block-action">
+        <h2 class="lending-title">Galaxy <br/> Lucky Painter</h2>
+
+        <p class="intro-action">
+          Lucky Painter là những thợ sơn chuyên nghiệp, tận tâm và yêu nghề. Chúng tôi hân hoan trong mỗi khoảnh khắc
+          chào
+          đón không gian mới. Chúng tôi chia sẻ niềm vui và là cầu nối may mắn đến mọi gia đình. Điểm tô sắc màu hạnh
+          phúc cho mái ấm của bạn
+          chính là sứ mệnh của chúng tôi!
+        </p>
+        <a class="btn-register"><span>Đăng ký ngay</span></a>
+        <a class="btn-content-event"><span>Nội dung chương trình</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer id="footer" role="contentinfo">
   <div class="container footer-wrapper">
     <div class="row">
@@ -161,5 +231,74 @@
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/galaxy.js"></script>
+<script>
+  var tab1 = $('#lucky-painter-header-1');
+  var tab2 = $('#lucky-painter-header-2');
+  var tab3 = $('#lucky-painter-header-3');
+  tab2.hide();
+  tab3.hide();
+
+  $(document).ready(function () {
+    tab1.find('.btn-register').click(function () {
+      $(this).parents('#lucky-painter-header-1').animate({width: "100%", left: '3%'}, '500')
+        .animate({left: '-95%'}, '500');
+
+      setTimeout(function () {
+        tab1.hide();
+        tab2.show();
+        tab2.css('left', '105%')
+          .css('width', '100%')
+          .css('position', 'relative');
+        tab2.animate({left: '5%'}, '500')
+          .animate({width: '100%', left: '0'}, '500');
+      }, '500');
+    });
+
+    tab1.find('.btn-content-event').click(function () {
+      $(this).parents('#lucky-painter-header-1').animate({width: "100%", left: '3%'}, '500')
+        .animate({left: '115%'}, '500');
+
+      setTimeout(function () {
+        tab1.hide();
+        tab3.show();
+        tab3.css('left', '-95%')
+          .css('width', '100%')
+          .css('position', 'relative');
+        tab3.animate({left: '5%'}, '500')
+          .animate({width: '100%', left: '0'}, '500');
+      }, '500');
+    });
+
+    tab3.find('.btn-register').click(function () {
+      $(this).parents('#lucky-painter-header-3').animate({width: "100%", left: '3%'}, '500')
+        .animate({left: '-95%'}, '500');
+
+      setTimeout(function () {
+        tab3.hide();
+        tab1.show();
+        tab1.css('left', '105%')
+          .css('width', '100%')
+          .css('position', 'relative');
+        tab1.animate({left: '5%'}, '500')
+          .animate({width: '100%', left: '0'}, '500');
+      }, '500');
+    });
+
+    tab2.find('.btn-register').click(function () {
+      $(this).parents('#lucky-painter-header-2').animate({width: "100%", left: '3%'}, '500')
+        .animate({left: '115%'}, '500');
+
+      setTimeout(function () {
+        tab2.hide();
+        tab1.show();
+        tab1.css('left', '-95%')
+          .css('width', '100%')
+          .css('position', 'relative');
+        tab1.animate({left: '5%'}, '500')
+          .animate({width: '100%', left: '0'}, '500');
+      }, '500');
+    });
+  });
+</script>
 </body>
 </html>

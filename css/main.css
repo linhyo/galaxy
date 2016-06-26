@@ -11649,10 +11649,6 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content {
     padding: 10px 0 0;
-  }
-}
-@media (max-width: 480px) {
-  #lucky-painter-header-register.header-banner .block-header-content {
     position: relative;
   }
 }
@@ -11852,13 +11848,13 @@ a.btn-share-result:hover {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
     padding: 15px 100px;
     width: 490px;
+    position: relative;
   }
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
     padding: 25px 35px;
     width: 100%;
-    position: relative;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block {

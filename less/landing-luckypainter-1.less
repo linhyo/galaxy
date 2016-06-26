@@ -2,7 +2,9 @@
   &.header-banner {
     display: block;
     width: 100%;
+    z-index: 1 !important;
     position: relative;
+    background-color: #ede5df;
     figure {
       text-align: center;
       position: relative;
@@ -177,6 +179,7 @@
     display: block;
     width: 100%;
     position: relative;
+    background-color: #ede5df;
     figure {
       text-align: center;
       position: relative;
@@ -206,6 +209,9 @@
       }
       @media (max-width: 640px) {
         padding: 10px 0 0;
+      }
+      @media (max-width: 480px) {
+        position: relative;
       }
       .wrapper-block {
         width: 1285px;
@@ -343,6 +349,7 @@
         @media (max-width: 480px) {
           padding: 25px 35px;
           width: 100%;
+          position: relative;
         }
         .scroll-block {
           width: 620px;
@@ -372,6 +379,7 @@
     display: block;
     width: 100%;
     position: relative;
+    background-color: #ede5df;
     figure {
       text-align: center;
       position: relative;
@@ -409,6 +417,9 @@
       @media (max-width: 640px) {
         padding: 10px 0 0;
       }
+      @media (max-width: 480px) {
+        position: relative;
+      }
       .wrapper-block {
         width: 1285px;
         position: relative;
@@ -444,6 +455,10 @@
         top: 0;
         position: absolute;
         z-index: 1;
+        @media (max-width: 480px) {
+          right: 0;
+          top: 105px;
+        }
         .prev-icon {
           background: url("../images/landing-header/block2-prev.png") no-repeat center center/100% auto;
           width: 34px;
@@ -545,6 +560,7 @@
         @media (max-width: 480px) {
           padding: 25px 35px;
           width: 100%;
+          position: relative;
         }
         .register-block {
           position: relative;

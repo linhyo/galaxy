@@ -11087,7 +11087,9 @@ a.btn-share-result:hover {
 #lucky-painter-header.header-banner {
   display: block;
   width: 100%;
+  z-index: 1 !important;
   position: relative;
+  background-color: #ede5df;
 }
 #lucky-painter-header.header-banner figure {
   text-align: center;
@@ -11318,6 +11320,7 @@ a.btn-share-result:hover {
   display: block;
   width: 100%;
   position: relative;
+  background-color: #ede5df;
 }
 #lucky-painter-header-content.header-banner figure {
   text-align: center;
@@ -11364,6 +11367,11 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-content.header-banner .block-header-content {
     padding: 10px 0 0;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner .block-header-content {
+    position: relative;
   }
 }
 #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
@@ -11570,6 +11578,7 @@ a.btn-share-result:hover {
   #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
     padding: 25px 35px;
     width: 100%;
+    position: relative;
   }
 }
 #lucky-painter-header-content.header-banner .block-header-content .block-content-1 .scroll-block {
@@ -11594,6 +11603,7 @@ a.btn-share-result:hover {
   display: block;
   width: 100%;
   position: relative;
+  background-color: #ede5df;
 }
 #lucky-painter-header-register.header-banner figure {
   text-align: center;
@@ -11639,6 +11649,11 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content {
     padding: 10px 0 0;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner .block-header-content {
+    position: relative;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
@@ -11694,6 +11709,12 @@ a.btn-share-result:hover {
   top: 0;
   position: absolute;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 {
+    right: 0;
+    top: 105px;
+  }
 }
 #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 .prev-icon {
   background: url("../images/landing-header/block2-prev.png") no-repeat center center / 100% auto;
@@ -11837,6 +11858,7 @@ a.btn-share-result:hover {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
     padding: 25px 35px;
     width: 100%;
+    position: relative;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block {

@@ -121,22 +121,22 @@
 <section id="lucky-painter-header" class="header-banner">
   <figure>
     <img class="banner-landing" src="images/landing-header/banner-landing.jpg" alt=""/>
-    <img class="paint-block-landing" src="images/landing-header/paint-block.png" alt=""/>
+    <img class="paint-block-landing wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.2s" src="images/landing-header/paint-block.png" alt=""/>
   </figure>
   <div class="action-content">
     <div class="container">
       <div class="block-action">
-        <h2 class="lending-title">Galaxy <br/> Lucky Painter</h2>
+        <h2 class="lending-title wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">Galaxy <br/> Lucky Painter</h2>
 
-        <p class="intro-action">
+        <p class="intro-action wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
           Lucky Painter là những thợ sơn chuyên nghiệp, tận tâm và yêu nghề. Chúng tôi hân hoan trong mỗi khoảnh khắc
           chào
           đón không gian mới. Chúng tôi chia sẻ niềm vui và là cầu nối may mắn đến mọi gia đình. Điểm tô sắc màu hạnh
           phúc cho mái ấm của bạn
           chính là sứ mệnh của chúng tôi!
         </p>
-        <a href="#" class="btn-register"><span>Đăng ký ngay</span></a>
-        <a href="#" class="btn-content-event"><span>Nội dung chương trình</span></a>
+        <a href="#" class="btn-register wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><span>Đăng ký ngay</span></a>
+        <a href="#" class="btn-content-event wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s"><span>Nội dung chương trình</span></a>
       </div>
     </div>
   </div>
@@ -310,9 +310,9 @@
   </div>
 </section>
 
-
 <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/wow.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/galaxy.js"></script>
 <script>
@@ -321,6 +321,22 @@
   var tab3 = $('#lucky-painter-header-register');
   tab2.hide();
   tab3.hide();
+
+  var wow = new WOW(
+    {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       true,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+    }
+  );
+  wow.init();
 
   $('.scroll-block').slimScroll({
     height: '340px'

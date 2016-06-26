@@ -11241,6 +11241,10 @@ a.btn-share-result:hover {
   transition: all 0.2s ease-in-out;
   box-shadow: -3px 1px 1px rgba(78, 58, 9, 0.4);
 }
+#lucky-painter-header.header-banner .action-content .block-action .btn-register:hover {
+  background-color: white;
+  color: #d21f1a;
+}
 @media (max-width: 480px) {
   #lucky-painter-header.header-banner .action-content .block-action .btn-register {
     font-size: 14px;
@@ -11258,10 +11262,6 @@ a.btn-share-result:hover {
 }
 #lucky-painter-header.header-banner .action-content .block-action .btn-register span {
   font-family: 'Bebas', sans-serif;
-}
-#lucky-painter-header.header-banner .action-content .block-action .btn-register:hover {
-  background-color: white;
-  color: #d21f1a;
 }
 #lucky-painter-header.header-banner .action-content .block-action .btn-content-event {
   display: block;
@@ -11322,6 +11322,17 @@ a.btn-share-result:hover {
 #lucky-painter-header-content.header-banner figure {
   text-align: center;
   position: relative;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner figure {
+    display: none;
+  }
 }
 #lucky-painter-header-content.header-banner figure img {
   max-width: 100%;
@@ -11334,6 +11345,26 @@ a.btn-share-result:hover {
   position: absolute;
   top: 0;
   width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-content.header-banner .block-header-content {
+    padding: 25px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-content.header-banner .block-header-content {
+    padding: 20px 0 0;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content {
+    padding: 10px 0 0;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
   width: 1285px;
@@ -11341,12 +11372,64 @@ a.btn-share-result:hover {
   height: 100%;
   display: block;
   margin: 0 auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 1200px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 1000px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 750px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 450px;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 340px;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 310px;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .btn-prev-block1 {
   display: block;
   left: 0;
   top: 0;
   position: absolute;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner .block-header-content .btn-prev-block1 {
+    left: -15px;
+    top: 105px;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .btn-prev-block1 .prev-icon {
   background: url("../images/landing-header/block1-prev.png") no-repeat center center / 100% auto;
@@ -11367,10 +11450,63 @@ a.btn-share-result:hover {
   line-height: 72px;
   text-transform: uppercase;
   text-shadow: -5px 3px 0 rgba(78, 58, 9, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header {
+    top: 70px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header {
+    font-size: 20px;
+    line-height: 35px;
+    top: 90px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header {
+    display: none;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header span {
   font-size: 80px;
   text-shadow: -5px 3px 0 rgba(78, 58, 9, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 70px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 35px;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header:after {
   position: absolute;
@@ -11378,9 +11514,20 @@ a.btn-share-result:hover {
   left: 0;
   box-shadow: -5px 3px 0 rgba(78, 58, 9, 0.5);
   background-color: #ffc406;
-  width: 120px;
+  width: 100px;
   height: 10px;
   content: '';
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content .title-wrapper-header:after {
+    height: 5px;
+    bottom: -10px;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
   width: 990px;
@@ -11390,6 +11537,40 @@ a.btn-share-result:hover {
   top: 0;
   padding: 90px 180px;
   background: url("../images/landing-header/block1-content.png") no-repeat center / 100% 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    padding: 65px 150px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    padding: 25px 125px;
+    width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    padding: 25px 55px;
+    width: 555px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    padding: 15px 35px;
+    width: 490px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    padding: 25px 35px;
+    width: 100%;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content .block-content-1 .scroll-block {
   width: 620px;
@@ -11417,6 +11598,7 @@ a.btn-share-result:hover {
 #lucky-painter-header-register.header-banner figure {
   text-align: center;
   position: relative;
+  display: block;
 }
 #lucky-painter-header-register.header-banner figure img {
   max-width: 100%;
@@ -11430,6 +11612,11 @@ a.btn-share-result:hover {
   max-width: 1903px;
   z-index: 1;
 }
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner figure {
+    display: none;
+  }
+}
 #lucky-painter-header-register.header-banner .block-header-content {
   display: block;
   left: 0;
@@ -11439,12 +11626,67 @@ a.btn-share-result:hover {
   top: 0;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content {
+    padding: 25px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content {
+    padding: 20px 0 0;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content {
+    padding: 10px 0 0;
+  }
+}
 #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
   width: 1285px;
   position: relative;
   height: 100%;
   display: block;
   margin: 0 auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 1200px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 1000px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 750px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 450px;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 340px;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 310px;
+  }
 }
 #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 {
   display: block;
@@ -11473,10 +11715,70 @@ a.btn-share-result:hover {
   line-height: 72px;
   text-transform: uppercase;
   text-shadow: -4px 2px 2px rgba(78, 58, 9, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    font-size: 35px;
+    top: 70px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    font-size: 20px;
+    line-height: 35px;
+    top: 90px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    display: none;
+  }
 }
 #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
   font-size: 80px;
   text-shadow: -4px 2px 2px rgba(78, 58, 9, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 70px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 50px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 35px;
+  }
 }
 #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header:after {
   position: absolute;
@@ -11488,6 +11790,12 @@ a.btn-share-result:hover {
   height: 10px;
   content: '';
 }
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header:after {
+    bottom: -10px;
+    height: 5px;
+  }
+}
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
   width: 990px;
   position: absolute;
@@ -11496,24 +11804,177 @@ a.btn-share-result:hover {
   top: 0;
   padding: 90px 180px;
   background: url("../images/landing-header/block2-content.png") no-repeat center / 100% 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 65px 150px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 25px 125px;
+    width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 25px 55px;
+    width: 555px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 15px 100px;
+    width: 490px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 25px 35px;
+    width: 100%;
+  }
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block {
-  width: 620px;
-  height: 340px;
   position: relative;
   display: block;
 }
-#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .title-block {
-  font-family: 'Bebas', sans-serif;
-  text-transform: uppercase;
-  color: #632366;
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 25px;
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
-#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block p {
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label {
   color: #808d9b;
   font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label:hover {
+  color: #632366;
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-group {
+    margin: 0 auto 5px;
+  }
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border-color: #808d9b;
+  background-color: #ebebeb;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-control:focus {
+  background-color: #ffffff;
+  border-color: #632366 !important;
+  box-shadow: 0, 0;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form textarea {
+  resize: none;
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form textarea {
+    max-height: 55px;
+  }
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .btn-submit {
+  border: 0;
+  display: block;
+  background-color: #d21f1a;
+  width: 170px;
+  height: 38px;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  font-size: 22px;
+  text-transform: uppercase;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 30px auto 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -3px 1px 1px rgba(78, 58, 9, 0.4);
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .btn-submit {
+    margin: 10px auto 0;
+    line-height: 25px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .btn-submit span {
+  font-family: 'Bebas', sans-serif;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .btn-submit:hover {
+  background-color: white;
+  color: #d21f1a;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success {
+  display: none;
+  text-align: center;
+  padding: 50px 0;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success .icon-success {
+  display: block;
+  background: url("../images/landing-header/success-icon.png") no-repeat center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success .success-title {
+  font-size: 45px;
+  margin: 30px 0 15px;
+  text-align: center;
+  color: #632366;
+  font-family: 'Bebas', sans-serif;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success p {
+  color: #8e4e91;
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  padding: 0 150px;
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success p {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .slimScrollDiv {
+    height: 250px !important;
+  }
+  .slimScrollDiv .scroll-block {
+    height: 250px !important;
+  }
+}
+@media (max-width: 640px) {
+  .slimScrollDiv {
+    height: 235px !important;
+  }
+  .slimScrollDiv .scroll-block {
+    height: 235px !important;
+  }
 }
 #luckypainter-event {
   position: relative;

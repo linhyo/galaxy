@@ -12421,7 +12421,7 @@ a.btn-share-result:hover {
 }
 #luckypainter-list .list-menu:after {
   position: absolute;
-  top: -6px;
+  top: -5px;
   left: 27px;
   display: inline-block;
   border-right: 6px solid transparent;

@@ -220,6 +220,14 @@
   -o-transform-origin: @x @y;
 }
 
+.backface-visibility(@argument: hidden) {
+  -webkit-backface-visibility: @argument;
+  -moz-backface-visibility: @argument;
+  -ms-backface-visibility: @argument;
+  -o-backface-visibility: @argument;
+  backface-visibility: @argument;
+}
+
 .user-select(@argument: none) {
   -webkit-user-select: @argument;
   -moz-user-select: @argument;

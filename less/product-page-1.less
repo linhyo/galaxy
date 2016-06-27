@@ -1,0 +1,159 @@
+#product-page1 {
+  &.header-banner {
+    display: block;
+    width: 100%;
+    z-index: 1 !important;
+    position: relative;
+    background-color: #ede5df;
+    .block-banner {
+      position: relative;
+      width: 100%;
+      figure {
+        text-align: center;
+        position: relative;
+        display: block;
+        .transition();
+        img {
+          .transition();
+          max-width: 100%;
+          display: block;
+        }
+        .bn1-product, .bn2-product {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+        .bn2-product {
+          z-index: 2;
+        }
+        .bn3-product, .bn4-product {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+        }
+        .banner-content {
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          text-align: left;
+          .container {
+            position: relative;
+            .bn1-content {
+              width: 610px;
+              height: auto;
+              position: absolute;
+              right: 0;
+              top: 125px;
+              color: white;
+              z-index: 1;
+              .description-content {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 36px;
+                color: white;
+                text-shadow: 2px 2px hsla(0, 0%, 0%, 0.3);
+                margin-bottom: 5px;
+              }
+              .title-content {
+                font-family: 'Gotham-Ultra', sans-serif;
+                font-size: 48px;
+                color: white;
+                text-shadow: 2px 2px hsla(0, 0%, 0%, 0.3);
+                margin-bottom: 20px;
+              }
+              p{
+                font-size: 18px;
+                color: white;
+              }
+            }
+            .bn2-content, .bn3-content, .bn4-content {
+              width: 535px;
+              height: auto;
+              position: absolute;
+              right: 0;
+              top: 280px;
+              color: white;
+              z-index: 1;
+              border: 8px solid white;
+              padding: 45px;
+              background-color:  hsla(0, 0%, 0%, 0.15);
+              .title-content {
+                font-size: 42px;
+                color: white;
+                text-align: right;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              p{
+                text-align: left;
+                font-size: 18px;
+                color: white;
+              }
+            }
+            .bn2-content{
+              &:after{
+                background: url("../images/products/icon-content1.png") no-repeat center/cover;
+                width: 181px;
+                height: 153px;
+                left: -90px;
+                top: -60px;
+                content: '';
+                position: absolute;
+              }
+            }
+            .bn3-content{
+              top: 216px;
+              &:after{
+                background: url("../images/products/icon-content2.png") no-repeat center/cover;
+                width: 176px;
+                height: 149px;
+                left: 50%;
+                top: 50%;
+                margin-left: -88px;
+                margin-top: -260px;
+                content: '';
+                position: absolute;
+              }
+              .title-content{
+                text-align: center;
+              }
+            }
+            .bn4-content{
+              top: 330px;
+              background: url("../images/products/bg-content.jpg") no-repeat center / cover;
+              &:after{
+                background: url("../images/products/icon-content3.png") no-repeat center/cover;
+                width: 160px;
+                height: 135px;
+                left: 50%;
+                top: 50%;
+                margin-left: -80px;
+                margin-top: -250px;
+                content: '';
+                position: absolute;
+              }
+              .title-content{
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+    .product-painter {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+}

@@ -406,6 +406,12 @@ textarea.has-error:-ms-input-placeholder {
   font-style: normal;
 }
 @font-face {
+  font-family: 'Gotham-Ultra';
+  src: url('../fonts/Gotham-Ultra.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: 'galaxy';
   src: url('../fonts/galaxy.eot?7ld454');
   src: url('../fonts/galaxy.eot?7ld454#iefix') format('embedded-opentype'), url('../fonts/galaxy.ttf?7ld454') format('truetype'), url('../fonts/galaxy.woff?7ld454') format('woff'), url('../fonts/galaxy.svg?7ld454#galaxy') format('svg');
@@ -12235,6 +12241,11 @@ a.btn-share-result:hover {
 }
 #luckypainter-list .list-number {
   display: table-cell;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #luckypainter-list .list-number > div {
   width: 70px;
@@ -12379,6 +12390,77 @@ a.btn-share-result:hover {
   background-clip: padding-box;
   overflow-y: auto;
 }
+#luckypainter-list .list-menu {
+  width: 280px;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  border-color: #9aa4ae;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 20px;
+  top: 115%;
+}
+#luckypainter-list .list-menu:before {
+  position: absolute;
+  top: -7px;
+  left: 26px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #9aa4ae;
+  border-left: 7px solid transparent;
+  content: '';
+}
+#luckypainter-list .list-menu:after {
+  position: absolute;
+  top: -6px;
+  left: 27px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+#luckypainter-list .list-menu .menu-top {
+  text-align: center;
+  border-bottom: 1px solid #b8b8b8;
+  padding-bottom: 15px;
+}
+#luckypainter-list .list-menu .menu-top h4 {
+  font-family: 'Fester', sans-serif;
+  color: #632366;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#luckypainter-list .list-menu .menu-top p {
+  color: #632366;
+  font-size: 15px;
+}
+#luckypainter-list .list-menu .menu-bottom {
+  padding-top: 15px;
+}
+#luckypainter-list .list-menu .menu-bottom p {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+}
+#luckypainter-list .list-menu .menu-bottom .menu-label {
+  width: 110px;
+  text-align: right;
+  color: #632366;
+  margin-right: 10px;
+}
+#luckypainter-list .list-menu .menu-bottom .menu-value {
+  color: #9aa4ae;
+}
 .luckypainter-event-title {
   color: #632366;
 }
@@ -12430,4 +12512,100 @@ a.btn-share-result:hover {
   .event-col-3 {
     padding-left: 25px;
   }
+}
+#product-category-banner {
+  position: relative;
+}
+#product-category-banner img {
+  width: 100%;
+}
+#product-category-banner .category-caption {
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  max-width: 450px;
+  border: 8px solid #fff;
+  text-align: center;
+  padding: 20px 35px;
+  margin-top: -129px;
+}
+#product-category-banner .category-caption h2 {
+  font-family: 'Gotham-Ultra', sans-serif;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#product-category-banner .category-caption p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#product-category-item {
+  padding: 50px 0;
+}
+#product-category-item .paint-item {
+  margin: 15px 0;
+}
+#product-category-item .paint-item .paint-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#product-category-item .paint-item .paint-box:before {
+  content: "";
+  display: block;
+  padding-top: 120%;
+}
+#product-category-item .paint-item .paint-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background: transparent no-repeat scroll center center / cover;
+}
+#product-category-item .paint-item .paint-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+}
+#product-category-item .paint-item .paint-caption h3 {
+  color: #713083;
+  font-size: 18px;
+}
+#product-category-item .paint-item .paint-caption h2 {
+  color: #713083;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 5px 0 15px;
+}
+#product-category-item .paint-item .paint-caption button.btn-view {
+  background-color: #8f318a;
+  border-color: #8f318a;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 36px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#product-category-item .paint-item .paint-caption button.btn-view:hover {
+  background-color: #fff;
+  color: #8f318a;
 }

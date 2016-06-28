@@ -175,6 +175,22 @@
 }
 
 #lucky-painter-header-content {
+  @media (max-width: 768px) {
+    .slimScrollDiv{
+      height: 250px !important;
+      .scroll-block{
+        height: 250px !important;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    .slimScrollDiv{
+      height: 235px !important;
+      .scroll-block{
+        height: 235px !important;
+      }
+    }
+  }
   &.header-banner {
     display: block;
     width: 100%;
@@ -665,19 +681,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .slimScrollDiv{
-    height: 250px !important;
-    .scroll-block{
-      height: 250px !important;
-    }
-  }
-}
-@media (max-width: 640px) {
-  .slimScrollDiv{
-    height: 235px !important;
-    .scroll-block{
-      height: 235px !important;
-    }
-  }
-}

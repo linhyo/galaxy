@@ -130,7 +130,7 @@
           font-size: 20px;
           margin: 5px 0 10px !important;
         }
-        button.btn-view {
+        button.btn-purple {
           font-size: 14px !important;
           padding: 5px 32px !important;
         }
@@ -152,7 +152,7 @@
         h2 {
           font-size: 20px;
         }
-        button.btn-view {
+        button.btn-purple {
           font-size: 14px !important;
           padding: 5px 32px !important;
         }
@@ -164,46 +164,6 @@
         color: #713083;
         text-transform: uppercase;
         margin: 5px 0 15px;
-      }
-      button.btn-view {
-        background-color: #8f318a;
-        border-color: #8f318a;
-        .border-radius(0);
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 6px 36px;
-        .transform(translateZ(0));
-        .backface-visibility();
-        -moz-osx-font-smoothing: grayscale;
-        position: relative;
-        -webkit-transition-property: color;
-        transition-property: color;
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-        &:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: #fff;
-          .transform(scaleX(0));
-          .transform-origin(0, 50%);
-          .transition(transform, 0.5s, ease-out);
-        }
-        &:hover {
-          //background-color: #fff;
-          color: #8f318a;
-          &:before {
-            .transform(scaleX(1));
-            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-          }
-        }
       }
     }
     .paint-border {

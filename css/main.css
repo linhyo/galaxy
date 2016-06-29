@@ -12912,6 +12912,9 @@ a.btn-share-result:hover {
 .block-banner#bn4 {
   background-image: url('../images/product-landing/bn4.jpg');
 }
+.block-banner#bn5 {
+  background-image: url('../images/product-landing/bn4.jpg');
+}
 .block-banner figure {
   text-align: center;
   position: relative;
@@ -13744,4 +13747,394 @@ a.btn-share-result:hover {
   .testimonial-next {
     right: 10px;
   }
+}
+#lucky-gift-box .flame {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+#lucky-gift-box .flame .promotion-flame2,
+#lucky-gift-box .flame .promotion-flame4 {
+  position: absolute;
+  left: 0;
+  bottom: -52%;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+#lucky-gift-box .flame .promotion-flame2 figure img,
+#lucky-gift-box .flame .promotion-flame4 figure img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+}
+#lucky-gift-box .flame .promotion-flame2 figure .flame-description,
+#lucky-gift-box .flame .promotion-flame4 figure .flame-description {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#lucky-gift-box .flame .promotion-flame2 figure .bn-flame,
+#lucky-gift-box .flame .promotion-flame4 figure .bn-flame {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#lucky-gift-box .flame .promotion-flame4 {
+  bottom: -50%;
+}
+#lucky-gift-box .flame figure img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+}
+#lucky-gift-box .flame figure .flame-description {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#lucky-gift-box .flame figure .flame-description.flame3 {
+  z-index: 11;
+}
+#lucky-gift-box .flame figure .bn-flame {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#lucky-gift-box .flame .flame-content {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+#lucky-gift-box .flame .flame-content.flame-content2 {
+  top: 250px;
+}
+#lucky-gift-box .flame .flame-content.flame-content3 {
+  top: 200px;
+}
+#lucky-gift-box .flame .flame-content.flame-content5 {
+  top: 400px;
+}
+#lucky-gift-box .flame .block-content1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 35px;
+}
+#lucky-gift-box .flame .block-content1 .title-content {
+  color: white;
+  font-family: 'Bebas', sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+  text-shadow: -5px 3px 2px rgba(78, 58, 9, 0.4);
+  margin-bottom: 35px;
+}
+#lucky-gift-box .flame .block-content1 .wrapper-content {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 50px;
+}
+#lucky-gift-box .flame .block-content1 .number-painter {
+  display: block;
+  margin: 20px auto;
+  padding: 45px 0 50px 160px;
+  position: relative;
+  text-align: left;
+  width: 75%;
+}
+#lucky-gift-box .flame .block-content1 .number-painter:after {
+  background: rgba(0, 0, 0, 0) url("../images/lucky-gift-box/number-painter.png") no-repeat scroll center center / 100% auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+#lucky-gift-box .flame .block-content1 .number-painter .timer {
+  color: #ff6600;
+  font-family: 'Bebas', sans-serif;
+  font-size: 60px;
+  left: 80px;
+  line-height: 87px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  z-index: 1;
+}
+#lucky-gift-box .flame .block-content1 .number-painter .description-top,
+#lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
+  color: #ff6600;
+  display: block;
+  font-weight: 600;
+  width: 100%;
+  line-height: 25px;
+  z-index: 1;
+  position: relative;
+}
+#lucky-gift-box .flame .block-content1 .number-painter .description-top {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+#lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
+  font-size: 20px;
+}
+#lucky-gift-box .flame .block-content1 .action-content {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-register {
+  border: 0;
+  display: block;
+  background-color: #d21f1a;
+  width: 245px;
+  height: 32px;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+  font-size: 22px;
+  text-transform: uppercase;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -3px 1px 1px rgba(78, 58, 9, 0.4);
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-register:hover {
+  background-color: white;
+  color: #d21f1a;
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-register span {
+  font-family: 'Bebas', sans-serif;
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-content-event {
+  display: block;
+  font-family: 'Bebas', sans-serif;
+  border: 3px solid #d21f1a;
+  background-color: transparent;
+  width: 245px;
+  height: 32px;
+  text-align: center;
+  color: #d21f1a;
+  line-height: 26px;
+  font-size: 22px;
+  text-transform: uppercase;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto 15px;
+  box-shadow: -3px 1px 1px rgba(78, 58, 9, 0.4);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-content-event span {
+  text-shadow: -2px 1px 1px rgba(78, 58, 9, 0.4);
+  font-family: 'Bebas', sans-serif;
+}
+#lucky-gift-box .flame .block-content1 .action-content .btn-content-event:hover {
+  border-color: white;
+  color: white;
+}
+#lucky-gift-box .flame .block-content2 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 35px;
+}
+#lucky-gift-box .flame .block-content2 .title-promotion {
+  color: #632366;
+  font-family: 'iCielBambola', sans-serif;
+  font-size: 50px;
+  line-height: 30px;
+}
+#lucky-gift-box .flame .block-content2 .sub-title-promotion {
+  color: #632366;
+  font-family: 'Bebas', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+#lucky-gift-box .flame .block-content2 .wrapper-promotion {
+  color: #8e4e91;
+  font-size: 14px;
+  padding: 0 50px;
+}
+#lucky-gift-box .flame .block-content3 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#lucky-gift-box .flame .block-content3 .title-content {
+  color: white;
+  font-family: 'iCielBambola', sans-serif;
+  font-size: 40px;
+  line-height: 35px;
+}
+#lucky-gift-box .flame .block-content3 .sub-title-content {
+  color: white;
+  font-family: 'Bebas', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+#lucky-gift-box .flame .block-content3 .wrapper-content {
+  color: white;
+  font-size: 14px;
+  padding: 0 50px;
+}
+#lucky-gift-box .flame .block-content3 .action-content {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#lucky-gift-box .flame .block-content3 .action-content .btn-show-more {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 15px 0;
+  display: block;
+}
+#lucky-gift-box .flame .block-content3 .action-content .btn-show-more span {
+  display: block;
+  font-weight: 600;
+}
+#lucky-gift-box .flame .block-content3 .action-content .btn-show-more:hover {
+  color: whitesmoke;
+}
+#lucky-gift-box .flame .block-content3 .paint-type {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 0 50px;
+}
+#lucky-gift-box .flame .block-content4 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 35px;
+}
+#lucky-gift-box .flame .block-content4 .title-promotion {
+  color: #632366;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+#lucky-gift-box .flame .block-content4 .title-promotion .promo {
+  font-weight: 400;
+  font-family: 'iCielBambola', sans-serif;
+  text-transform: inherit;
+}
+#lucky-gift-box .flame .block-content4 .title-promotion span {
+  display: inline-block;
+  color: #632366;
+  font-family: 'Bebas', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#lucky-gift-box .flame .block-content4 .wrapper-promotion {
+  color: #8e4e91;
+  font-size: 14px;
+  padding: 0 50px;
+}
+#lucky-gift-box .flame .block-content5 {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  height: auto;
+  top: 0;
+  padding: 90px 180px;
+  background: url("../images/lucky-gift-box/block-content.png") no-repeat center / 100% 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 1320px) {
+  #lucky-gift-box .flame .block-content5 {
+    padding: 65px 150px;
+  }
+}
+@media (max-width: 1024px) {
+  #lucky-gift-box .flame .block-content5 {
+    padding: 25px 125px;
+    width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-gift-box .flame .block-content5 {
+    padding: 25px 55px;
+    width: 555px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-gift-box .flame .block-content5 {
+    padding: 15px 35px;
+    width: 490px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-gift-box .flame .block-content5 {
+    padding: 25px 35px;
+    width: 100%;
+    position: relative;
+  }
+}
+#lucky-gift-box .flame .block-content5 .scroll-block {
+  width: 620px;
+  height: 340px;
+  position: relative;
+  display: block;
+}
+#lucky-gift-box .flame .block-content5 .scroll-block .title-block {
+  font-family: 'Bebas', sans-serif;
+  text-transform: uppercase;
+  color: #632366;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#lucky-gift-box .flame .block-content5 .scroll-block p {
+  color: #808d9b;
+  font-size: 15px;
 }

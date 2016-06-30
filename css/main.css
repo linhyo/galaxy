@@ -12618,6 +12618,193 @@ a.btn-share-result:hover {
     padding-left: 25px;
   }
 }
+#product-collection-banner {
+  position: relative;
+}
+#product-collection-banner:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 50px;
+  background-color: #03162a;
+}
+#product-collection-banner img {
+  position: relative;
+  width: 100%;
+}
+#product-collection-banner .banner-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#product-collection-banner .banner-content {
+  text-align: center;
+  max-width: 560px;
+}
+@media (min-width: 1200px) {
+  #product-collection-banner .banner-content h1 {
+    font-size: 50px;
+  }
+  #product-collection-banner .banner-content p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #product-collection-banner .banner-content h1 {
+    font-size: 44px;
+  }
+  #product-collection-banner .banner-content p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #product-collection-banner .banner-content h1 {
+    font-size: 38px;
+  }
+  #product-collection-banner .banner-content p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #product-collection-banner .banner-content h1 {
+    font-size: 26px;
+  }
+  #product-collection-banner .banner-content p {
+    display: none;
+  }
+}
+#product-collection-banner .banner-content h1 {
+  font-family: 'Gotham-Ultra', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#product-collection-banner .banner-content p {
+  color: #fff;
+}
+.product-category {
+  position: relative;
+  margin-top: 10px;
+}
+.product-category img {
+  width: 100%;
+}
+.product-category .category-caption {
+  position: absolute;
+  top: 50%;
+  border: solid #fff;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .product-category .category-caption.right-align {
+    right: 120px;
+  }
+  .product-category .category-caption.left-align {
+    left: 120px;
+  }
+}
+@media (max-width: 991px) {
+  .product-category .category-caption.right-align {
+    right: 55px;
+  }
+  .product-category .category-caption.left-align {
+    left: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .product-category .category-caption.right-align {
+    right: 30px;
+  }
+  .product-category .category-caption.left-align {
+    left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .product-category .category-caption {
+    max-width: 450px;
+    padding: 20px 35px;
+    margin-top: -129px;
+    border-width: 8px;
+  }
+  .product-category .category-caption h2 {
+    font-size: 48px;
+  }
+  .product-category .category-caption p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product-category .category-caption {
+    max-width: 420px;
+    padding: 15px 30px;
+    margin-top: -110px;
+    border-width: 6px;
+  }
+  .product-category .category-caption h2 {
+    font-size: 42px;
+  }
+  .product-category .category-caption p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-category .category-caption {
+    max-width: 380px;
+    padding: 15px 20px;
+    margin-top: -95px;
+    border-width: 4px;
+  }
+  .product-category .category-caption h2 {
+    font-size: 36px;
+  }
+  .product-category .category-caption p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .product-category .category-caption {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: -45px;
+    border: none;
+  }
+  .product-category .category-caption h2 {
+    font-size: 25px;
+  }
+  .product-category .category-caption p {
+    display: none;
+  }
+}
+.product-category .category-caption h2 {
+  font-family: 'Gotham-Ultra', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.product-category .category-caption p {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
 #product-category-banner {
   position: relative;
 }

@@ -1097,58 +1097,15 @@ button.btn-purple {
   font-weight: 700;
   text-transform: uppercase;
   padding: 6px 36px;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-button.btn-purple:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  -moz-transform-origin: 0 50%;
-  -ms-transform-origin: 0 50%;
-  -o-transform-origin: 0 50%;
-  -webkit-transition: transform 0.5s ease-out;
-  -moz-transition: transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  -ms-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 button.btn-purple:hover {
+  background-color: #fff;
   color: #8f318a;
-}
-button.btn-purple:hover:before {
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .navbar {
   position: relative;
@@ -13496,19 +13453,7 @@ a.btn-share-result:hover {
   position: relative;
   margin-bottom: 30px;
 }
-#product-page-feature .feature-item figure {
-  position: relative;
-  overflow: hidden;
-}
-#product-page-feature .feature-item figure img {
-  width: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-#product-page-feature .feature-item figure img:hover {
+#product-page-feature .feature-item:hover img {
   -moz-opacity: 0.9;
   -khtml-opacity: 0.9;
   -webkit-opacity: 0.9;
@@ -13520,6 +13465,18 @@ a.btn-share-result:hover {
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+#product-page-feature .feature-item figure {
+  position: relative;
+  overflow: hidden;
+}
+#product-page-feature .feature-item figure img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #product-page-feature .feature-item figure figcaption {
   position: absolute;
@@ -13619,58 +13576,15 @@ a.btn-share-result:hover {
   color: #8f318a;
   font-size: 16px;
   font-weight: 300;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-#product-page-feature .feature-item figure figcaption button:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #8f318a;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  -moz-transform-origin: 0 50%;
-  -ms-transform-origin: 0 50%;
-  -o-transform-origin: 0 50%;
-  -webkit-transition: transform 0.5s ease-out;
-  -moz-transition: transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  -ms-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #product-page-feature .feature-item figure figcaption button:hover {
+  background-color: #8f318a;
   color: #fff;
-}
-#product-page-feature .feature-item figure figcaption button:hover:before {
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 #product-page-news {
   padding: 30px 0;
@@ -13724,7 +13638,7 @@ a.btn-share-result:hover {
 @media (min-width: 768px) and (max-width: 991px) {
   #product-page-news .news-item .news-caption h4 {
     height: 48px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
 }
@@ -13790,7 +13704,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .product-page-title {
-    font-size: 39px;
+    font-size: 36px;
   }
 }
 @media (max-width: 767px) {
@@ -13826,6 +13740,7 @@ a.btn-share-result:hover {
 }
 .testimonial-slide .testimonial-item p {
   color: #454545;
+  font-weight: 300;
 }
 @media (min-width: 1200px) {
   .testimonial-slide .testimonial-item p {
@@ -13853,6 +13768,10 @@ a.btn-share-result:hover {
 }
 .testimonial-slide .testimonial-item h5 {
   color: #454545;
+  font-weight: 300;
+}
+.testimonial-slide .testimonial-item h5 span {
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .testimonial-slide .testimonial-item h5 {

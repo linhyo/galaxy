@@ -19,7 +19,7 @@ $(document).ready(function () {
   var testimonial = $('.testimonial-slide');
 
   testimonial.owlCarousel({
-    slideSpeed: 500,
+    slideSpeed: 300,
     items: 1,
     dots: false,
     nav: true,

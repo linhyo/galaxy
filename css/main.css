@@ -13267,41 +13267,27 @@ a.btn-share-result:hover {
 }
 #product-page-banner {
   position: relative;
+  background: #4e2a66 url("../images/product-landing/violet-bg.jpg") no-repeat center center / cover;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  #product-page-banner {
+    min-height: 750px;
+  }
+}
+@media (max-width: 991px) {
+  #product-page-banner {
+    min-height: 600px;
+  }
 }
 #product-page-banner figure {
-  position: relative;
-}
-#product-page-banner figure img {
-  width: 100%;
-}
-#product-page-banner .banner-text {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  padding: 40px 0 0;
 }
 @media (min-width: 1200px) {
-  #product-page-banner .banner-text {
-    padding: 100px 0 0;
+  #product-page-banner .banner-content {
+    padding: 100px 0 50px;
   }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #product-page-banner .banner-text {
-    padding: 30px 0 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #product-page-banner .banner-text {
-    padding: 20px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  #product-page-banner .banner-text {
-    padding: 50px 0 0;
-  }
-}
-@media (min-width: 1200px) {
   #product-page-banner .banner-content h3 {
     font-size: 36px;
   }
@@ -13310,6 +13296,9 @@ a.btn-share-result:hover {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #product-page-banner .banner-content {
+    padding: 80px 0 40px;
+  }
   #product-page-banner .banner-content h3 {
     font-size: 32px;
   }
@@ -13318,6 +13307,9 @@ a.btn-share-result:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #product-page-banner .banner-content {
+    padding: 50px 0 30px;
+  }
   #product-page-banner .banner-content h3 {
     font-size: 24px;
   }
@@ -13326,6 +13318,9 @@ a.btn-share-result:hover {
   }
 }
 @media (max-width: 767px) {
+  #product-page-banner .banner-content {
+    padding: 10px 0 40px;
+  }
   #product-page-banner .banner-content h3 {
     font-size: 20px;
   }
@@ -13337,6 +13332,7 @@ a.btn-share-result:hover {
 #product-page-banner .banner-content h3 {
   color: #fff;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
 }
 #product-page-banner .banner-content h3 {
   font-family: 'Gotham-Medium', sans-serif;
@@ -13344,9 +13340,6 @@ a.btn-share-result:hover {
 }
 #product-page-banner .banner-content h2 {
   font-family: 'Gotham-Ultra', sans-serif;
-}
-#product-page-banner .banner-tab {
-  margin-left: -10px;
 }
 @media (min-width: 1200px) {
   #product-page-banner .banner-tab {
@@ -13358,14 +13351,9 @@ a.btn-share-result:hover {
     margin-top: 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   #product-page-banner .banner-tab {
     margin-top: 10px;
-  }
-}
-@media (max-width: 767px) {
-  #product-page-banner .banner-tab {
-    display: none;
   }
 }
 #product-page-banner .nav-tabs {
@@ -13439,9 +13427,6 @@ a.btn-share-result:hover {
   padding: 20px 10px;
   cursor: default;
 }
-#product-page-banner .tab-content .scroll-wrapper {
-  padding-right: 15px;
-}
 #product-page-banner .tab-content p {
   color: #fff;
   font-size: 14px;
@@ -13456,12 +13441,12 @@ a.btn-share-result:hover {
     margin-right: 40px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   #product-page-banner .tab-content ul {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   #product-page-banner .tab-content ul > li {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 #product-page-banner .tab-content ul > li {
@@ -13470,6 +13455,11 @@ a.btn-share-result:hover {
 @media (min-width: 768px) and (max-width: 1199px) {
   #product-page-banner .tab-content img {
     width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #product-page-banner .tab-content img {
+    width: 70%;
   }
 }
 @media (min-width: 768px) {
@@ -13482,7 +13472,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #product-page-testimonial {
-    padding: 80px 0;
+    padding: 60px 0 80px;
   }
   #product-page-testimonial .testimonial-wrapper:after {
     bottom: -40px;
@@ -13837,7 +13827,13 @@ a.btn-share-result:hover {
 .testimonial-slide .testimonial-item p {
   color: #454545;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  .testimonial-slide .testimonial-item p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   .testimonial-slide .testimonial-item p {
     font-size: 20px;
     margin: 20px 0;
@@ -13883,8 +13879,7 @@ a.btn-share-result:hover {
 .testimonial-prev,
 .testimonial-next {
   position: absolute;
-  top: 50%;
-  margin-top: -40px;
+  top: 75px;
   display: inline-block;
   background: transparent no-repeat center center / 100% auto;
 }
@@ -13911,29 +13906,11 @@ a.btn-share-result:hover {
 }
 .testimonial-prev {
   background-image: url("../images/product-landing/prev-icon.png");
-}
-@media (min-width: 768px) {
-  .testimonial-prev {
-    left: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial-prev {
-    left: 10px;
-  }
+  left: 0;
 }
 .testimonial-next {
   background-image: url("../images/product-landing/next-icon.png");
-}
-@media (min-width: 768px) {
-  .testimonial-next {
-    right: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial-next {
-    right: 10px;
-  }
+  right: 0;
 }
 #lucky-gift-box .flame {
   display: block;

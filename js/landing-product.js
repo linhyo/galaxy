@@ -19,7 +19,7 @@ $(document).ready(function () {
   var testimonial = $('.testimonial-slide');
 
   testimonial.owlCarousel({
-    slideSpeed: 300,
+    slideSpeed: 500,
     items: 1,
     dots: false,
     nav: true,
@@ -30,33 +30,8 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     autoplayHoverPause: true,
-    autoplaySpeed: 2000,
-    autoplayTimeout: 2000
+    autoplaySpeed: 3000,
+    autoplayTimeout: 3000
   });
-
-  var bannerScroll = $('.banner-text .scroll-wrapper');
-
-  $(window).resize(function(){
-    var width = $(window).width();
-    if(width >= 1200){
-      bannerScroll.slimScroll({
-        color: '#fff',
-        height: '190px',
-        alwaysVisible: false
-      });
-    } else if (width >= 992 && width < 1200) {
-      bannerScroll.slimScroll({
-        color: '#fff',
-        height: '170px',
-        alwaysVisible: false
-      });
-    } else {
-      bannerScroll.slimScroll({
-        color: '#fff',
-        height: '140px',
-        alwaysVisible: false
-      });
-    }
-  }).resize();//trigger the resize event on page load.
 
 });

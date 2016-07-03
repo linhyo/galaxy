@@ -264,9 +264,12 @@
         .paint-border {
           .opacity(1);
         }
+        .paint-background {
+          .filter(blur(3px));
+        }
       }
     }
-    .paint-image {
+    .paint-background {
       position: absolute;
       top: 0;
       left: 0;
@@ -274,6 +277,17 @@
       right: 0;
       text-align: center;
       background: transparent no-repeat scroll center center / cover;
+      .transition();
+    }
+    .paint-image {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      figure {
+        display: inline-block;
+        width: 52%;
+      }
     }
     .paint-caption {
       position: absolute;

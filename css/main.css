@@ -1103,7 +1103,8 @@ button.btn-purple {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-button.btn-purple:hover {
+button.btn-purple:hover,
+button.btn-purple:focus {
   background-color: #fff;
   color: #8f318a;
 }
@@ -13564,6 +13565,11 @@ a.btn-share-result:hover {
 #product-page-testimonial .btn-send-testimonial {
   display: inline-block;
 }
+@media (min-width: 768px) {
+  #product-page-testimonial .btn-send-testimonial {
+    font-size: 20px;
+  }
+}
 #product-page-testimonial .testimonial-wrapper {
   position: relative;
   text-align: center;
@@ -13956,6 +13962,370 @@ a.btn-share-result:hover {
 .testimonial-next {
   background-image: url("../images/product-landing/next-icon.png");
   right: 0;
+}
+@media (min-width: 768px) {
+  .testimonial-modal .modal-dialog {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+.testimonial-modal .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.testimonial-modal .modal-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.testimonial-modal .modal-border .x-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(left, #67327b, transparent);
+  background-image: -moz-linear-gradient(left, #67327b, transparent);
+  background-image: -o-linear-gradient(left, #67327b, transparent);
+}
+.testimonial-modal .modal-border .y-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(#67327b, transparent);
+  background-image: -moz-linear-gradient(#67327b, transparent);
+  background-image: -o-linear-gradient(#67327b, transparent);
+  background-image: linear-gradient(#67327b, transparent);
+}
+.testimonial-modal .modal-border .x-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(left, transparent, #67327b);
+  background-image: -moz-linear-gradient(left, transparent, #67327b);
+  background-image: -o-linear-gradient(left, transparent, #67327b);
+}
+.testimonial-modal .modal-border .y-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(transparent, #67327b);
+  background-image: -moz-linear-gradient(transparent, #67327b);
+  background-image: -o-linear-gradient(transparent, #67327b);
+  background-image: linear-gradient(transparent, #67327b);
+}
+.testimonial-modal .close {
+  position: absolute;
+  color: #8f318a;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  filter: alpha(opacity=70);
+}
+@media (min-width: 768px) {
+  .testimonial-modal .close {
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-modal .close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
+}
+.testimonial-modal .close:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+.testimonial-modal .modal-header,
+.testimonial-modal .modal-body,
+.testimonial-modal .modal-footer {
+  position: relative;
+  border: none;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  .testimonial-modal .modal-header {
+    padding: 30px 80px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .testimonial-modal .modal-body {
+    padding: 0 65px;
+  }
+}
+.testimonial-modal .modal-footer {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimonial-modal .modal-footer button {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-modal .modal-footer button {
+    margin-bottom: 20px;
+  }
+}
+.testimonial-modal .modal-title {
+  color: #252525;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .testimonial-modal .modal-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-modal .modal-title {
+    font-size: 28px;
+  }
+}
+.testimonial-modal .modal-divider {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.testimonial-modal .modal-divider .star-bar {
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height: 36px;
+  background: #ffffff url("../images/product-landing/star-bar.png") no-repeat center center;
+  padding: 0 30px;
+  z-index: 10;
+}
+.testimonial-modal .modal-divider:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+}
+.testimonial-modal .form-textarea {
+  position: relative;
+}
+.testimonial-modal .form-textarea textarea {
+  height: auto;
+  resize: vertical;
+}
+.testimonial-modal .form-textarea .note {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  font-size: 15px;
+}
+.testimonial-modal .form-group:before,
+.testimonial-modal .form-group:after {
+  display: table;
+  content: " ";
+}
+.testimonial-modal .form-group:after {
+  clear: both;
+}
+.testimonial-modal .form-control {
+  color: #8d8d8d !important;
+  font-weight: 300;
+  border-color: #ddd !important;
+  box-shadow: none;
+}
+.testimonial-modal .form-control:focus {
+  border-color: #8f318a !important;
+}
+@media (min-width: 768px) {
+  .testimonial-modal .form-control {
+    height: 48px;
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-modal .form-control {
+    height: 40px;
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-modal .form-input-1 > div:first-child,
+  .testimonial-modal .form-input-2 > div:first-child {
+    margin-bottom: 15px;
+  }
+  .testimonial-modal .form-input-2 {
+    margin-bottom: 0;
+  }
+}
+.testimonial-success-modal .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.testimonial-success-modal .modal-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.testimonial-success-modal .modal-border .x-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(left, #67327b, transparent);
+  background-image: -moz-linear-gradient(left, #67327b, transparent);
+  background-image: -o-linear-gradient(left, #67327b, transparent);
+}
+.testimonial-success-modal .modal-border .y-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(#67327b, transparent);
+  background-image: -moz-linear-gradient(#67327b, transparent);
+  background-image: -o-linear-gradient(#67327b, transparent);
+  background-image: linear-gradient(#67327b, transparent);
+}
+.testimonial-success-modal .modal-border .x-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(left, transparent, #67327b);
+  background-image: -moz-linear-gradient(left, transparent, #67327b);
+  background-image: -o-linear-gradient(left, transparent, #67327b);
+}
+.testimonial-success-modal .modal-border .y-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(transparent, #67327b);
+  background-image: -moz-linear-gradient(transparent, #67327b);
+  background-image: -o-linear-gradient(transparent, #67327b);
+  background-image: linear-gradient(transparent, #67327b);
+}
+.testimonial-success-modal .close {
+  position: absolute;
+  color: #8f318a;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  filter: alpha(opacity=70);
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  .testimonial-success-modal .close {
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-success-modal .close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
+}
+.testimonial-success-modal .close:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+.testimonial-success-modal .modal-header,
+.testimonial-success-modal .modal-body,
+.testimonial-success-modal .modal-footer {
+  position: relative;
+  border: none;
+  z-index: 100;
+}
+.testimonial-success-modal .modal-footer {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimonial-success-modal .modal-footer button {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-success-modal .modal-footer button {
+    margin-bottom: 30px;
+  }
+}
+.testimonial-success-modal .modal-body img {
+  margin: 10px auto 30px;
+}
+.testimonial-success-modal .modal-body p {
+  color: #8f318a;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimonial-success-modal .modal-body p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-success-modal .modal-body p {
+    font-size: 16px;
+  }
 }
 #lucky-gift-box .flame {
   display: block;

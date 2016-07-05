@@ -25,8 +25,8 @@ $(document).ready(function () {
   });
   tab1.find('.btn-content-event').click(function (e) {
     e.preventDefault();
-    $(this).parents('#lucky-painter-header').animate({width: "100%", right: '3%', 'z-index': '10'}, '500')
-      .animate({left: '-97%'}, '500');
+    $(this).parents('#lucky-painter-header').animate({width: "100%", right: '3%', 'z-index': '10'}, '50')
+      .animate({left: '-97%'}, '50');
 
     setTimeout(function () {
       tab1.hide();
@@ -34,15 +34,15 @@ $(document).ready(function () {
       tab2.css('left', '100%')
         .css('width', '100%')
         .css('position', 'relative');
-      tab2.animate({left: '0%'}, '500')
-        .animate({width: '100%', left: '0'}, '500');
-    }, '500');
+      tab2.animate({left: '0%'}, '700')
+        .animate({width: '100%', left: '0'}, '700');
+    }, '50');
   });
 
   tab1.find('.btn-register').click(function (e) {
     e.preventDefault();
-    $(this).parents('#lucky-painter-header').animate({width: "100%", left: '3%', 'z-index': '10'}, '500')
-      .animate({left: '103%'}, '500');
+    $(this).parents('#lucky-painter-header').animate({width: "100%", left: '3%', 'z-index': '10'}, '50')
+      .animate({left: '103%'}, '50');
 
     setTimeout(function () {
       tab1.hide();
@@ -50,14 +50,14 @@ $(document).ready(function () {
       tab3.css('left', '-100%')
         .css('width', '100%')
         .css('position', 'relative');
-      tab3.animate({left: '0%'}, '500')
-        .animate({width: '100%', left: '0'}, '500');
-    }, '500');
+      tab3.animate({left: '0%'}, '700')
+        .animate({width: '100%', left: '0'}, '700');
+    }, '50');
   });
 
   tab2.find('.btn-prev-block1').click(function (e) {
     e.preventDefault();
-    $(this).parents('#lucky-painter-header-content').animate({width: "100%", left: '3%', 'z-index': '10'}, '500')
+    $(this).parents('#lucky-painter-header-content').animate({width: "100%", left: '3%', 'z-index': '10'}, '50')
       .animate({left: '103%'}, '500');
 
     setTimeout(function () {
@@ -67,15 +67,15 @@ $(document).ready(function () {
         .css('width', '100%')
         .css('z-index', '1')
         .css('position', 'relative');
-      tab1.animate({left: '0%'}, '500')
-        .animate({width: '100%', left: '0'}, '500');
-    }, '500');
+      tab1.animate({left: '0%'}, '700')
+        .animate({width: '100%', left: '0'}, '700');
+    }, '50');
   });
 
   tab3.find('.btn-prev-block2').click(function (e) {
     e.preventDefault();
-    $(this).parents('#lucky-painter-header-register').animate({width: "100%", left: '-3%', 'z-index': '10'}, '500')
-      .animate({left: '-97%'}, '500');
+    $(this).parents('#lucky-painter-header-register').animate({width: "100%", left: '-3%', 'z-index': '10'}, '50')
+      .animate({left: '-97%'}, '50');
 
     setTimeout(function () {
       tab3.hide();
@@ -84,24 +84,16 @@ $(document).ready(function () {
         .css('width', '100%')
         .css('z-index', '1')
         .css('position', 'relative');
-      tab1.animate({left: '0%'}, '500')
-        .animate({width: '100%', left: '0'}, '500');
-    }, '500');
+      tab1.animate({left: '0%'}, '700')
+        .animate({width: '100%', left: '0'}, '700');
+    }, '50');
   });
 
   $('.btn-submit').click(function(e){
     e.preventDefault();
-    $(this).parents('.register-form').animate({width: "100%", left: '3%'}, '500')
-      .animate({left: '-95%'}, '500');
-
     setTimeout(function () {
       $('.register-form').hide();
       $('.register-success').show();
-      $('.register-success').css('left', '100%')
-        .css('width', '100%')
-        .css('position', 'relative');
-      $('.register-success').animate({left: '0%'}, '500')
-        .animate({width: '100%', left: '0'}, '500');
     }, '500');
   });
 });

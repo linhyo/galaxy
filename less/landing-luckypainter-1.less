@@ -49,7 +49,7 @@
           margin-left: 150px;
         }
         @media (max-width: 1024px) {
-          margin-left: 50px;
+          margin-left: 100px;
         }
         @media (max-width: 768px) {
           margin-left: 20px;
@@ -82,9 +82,9 @@
             line-height: 30px;
           }
           @media (max-width: 480px) {
-            margin-bottom: 10px;
-            font-size: 20px;
-            line-height: 20px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            line-height: 18px;
           }
         }
         .intro-action {
@@ -93,7 +93,10 @@
           font-weight: 600;
           margin-bottom: 20px;
           display: block;
-          @media (max-width: 480px) {
+          @media (max-width: 1024px) {
+            margin-bottom: 10px;
+          }
+          @media (max-width: 768px) {
             display: none;
           }
         }
@@ -116,6 +119,9 @@
             background-color: white;
             color: #d21f1a;
           }
+          @media (max-width: 640px) {
+            width: 200px;
+          }
           @media (max-width: 480px) {
             font-size: 14px;
             line-height: 18px;
@@ -124,7 +130,7 @@
             margin: 0 auto 5px;
           }
           @media (max-width: 360px) {
-            width: 115px;
+            width: 110px;
             font-size: 12px;
           }
           span {
@@ -147,6 +153,9 @@
           margin: 0 auto 15px;
           box-shadow: -3px 1px 1px hsla(43, 79%, 17%, 0.4);
           .transition();
+          @media (max-width: 640px) {
+            width: 200px;
+          }
           @media (max-width: 480px) {
             font-size: 14px;
             line-height: 18px;
@@ -156,7 +165,7 @@
             border: 2px solid #d21f1a;
           }
           @media (max-width: 360px) {
-            width: 115px;
+            width: 110px;
             font-size: 12px;
           }
 
@@ -188,6 +197,14 @@
       height: 235px !important;
       .scroll-block{
         height: 235px !important;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .slimScrollDiv{
+      height: 180px !important;
+      .scroll-block{
+        height: 160px !important;
       }
     }
   }
@@ -290,6 +307,7 @@
         text-transform: uppercase;
         text-shadow: -5px 3px 0 hsla(43, 79%, 17%, 0.5);
         .transition();
+        z-index: 1;
         @media (max-width: 1320px) {
           font-size: 50px;
           line-height: 70px;
@@ -306,7 +324,11 @@
           top: 90px;
         }
         @media (max-width: 480px) {
-          display: none;
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
+          text-shadow: -1px 1px 0 hsla(43, 79%, 17%, 0.5);
         }
         span {
           font-size: 80px;
@@ -320,6 +342,7 @@
           }
           @media (max-width: 640px) {
             font-size: 35px;
+            text-shadow: -1px 1px 0 hsla(43, 79%, 17%, 0.5);
           }
         }
         &:after {
@@ -335,6 +358,7 @@
           @media (max-width: 640px) {
             height: 5px;
             bottom: -10px;
+            box-shadow: -1px 1px 0 hsla(43, 79%, 17%, 0.5);
           }
         }
       }
@@ -513,7 +537,10 @@
           top: 90px;
         }
         @media (max-width: 480px) {
-          display: none;
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
         }
         span {
           font-size: 80px;
@@ -650,12 +677,19 @@
             display: none;
             text-align: center;
             padding: 50px 0;
+            @media (max-width: 480px) {
+              padding: 0;
+            }
             .icon-success {
               display: block;
-              background: url("../images/landing-header/success-icon.png") no-repeat center;
+              background: url("../images/landing-header/success-icon.png") no-repeat center / cover;
               width: 88px;
               height: 88px;
               margin: 0 auto;
+              @media (max-width: 480px) {
+                width: 55px;
+                height: 55px;
+              }
             }
             .success-title {
               font-size: 45px;
@@ -663,6 +697,12 @@
               text-align: center;
               color: #632366;
               font-family: @landing-font;
+              @media (max-width: 480px) {
+                margin: 0;
+                line-height: 25px;
+                height: 30px;
+                font-size: 18px;
+              }
             }
             p {
               color: #8e4e91;

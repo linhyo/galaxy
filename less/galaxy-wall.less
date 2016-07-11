@@ -8,6 +8,11 @@
     position: relative;
     width: 100%;
     z-index: 1;
+    @media (max-width: 767px) {
+      img {
+        height: 500px;
+      }
+    }
   }
   .item {
     width: 100%;
@@ -21,10 +26,6 @@
       .bannter-prize {
         margin-top: 220px;
       }
-      .banner-desc {
-        top: 150px;
-        right: 100px;
-      }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
       .banner-painter {
@@ -33,18 +34,28 @@
       .bannter-prize {
         margin-top: 170px;
       }
-      .banner-desc {
-        top: 100px;
-        right: 50px;
-      }
     }
     @media (min-width: 768px) and (max-width: 991px) {
-      .banner-desc {
-        right: 50px;
+      .banner-painter {
+        margin-top: 80px;
+      }
+      .bannter-prize {
+        margin-top: 150px;
+      }
+      .banner-frame {
+        height: 300px;
       }
     }
     @media (max-width: 767px) {
-
+      .banner-painter {
+        display: none;
+      }
+      .bannter-prize {
+        margin-top: 70px;
+      }
+      .banner-content {
+        margin-top: 85px;
+      }
     }
   }
   .item-container {
@@ -61,7 +72,12 @@
     > figure {
       position: relative;
       &:first-child {
-        margin-top: 80px;
+        @media (min-width: 992px) {
+          margin-top: 80px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin-top: 40px;
+        }
       }
       &:nth-child(2) {
         width: 75%;
@@ -73,6 +89,8 @@
     position: absolute;
     text-align: right;
     @media (min-width: 1200px) {
+      top: 150px;
+      right: 100px;
       h2 {
         font-size: 48px;
       }
@@ -81,6 +99,8 @@
       }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
+      top: 100px;
+      right: 50px;
       h2 {
         font-size: 40px;
       }
@@ -89,6 +109,8 @@
       }
     }
     @media (min-width: 768px) and (max-width: 991px) {
+      top: 80px;
+      right: 50px;
       h2 {
         font-size: 32px;
       }
@@ -97,7 +119,14 @@
       }
     }
     @media (max-width: 767px) {
-
+      top: 20px;
+      right: 50px;
+      h2 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 16px;
+      }
     }
     h2, h3 {
       color: #fff;
@@ -143,8 +172,8 @@
       }
     }
     @media (min-width: 768px) and (max-width: 991px) {
-      top: 5px;
-      left: 58px;
+      top: -2px;
+      left: 28px;
       .number {
         font-size: 50px;
       }
@@ -158,8 +187,8 @@
       }
     }
     @media (max-width: 767px) {
-      top: 5px;
-      left: 58px;
+      top: 2px;
+      left: 30px;
       .number {
         font-size: 45px;
       }
@@ -198,31 +227,43 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    padding: 40px;
     .flex();
     .align-items(center);
     .justify-content(center);
     p {
       color: #8e4e91;
       font-weight: 600;
-      margin: 20px 0;
+    }
+    @media (min-width: 992px) {
+      p {
+        margin: 20px 0;
+      }
+    }
+    @media (max-width: 991px) {
+      p {
+        margin: 10px 0;
+      }
     }
     @media (min-width: 1200px) {
+      padding: 40px;
       img {
         width: 230px;
       }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
+      padding: 30px;
       img {
         width: 180px;
       }
     }
     @media (min-width: 768px) and (max-width: 991px) {
+      padding: 20px;
       img {
         width: 150px;
       }
     }
     @media (max-width: 767px) {
+      padding: 10px;
       img {
         width: 100px;
       }
@@ -235,16 +276,19 @@
   width: 100%;
   background: url("../images/galaxy-wall/middle-bg.jpg") no-repeat center top / cover;
   @media (min-width: 1200px) {
-    min-height: 760px;
+    min-height: 800px;
   }
   @media (min-width: 992px) and (max-width: 1199px) {
-    min-height: 660px;
+    min-height: 700px;
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    min-height: 560px;
+    min-height: 700px;
   }
   @media (max-width: 767px) {
-    min-height: 460px;
+    min-height: 800px;
+    .banner-btn {
+      width: 200px;
+    }
   }
   .painter-decor {
     position: absolute;
@@ -271,23 +315,53 @@
     top: 0;
     right: 0;
     padding: 90px 180px 100px;
-    background: url("../images/landing-header/block2-content.png") no-repeat center / 100% 100%;
+    background: url("../images/galaxy-wall/rule-wrapper.png") no-repeat center / 100% 100%;
     .transition();
+    cursor: default;
+    .rule-2, .rule-3 {
+      display: none;
+    }
+    .rule-3 {
+      > div {
+        width: 100%;
+        height: 100%;
+        .flex();
+        .align-items(center);
+        .justify-content(center);
+      }
+    }
+    .rule-1, .rule-2, .rule-3 {
+      position: relative;
+      overflow: hidden;
+      z-index: 1000;
+    }
     @media (min-width: 1200px) {
       padding: 65px 150px;
       margin-top: 200px;
+      .rule-1, .rule-2, .rule-3 {
+        height: 480px;
+      }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
       padding: 35px 125px;
       margin-top: 150px;
+      .rule-1, .rule-2, .rule-3 {
+        height: 490px;
+      }
     }
     @media (min-width: 768px) and (max-width: 991px) {
       padding: 35px 65px;
       margin-top: 100px;
+      .rule-1, .rule-2, .rule-3 {
+        height: 500px;
+      }
     }
     @media (max-width: 767px) {
       padding: 25px 35px;
       margin-top: 50px;
+      .rule-1, .rule-2, .rule-3 {
+        height: 650px;
+      }
     }
     .scroll-block {
       width: 620px;
@@ -309,6 +383,136 @@
       color: #808d9b;
       font-size: 15px;
       line-height: 24px;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    .form-upload {
+
+    }
+    .form-message {
+      text-align: center;
+      h3 {
+        color: #632366;
+        font-family: @bold-font;
+        font-size: 36px;
+        margin: 25px 0 10px;
+      }
+      p {
+        color: #632366;
+        font-size: 16px;
+      }
+    }
+    .form-holder {
+      position: relative;
+      width: 100%;
+      height: 204px;
+      border: 1px dashed #9aa4ae;
+    }
+    .holder-border {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      .transition(opacity, 0.3s, ease-in-out);
+      .x-top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 5px;
+        z-index: 100;
+        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#67327b), to(transparent));
+        background-image: -webkit-linear-gradient(left, #67327b, transparent);
+        background-image: -moz-linear-gradient(left, #67327b, transparent);
+        background-image: -o-linear-gradient(left, #67327b, transparent);
+      }
+      .y-top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 60%;
+        z-index: 100;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67327b), to(transparent));
+        background-image: -webkit-linear-gradient(#67327b, transparent);
+        background-image: -moz-linear-gradient(#67327b, transparent);
+        background-image: -o-linear-gradient(#67327b, transparent);
+        background-image: linear-gradient(#67327b, transparent);
+      }
+      .x-bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        height: 5px;
+        z-index: 100;
+        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#67327b));
+        background-image: -webkit-linear-gradient(left, transparent, #67327b);
+        background-image: -moz-linear-gradient(left, transparent, #67327b);
+        background-image: -o-linear-gradient(left, transparent, #67327b);
+      }
+      .y-bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5px;
+        height: 60%;
+        z-index: 100;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#67327b));
+        background-image: -webkit-linear-gradient(transparent, #67327b);
+        background-image: -moz-linear-gradient(transparent, #67327b);
+        background-image: -o-linear-gradient(transparent, #67327b);
+        background-image: linear-gradient(transparent, #67327b);
+      }
+    }
+    .holder-logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+      height: 41px;
+      background: url("../images/galaxy-wall/galaxy-wall.png") no-repeat center center / 100% auto;
+    }
+    .holder-camera {
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 50%;
+      margin-left: -45px;
+      width: 90px;
+      height: 100px;
+      background: url("../images/galaxy-wall/upload-icon.png") no-repeat center center / 100% auto;
+    }
+    label {
+      color: #9aa4ae;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    .form-control {
+      background-color: #ebebeb;
+      border-color: #9aa4ae;
+      .border-radius(0);
+      box-shadow: none;
+      &:focus {
+        background-color: #fff;
+        border-color: #632366 !important;
+      }
+    }
+    .form-submit {
+      text-align: center;
+      button {
+        display: inline-block !important;
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        button:nth-child(2) {
+          margin-top: 10px;
+        }
+      }
     }
   }
   .banner-btn {
@@ -350,10 +554,27 @@
   .walls {
     margin: auto;
   }
+  @media (min-width: 992px) {
+    .wall-sizer, .wall-item {
+      width: 33.33%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .wall-sizer, .wall-item {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .wall-sizer, .wall-item {
+      width: 100%;
+    }
+  }
+
   .wall-item {
     float: left;
-    width: 380px;
     padding: 8px;
+    cursor: pointer;
     .item {
       position: relative;
       overflow: hidden;
@@ -440,6 +661,79 @@
     color: #fff;
     &:hover {
       background-color: #d21f1a;
+    }
+  }
+}
+
+#viewAndShare {
+  .modal-dialog {
+    @media (min-width: 992px) {
+      width: 840px;
+    }
+  }
+  .modal-content {
+    position: relative;
+    .border-radius(0);
+  }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    z-index: 99;
+    i {
+      display: block;
+      width: 18px;
+      height: 17px;
+      background: url('../images/galaxy-wall/close-icon.png');
+    }
+  }
+  @media (min-width: 992px) {
+    .modal-left {
+      padding-right: 0;
+    }
+    .modal-right {
+      padding-left: 0;
+    }
+  }
+  .gw-image {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .gw-caption {
+    .gradient(#fefefe, #dedede);
+    padding: 30px;
+    cursor: default;
+    p {
+      color: #000;
+      line-height: 24px;
+    }
+    .gw-author {
+      color: #000;
+      margin-top: 25px;
+      text-transform: uppercase;
+    }
+  }
+  .box-conversation {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    .conversation-logo {
+      padding: 0 0 20px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid #afafaf;
+    }
+    .conversation-content {
+      display: block;
+      width: 100%;
+      position: relative;
+      padding-top: 20px;
     }
   }
 }

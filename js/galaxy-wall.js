@@ -30,14 +30,42 @@ $(document).ready(function () {
   });
 
   $('.scroll-block').slimScroll({
-    height: '300px'
+    height: '400px'
+  });
+
+  $('.gw-scroll').slimScroll({
+    height: '150px'
   });
 
   $('.walls').masonry({
-    // options
+    fitWidth: true,
     itemSelector: '.wall-item',
-    columnWidth: 380,
-    fitWidth: true
+    columnWidth: '.wall-sizer',
+    percentPosition: true
+  });
+
+  $('#viewAndShare').on('show.bs.modal', function (event) {
+    var item = $(event.relatedTarget);
+    var source = item.data('image');
+    var modal = $(this);
+    modal.find('.gw-image img').attr('src', source);
+  });
+
+  $('.btn-joinow').on('click', function () {
+    $(this).parent().hide();
+    $(this).parent().next().show();
+  });
+
+  $('.btn-sendimage').on('click', function (e) {
+    e.preventDefault();
+    $('.rule-1, .rule-2').hide();
+    $('.rule-3').show();
+  });
+
+  $('.btn-close').on('click', function (e) {
+    e.preventDefault();
+    $('.rule-2, .rule-3').hide();
+    $('.rule-1').show();
   });
 
 });

@@ -21,14 +21,27 @@
       .bannter-prize {
         margin-top: 220px;
       }
+      .banner-desc {
+        top: 150px;
+        right: 100px;
+      }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
       .banner-painter {
         margin-top: 100px;
       }
+      .bannter-prize {
+        margin-top: 170px;
+      }
+      .banner-desc {
+        top: 100px;
+        right: 50px;
+      }
     }
     @media (min-width: 768px) and (max-width: 991px) {
-
+      .banner-desc {
+        right: 50px;
+      }
     }
     @media (max-width: 767px) {
 
@@ -58,20 +71,39 @@
   }
   .banner-desc {
     position: absolute;
-    left: -200px;
-    top: 150px;
     text-align: right;
+    @media (min-width: 1200px) {
+      h2 {
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 32px;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      h2 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 767px) {
+
+    }
     h2, h3 {
       color: #fff;
       font-family: @bold-font;
       text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
       white-space: nowrap;
-    }
-    h2 {
-      font-size: 48px;
-    }
-    h3 {
-      font-size: 32px;
     }
     button {
       margin-top: 20px;

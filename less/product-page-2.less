@@ -10,7 +10,10 @@
     min-height: 600px;
   }
   figure {
-    padding: 40px 0 0;
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 0 0;
   }
   .banner-content {
     @media (min-width: 1200px) {
@@ -137,17 +140,15 @@
       @media (min-width: 992px) {
         margin-top: 30px;
         > li {
-          margin-right: 40px;
+          margin-right: 20px;
         }
       }
       @media (max-width: 991px) {
         margin-top: 20px;
-        > li {
-          margin-right: 10px;
-        }
       }
       > li {
         display: inline-block;
+        margin-bottom: 20px;
       }
     }
     img {

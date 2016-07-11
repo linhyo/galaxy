@@ -13625,7 +13625,10 @@ a.btn-share-result:hover {
   }
 }
 #product-page-banner figure {
-  padding: 40px 0 0;
+  display: inline-block;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px 0 0;
 }
 @media (min-width: 1200px) {
   #product-page-banner .banner-content {
@@ -13781,19 +13784,17 @@ a.btn-share-result:hover {
     margin-top: 30px;
   }
   #product-page-banner .tab-content ul > li {
-    margin-right: 40px;
+    margin-right: 20px;
   }
 }
 @media (max-width: 991px) {
   #product-page-banner .tab-content ul {
     margin-top: 20px;
   }
-  #product-page-banner .tab-content ul > li {
-    margin-right: 10px;
-  }
 }
 #product-page-banner .tab-content ul > li {
   display: inline-block;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   #product-page-banner .tab-content img {
@@ -15404,10 +15405,26 @@ a.btn-share-result:hover {
   #galaxy-wall-top .item .bannter-prize {
     margin-top: 220px;
   }
+  #galaxy-wall-top .item .banner-desc {
+    top: 150px;
+    right: 100px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-wall-top .item .banner-painter {
     margin-top: 100px;
+  }
+  #galaxy-wall-top .item .bannter-prize {
+    margin-top: 170px;
+  }
+  #galaxy-wall-top .item .banner-desc {
+    top: 100px;
+    right: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-wall-top .item .banner-desc {
+    right: 50px;
   }
 }
 #galaxy-wall-top .item-container {
@@ -15434,9 +15451,31 @@ a.btn-share-result:hover {
 }
 #galaxy-wall-top .banner-desc {
   position: absolute;
-  left: -200px;
-  top: 150px;
   text-align: right;
+}
+@media (min-width: 1200px) {
+  #galaxy-wall-top .banner-desc h2 {
+    font-size: 48px;
+  }
+  #galaxy-wall-top .banner-desc h3 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #galaxy-wall-top .banner-desc h2 {
+    font-size: 40px;
+  }
+  #galaxy-wall-top .banner-desc h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-wall-top .banner-desc h2 {
+    font-size: 32px;
+  }
+  #galaxy-wall-top .banner-desc h3 {
+    font-size: 16px;
+  }
 }
 #galaxy-wall-top .banner-desc h2,
 #galaxy-wall-top .banner-desc h3 {
@@ -15444,12 +15483,6 @@ a.btn-share-result:hover {
   font-family: 'Fester', sans-serif;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
-}
-#galaxy-wall-top .banner-desc h2 {
-  font-size: 48px;
-}
-#galaxy-wall-top .banner-desc h3 {
-  font-size: 32px;
 }
 #galaxy-wall-top .banner-desc button {
   margin-top: 20px;

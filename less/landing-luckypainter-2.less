@@ -205,32 +205,6 @@
       font-weight: 700;
     }
   }
-  .btn-viewmore {
-    background-color: #fff;
-    border-color: #9aa4ae;
-    color: #9aa4ae;
-    font-family: @bold-font !important;
-    .border-radius(20px);
-    margin-top: 20px;
-    padding: 6px 20px;
-    .transition();
-    @media (min-width: 1200px) {
-      font-size: 20px;
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      font-size: 18px;
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-      font-size: 16px;
-    }
-    @media (max-width: 767px) {
-      font-size: 18px;
-    }
-    &:hover {
-      background-color: #9aa4ae;
-      color: #fff;
-    }
-  }
   .luckypainter-event-title p {
     margin: 10px 0;
   }
@@ -370,5 +344,21 @@
   }
   .event-col-3 {
     padding-left: 25px;
+  }
+}
+
+.btn-viewmore {
+  background-color: #fff;
+  border-color: #9aa4ae;
+  color: #9aa4ae;
+  font-size: 20px;
+  font-family: @bold-font !important;
+  .border-radius(20px);
+  margin-top: 20px;
+  padding: 5px 30px 0;
+  .transition();
+  &:hover {
+    background-color: #9aa4ae;
+    color: #fff;
   }
 }

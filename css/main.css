@@ -13447,7 +13447,7 @@ a.btn-share-result:hover {
     width: 50%;
     top: 15px;
     right: 15px;
-    padding: 10px;
+    padding: 35px 15px;
   }
 }
 @media (max-width: 480px) {
@@ -13516,7 +13516,12 @@ a.btn-share-result:hover {
   margin-top: -61px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg2 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg2 {
     left: 0;
     margin-left: -15px;
@@ -13535,7 +13540,12 @@ a.btn-share-result:hover {
   margin-top: -65px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg3 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg3 {
     left: 0;
     margin-left: -15px;
@@ -13554,7 +13564,12 @@ a.btn-share-result:hover {
   margin-top: -65px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg4 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg4 {
     left: 0;
     margin-left: -15px;
@@ -13573,7 +13588,12 @@ a.btn-share-result:hover {
   margin-top: -65px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg5 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg5 {
     left: 0;
     margin-left: -15px;
@@ -13592,7 +13612,12 @@ a.btn-share-result:hover {
   margin-top: -70px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg6 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg6 {
     left: 0;
     margin-left: -15px;
@@ -13611,7 +13636,12 @@ a.btn-share-result:hover {
   margin-top: -61px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg7 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg7 {
     left: 0;
     margin-left: -12px;
@@ -13630,7 +13660,12 @@ a.btn-share-result:hover {
   margin-top: -60px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg8 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg8 {
     left: 0;
     margin-left: -10px;
@@ -13649,7 +13684,12 @@ a.btn-share-result:hover {
   margin-top: -65px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg9 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg9 {
     left: 0;
     margin-left: -13px;
@@ -13668,7 +13708,12 @@ a.btn-share-result:hover {
   margin-top: -66px;
   position: absolute;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .block-banner figure .banner-content .container .bn-paint-content .icon-bg10 {
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
   .block-banner figure .banner-content .container .bn-paint-content .icon-bg10 {
     left: 0;
     margin-left: -13px;

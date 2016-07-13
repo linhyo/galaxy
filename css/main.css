@@ -15636,9 +15636,6 @@ a.btn-share-result:hover {
     width: 100%;
   }
 }
-#galaxy-wall-top .banner-desc {
-  position: absolute;
-}
 @media (min-width: 1600px) {
   #galaxy-wall-top .banner-desc {
     top: 170px;
@@ -15689,6 +15686,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) {
   #galaxy-wall-top .banner-desc {
+    position: absolute;
     text-align: right;
   }
   #galaxy-wall-top .banner-desc h2,
@@ -15698,9 +15696,9 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #galaxy-wall-top .banner-desc {
-    top: 20px;
     width: 100%;
     text-align: center;
+    margin-top: 120px;
   }
   #galaxy-wall-top .banner-desc h2 {
     font-size: 30px;
@@ -15745,6 +15743,7 @@ a.btn-share-result:hover {
 }
 #galaxy-wall-top .banner-statistic {
   display: table;
+  padding-right: 10%;
 }
 @media (min-width: 1600px) {
   #galaxy-wall-top .banner-statistic .number {
@@ -15805,10 +15804,17 @@ a.btn-share-result:hover {
   display: table-cell;
   vertical-align: middle;
 }
+#galaxy-wall-top .banner-statistic > div:first-child {
+  width: 40%;
+  text-align: right;
+}
+#galaxy-wall-top .banner-statistic > div:nth-child(2) {
+  width: 60%;
+}
 #galaxy-wall-top .banner-statistic > div .number {
   color: #632366;
   font-family: 'Fester', sans-serif;
-  padding-right: 20px;
+  padding-right: 5px;
   padding-top: 10px;
 }
 #galaxy-wall-top .banner-statistic > div span {

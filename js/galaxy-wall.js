@@ -29,9 +29,20 @@ $(document).ready(function () {
     owlSlide.trigger('next.owl.carousel');
   });
 
-  $('.scroll-block').slimScroll({
-    height: '400px'
-  });
+
+  $(window).resize(function(){
+    var width = $(window).width();
+    if(width >= 768){
+      $('.scroll-block').slimScroll({
+        height: '400px'
+      });
+    } else{
+      $('.scroll-block').slimScroll({
+        height: '500px'
+      });
+
+    }
+  }).resize();//trigger the resize event on page load.
 
   $('.gw-scroll').slimScroll({
     height: '150px'

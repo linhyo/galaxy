@@ -15514,6 +15514,11 @@ a.btn-share-result:hover {
 #galaxy-wall-top .item {
   width: 100%;
 }
+@media (min-width: 1600px) {
+  #galaxy-wall-top .item .bannter-prize {
+    margin-top: 250px !important;
+  }
+}
 @media (min-width: 1200px) {
   #galaxy-wall-top .item .banner-content {
     margin-top: 30px;
@@ -15535,24 +15540,47 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-wall-top .item .banner-painter {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   #galaxy-wall-top .item .bannter-prize {
     margin-top: 150px;
   }
   #galaxy-wall-top .item .banner-frame {
-    height: 300px;
+    height: 340px;
   }
 }
 @media (max-width: 767px) {
-  #galaxy-wall-top .item .banner-painter {
-    display: none;
-  }
   #galaxy-wall-top .item .bannter-prize {
     margin-top: 70px;
   }
+  #galaxy-wall-top .item .banner-painter {
+    position: relative;
+    margin-top: 180px;
+    z-index: 10;
+  }
   #galaxy-wall-top .item .banner-content {
-    margin-top: 85px;
+    z-index: 9;
+  }
+  #galaxy-wall-top .item .absolute {
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+}
+@media (min-width: 992px) {
+  #galaxy-wall-top .item .painter-desktop {
+    display: block;
+  }
+  #galaxy-wall-top .item .painter-mobile {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  #galaxy-wall-top .item .painter-desktop {
+    display: none;
+  }
+  #galaxy-wall-top .item .painter-mobile {
+    display: block;
   }
 }
 #galaxy-wall-top .item-container {
@@ -15582,13 +15610,48 @@ a.btn-share-result:hover {
 }
 #galaxy-wall-top .banner-content > figure:nth-child(2) {
   width: 75%;
-  margin: 30px auto 0;
+}
+@media (min-width: 768px) {
+  #galaxy-wall-top .banner-content > figure:nth-child(2) {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-top .banner-content > figure:nth-child(2) {
+    margin-left: auto;
+  }
+}
+@media (min-width: 992px) {
+  #galaxy-wall-top .banner-smear {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #galaxy-wall-top .banner-smear {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-top .banner-smear {
+    width: 100%;
+  }
 }
 #galaxy-wall-top .banner-desc {
   position: absolute;
-  text-align: right;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
+  #galaxy-wall-top .banner-desc {
+    top: 170px;
+    right: 100px;
+  }
+  #galaxy-wall-top .banner-desc h2 {
+    font-size: 65px;
+  }
+  #galaxy-wall-top .banner-desc h3 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
   #galaxy-wall-top .banner-desc {
     top: 150px;
     right: 100px;
@@ -15618,19 +15681,29 @@ a.btn-share-result:hover {
     right: 50px;
   }
   #galaxy-wall-top .banner-desc h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
   #galaxy-wall-top .banner-desc h3 {
-    font-size: 16px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  #galaxy-wall-top .banner-desc {
+    text-align: right;
+  }
+  #galaxy-wall-top .banner-desc h2,
+  #galaxy-wall-top .banner-desc h3 {
+    white-space: nowrap;
   }
 }
 @media (max-width: 767px) {
   #galaxy-wall-top .banner-desc {
     top: 20px;
-    right: 50px;
+    width: 100%;
+    text-align: center;
   }
   #galaxy-wall-top .banner-desc h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   #galaxy-wall-top .banner-desc h3 {
     font-size: 16px;
@@ -15641,20 +15714,50 @@ a.btn-share-result:hover {
   color: #fff;
   font-family: 'Fester', sans-serif;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-  white-space: nowrap;
+}
+#galaxy-wall-top .banner-desc h2 {
+  margin-bottom: 5px;
 }
 #galaxy-wall-top .banner-desc button {
   margin-top: 20px;
 }
+#galaxy-wall-top .banner-number {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
 #galaxy-wall-top .banner-statistic {
   display: table;
-  position: absolute;
 }
-@media (min-width: 1200px) {
-  #galaxy-wall-top .banner-statistic {
-    top: 10px;
-    left: 60px;
+@media (min-width: 1600px) {
+  #galaxy-wall-top .banner-statistic .number {
+    font-size: 75px;
   }
+  #galaxy-wall-top .banner-statistic span:first-child {
+    font-size: 30px;
+  }
+  #galaxy-wall-top .banner-statistic span:nth-child(2) {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
   #galaxy-wall-top .banner-statistic .number {
     font-size: 60px;
   }
@@ -15666,10 +15769,6 @@ a.btn-share-result:hover {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  #galaxy-wall-top .banner-statistic {
-    top: 5px;
-    left: 58px;
-  }
   #galaxy-wall-top .banner-statistic .number {
     font-size: 55px;
   }
@@ -15681,10 +15780,6 @@ a.btn-share-result:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #galaxy-wall-top .banner-statistic {
-    top: -2px;
-    left: 28px;
-  }
   #galaxy-wall-top .banner-statistic .number {
     font-size: 50px;
   }
@@ -15696,10 +15791,6 @@ a.btn-share-result:hover {
   }
 }
 @media (max-width: 767px) {
-  #galaxy-wall-top .banner-statistic {
-    top: 2px;
-    left: 30px;
-  }
   #galaxy-wall-top .banner-statistic .number {
     font-size: 45px;
   }
@@ -15723,7 +15814,7 @@ a.btn-share-result:hover {
 #galaxy-wall-top .banner-statistic > div span {
   display: block;
   color: #8c2d90;
-  font-weight: 600;
+  font-weight: bold;
 }
 #galaxy-wall-top .banner-statistic > div span:first-child {
   text-transform: uppercase;
@@ -15755,7 +15846,12 @@ a.btn-share-result:hover {
   color: #8e4e91;
   font-weight: 600;
 }
-@media (min-width: 992px) {
+@media (min-width: 1600px) {
+  #galaxy-wall-top .banner-text p {
+    margin: 5% 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1599px) {
   #galaxy-wall-top .banner-text p {
     margin: 20px 0;
   }
@@ -15765,17 +15861,28 @@ a.btn-share-result:hover {
     margin: 10px 0;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   #galaxy-wall-top .banner-text {
-    padding: 40px;
+    padding: 0 12%;
   }
   #galaxy-wall-top .banner-text img {
-    width: 230px;
+    width: 250px;
+  }
+  #galaxy-wall-top .banner-text p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #galaxy-wall-top .banner-text {
+    padding: 0 60px;
+  }
+  #galaxy-wall-top .banner-text img {
+    width: 200px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-wall-top .banner-text {
-    padding: 30px;
+    padding: 0 30px;
   }
   #galaxy-wall-top .banner-text img {
     width: 180px;
@@ -15783,7 +15890,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-wall-top .banner-text {
-    padding: 20px;
+    padding: 0 12%;
   }
   #galaxy-wall-top .banner-text img {
     width: 150px;
@@ -15791,16 +15898,21 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #galaxy-wall-top .banner-text {
-    padding: 10px;
+    padding: 0 10px;
   }
   #galaxy-wall-top .banner-text img {
-    width: 100px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  #galaxy-wall-top .banner-text p {
+    display: none;
   }
 }
 #galaxy-wall-middle {
   position: relative;
   width: 100%;
   background: url("../images/galaxy-wall/middle-bg.jpg") no-repeat center top / cover;
+  margin-bottom: -5px;
 }
 @media (min-width: 1200px) {
   #galaxy-wall-middle {
@@ -15843,7 +15955,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-wall-middle .painter-decor {
-    bottom: -30px;
+    bottom: -105px;
   }
 }
 @media (max-width: 767px) {
@@ -15851,14 +15963,14 @@ a.btn-share-result:hover {
     bottom: -30px;
   }
 }
+#galaxy-wall-middle .painter-decor > figure img {
+  width: 100%;
+}
 #galaxy-wall-middle .rule-wrapper {
+  position: relative;
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 90px 180px 100px;
-  background: url("../images/galaxy-wall/rule-wrapper.png") no-repeat center / 100% 100%;
+  background: no-repeat center / 100% 100%;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -15896,6 +16008,16 @@ a.btn-share-result:hover {
   overflow: hidden;
   z-index: 1000;
 }
+@media (min-width: 768px) {
+  #galaxy-wall-middle .rule-wrapper {
+    background-image: url("../images/galaxy-wall/rule-wrapper.png");
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-middle .rule-wrapper {
+    background-image: url("../images/galaxy-wall/rule-wrapper-mobile.png");
+  }
+}
 @media (min-width: 1200px) {
   #galaxy-wall-middle .rule-wrapper {
     padding: 65px 150px;
@@ -15909,7 +16031,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-wall-middle .rule-wrapper {
-    padding: 35px 125px;
+    padding: 55px 125px 30px;
     margin-top: 150px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
@@ -15920,19 +16042,22 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #galaxy-wall-middle .rule-wrapper {
-    padding: 35px 65px;
-    margin-top: 100px;
+    padding: 40px 65px 20px;
+    margin-top: 150px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
   #galaxy-wall-middle .rule-wrapper .rule-2,
   #galaxy-wall-middle .rule-wrapper .rule-3 {
     height: 500px;
   }
+  #galaxy-wall-middle .rule-wrapper .rule-2 {
+    padding-top: 30px;
+  }
 }
 @media (max-width: 767px) {
   #galaxy-wall-middle .rule-wrapper {
-    padding: 25px 35px;
-    margin-top: 50px;
+    padding: 40px 35px 20px;
+    margin-top: 90px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
   #galaxy-wall-middle .rule-wrapper .rule-2,
@@ -15951,10 +16076,19 @@ a.btn-share-result:hover {
   font-family: 'Fester', sans-serif;
   text-transform: uppercase;
   color: #632366;
-  font-size: 25px;
   line-height: 40px;
   text-align: center;
   margin-bottom: 25px;
+}
+@media (min-width: 1600px) {
+  #galaxy-wall-middle .rule-wrapper .title-block {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1599px) {
+  #galaxy-wall-middle .rule-wrapper .title-block {
+    font-size: 25px;
+  }
 }
 #galaxy-wall-middle .rule-wrapper p {
   color: #808d9b;
@@ -15970,8 +16104,17 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .rule-wrapper .form-message h3 {
   color: #632366;
   font-family: 'Fester', sans-serif;
-  font-size: 36px;
   margin: 25px 0 10px;
+}
+@media (min-width: 768px) {
+  #galaxy-wall-middle .rule-wrapper .form-message h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-middle .rule-wrapper .form-message h3 {
+    font-size: 30px;
+  }
 }
 #galaxy-wall-middle .rule-wrapper .form-message p {
   color: #632366;
@@ -15980,8 +16123,22 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .rule-wrapper .form-holder {
   position: relative;
   width: 100%;
-  height: 204px;
   border: 1px dashed #9aa4ae;
+}
+@media (min-width: 768px) {
+  #galaxy-wall-middle .rule-wrapper .form-holder {
+    height: 212px;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-middle .rule-wrapper .form-holder {
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-middle .rule-wrapper .form-upload {
+    margin-bottom: 15px;
+  }
 }
 #galaxy-wall-middle .rule-wrapper .holder-border {
   position: absolute;
@@ -16093,7 +16250,7 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .rule-wrapper .form-submit button:first-child {
   margin-right: 10px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
   #galaxy-wall-middle .rule-wrapper .form-submit button:nth-child(2) {
     margin-top: 10px;
   }
@@ -16101,8 +16258,13 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .banner-btn {
   position: relative;
   display: block !important;
-  margin-top: 30px;
   z-index: 101;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  #galaxy-wall-middle .rule-2 .banner-btn {
+    margin-top: 0;
+  }
 }
 #galaxy-wall-bottom {
   position: relative;
@@ -16115,9 +16277,27 @@ a.btn-share-result:hover {
   color: #fff;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #galaxy-wall-bottom .title-block h2,
+  #galaxy-wall-bottom .title-block h3 {
+    font-size: 50px;
+  }
+  #galaxy-wall-bottom .title-block p {
+    margin: 30px 0 40px;
+    padding: 0 70px;
+  }
+}
+@media (max-width: 767px) {
+  #galaxy-wall-bottom .title-block h2,
+  #galaxy-wall-bottom .title-block h3 {
+    font-size: 40px;
+  }
+  #galaxy-wall-bottom .title-block p {
+    margin: 20px 0 30px;
+  }
+}
 #galaxy-wall-bottom .title-block h2,
 #galaxy-wall-bottom .title-block h3 {
-  font-size: 50px;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 #galaxy-wall-bottom .title-block h2 {
@@ -16131,8 +16311,6 @@ a.btn-share-result:hover {
   color: #fff;
   font-size: 15px;
   line-height: 24px;
-  margin: 30px 0 40px;
-  padding: 0 70px;
 }
 #galaxy-wall-bottom .walls {
   margin: auto;
@@ -16208,12 +16386,10 @@ a.btn-share-result:hover {
 }
 .banner-btn {
   display: inline-block;
-  width: 250px;
   height: 38px;
   margin-bottom: 10px;
   padding: 5px 12px 0;
   font-family: 'Fester', sans-serif !important;
-  font-size: 20px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -16241,6 +16417,18 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .banner-btn {
+    width: 250px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-btn {
+    width: 200px;
+    font-size: 16px;
+  }
 }
 .banner-btn.red {
   background-color: #d21f1a;
@@ -16306,11 +16494,101 @@ a.btn-share-result:hover {
     padding-left: 0;
   }
 }
+#viewAndShare .modal-prev,
+#viewAndShare .modal-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  width: 24px;
+  height: 42px;
+  background: no-repeat center center / 100% auto;
+  cursor: pointer;
+}
+#viewAndShare .modal-prev {
+  left: -40px;
+  background-image: url("../images/galaxy-wall/prev-icon.png");
+}
+#viewAndShare .modal-next {
+  right: -40px;
+  background-image: url("../images/galaxy-wall/next-icon.png");
+}
 #viewAndShare .gw-image {
+  position: relative;
   display: block;
 }
 #viewAndShare .gw-image img {
+  display: block;
   width: 100%;
+}
+#viewAndShare .gw-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+#viewAndShare .gw-border .x-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(left, #67327b, transparent);
+  background-image: -moz-linear-gradient(left, #67327b, transparent);
+  background-image: -o-linear-gradient(left, #67327b, transparent);
+}
+#viewAndShare .gw-border .y-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67327b), to(transparent));
+  background-image: -webkit-linear-gradient(#67327b, transparent);
+  background-image: -moz-linear-gradient(#67327b, transparent);
+  background-image: -o-linear-gradient(#67327b, transparent);
+  background-image: linear-gradient(#67327b, transparent);
+}
+#viewAndShare .gw-border .x-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 10px;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(left, transparent, #67327b);
+  background-image: -moz-linear-gradient(left, transparent, #67327b);
+  background-image: -o-linear-gradient(left, transparent, #67327b);
+}
+#viewAndShare .gw-border .y-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 60%;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#67327b));
+  background-image: -webkit-linear-gradient(transparent, #67327b);
+  background-image: -moz-linear-gradient(transparent, #67327b);
+  background-image: -o-linear-gradient(transparent, #67327b);
+  background-image: linear-gradient(transparent, #67327b);
+}
+#viewAndShare .gw-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 76px;
+  background: url("../images/galaxy-wall/galaxy-wall.png") no-repeat center center / 100% auto;
 }
 #viewAndShare .gw-caption {
   background-color: #fefefe;
@@ -16348,4 +16626,7 @@ a.btn-share-result:hover {
   width: 100%;
   position: relative;
   padding-top: 20px;
+}
+.no-padding {
+  padding: 0;
 }

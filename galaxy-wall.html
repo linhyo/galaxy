@@ -127,15 +127,16 @@
       </figure>
       <div class="item-container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-5 col-xs-offset-0 col-sm-3 col-sm-offset-1 col-md-6 col-md-offset-0">
             <figure class="banner-painter">
-              <img src="images/galaxy-wall/painter.png" alt="...">
+              <img class="painter-desktop" src="images/galaxy-wall/painter.png" alt="...">
+              <img class="painter-mobile" src="images/galaxy-wall/only-painter.png" alt="...">
             </figure>
           </div>
-          <div class="col-xs-12 col-sm-6 col-lg-5">
+          <div class="col-xs-12 col-sm-8 col-md-5 no-padding absolute">
             <div class="banner-content">
               <figure>
-                <img class="banner-frame" src="images/galaxy-wall/frame.jpg">
+                <img class="banner-frame" src="images/galaxy-wall/frame.png">
 
                 <div class="banner-text">
                   <div>
@@ -153,15 +154,18 @@
               <figure>
                 <img class="banner-smear center-block" src="images/galaxy-wall/smear.png">
 
-                <div class="banner-statistic">
-                  <div>
-                    <div class="number">078</div>
-                  </div>
-                  <div>
-                    <span>Bức tường</span>
-                    <span>đã được đăng</span>
+                <div class="banner-number">
+                  <div class="banner-statistic">
+                    <div>
+                      <div class="number">078</div>
+                    </div>
+                    <div>
+                      <span>Bức tường</span>
+                      <span>đã được đăng</span>
+                    </div>
                   </div>
                 </div>
+
               </figure>
             </div>
           </div>
@@ -203,7 +207,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
+      <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
         <div id="galaxyWallRules" class="rule-wrapper">
           <div class="rule-1">
             <div class="scroll-block">
@@ -498,7 +502,11 @@
 </section>
 
 <div class="modal fade" id="viewAndShare" tabindex="-1" role="dialog">
+
   <div class="modal-dialog" role="document">
+    <div class="modal-prev"></div>
+    <div class="modal-next"></div>
+
     <button type="button" class="modal-close" data-dismiss="modal">
       <i class="close-icon"></i>
     </button>
@@ -508,6 +516,13 @@
         <div class="col-xs-12 col-md-8 modal-left">
           <figure class="gw-image">
             <img src="">
+            <div class="gw-border">
+              <div class="x-top-left"></div>
+              <div class="y-top-left"></div>
+              <div class="x-bottom-right"></div>
+              <div class="y-bottom-right"></div>
+            </div>
+            <div class="gw-logo"></div>
           </figure>
           <div class="gw-caption">
             <div class="gw-scroll">

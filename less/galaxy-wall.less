@@ -932,9 +932,15 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 150px;
-    height: 76px;
     background: url("../images/galaxy-wall/galaxy-wall.png") no-repeat center center / 100% auto;
+    @media (min-width: 768px) {
+      width: 150px;
+      height: 76px;
+    }
+    @media (max-width: 767px) {
+      width: 120px;
+      height: 61px;
+    }
   }
   .gw-caption {
     .gradient(#fefefe, #dedede);

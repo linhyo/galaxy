@@ -16586,9 +16586,19 @@ a.btn-share-result:hover {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 150px;
-  height: 76px;
   background: url("../images/galaxy-wall/galaxy-wall.png") no-repeat center center / 100% auto;
+}
+@media (min-width: 768px) {
+  #viewAndShare .gw-logo {
+    width: 150px;
+    height: 76px;
+  }
+}
+@media (max-width: 767px) {
+  #viewAndShare .gw-logo {
+    width: 120px;
+    height: 61px;
+  }
 }
 #viewAndShare .gw-caption {
   background-color: #fefefe;

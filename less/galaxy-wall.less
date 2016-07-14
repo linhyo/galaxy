@@ -298,6 +298,7 @@
         display: block;
         color: #8c2d90;
         font-weight: bold;
+        white-space: nowrap;
         &:first-child {
           text-transform: uppercase;
         }
@@ -323,12 +324,12 @@
         margin: 5% 0;
       }
     }
-    @media (min-width: 992px) and (max-width: 1599px) {
+    @media (min-width: 1200px) and (max-width: 1599px) {
       p {
         margin: 20px 0;
       }
     }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       p {
         margin: 10px 0;
       }
@@ -349,7 +350,7 @@
       }
     }
     @media (min-width: 992px) and (max-width: 1199px) {
-      padding: 0 30px;
+      padding: 0 50px;
       img {
         width: 180px;
       }
@@ -767,11 +768,10 @@
   display: inline-block;
   height: 38px;
   margin-bottom: 10px;
-  padding: 5px 12px 0;
+  padding: 0 10px;
   font-family: @bold-font !important;
-
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 38px;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
   text-transform: uppercase;

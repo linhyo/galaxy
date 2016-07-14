@@ -15821,6 +15821,7 @@ a.btn-share-result:hover {
   display: block;
   color: #8c2d90;
   font-weight: bold;
+  white-space: nowrap;
 }
 #galaxy-wall-top .banner-statistic > div span:first-child {
   text-transform: uppercase;
@@ -15857,12 +15858,12 @@ a.btn-share-result:hover {
     margin: 5% 0;
   }
 }
-@media (min-width: 992px) and (max-width: 1599px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
   #galaxy-wall-top .banner-text p {
     margin: 20px 0;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   #galaxy-wall-top .banner-text p {
     margin: 10px 0;
   }
@@ -15888,7 +15889,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #galaxy-wall-top .banner-text {
-    padding: 0 30px;
+    padding: 0 50px;
   }
   #galaxy-wall-top .banner-text img {
     width: 180px;
@@ -16394,10 +16395,10 @@ a.btn-share-result:hover {
   display: inline-block;
   height: 38px;
   margin-bottom: 10px;
-  padding: 5px 12px 0;
+  padding: 0 10px;
   font-family: 'Fester', sans-serif !important;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 38px;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;

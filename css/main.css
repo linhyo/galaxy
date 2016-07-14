@@ -13254,12 +13254,38 @@ a.btn-share-result:hover {
     bottom: 185px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1600px) {
+@media (min-width: 1366px) and (max-width: 1600px) {
+  #product-page1.header-banner .bn5-product .bn5-product-content {
+    bottom: 145px;
+    left: 585px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1366px) {
+  #product-page1.header-banner .bn5-product .bn5-product-content {
+    bottom: 105px;
+    left: 530px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
   #product-page1.header-banner .bn5-product .bn5-product-content {
     left: 525px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 980px) and (max-width: 1024px) {
+  #product-page1.header-banner .bn5-product .bn5-product-content {
+    left: 420px;
+    bottom: 80px;
+    height: 250px;
+    width: 390px;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv {
+    height: 200px !important;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
+    height: 200px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
   #product-page1.header-banner .bn5-product .bn5-product-content {
     left: 350px;
   }
@@ -13339,9 +13365,7 @@ a.btn-share-result:hover {
   display: block;
 }
 .block-banner figure .bn1-product,
-.block-banner figure .bn2-product,
-.block-banner figure .bn3-product,
-.block-banner figure .bn4-product {
+.block-banner figure .bn-product {
   width: 100%;
   height: 100%;
   position: relative;

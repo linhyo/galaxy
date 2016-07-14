@@ -54,10 +54,30 @@
           left: 680px;
           bottom: 185px;
         }
-        @media (min-width: 1024px) and (max-width: 1600px) {
+        @media (min-width: 1366px) and (max-width: 1600px) {
+          bottom: 145px;
+          left: 585px;
+        }
+        @media (min-width: 1280px) and (max-width: 1366px) {
+          bottom: 105px;
+          left: 530px;
+        }
+        @media (min-width: 1024px) and (max-width: 1280px) {
           left: 525px;
         }
-        @media (min-width: 768px) and (max-width: 1024px) {
+        @media (min-width: 980px) and (max-width: 1024px) {
+          left: 420px;
+          bottom: 80px;
+          height: 250px;
+          width: 390px;
+          .slimScrollDiv{
+            height: 200px !important;
+            .scroll-block{
+              height: 200px !important;
+            }
+          }
+        }
+        @media (min-width: 768px) and (max-width: 980px) {
           left: 350px;
         }
         @media (max-width: 768px) {
@@ -128,7 +148,7 @@
       max-width: 100%;
       display: block;
     }
-    .bn1-product, .bn2-product, .bn3-product, .bn4-product {
+    .bn1-product, .bn-product{
       width: 100%;
       height: 100%;
       position: relative;

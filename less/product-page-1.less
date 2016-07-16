@@ -1,5 +1,5 @@
 #product-page1 {
-  @media (max-width: 768px) {
+  @media (max-width: 640px) {
     display: none;
   }
   &.header-banner {
@@ -7,7 +7,7 @@
     width: 100%;
     z-index: 1 !important;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
       display: none;
     }
     .product-painter {
@@ -477,7 +477,7 @@
 
 #product-page-1-mobile {
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 640px) {
     display: block;
     position: relative;
   }
@@ -486,7 +486,7 @@
     width: 100%;
     z-index: 1 !important;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
       display: block;
     }
     .product-painter {
@@ -530,25 +530,36 @@
         margin-bottom: 8px;
         display: block;
         text-align: left;
-        border-bottom: 1px solid #ba5a5e;
         li {
-          display: block;
+          display: inline-block;
           margin-bottom: 10px;
+          width: 45%;
+          text-align: center;
           position: relative;
           a {
-            background-color: #903a9b;
-            color: #fff;
-            padding: 10px;
+            background-color: transparent;
+            color: #af4cbf;
+            padding: 10px 0;
             display: block;
-            font-weight: bold;
+            width: 100%;
+            font-weight: 300;
             .transition();
-            text-align: center;
+            text-align: left;
+            font-size: 18px;
           }
           &.active {
+            &:after{
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 80px;
+              height: 3px;
+              background-color: #903a9b;
+            }
             a {
-              background-color: #ffffff;
-              color: #903a9b;
               font-weight: bold;
+              color: #903a9b;
             }
           }
 
@@ -557,7 +568,7 @@
       .tab-content {
         .tab-pane {
           text-align: left;
-          color: white;
+          color: #333333;
         }
       }
     }

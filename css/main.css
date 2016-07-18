@@ -11245,7 +11245,7 @@ a.btn-share-result:hover {
   position: relative;
 }
 #lucky-painter-header.header-banner figure img {
-  max-width: 100%;
+  width: 100%;
 }
 #lucky-painter-header.header-banner figure .paint-block-landing {
   position: absolute;
@@ -11526,7 +11526,7 @@ a.btn-share-result:hover {
   }
 }
 #lucky-painter-header-content.header-banner figure img {
-  max-width: 100%;
+  width: 100%;
 }
 #lucky-painter-header-content.header-banner .block-header-content {
   display: block;
@@ -11806,7 +11806,7 @@ a.btn-share-result:hover {
   display: block;
 }
 #lucky-painter-header-register.header-banner figure img {
-  max-width: 100%;
+  width: 100%;
 }
 #lucky-painter-header-register.header-banner figure .paint-block-landing {
   position: absolute;
@@ -12203,7 +12203,6 @@ a.btn-share-result:hover {
   background-image: -moz-linear-gradient(top, #ebe2db, #f6f3f0);
   background-image: -ms-linear-gradient(top, #ebe2db, #f6f3f0);
   background-image: -o-linear-gradient(top, #ebe2db, #f6f3f0);
-  margin-bottom: 100px;
 }
 #luckypainter-event > div {
   overflow: hidden;
@@ -12214,36 +12213,57 @@ a.btn-share-result:hover {
   left: 0;
   right: 0;
   width: 100%;
-  height: 123px;
+  height: 168px;
   background: url("../images/luckypainter-landing/paint-bottom-bg.png") repeat-x center center / 100% auto;
 }
 @media (min-width: 1200px) {
+  #luckypainter-event {
+    padding: 140px 0 60px;
+  }
   #luckypainter-event:after {
-    bottom: -100px;
+    bottom: -120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #luckypainter-event {
+    padding: 110px 0 50px;
+  }
   #luckypainter-event:after {
-    bottom: -90px;
+    bottom: -110px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #luckypainter-event:after {
-    bottom: -80px;
-  }
-}
-@media (min-width: 768px) {
-  #luckypainter-event {
-    padding: 140px 0 80px;
-  }
-}
-@media (max-width: 767px) {
   #luckypainter-event {
     padding: 100px 0 40px;
   }
   #luckypainter-event:after {
-    display: none !important;
+    bottom: -110px;
   }
+}
+@media (min-width: 1600px) {
+  #luckypainter-event {
+    padding: 180px 0 60px;
+  }
+  #luckypainter-event:after {
+    bottom: -140px;
+  }
+}
+@media (max-width: 767px) {
+  #luckypainter-event {
+    padding: 40px 0 20px;
+  }
+  #luckypainter-event:after {
+    height: 70px;
+    bottom: -50px;
+  }
+}
+#luckypainter-event .luckypainter-event-title p {
+  padding: 0 20px;
+}
+#luckypainter-event .event-col-1,
+#luckypainter-event .event-col-2,
+#luckypainter-event .event-col-3 {
+  padding-bottom: 20px;
 }
 @media (max-width: 767px) {
   #luckypainter-event .event-wrapper {
@@ -12269,9 +12289,9 @@ a.btn-share-result:hover {
 #luckypainter-event .event-wrapper .event-overlay {
   position: absolute;
   top: 60px;
-  right: 30px;
+  right: 40px;
   bottom: 60px;
-  left: 30px;
+  left: 40px;
   text-align: center;
   display: -webkit-box;
   display: -moz-box;
@@ -12298,39 +12318,56 @@ a.btn-share-result:hover {
 #luckypainter-event .event-wrapper .event-overlay.overlay-3 {
   background-color: rgba(70, 12, 10, 0.5);
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #luckypainter-event .event-wrapper .event-overlay {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+  }
+}
 #luckypainter-event .event-wrapper .event-overlay h4 {
   font-family: 'Fester', sans-serif;
   color: #fff;
+  text-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
+  #luckypainter-event .event-wrapper .event-overlay h4 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
   #luckypainter-event .event-wrapper .event-overlay h4 {
     font-size: 44px;
-    line-height: 60px;
+    line-height: 56px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #luckypainter-event .event-wrapper .event-overlay h4 {
-    font-size: 34px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event .event-wrapper .event-overlay h4 {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 @media (max-width: 767px) {
   #luckypainter-event .event-wrapper .event-overlay h4 {
-    font-size: 35px;
+    font-size: 42px;
     line-height: 50px;
   }
 }
 #luckypainter-event .event-wrapper .event-overlay button {
+  height: 40px;
   background-color: transparent;
-  border-color: #fff;
   color: #fff;
   font-family: 'Fester', sans-serif !important;
+  line-height: 44px;
+  border: 2px solid #fff;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -12339,7 +12376,7 @@ a.btn-share-result:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   margin-top: 20px;
-  padding: 6px 20px;
+  padding: 0 22px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -12358,6 +12395,8 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event .event-wrapper .event-overlay button {
+    height: 34px;
+    line-height: 34px;
     font-size: 16px;
   }
 }
@@ -12372,7 +12411,27 @@ a.btn-share-result:hover {
   color: #d21f1a;
 }
 #luckypainter-list {
-  margin: 50px 0;
+  margin-bottom: 50px;
+}
+@media (min-width: 1600px) {
+  #luckypainter-list {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1599px) {
+  #luckypainter-list {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #luckypainter-list {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 767px) {
+  #luckypainter-list {
+    margin-top: 70px;
+  }
 }
 #luckypainter-list .luckypainter-item {
   margin: 30px 0;
@@ -12444,6 +12503,9 @@ a.btn-share-result:hover {
   color: #000;
 }
 #luckypainter-list .list-info .list-name {
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
   font-size: 16px;
   font-weight: 700;
 }
@@ -12485,12 +12547,7 @@ a.btn-share-result:hover {
 }
 #luckypainter-list .list-menu {
   width: 280px;
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background: url("../images/luckypainter-landing/painter-info.png") no-repeat left center / cover;
   border-color: #9aa4ae;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -12504,55 +12561,80 @@ a.btn-share-result:hover {
 }
 #luckypainter-list .list-menu:before {
   position: absolute;
-  top: -7px;
+  top: -9px;
   left: 26px;
   display: inline-block;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #9aa4ae;
-  border-left: 7px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #9aa4ae;
+  border-left: 9px solid transparent;
   content: '';
 }
 #luckypainter-list .list-menu:after {
   position: absolute;
-  top: -5px;
+  top: -7px;
   left: 27px;
   display: inline-block;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid #ffffff;
-  border-left: 6px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #701450;
+  border-left: 8px solid transparent;
   content: '';
 }
 #luckypainter-list .list-menu .menu-top {
   text-align: center;
-  border-bottom: 1px solid #b8b8b8;
+  border-bottom: 1px solid #fff;
   padding-bottom: 15px;
+}
+@media (min-width: 1600px) {
+  #luckypainter-list .list-menu .menu-top h4 {
+    font-size: 22px;
+  }
+  #luckypainter-list .list-menu .menu-top p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1599px) {
+  #luckypainter-list .list-menu .menu-top h4 {
+    font-size: 20px;
+  }
+  #luckypainter-list .list-menu .menu-top p {
+    font-size: 15px;
+  }
 }
 #luckypainter-list .list-menu .menu-top h4 {
   font-family: 'Fester', sans-serif;
-  color: #632366;
-  font-size: 20px;
+  color: #fff;
   text-transform: uppercase;
 }
 #luckypainter-list .list-menu .menu-top p {
-  color: #632366;
-  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
 }
 #luckypainter-list .list-menu .menu-bottom {
   padding-top: 15px;
 }
+@media (min-width: 1600px) {
+  #luckypainter-list .list-menu .menu-bottom p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1599px) {
+  #luckypainter-list .list-menu .menu-bottom p {
+    font-size: 13px;
+  }
+}
 #luckypainter-list .list-menu .menu-bottom p {
   display: inline-block;
-  font-size: 13px;
   line-height: 24px;
+  font-weight: 600;
 }
 #luckypainter-list .list-menu .menu-bottom .menu-label {
   width: 110px;
   text-align: right;
-  color: #632366;
+  color: #fff;
   margin-right: 10px;
 }
 #luckypainter-list .list-menu .menu-bottom .menu-value {
-  color: #9aa4ae;
+  color: #fff;
 }
 .luckypainter-event-title {
   color: #632366;
@@ -15172,6 +15254,11 @@ a.btn-share-result:hover {
 #lucky-gift-box .flame .flame-content.flame-content5 {
   top: 400px;
 }
+@media (min-width: 1600px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .flame-content.flame-content5 {
+    top: 700px;
+  }
+}
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .flame-content.flame-content5 {
     top: 300px;
@@ -15222,6 +15309,11 @@ a.btn-share-result:hover {
   display: block;
   margin-top: 35px;
 }
+@media (min-width: 1600px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 {
+    margin-top: 75px;
+  }
+}
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .block-content1 {
     margin-top: 20px;
@@ -15250,6 +15342,12 @@ a.btn-share-result:hover {
   text-transform: uppercase;
   text-shadow: -5px 3px 2px rgba(78, 58, 9, 0.4);
   margin-bottom: 35px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .title-content {
+    font-size: 90px;
+    line-height: 90px;
+  }
 }
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .block-content1 .title-content {
@@ -15280,6 +15378,11 @@ a.btn-share-result:hover {
   font-size: 14px;
   padding: 0 50px;
   display: block;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .wrapper-content {
+    font-size: 18px;
+  }
 }
 @media (max-width: 768px) {
   #lucky-gift-box .flame .block-content1 .wrapper-content {
@@ -15344,6 +15447,12 @@ a.btn-share-result:hover {
   top: 20px;
   z-index: 1;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .number-painter .timer {
+    font-size: 75px;
+    left: 45px;
+  }
+}
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .block-content1 .number-painter .timer {
     top: 10px;
@@ -15392,6 +15501,11 @@ a.btn-share-result:hover {
   font-size: 22px;
   text-transform: uppercase;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .number-painter .description-top {
+    font-size: 30px;
+  }
+}
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content1 .number-painter .description-top {
     font-size: 12px;
@@ -15399,6 +15513,11 @@ a.btn-share-result:hover {
 }
 #lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
   font-size: 20px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
+    font-size: 28px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
@@ -15439,6 +15558,14 @@ a.btn-share-result:hover {
 #lucky-gift-box .flame .block-content1 .action-content .btn-register:hover {
   background-color: white;
   color: #d21f1a;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .action-content .btn-register {
+    font-size: 28px;
+    height: 38px;
+    line-height: 32px;
+    width: 300px;
+  }
 }
 @media (max-width: 768px) {
   #lucky-gift-box .flame .block-content1 .action-content .btn-register {
@@ -15499,6 +15626,14 @@ a.btn-share-result:hover {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content1 .action-content .btn-content-event {
+    font-size: 28px;
+    height: 38px;
+    line-height: 28px;
+    width: 300px;
+  }
+}
 @media (max-width: 768px) {
   #lucky-gift-box .flame .block-content1 .action-content .btn-content-event {
     width: 220px;
@@ -15544,6 +15679,11 @@ a.btn-share-result:hover {
   display: block;
   margin-top: 35px;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content2 {
+    margin-top: 95px;
+  }
+}
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .block-content2 {
     margin-top: 15px;
@@ -15565,6 +15705,12 @@ a.btn-share-result:hover {
   font-size: 50px;
   line-height: 30px;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content2 .title-promotion {
+    font-size: 60px;
+    line-height: 35px;
+  }
+}
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content2 .title-promotion {
     font-size: 25px;
@@ -15585,6 +15731,11 @@ a.btn-share-result:hover {
   margin-bottom: 15px;
   font-weight: 600;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content2 .sub-title-promotion {
+    font-size: 60px;
+  }
+}
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content2 .sub-title-promotion {
     font-size: 20px;
@@ -15600,6 +15751,11 @@ a.btn-share-result:hover {
   color: #8e4e91;
   font-size: 14px;
   padding: 0 50px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content2 .wrapper-promotion {
+    font-size: 18px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content2 .wrapper-promotion {
@@ -15623,6 +15779,12 @@ a.btn-share-result:hover {
   font-size: 50px;
   line-height: 35px;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content3 .title-content {
+    font-size: 60px;
+    line-height: 40px;
+  }
+}
 @media (max-width: 640px) {
   #lucky-gift-box .flame .block-content3 .title-content {
     font-size: 35px;
@@ -15634,6 +15796,11 @@ a.btn-share-result:hover {
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 35px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content3 .sub-title-content {
+    font-size: 60px;
+  }
 }
 @media (max-width: 640px) {
   #lucky-gift-box .flame .block-content3 .sub-title-content {
@@ -15650,6 +15817,11 @@ a.btn-share-result:hover {
   color: white;
   font-size: 14px;
   padding: 0 50px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content3 .wrapper-content {
+    font-size: 18px;
+  }
 }
 @media (max-width: 640px) {
   #lucky-gift-box .flame .block-content3 .wrapper-content {
@@ -15679,6 +15851,11 @@ a.btn-share-result:hover {
   transition: all 0.2s ease-in-out;
   margin: 15px 0;
   display: block;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content3 .action-content .btn-show-more {
+    font-size: 22px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content3 .action-content .btn-show-more {
@@ -15712,11 +15889,22 @@ a.btn-share-result:hover {
   display: block;
   margin-top: 35px;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content4 {
+    margin-top: 200px;
+  }
+}
 #lucky-gift-box .flame .block-content4 .title-promotion {
   color: #632366;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 15px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content4 .title-promotion {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content4 .title-promotion {
@@ -15737,6 +15925,12 @@ a.btn-share-result:hover {
   font-weight: 600;
   text-transform: uppercase;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content4 .title-promotion span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content4 .title-promotion span {
     font-size: 35px;
@@ -15746,6 +15940,11 @@ a.btn-share-result:hover {
   color: #8e4e91;
   font-size: 14px;
   padding: 0 50px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-gift-box .flame .block-content4 .wrapper-promotion {
+    font-size: 18px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content4 .wrapper-promotion {

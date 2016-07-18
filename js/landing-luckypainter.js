@@ -96,4 +96,13 @@ $(document).ready(function () {
       $('.register-success').show();
     }, '500');
   });
+
+  $(window).resize(function(){
+    var width = $(window).width();
+    if(width < 768){
+      $('.luckypainter-event-title p').html('Sơn Galaxy chia sẻ và đồng hành cùng với giới thợ thầu thông qua hàng loạt chương trình hấp dẫn.');
+    } else {
+      $('.luckypainter-event-title p').html('Sơn Galaxy chia sẻ và đồng hành cùng với giới thợ thầu <br> thông qua hàng loạt chương trình hấp dẫn.');
+    }
+  }).resize();//trigger the resize event on page load.
 });

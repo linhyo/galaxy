@@ -1,0 +1,495 @@
+#smart-painter-top {
+  position: relative;
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-content {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+  }
+  .banner-caption {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    @media (min-width: 1600px) {
+      margin-top: 30%;
+      h1 {
+        font-size: 80px;
+      }
+      p {
+        font-size: 16px;
+        padding: 0 50px;
+        margin: 30px 0;
+      }
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 60px;
+      h1 {
+        font-size: 70px;
+      }
+      p {
+        font-size: 14px;
+        padding: 0 35px;
+        margin: 30px 0;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 25px;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 14px;
+        padding: 0 40px;
+        margin: 15px 0;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 10px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 13px;
+        margin: 10px 0;
+      }
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (max-width: 767px) {
+      margin-top: 15px;
+      h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+      p {
+        display: none;
+      }
+      .banner-btn {
+        width: 180px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+    h1, p {
+      color: #fff;
+    }
+    h1 {
+      font-family: @bold-font;
+      text-transform: uppercase;
+      text-shadow: -5px 3px 2px rgba(78, 58, 9, 0.4);
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+.green-wall {
+  .gradient(#e7e8b2, #a8cd5e);
+}
+
+#smart-painter-middle {
+  position: relative;
+  padding: 10px 0 150px;
+  .slide-mask {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgba(0,0,0,0.4);
+    .flex();
+    .align-items(center);
+    .justify-content(center);
+    > div {
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  .game-week {
+    color: #fff;
+    font-family: @import-font;
+    font-size: 40px;
+  }
+  .game-name {
+    color: #fff;
+    font-family: @bold-font;
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  .title-divider {
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin: 25px 0;
+  }
+  .game-statistic {
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 0 10px;
+    .number, .text {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .number {
+      min-width: 50%;
+      text-align: right;
+      padding: 10px 5px 0 0;
+      p {
+        color: #fff;
+        font-family: @bold-font;
+        font-size: 55px;
+        line-height: 55px;
+      }
+    }
+    .text {
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+  .game-info {
+    display: table;
+    margin: 40px auto;
+    .crown-icon, .player {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .crown-icon > i {
+      display: inline-block;
+      width: 70px;
+      height: 41px;
+      background: url("../images/smart-painter/crown.png") no-repeat center center / 100% auto;
+    }
+    .player {
+      padding-left: 10px;
+      h4, p {
+        color: #fff;
+        white-space: nowrap;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .game-desc {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .lock-icon {
+    display: block;
+    width: 23px;
+    height: 29px;
+    background: url("../images/smart-painter/lock.png") no-repeat center center;
+    margin: 60px auto 20px;
+  }
+  .game-opening {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .slide-inactive {
+    img {
+      .filter(grayscale(100%));
+    }
+  }
+}
+
+#smart-painter-bottom {
+  position: relative;
+  .banner-img img {
+    width: 100%;
+  }
+  .floor {
+    position: relative;
+  }
+  .paint-tool {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+  }
+}
+
+#viewRules {
+  .rule-wrapper {
+    position: relative;
+    min-height: 500px;
+    height: auto;
+    background: no-repeat center / 100% 100%;
+    .transition();
+    cursor: default;
+    @media (min-width: 768px) {
+      max-width: 950px;
+      width: 100%;
+      background-image: url("../images/smart-painter/paint-wrapper.png");
+      padding: 100px;
+    }
+    @media (max-width: 767px) {
+      background-image: url("../images/galaxy-wall/rule-wrapper-mobile.png");
+      padding: 30px;
+    }
+  }
+  .scroll-block {
+    width: 620px;
+    height: 340px;
+    position: relative;
+    display: block;
+    z-index: 101;
+  }
+  .title-block {
+    font-family: @bold-font;
+    text-transform: uppercase;
+    color: #632366;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    @media (min-width: 1600px) {
+      font-size: 30px;
+    }
+    @media (max-width: 1599px) {
+      font-size: 25px;
+    }
+  }
+  p {
+    color: #808d9b;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .btn-close {
+    display: block;
+    margin: 40px auto 0;
+  }
+}
+
+#playNow {
+  .game-wrapper {
+    position: relative;
+    min-height: 600px;
+    height: auto;
+    background: #fff url("../images/smart-painter/popup-bg.jpg") no-repeat center bottom / 100% auto;
+    .transition();
+    cursor: default;
+    padding: 30px;
+    @media (min-width: 768px) {
+      max-width: 450px;
+      width: 100%;
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    z-index: 99;
+    i {
+      display: block;
+      width: 18px;
+      height: 17px;
+      background: url('../images/galaxy-wall/close-icon.png');
+    }
+  }
+  .dialog-content {
+    position: relative;
+    z-index: 10;
+  }
+  .dialog-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    .transition(opacity, 0.3s, ease-in-out);
+    .x-top-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 10px;
+      z-index: 100;
+      background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#67327b), to(transparent));
+      background-image: -webkit-linear-gradient(left, #67327b, transparent);
+      background-image: -moz-linear-gradient(left, #67327b, transparent);
+      background-image: -o-linear-gradient(left, #67327b, transparent);
+    }
+    .y-top-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 60%;
+      z-index: 100;
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67327b), to(transparent));
+      background-image: -webkit-linear-gradient(#67327b, transparent);
+      background-image: -moz-linear-gradient(#67327b, transparent);
+      background-image: -o-linear-gradient(#67327b, transparent);
+      background-image: linear-gradient(#67327b, transparent);
+    }
+    .x-bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60%;
+      height: 10px;
+      z-index: 100;
+      background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#67327b));
+      background-image: -webkit-linear-gradient(left, transparent, #67327b);
+      background-image: -moz-linear-gradient(left, transparent, #67327b);
+      background-image: -o-linear-gradient(left, transparent, #67327b);
+    }
+    .y-bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 60%;
+      z-index: 100;
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#67327b));
+      background-image: -webkit-linear-gradient(transparent, #67327b);
+      background-image: -moz-linear-gradient(transparent, #67327b);
+      background-image: -o-linear-gradient(transparent, #67327b);
+      background-image: linear-gradient(transparent, #67327b);
+    }
+  }
+  .game-step {
+    padding: 60px 20px;
+  }
+  .dialog-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid #632366;
+    }
+    h2 {
+      color: #632366;
+      font-family: @bold-font;
+      font-size: 36px;
+    }
+  }
+  .game-step {
+    position: relative;
+  }
+  .step-2, .step-3 {
+    display: none;
+  }
+  .dialog-form {
+    padding: 30px;
+  }
+  .step-1 {
+    .form-group {
+      text-align: center;
+    }
+    label {
+      color: #9aa4ae;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+  }
+  .form-control {
+    background-color: #ebebeb;
+    border-color: #9aa4ae;
+    .border-radius(0);
+    box-shadow: none;
+    &:focus {
+      background-color: #fff;
+      border-color: #632366 !important;
+    }
+  }
+  .banner-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+  }
+  .question-number {
+    margin: 20px 0;
+    ul {
+      text-align: center;
+      > li {
+        display: inline-block;
+        margin: 5px;
+        > a {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-color: #808d9b;
+          .border-radius(50%);
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 35px;
+          text-align: center;
+        }
+        &.active > a {
+          background-color: #632366;
+        }
+      }
+    }
+  }
+  .step-2 {
+    input[type="radio"] {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+    }
+  }
+  .question-content, .question-form label {
+    color: #808d9b;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .question-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-message {
+    margin-top: 25%;
+    text-align: center;
+    h3 {
+      color: #632366;
+      font-family: @bold-font;
+      margin: 25px 0 10px;
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: #632366;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+}

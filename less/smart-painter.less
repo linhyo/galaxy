@@ -68,7 +68,7 @@
       display: block;
     }
     @media (max-width: 767px) {
-      margin-top: 15px;
+      margin-top: 70px;
       h1 {
         font-size: 25px;
         margin-bottom: 5px;
@@ -84,6 +84,9 @@
         font-size: 13px;
         margin-bottom: 5px;
       }
+    }
+    @media (max-width: 450px) {
+      margin-top: 15px;
     }
     h1, p {
       color: #fff;
@@ -109,8 +112,13 @@
   @media (min-width: 768px) {
     padding: 0 0 150px;
   }
-  @media (max-width: 767px) {
+  @media (min-width: 451px) and (max-width: 767px) {
+    padding: 0 0 80px;
+  }
+  @media (max-width: 450px) {
     padding: 0 0 50px;
+  }
+  @media (max-width: 767px) {
     .col-xs-12 {
       padding: 0;
     }
@@ -186,12 +194,18 @@
     @media (min-width: 1600px) {
       left: -20px;
     }
+    @media (min-width: 500px) and (max-width: 767px) {
+      left: 50px;
+    }
   }
   #carousel-right {
     background-image: url("../images/smart-painter/next-icon.png");
     right: 0;
     @media (min-width: 1600px) {
       right: -20px;
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      right: 50px;
     }
   }
 

@@ -17251,7 +17251,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #smart-painter-top .banner-caption {
-    margin-top: 15px;
+    margin-top: 70px;
   }
   #smart-painter-top .banner-caption h1 {
     font-size: 25px;
@@ -17266,6 +17266,11 @@ a.btn-share-result:hover {
     line-height: 25px;
     font-size: 13px;
     margin-bottom: 5px;
+  }
+}
+@media (max-width: 450px) {
+  #smart-painter-top .banner-caption {
+    margin-top: 15px;
   }
 }
 #smart-painter-top .banner-caption h1,
@@ -17297,10 +17302,17 @@ a.btn-share-result:hover {
     padding: 0 0 150px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 451px) and (max-width: 767px) {
+  #smart-painter-middle {
+    padding: 0 0 80px;
+  }
+}
+@media (max-width: 450px) {
   #smart-painter-middle {
     padding: 0 0 50px;
   }
+}
+@media (max-width: 767px) {
   #smart-painter-middle .col-xs-12 {
     padding: 0;
   }
@@ -17403,6 +17415,11 @@ a.btn-share-result:hover {
     left: -20px;
   }
 }
+@media (min-width: 500px) and (max-width: 767px) {
+  #smart-painter-middle #carousel-left {
+    left: 50px;
+  }
+}
 #smart-painter-middle #carousel-right {
   background-image: url("../images/smart-painter/next-icon.png");
   right: 0;
@@ -17410,6 +17427,11 @@ a.btn-share-result:hover {
 @media (min-width: 1600px) {
   #smart-painter-middle #carousel-right {
     right: -20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  #smart-painter-middle #carousel-right {
+    right: 50px;
   }
 }
 @media (min-width: 1600px) {

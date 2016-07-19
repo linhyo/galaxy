@@ -13392,8 +13392,14 @@ a.btn-share-result:hover {
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   #product-page1.header-banner .bn5-product .bn5-product-content {
-    left: 680px;
-    bottom: 185px;
+    bottom: 300px;
+    left: 800px;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv {
+    height: 450px !important;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
+    height: 450px !important;
   }
 }
 @media (min-width: 1366px) and (max-width: 1600px) {

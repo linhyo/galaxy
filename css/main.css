@@ -11245,7 +11245,7 @@ a.btn-share-result:hover {
   position: relative;
 }
 #lucky-painter-header.header-banner figure img {
-  width: 100%;
+  max-width: 100%;
 }
 #lucky-painter-header.header-banner figure .paint-block-landing {
   position: absolute;
@@ -11333,6 +11333,12 @@ a.btn-share-result:hover {
   text-shadow: -5px 3px 2px rgba(78, 58, 9, 0.4);
   margin-bottom: 25px;
 }
+@media (min-width: 1024px) and (max-width: 1920px) {
+  #lucky-painter-header.header-banner .action-content .block-action .lending-title {
+    font-size: 90px;
+    line-height: 75px;
+  }
+}
 @media (max-width: 1024px) {
   #lucky-painter-header.header-banner .action-content .block-action .lending-title {
     margin-bottom: 10px;
@@ -11360,6 +11366,11 @@ a.btn-share-result:hover {
   font-weight: 600;
   margin-bottom: 20px;
   display: block;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header.header-banner .action-content .block-action .intro-action {
+    font-size: 17px;
+  }
 }
 @media (max-width: 1024px) {
   #lucky-painter-header.header-banner .action-content .block-action .intro-action {
@@ -11400,6 +11411,14 @@ a.btn-share-result:hover {
 #lucky-painter-header.header-banner .action-content .block-action .btn-register:hover {
   background-color: white;
   color: #d21f1a;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header.header-banner .action-content .block-action .btn-register {
+    font-size: 28px;
+    height: 38px;
+    line-height: 32px;
+    width: 300px;
+  }
 }
 @media (max-width: 640px) {
   #lucky-painter-header.header-banner .action-content .block-action .btn-register {
@@ -11450,6 +11469,14 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header.header-banner .action-content .block-action .btn-content-event {
+    font-size: 28px;
+    height: 38px;
+    line-height: 28px;
+    width: 300px;
+  }
 }
 @media (max-width: 640px) {
   #lucky-painter-header.header-banner .action-content .block-action .btn-content-event {
@@ -11526,7 +11553,7 @@ a.btn-share-result:hover {
   }
 }
 #lucky-painter-header-content.header-banner figure img {
-  width: 100%;
+  max-width: 100%;
 }
 #lucky-painter-header-content.header-banner .block-header-content {
   display: block;
@@ -11573,6 +11600,11 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
+    width: 1560px;
+  }
 }
 @media (max-width: 1320px) {
   #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
@@ -11806,7 +11838,7 @@ a.btn-share-result:hover {
   display: block;
 }
 #lucky-painter-header-register.header-banner figure img {
-  width: 100%;
+  max-width: 100%;
 }
 #lucky-painter-header-register.header-banner figure .paint-block-landing {
   position: absolute;
@@ -11858,6 +11890,11 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
+    width: 1560px;
+  }
 }
 @media (max-width: 1320px) {
   #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {

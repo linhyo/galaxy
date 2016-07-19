@@ -9,7 +9,7 @@
       text-align: center;
       position: relative;
       img {
-        width: 100%;
+        max-width: 100%;
       }
       .paint-block-landing {
         position: absolute;
@@ -71,6 +71,12 @@
           text-transform: uppercase;
           text-shadow: -5px 3px 2px hsla(43, 79%, 17%, 0.4);
           margin-bottom: 25px;
+
+          @media (min-width: 1024px) and (max-width: 1920px){
+            font-size: 90px;
+            line-height: 75px;
+          }
+
           @media (max-width: 1024px) {
             margin-bottom: 10px;
             font-size: 50px;
@@ -93,6 +99,9 @@
           font-weight: 600;
           margin-bottom: 20px;
           display: block;
+          @media (min-width: 1660px) and (max-width: 1920px){
+            font-size: 17px;
+          }
           @media (max-width: 1024px) {
             margin-bottom: 10px;
           }
@@ -119,6 +128,13 @@
             background-color: white;
             color: #d21f1a;
           }
+          @media (min-width: 1660px) and (max-width: 1920px){
+            font-size: 28px;
+            height: 38px;
+            line-height: 32px;
+            width: 300px;
+          }
+
           @media (max-width: 640px) {
             width: 200px;
           }
@@ -153,6 +169,12 @@
           margin: 0 auto 15px;
           box-shadow: -3px 1px 1px hsla(43, 79%, 17%, 0.4);
           .transition();
+          @media (min-width: 1660px) and (max-width: 1920px){
+            font-size: 28px;
+            height: 38px;
+            line-height: 28px;
+            width: 300px;
+          }
           @media (max-width: 640px) {
             width: 200px;
           }
@@ -222,7 +244,7 @@
         display: none;
       }
       img {
-        width: 100%;
+        max-width: 100%;
       }
     }
     .block-header-content {
@@ -253,6 +275,9 @@
         display: block;
         margin: 0 auto;
         .transition();
+        @media (min-width: 1660px) and (max-width: 1920px) {
+          width: 1560px;
+        }
         @media (max-width: 1320px) {
           width: 1200px;
         }
@@ -425,7 +450,7 @@
       position: relative;
       display: block;
       img {
-        width: 100%;
+        max-width: 100%;
       }
       .paint-block-landing {
         position: absolute;
@@ -465,6 +490,9 @@
         display: block;
         margin: 0 auto;
         .transition();
+        @media (min-width: 1660px) and (max-width: 1920px) {
+          width: 1560px;
+        }
         @media (max-width: 1320px) {
           width: 1200px;
         }

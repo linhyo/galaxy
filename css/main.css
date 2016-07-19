@@ -4363,7 +4363,7 @@ a.btn-share-result:hover {
 .galaxy-feature .product-slide .slide-img {
   min-height: 370px;
   width: 70%;
-  max-width: 0 auto;
+  margin: 0 auto;
   background: transparent no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

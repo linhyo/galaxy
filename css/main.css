@@ -2093,12 +2093,16 @@ button.btn-purple:focus {
 #carousel .slide img {
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #carousel .slide > div {
   position: relative;
   padding: 0;
   margin: 0;
   height: 100%;
+  padding: 10px;
 }
 #carousel .slide span {
   background-color: #000;
@@ -14927,6 +14931,18 @@ a.btn-share-result:hover {
     font-size: 28px;
   }
 }
+.testimonial-modal .rating-symbol {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  background: transparent no-repeat center center / 100% auto;
+}
+.testimonial-modal .symbol-filled {
+  background-image: url("../images/product-landing/rated-star.png");
+}
+.testimonial-modal .symbol-empty {
+  background-image: url("../images/product-landing/unrated-star.png");
+}
 .testimonial-modal .modal-divider {
   position: relative;
   width: 100%;
@@ -14935,9 +14951,8 @@ a.btn-share-result:hover {
 .testimonial-modal .modal-divider .star-bar {
   position: relative;
   display: inline-block;
-  width: 260px;
-  height: 36px;
-  background: #ffffff url("../images/product-landing/star-bar.png") no-repeat center center;
+  min-width: 260px;
+  background-color: #fff;
   padding: 0 30px;
   z-index: 10;
 }
@@ -16974,6 +16989,9 @@ a.btn-share-result:hover {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -16999,6 +17017,7 @@ a.btn-share-result:hover {
 }
 .banner-btn.red:hover {
   background-color: #fff;
+  border-color: #fff;
   color: #d21f1a;
 }
 .banner-btn.white {

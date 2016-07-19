@@ -34,4 +34,9 @@ $(document).ready(function () {
     autoplayTimeout: 3000
   });
 
+  $('.rating-star').rating()
+    .on('change', function () {
+    console.log('Rating: ' + $(this).val());
+  });
+
 });

@@ -34,18 +34,21 @@ $(document).ready(function () {
     var width = $(window).width();
     if(width >= 768){
       $('.scroll-block').slimScroll({
-        height: '400px'
+        height: '400px',
+        alwaysVisible: true
       });
     } else{
       $('.scroll-block').slimScroll({
-        height: '500px'
+        height: '500px',
+        alwaysVisible: true
       });
 
     }
   }).resize();//trigger the resize event on page load.
 
   $('.gw-scroll').slimScroll({
-    height: '150px'
+    height: '150px',
+    alwaysVisible: true
   });
 
   $('.walls').masonry({

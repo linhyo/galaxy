@@ -22,7 +22,6 @@
       }
       p {
         font-size: 16px;
-        padding: 0 50px;
         margin: 30px 0;
       }
     }
@@ -33,7 +32,7 @@
       }
       p {
         font-size: 14px;
-        padding: 0 35px;
+        padding: 0 30px;
         margin: 30px 0;
       }
     }
@@ -43,9 +42,9 @@
         font-size: 50px;
       }
       p {
-        font-size: 14px;
-        padding: 0 40px;
-        margin: 15px 0;
+        font-size: 13px;
+        padding: 0 30px;
+        margin: 0 0 15px;
       }
     }
     @media (min-width: 768px) and (max-width: 991px) {
@@ -54,8 +53,15 @@
         font-size: 40px;
       }
       p {
-        font-size: 13px;
+        font-size: 12px;
+        padding: 0 10px;
         margin: 10px 0;
+      }
+      .banner-btn {
+        width: 210px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 18px;
       }
     }
     @media (min-width: 768px) {
@@ -64,17 +70,18 @@
     @media (max-width: 767px) {
       margin-top: 15px;
       h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 5px;
       }
       p {
         display: none;
       }
+
       .banner-btn {
-        width: 180px;
-        height: 26px;
-        line-height: 26px;
-        font-size: 16px;
+        width: 150px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 13px;
         margin-bottom: 5px;
       }
     }
@@ -87,7 +94,6 @@
       text-shadow: -5px 3px 2px rgba(78, 58, 9, 0.4);
     }
     p {
-      font-size: 14px;
       font-weight: 600;
     }
   }
@@ -99,14 +105,62 @@
 
 #smart-painter-middle {
   position: relative;
-  padding: 10px 0 150px;
-  .slide-mask {
+  padding: 0 0 150px;
+  @media (min-width: 768px) {
+    padding: 0 0 150px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 0 50px;
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+  .carousel-container {
+    position: relative;
+  }
+  #game-carousel {
+    position: relative;
+    margin: 0 auto;
+    @media (min-width: 1600px) {
+      width: 1100px;
+      height: 660px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 960px;
+      height: 660px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 840px;
+      height: 570px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 600px;
+      height: 540px;
+    }
+    @media (max-width: 767px) {
+      width: 320px;
+      height: 470px;
+    }
+  }
+  .carousel-image {
+    border: 0;
+    display: block;
+  }
+  .carousel-feature {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    cursor: pointer;
+    .box-shadow(0,0,10px,0.5);
+  }
+  .carousel-caption {
     position: absolute;
     top: 40px;
     left: 40px;
     right: 40px;
     bottom: 40px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0;
     .flex();
     .align-items(center);
     .justify-content(center);
@@ -115,28 +169,217 @@
       text-align: center;
     }
   }
+  .carousel-ctrl {
+    display: block;
+    z-index: 1000;
+    width: 31px;
+    height: 54px;
+    background: no-repeat center center / 100% auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -27px;
+    cursor: pointer;
+  }
+  #carousel-left {
+    background-image: url("../images/smart-painter/prev-icon.png");
+    left: 0;
+    @media (min-width: 1600px) {
+      left: -20px;
+    }
+  }
+  #carousel-right {
+    background-image: url("../images/smart-painter/next-icon.png");
+    right: 0;
+    @media (min-width: 1600px) {
+      right: -20px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .game-week, .game-name {
+      font-size: 50px;
+    }
+    .game-statistic {
+      .number p {
+        font-size: 65px;
+        line-height: 65px;
+      }
+      .text p {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+    .game-info {
+      .player {
+        h4 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .game-desc {
+      font-size: 15px;
+    }
+    .game-opening {
+      font-size: 18px;
+    }
+    .banner-btn.black {
+      font-size: 24px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    .game-week, .game-name {
+      font-size: 40px;
+    }
+    .game-statistic {
+      .number p {
+        font-size: 55px;
+        line-height: 55px;
+      }
+      .text p {
+        font-size: 20px;
+      }
+    }
+    .game-info {
+      .player {
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .game-desc {
+      font-size: 15px;
+    }
+    .game-opening {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .game-week, .game-name {
+      font-size: 40px;
+    }
+    .game-statistic {
+      .number p {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .text p {
+        font-size: 18px;
+      }
+    }
+    .game-info {
+      .player {
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .game-desc {
+      font-size: 14px;
+    }
+    .game-opening {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .game-week, .game-name {
+      font-size: 30px;
+    }
+    .game-statistic {
+      .number p {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .text p {
+        font-size: 16px;
+      }
+    }
+    .game-info {
+      .player {
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .game-desc {
+      font-size: 13px;
+    }
+    .game-opening {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .game-week, .game-name {
+      font-size: 30px;
+    }
+    .game-statistic {
+      .number p {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .text p {
+        font-size: 16px;
+      }
+    }
+    .game-info {
+      .player {
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .game-desc {
+      font-size: 13px;
+    }
+    .game-opening {
+      font-size: 15px;
+    }
+    .crown-icon > i {
+      width: 52px !important;
+      height: 30px !important;
+    }
+  }
 
   .game-week {
     color: #fff;
     font-family: @import-font;
-    font-size: 40px;
   }
   .game-name {
     color: #fff;
     font-family: @bold-font;
-    font-size: 40px;
     white-space: nowrap;
   }
   .title-divider {
     width: 100%;
     border-top: 1px solid #fff;
-    margin: 25px 0;
+    margin: 8% 0 10%;
   }
   .game-statistic {
     display: table;
     margin: 0 auto;
     border: 1px solid #fff;
     padding: 0 10px;
+    text-align: left;
     .number, .text {
       display: table-cell;
       vertical-align: middle;
@@ -148,21 +391,19 @@
       p {
         color: #fff;
         font-family: @bold-font;
-        font-size: 55px;
-        line-height: 55px;
       }
     }
     .text {
       p {
         color: #fff;
-        font-size: 20px;
         font-weight: 600;
+        white-space: nowrap;
       }
     }
   }
   .game-info {
     display: table;
-    margin: 40px auto;
+    margin: 15% auto;
     .crown-icon, .player {
       display: table-cell;
       vertical-align: middle;
@@ -174,24 +415,22 @@
       background: url("../images/smart-painter/crown.png") no-repeat center center / 100% auto;
     }
     .player {
+      text-align: left;
       padding-left: 10px;
       h4, p {
         color: #fff;
         white-space: nowrap;
       }
       h4 {
-        font-size: 20px;
         font-weight: bold;
       }
       p {
-        font-size: 14px;
         font-weight: 600;
       }
     }
   }
   .game-desc {
     color: #fff;
-    font-size: 15px;
     font-weight: 600;
   }
   .lock-icon {
@@ -199,19 +438,18 @@
     width: 23px;
     height: 29px;
     background: url("../images/smart-painter/lock.png") no-repeat center center;
-    margin: 60px auto 20px;
+    margin: 25% auto 10%;
   }
   .game-opening {
     display: inline-block;
     color: #fff;
-    font-size: 18px;
     font-weight: bold;
     border: 1px solid #fff;
     padding: 5px 10px;
     text-transform: uppercase;
     white-space: nowrap;
   }
-  .slide-inactive {
+  .carousel-inactive {
     img {
       .filter(grayscale(100%));
     }
@@ -225,6 +463,9 @@
   }
   .floor {
     position: relative;
+    @media (max-width: 767px) {
+      height: 150px;
+    }
   }
   .paint-tool {
     position: absolute;
@@ -246,11 +487,11 @@
       max-width: 950px;
       width: 100%;
       background-image: url("../images/smart-painter/paint-wrapper.png");
-      padding: 100px;
+      padding: 50px 100px;
     }
     @media (max-width: 767px) {
       background-image: url("../images/galaxy-wall/rule-wrapper-mobile.png");
-      padding: 30px;
+      padding: 50px 30px;
     }
   }
   .scroll-block {
@@ -273,6 +514,9 @@
     @media (max-width: 1599px) {
       font-size: 25px;
     }
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
   p {
     color: #808d9b;
@@ -282,13 +526,19 @@
   .btn-close {
     display: block;
     margin: 40px auto 0;
+    @media (min-width: 768px) {
+      margin: 40px auto 0;
+    }
+    @media (max-width: 767px) {
+      margin: 20px auto 0;
+    }
   }
 }
 
 #playNow {
   .game-wrapper {
     position: relative;
-    min-height: 600px;
+    min-height: 580px;
     height: auto;
     background: #fff url("../images/smart-painter/popup-bg.jpg") no-repeat center bottom / 100% auto;
     .transition();
@@ -378,7 +628,12 @@
     }
   }
   .game-step {
-    padding: 60px 20px;
+    @media (min-width: 768px) {
+      padding: 60px 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 0 0;
+    }
   }
   .dialog-title {
     position: relative;
@@ -396,6 +651,12 @@
       color: #632366;
       font-family: @bold-font;
       font-size: 36px;
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
     }
   }
   .game-step {
@@ -405,7 +666,12 @@
     display: none;
   }
   .dialog-form {
-    padding: 30px;
+    @media (min-width: 768px) {
+      padding: 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 0;
+    }
   }
   .step-1 {
     .form-group {

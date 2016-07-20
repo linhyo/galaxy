@@ -13509,7 +13509,7 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 #product-page1.header-banner .block-banner figure .bn1-product,
@@ -14019,7 +14019,7 @@ a.btn-share-result:hover {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 #product-page-1-mobile.header-banner .block-banner .banner-content {

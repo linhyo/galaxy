@@ -13556,6 +13556,12 @@ a.btn-share-result:hover {
   color: white;
   z-index: 1;
 }
+@media (max-width: 1024px) {
+  #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content {
+    width: 540px;
+    top: 65px;
+  }
+}
 @media (max-width: 800px) {
   #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content {
     width: 50%;
@@ -13613,6 +13619,12 @@ a.btn-share-result:hover {
   border: 6px solid white;
   padding: 80px 50px 35px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+  #product-page1.header-banner .block-banner figure .banner-content .container .bn-paint-content {
+    top: 70px;
+    padding: 25px 35px;
+  }
 }
 @media (max-width: 800px) {
   #product-page1.header-banner .block-banner figure .banner-content .container .bn-paint-content {

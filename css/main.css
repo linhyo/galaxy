@@ -4361,14 +4361,12 @@ a.btn-share-result:hover {
   font-weight: 700;
 }
 .galaxy-feature .product-slide .slide-img {
-  min-height: 370px;
-  width: 70%;
+  background: transparent none no-repeat scroll center center / 65% auto;
+  height: 100%;
   margin: 0 auto;
-  background: transparent no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  min-height: 370px;
+  width: 100%;
+  max-width: 375px;
 }
 .galaxy-feature .product-slide .slide-control {
   position: absolute;

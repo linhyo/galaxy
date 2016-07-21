@@ -16036,6 +16036,11 @@ a.btn-share-result:hover {
   color: #808d9b;
   font-size: 15px;
 }
+@media (max-width: 1320px) {
+  #lucky-gift-box .flame .block-content5 .scroll-block p {
+    font-size: 12px;
+  }
+}
 #galaxy-wall-top {
   width: 100%;
 }

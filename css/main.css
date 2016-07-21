@@ -14729,6 +14729,18 @@ a.btn-share-result:hover {
   background-image: url("../images/product-landing/next-icon.png");
   right: 0;
 }
+.rating-symbol {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  background: transparent no-repeat center center / 100% auto;
+}
+.symbol-filled {
+  background-image: url("../images/product-landing/rated-star.png");
+}
+.symbol-empty {
+  background-image: url("../images/product-landing/unrated-star.png");
+}
 @media (min-width: 768px) {
   .testimonial-modal .modal-dialog {
     max-width: 800px;
@@ -14880,18 +14892,6 @@ a.btn-share-result:hover {
   .testimonial-modal .modal-title {
     font-size: 28px;
   }
-}
-.testimonial-modal .rating-symbol {
-  display: inline-block;
-  width: 40px;
-  height: 38px;
-  background: transparent no-repeat center center / 100% auto;
-}
-.testimonial-modal .symbol-filled {
-  background-image: url("../images/product-landing/rated-star.png");
-}
-.testimonial-modal .symbol-empty {
-  background-image: url("../images/product-landing/unrated-star.png");
 }
 .testimonial-modal .modal-divider {
   position: relative;

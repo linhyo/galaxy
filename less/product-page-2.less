@@ -506,6 +506,19 @@
   right: 0;
 }
 
+.rating-symbol {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  background: transparent no-repeat center center / 100% auto;
+}
+.symbol-filled {
+  background-image: url("../images/product-landing/rated-star.png");
+}
+.symbol-empty {
+  background-image: url("../images/product-landing/unrated-star.png");
+}
+
 .testimonial-modal {
   .modal-dialog {
     @media (min-width: 768px) {
@@ -630,18 +643,6 @@
     @media (max-width: 767px) {
       font-size: 28px;
     }
-  }
-  .rating-symbol {
-    display: inline-block;
-    width: 40px;
-    height: 38px;
-    background: transparent no-repeat center center / 100% auto;
-  }
-  .symbol-filled {
-    background-image: url("../images/product-landing/rated-star.png");
-  }
-  .symbol-empty {
-    background-image: url("../images/product-landing/unrated-star.png");
   }
   .modal-divider {
     position: relative;

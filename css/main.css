@@ -14304,32 +14304,25 @@ a.btn-share-result:hover {
   line-height: 24px;
   text-align: justify;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #product-page-banner .tab-content ul {
     margin-top: 30px;
   }
   #product-page-banner .tab-content ul > li {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 991px) {
-  #product-page-banner .tab-content ul {
-    margin-top: 20px;
-  }
-}
-#product-page-banner .tab-content ul > li {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  #product-page-banner .tab-content img {
-    width: 80%;
+    width: 33%;
   }
 }
 @media (max-width: 767px) {
-  #product-page-banner .tab-content img {
-    width: 70%;
+  #product-page-banner .tab-content ul {
+    margin-top: 20px;
   }
+  #product-page-banner .tab-content ul > li {
+    width: 50%;
+  }
+}
+#product-page-banner .tab-content ul > li {
+  float: left;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   #product-page-testimonial {

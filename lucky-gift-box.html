@@ -147,7 +147,7 @@
               </div>
               <div class="action-content">
                 <a href="#" class="btn-register"><span>Đăng ký ngay</span></a>
-                <a href="#" class="btn-content-event"><span>Nội dung chương trình</span></a>
+                <a data-scroll href="#luckyGiftBoxRules" class="btn-content-event"><span>Nội dung chương trình</span></a>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@
     <figure>
       <img src="images/lucky-gift-box/flame5.png" alt=""/>
     </figure>
-    <div class="flame-content flame-content5">
+    <div class="flame-content flame-content5" id="luckyGiftBoxRules">
       <div class="container">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1">
@@ -348,9 +348,11 @@
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/lib/wow.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.parallax-scroll.min.js"></script>
 <script type="text/javascript" src="js/number-counter.js"></script>
 <script>
+  smoothScroll.init();
   var wow = new WOW(
     {
       boxClass:     'wow',      // animated element css class (default is wow)

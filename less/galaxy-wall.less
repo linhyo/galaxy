@@ -526,7 +526,9 @@
     .form-holder {
       position: relative;
       width: 100%;
+      background-color: #ebebeb;
       border: 1px dashed #9aa4ae;
+      cursor: pointer;
       @media (min-width: 768px) {
         height: 212px;
       }
@@ -539,6 +541,17 @@
         margin-bottom: 15px;
       }
     }
+    .holder-hover {
+      .holder-camera {
+        .transition();
+        background-image: url("../images/galaxy-wall/white-upload-icon.png") !important;
+      }
+      &:hover {
+        .holder-camera {
+          .opacity(1) !important;
+        }
+      }
+    }
     .holder-border {
       position: absolute;
       top: 0;
@@ -546,6 +559,7 @@
       bottom: 0;
       left: 0;
       .transition(opacity, 0.3s, ease-in-out);
+      z-index: 10;
       .x-top-left {
         position: absolute;
         top: 0;
@@ -604,6 +618,7 @@
       width: 80px;
       height: 41px;
       background: url("../images/galaxy-wall/galaxy-wall.png") no-repeat center center / 100% auto;
+      z-index: 10;
     }
     .holder-camera {
       position: absolute;
@@ -613,7 +628,22 @@
       margin-left: -45px;
       width: 90px;
       height: 100px;
-      background: url("../images/galaxy-wall/upload-icon.png") no-repeat center center / 100% auto;
+      background: no-repeat center center / 100% auto;
+      background-image: url("../images/galaxy-wall/upload-icon.png");
+      z-index: 10;
+    }
+    .holder-image {
+      text-align: center;
+      z-index: 1;
+      img {
+        max-height: 210px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
     }
     label {
       color: #9aa4ae;

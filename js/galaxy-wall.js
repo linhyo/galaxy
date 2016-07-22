@@ -82,4 +82,58 @@ $(document).ready(function () {
     $('.rule-1').show();
   });
 
+  //check if browser supports file api and filereader features
+  if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+    //this function is called when the input loads an image
+    function renderImage(file) {
+      var reader = new FileReader();
+      reader.onload = function (event) {
+        var the_url = event.target.result;
+
+        if (file.type.match('image.*')) {
+          $('#holder').addClass('holder-hover').find('.holder-image').html("<img src='" + the_url + "' />");
+          $('#holder').find('.holder-camera').css('opacity','0');
+        } else {
+          alert('File này ko phải là ảnh.');
+        }
+      };
+
+      //when the file is read it triggers the onload event above.
+      reader.readAsDataURL(file);
+    }
+
+    //watch for change on the
+    $("#upload-photo").change(function () {
+      //grab the first image in the fileList
+      //in this example we are only loading one file.
+      renderImage(this.files[0]);
+
+    });
+  } else {
+    alert('The File APIs are not fully supported in this browser.');
+  }
+
+  $('#holder').on('click', function(e) {
+    e.preventDefault();
+    $("#upload-photo").trigger('click');
+  });
+
+  // Drag and drop file
+  var holder = document.getElementById('holder');
+
+  holder.ondragover = function () {
+    return false;
+  };
+  holder.ondragend = function () {
+    return false;
+  };
+  holder.ondrop = function (e) {
+    e.preventDefault();
+    var file = e.dataTransfer.files[0];
+    renderImage(file);
+
+    return false;
+  };
+
 });

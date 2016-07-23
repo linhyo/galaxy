@@ -14621,6 +14621,11 @@ a.btn-share-result:hover {
     font-size: 28px;
   }
 }
+@media (max-width: 320px) {
+  .product-page-title {
+    font-size: 24px;
+  }
+}
 .testimonial-slide {
   position: relative;
   padding: 0 100px;
@@ -14649,7 +14654,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 320px) {
   .testimonial-slide {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
 .testimonial-slide .testimonial-item p {
@@ -14705,10 +14710,6 @@ a.btn-share-result:hover {
     line-height: 22px;
   }
 }
-.testimonial-slide .testimonial-item .testimonial-rating > i {
-  color: #dbba21;
-  font-size: 40px;
-}
 .testimonial-prev,
 .testimonial-next {
   position: absolute;
@@ -14747,9 +14748,19 @@ a.btn-share-result:hover {
 }
 .rating-symbol {
   display: inline-block;
-  width: 40px;
-  height: 38px;
   background: transparent no-repeat center center / 100% auto;
+}
+@media (min-width: 768px) {
+  .rating-symbol {
+    width: 40px;
+    height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .rating-symbol {
+    width: 32px;
+    height: 30px;
+  }
 }
 .symbol-filled {
   background-image: url("../images/product-landing/rated-star.png");
@@ -16969,12 +16980,12 @@ a.btn-share-result:hover {
 }
 .banner-btn {
   display: inline-block;
-  height: 38px;
+  height: 40px;
   margin-bottom: 10px;
   padding: 0 10px;
-  font-family: 'Fester', sans-serif !important;
+  font-family: 'Bebas', sans-serif !important;
   font-weight: normal;
-  line-height: 38px;
+  line-height: 1.42857143;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
@@ -17007,13 +17018,15 @@ a.btn-share-result:hover {
 @media (min-width: 768px) {
   .banner-btn {
     width: 250px;
-    font-size: 20px;
+    height: 40px;
+    font-size: 24px;
   }
 }
 @media (max-width: 767px) {
   .banner-btn {
     width: 200px;
-    font-size: 16px;
+    height: 36px;
+    font-size: 20px;
   }
 }
 .banner-btn.red {

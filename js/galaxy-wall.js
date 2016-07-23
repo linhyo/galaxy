@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+  $('.walls').masonry({
+    fitWidth: true,
+    itemSelector: '.wall-item',
+    columnWidth: '.wall-sizer',
+    percentPosition: true
+  });
+
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)
@@ -29,7 +36,6 @@ $(document).ready(function () {
     owlSlide.trigger('next.owl.carousel');
   });
 
-
   $(window).resize(function(){
     var width = $(window).width();
     if(width >= 768){
@@ -49,13 +55,6 @@ $(document).ready(function () {
   $('.gw-scroll').slimScroll({
     height: '150px',
     alwaysVisible: true
-  });
-
-  $('.walls').masonry({
-    fitWidth: true,
-    itemSelector: '.wall-item',
-    columnWidth: '.wall-sizer',
-    percentPosition: true
   });
 
   $('#viewAndShare').on('show.bs.modal', function (event) {

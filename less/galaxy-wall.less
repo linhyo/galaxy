@@ -1,3 +1,20 @@
+@media (min-width: 992px) {
+  .wall-sizer, .wall-item {
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wall-sizer, .wall-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .wall-sizer, .wall-item {
+    width: 100%;
+  }
+}
+
 #galaxy-wall-top {
   width: 100%;
   .owl-stage-outer {
@@ -733,22 +750,6 @@
   .walls {
     margin: auto;
   }
-  @media (min-width: 992px) {
-    .wall-sizer, .wall-item {
-      width: 33.33%;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .wall-sizer, .wall-item {
-      width: 50%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .wall-sizer, .wall-item {
-      width: 100%;
-    }
-  }
 
   .wall-item {
     float: left;
@@ -757,6 +758,9 @@
     .item {
       position: relative;
       overflow: hidden;
+      figure img {
+        width: 100%;
+      }
       &:hover {
         figure img {
           .transform(scale(1.1));
@@ -796,7 +800,6 @@
 
 .banner-btn {
   display: inline-block;
-  height: 40px;
   margin-bottom: 10px;
   padding: 0 10px;
   font-family: @landing-font !important;
@@ -807,6 +810,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
+  letter-spacing: 0.5px;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
@@ -817,12 +821,10 @@
   .transition();
   @media (min-width: 768px) {
     width: 250px;
-    height: 40px;
     font-size: 24px;
   }
   @media (max-width: 767px) {
     width: 200px;
-    height: 36px;
     font-size: 20px;
   }
   &.red {

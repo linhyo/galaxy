@@ -1,12 +1,13 @@
-$(document).ready(function () {
-
+$(window).load( function() {
   $('.walls').masonry({
-    fitWidth: true,
+    //fitWidth: true,
     itemSelector: '.wall-item',
     columnWidth: '.wall-sizer',
     percentPosition: true
   });
+});
 
+$(document).ready(function () {
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)

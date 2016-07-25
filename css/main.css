@@ -12321,10 +12321,10 @@ a.btn-share-result:hover {
   }
 }
 #luckypainter-event .event-wrapper .event-overlay button {
-  height: 40px;
   background-color: transparent;
   color: #fff;
-  font-family: 'Fester', sans-serif !important;
+  font-family: 'Bebas', sans-serif !important;
+  letter-spacing: 0.5px;
   border: 2px solid #fff;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -12334,7 +12334,7 @@ a.btn-share-result:hover {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   margin-top: 20px;
-  padding: 4px 22px;
+  padding: 1px 22px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -12348,19 +12348,17 @@ a.btn-share-result:hover {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #luckypainter-event .event-wrapper .event-overlay button {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event .event-wrapper .event-overlay button {
-    height: 34px;
-    line-height: 34px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
   #luckypainter-event .event-wrapper .event-overlay button {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 #luckypainter-event .event-wrapper .event-overlay button:hover {
@@ -12648,10 +12646,11 @@ a.btn-share-result:hover {
 }
 .btn-viewmore {
   background-color: #fff;
-  border-color: #9aa4ae;
   color: #9aa4ae;
   font-size: 24px;
   font-family: 'Bebas', sans-serif !important;
+  letter-spacing: 0.5px;
+  border-color: #9aa4ae;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -16047,6 +16046,24 @@ a.btn-share-result:hover {
     font-size: 12px;
   }
 }
+@media (min-width: 992px) {
+  .wall-sizer,
+  .wall-item {
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wall-sizer,
+  .wall-item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .wall-sizer,
+  .wall-item {
+    width: 100%;
+  }
+}
 #galaxy-wall-top {
   width: 100%;
 }
@@ -16909,24 +16926,6 @@ a.btn-share-result:hover {
 #galaxy-wall-bottom .walls {
   margin: auto;
 }
-@media (min-width: 992px) {
-  #galaxy-wall-bottom .wall-sizer,
-  #galaxy-wall-bottom .wall-item {
-    width: 33.33%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #galaxy-wall-bottom .wall-sizer,
-  #galaxy-wall-bottom .wall-item {
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  #galaxy-wall-bottom .wall-sizer,
-  #galaxy-wall-bottom .wall-item {
-    width: 100%;
-  }
-}
 #galaxy-wall-bottom .wall-item {
   float: left;
   padding: 8px;
@@ -16935,6 +16934,9 @@ a.btn-share-result:hover {
 #galaxy-wall-bottom .wall-item .item {
   position: relative;
   overflow: hidden;
+}
+#galaxy-wall-bottom .wall-item .item figure img {
+  width: 100%;
 }
 #galaxy-wall-bottom .wall-item .item:hover figure img {
   -webkit-transform: scale(1.1);
@@ -16980,7 +16982,6 @@ a.btn-share-result:hover {
 }
 .banner-btn {
   display: inline-block;
-  height: 40px;
   margin-bottom: 10px;
   padding: 0 10px;
   font-family: 'Bebas', sans-serif !important;
@@ -16991,6 +16992,7 @@ a.btn-share-result:hover {
   text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
+  letter-spacing: 0.5px;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
@@ -17018,14 +17020,12 @@ a.btn-share-result:hover {
 @media (min-width: 768px) {
   .banner-btn {
     width: 250px;
-    height: 40px;
     font-size: 24px;
   }
 }
 @media (max-width: 767px) {
   .banner-btn {
     width: 200px;
-    height: 36px;
     font-size: 20px;
   }
 }

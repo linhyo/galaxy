@@ -118,28 +118,26 @@
         }
       }
       button {
-        height: 40px;
         background-color: transparent;
         color: #fff;
-        font-family: @bold-font !important;
+        font-family: @landing-font !important;
+        letter-spacing: 0.5px;
         border: 2px solid #fff;
         .border-radius(20px);
         margin-top: 20px;
-        padding: 4px 22px;
+        padding: 1px 22px;
         .transition();
         @media (min-width: 1200px) {
           font-size: 24px;
         }
         @media (min-width: 992px) and (max-width: 1199px) {
-          font-size: 20px;
+          font-size: 22px;
         }
         @media (min-width: 768px) and (max-width: 991px) {
-          height: 34px;
-          line-height: 34px;
-          font-size: 18px;
+          font-size: 20px;
         }
         @media (max-width: 767px) {
-          font-size: 20px;
+          font-size: 24px;
         }
         &:hover {
           border-color: #fff;
@@ -417,10 +415,11 @@
 
 .btn-viewmore {
   background-color: #fff;
-  border-color: #9aa4ae;
   color: #9aa4ae;
   font-size: 24px;
   font-family: @landing-font !important;
+  letter-spacing: 0.5px;
+  border-color: #9aa4ae;
   .border-radius(20px);
   margin-top: 20px;
   padding: 1px 30px;

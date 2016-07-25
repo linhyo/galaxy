@@ -1111,6 +1111,9 @@ button.btn-purple:focus {
 .slimScrollBar {
   z-index: 9999 !important;
 }
+.has-error .form-control {
+  border-color: #a94442 !important;
+}
 .navbar {
   position: relative;
   width: 100%;
@@ -16600,9 +16603,11 @@ a.btn-share-result:hover {
     margin-top: 200px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
-  #galaxy-wall-middle .rule-wrapper .rule-2,
   #galaxy-wall-middle .rule-wrapper .rule-3 {
     height: 480px;
+  }
+  #galaxy-wall-middle .rule-wrapper .rule-2 {
+    min-height: 480px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -16611,9 +16616,11 @@ a.btn-share-result:hover {
     margin-top: 150px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
-  #galaxy-wall-middle .rule-wrapper .rule-2,
   #galaxy-wall-middle .rule-wrapper .rule-3 {
     height: 490px;
+  }
+  #galaxy-wall-middle .rule-wrapper .rule-2 {
+    min-height: 490px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -16622,11 +16629,11 @@ a.btn-share-result:hover {
     margin-top: 150px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
-  #galaxy-wall-middle .rule-wrapper .rule-2,
   #galaxy-wall-middle .rule-wrapper .rule-3 {
     height: 500px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-2 {
+    min-height: 500px;
     padding-top: 30px;
   }
 }
@@ -16636,9 +16643,11 @@ a.btn-share-result:hover {
     margin-top: 90px;
   }
   #galaxy-wall-middle .rule-wrapper .rule-1,
-  #galaxy-wall-middle .rule-wrapper .rule-2,
   #galaxy-wall-middle .rule-wrapper .rule-3 {
     height: 650px;
+  }
+  #galaxy-wall-middle .rule-wrapper .rule-2 {
+    min-height: 650px;
   }
 }
 #galaxy-wall-middle .rule-wrapper .scroll-block {
@@ -17249,6 +17258,22 @@ a.btn-share-result:hover {
 .no-padding {
   padding: 0;
 }
+@media (min-width: 992px) {
+  .large-carousel {
+    display: block;
+  }
+  .small-carousel {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .large-carousel {
+    display: none;
+  }
+  .small-carousel {
+    display: block;
+  }
+}
 #smart-painter-top {
   position: relative;
 }
@@ -17439,6 +17464,21 @@ a.btn-share-result:hover {
   border: 0;
   display: block;
 }
+#smart-painter-middle .game-feature {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #smart-painter-middle .game-feature {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  #smart-painter-middle .game-feature {
+    width: 80%;
+  }
+}
 #smart-painter-middle .carousel-feature {
   position: absolute;
   top: -1000px;
@@ -17450,10 +17490,6 @@ a.btn-share-result:hover {
 }
 #smart-painter-middle .carousel-caption {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0;
   display: -webkit-box;
@@ -17476,22 +17512,54 @@ a.btn-share-result:hover {
   width: 80%;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #smart-painter-middle .carousel-caption {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  #smart-painter-middle .carousel-caption {
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
 #smart-painter-middle .carousel-ctrl {
   display: block;
   z-index: 1000;
-  width: 31px;
-  height: 54px;
   background: no-repeat center center / 100% auto;
   position: absolute;
   top: 50%;
-  margin-top: -27px;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  #smart-painter-middle .carousel-ctrl {
+    width: 31px;
+    height: 54px;
+    margin-top: -27px;
+  }
+}
+@media (max-width: 767px) {
+  #smart-painter-middle .carousel-ctrl {
+    width: 24px;
+    height: 42px;
+    margin-top: -21px;
+  }
 }
 #smart-painter-middle #carousel-left {
   background-image: url("../images/smart-painter/prev-icon.png");
   left: 0;
 }
 @media (min-width: 1600px) {
+  #smart-painter-middle #carousel-left {
+    left: -20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   #smart-painter-middle #carousel-left {
     left: -20px;
   }
@@ -17506,6 +17574,11 @@ a.btn-share-result:hover {
   right: 0;
 }
 @media (min-width: 1600px) {
+  #smart-painter-middle #carousel-right {
+    right: -20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   #smart-painter-middle #carousel-right {
     right: -20px;
   }

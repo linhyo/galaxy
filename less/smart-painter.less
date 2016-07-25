@@ -1,3 +1,21 @@
+@media (min-width: 992px) {
+  .large-carousel {
+    display: block;
+  }
+  .small-carousel {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .large-carousel {
+    display: none;
+  }
+  .small-carousel {
+    display: block;
+  }
+}
+
 #smart-painter-top {
   position: relative;
   .banner-img img {
@@ -154,6 +172,17 @@
     border: 0;
     display: block;
   }
+  .game-feature {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 90%;
+    }
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+  }
   .carousel-feature {
     position: absolute;
     top: -1000px;
@@ -163,10 +192,6 @@
   }
   .carousel-caption {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    bottom: 40px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 0;
     .flex();
@@ -176,22 +201,44 @@
       width: 80%;
       text-align: center;
     }
+    @media (min-width: 768px) {
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      top: 30px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+    }
   }
   .carousel-ctrl {
     display: block;
     z-index: 1000;
-    width: 31px;
-    height: 54px;
     background: no-repeat center center / 100% auto;
     position: absolute;
     top: 50%;
-    margin-top: -27px;
     cursor: pointer;
+    @media (min-width: 768px) {
+      width: 31px;
+      height: 54px;
+      margin-top: -27px;
+    }
+    @media (max-width: 767px) {
+      width: 24px;
+      height: 42px;
+      margin-top: -21px;
+    }
   }
   #carousel-left {
     background-image: url("../images/smart-painter/prev-icon.png");
     left: 0;
     @media (min-width: 1600px) {
+      left: -20px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
       left: -20px;
     }
     @media (min-width: 500px) and (max-width: 767px) {
@@ -202,6 +249,9 @@
     background-image: url("../images/smart-painter/next-icon.png");
     right: 0;
     @media (min-width: 1600px) {
+      right: -20px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
       right: -20px;
     }
     @media (min-width: 500px) and (max-width: 767px) {

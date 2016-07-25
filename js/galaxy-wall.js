@@ -1,6 +1,5 @@
 $(window).load( function() {
   $('.walls').masonry({
-    //fitWidth: true,
     itemSelector: '.wall-item',
     columnWidth: '.wall-sizer',
     percentPosition: true
@@ -8,6 +7,8 @@ $(window).load( function() {
 });
 
 $(document).ready(function () {
+  smoothScroll.init();
+
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)

@@ -17082,6 +17082,7 @@ a.btn-share-result:hover {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
+  padding: 0 10px 2px;
 }
 .banner-btn.black:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -17357,8 +17358,6 @@ a.btn-share-result:hover {
   }
   #smart-painter-top .banner-caption .banner-btn {
     width: 210px;
-    height: 34px;
-    line-height: 34px;
     font-size: 18px;
   }
 }
@@ -17380,8 +17379,6 @@ a.btn-share-result:hover {
   }
   #smart-painter-top .banner-caption .banner-btn {
     width: 150px;
-    height: 25px;
-    line-height: 25px;
     font-size: 13px;
     margin-bottom: 5px;
   }
@@ -17627,8 +17624,6 @@ a.btn-share-result:hover {
   }
   #smart-painter-middle .banner-btn.black {
     font-size: 24px;
-    height: 40px;
-    line-height: 40px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {

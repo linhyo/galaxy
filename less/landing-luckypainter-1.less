@@ -19,6 +19,17 @@
         height: auto;
         max-width: 1903px;
       }
+      .banner-landing, .paint-block-landing{
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .banner-landing-mobile{
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
     }
     .action-content {
       position: absolute;
@@ -52,22 +63,27 @@
           margin-left: 100px;
         }
         @media (max-width: 768px) {
-          margin-left: 20px;
+          margin-left: -20px;
+          margin-top: 125px;
+        }
+        @media (max-width: 600px) {
+          margin-left: -60px;
+          margin-top: 100px;
         }
         @media (max-width: 480px) {
-          margin-left: 60px;
-          width: 215px;
-        }
-        @media (max-width: 415px) {
-          margin-left: 30px;
-          width: 215px;
+          margin-top: 15px;
+          margin-left: -40px;
+          width: 285px;
         }
         @media (max-width: 360px) {
-          margin-left: 10px;
+          margin-left: -40px;
+          width: 275px;
+          margin-top: 60px;
         }
         @media (max-width: 320px) {
-          margin-left: 0;
+          width: 235px;
         }
+
         .lending-title {
           font-family: @landing-font;
           font-size: 70px;
@@ -89,11 +105,6 @@
             font-size: 30px;
             line-height: 30px;
           }
-          @media (max-width: 480px) {
-            margin-bottom: 5px;
-            font-size: 18px;
-            line-height: 18px;
-          }
         }
         .intro-action {
           color: white;
@@ -108,7 +119,14 @@
             margin-bottom: 10px;
           }
           @media (max-width: 768px) {
-            display: none;
+            padding: 0 60px;
+          }
+          @media (max-width: 480px) {
+            padding: 0 45px;
+            font-size: 11px;
+          }
+          @media (max-width: 360px) {
+           display: none;
           }
         }
         .btn-register {
@@ -147,10 +165,7 @@
             height: 22px;
             margin: 0 auto 5px;
           }
-          @media (max-width: 360px) {
-            width: 110px;
-            font-size: 12px;
-          }
+
           span {
             font-family: @landing-font;
           }
@@ -187,10 +202,6 @@
             height: 22px;
             margin: 0 auto 5px;
             border: 2px solid #d21f1a;
-          }
-          @media (max-width: 360px) {
-            width: 110px;
-            font-size: 12px;
           }
 
           span {
@@ -459,7 +470,7 @@
         top: 0;
         width: 100%;
         height: auto;
-        max-width: 1903px;
+        max-width: 1920px;
         z-index: 1;
       }
       @media (max-width: 640px) {

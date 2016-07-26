@@ -12219,8 +12219,20 @@ a.btn-share-result:hover {
     bottom: -50px;
   }
 }
-#luckypainter-event .luckypainter-event-title p {
-  padding: 0 20px;
+@media (min-width: 1200px) {
+  #luckypainter-event .luckypainter-event-title p {
+    padding: 0 32%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #luckypainter-event .luckypainter-event-title p {
+    padding: 0 28%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #luckypainter-event .luckypainter-event-title p {
+    padding: 0 22%;
+  }
 }
 #luckypainter-event .event-col-1,
 #luckypainter-event .event-col-2,

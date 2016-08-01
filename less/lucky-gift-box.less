@@ -488,7 +488,7 @@
           margin-bottom: 5px;
         }
         @media (max-width: 360px) {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
       .wrapper-promotion {
@@ -522,6 +522,9 @@
         }
         @media (max-width: 640px) {
           font-size: 35px;
+        }
+        @media (max-width: 480px) {
+          font-size: 25px;
         }
       }
       .sub-title-content {
@@ -604,6 +607,9 @@
       @media (min-width: 1660px) and (max-width: 1920px){
         margin-top: 200px;
       }
+      @media (max-width: 480px) {
+        margin-top: 65px;
+      }
       .title-promotion {
         color: #632366;
         font-size: 50px;
@@ -614,10 +620,14 @@
           line-height: 60px;
         }
         @media (max-width: 480px) {
-          line-height: 35px;
+          line-height: 0;
           margin-bottom: 5px;
         }
         .promo {
+          @media (max-width: 480px) {
+            font-size: 25px;
+            line-height: 25px;
+          }
           font-weight: 400;
           font-family: @import-font;
           text-transform: inherit;
@@ -634,7 +644,8 @@
             line-height: 60px;
           }
           @media (max-width: 480px) {
-            font-size: 35px;
+            line-height: 20px;
+            font-size: 20px;
           }
         }
       }
@@ -675,7 +686,7 @@
         padding: 35px 65px;
       }
       @media (max-width: 480px) {
-        padding: 25px 35px;
+        padding: 15px 35px 0;
       }
       .scroll-block {
         width: 620px;

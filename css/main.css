@@ -15797,7 +15797,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 360px) {
   #lucky-gift-box .flame .block-content2 .sub-title-promotion {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 #lucky-gift-box .flame .block-content2 .wrapper-promotion {
@@ -15841,6 +15841,11 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-gift-box .flame .block-content3 .title-content {
     font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-gift-box .flame .block-content3 .title-content {
+    font-size: 25px;
   }
 }
 #lucky-gift-box .flame .block-content3 .sub-title-content {
@@ -15947,6 +15952,11 @@ a.btn-share-result:hover {
     margin-top: 200px;
   }
 }
+@media (max-width: 480px) {
+  #lucky-gift-box .flame .block-content4 {
+    margin-top: 65px;
+  }
+}
 #lucky-gift-box .flame .block-content4 .title-promotion {
   color: #632366;
   font-size: 50px;
@@ -15961,7 +15971,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content4 .title-promotion {
-    line-height: 35px;
+    line-height: 0;
     margin-bottom: 5px;
   }
 }
@@ -15969,6 +15979,12 @@ a.btn-share-result:hover {
   font-weight: 400;
   font-family: 'iCielBambola', sans-serif;
   text-transform: inherit;
+}
+@media (max-width: 480px) {
+  #lucky-gift-box .flame .block-content4 .title-promotion .promo {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 #lucky-gift-box .flame .block-content4 .title-promotion span {
   display: inline-block;
@@ -15986,7 +16002,8 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content4 .title-promotion span {
-    font-size: 35px;
+    line-height: 20px;
+    font-size: 20px;
   }
 }
 #lucky-gift-box .flame .block-content4 .wrapper-promotion {
@@ -16045,7 +16062,7 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content5 {
-    padding: 25px 35px;
+    padding: 15px 35px 0;
   }
 }
 #lucky-gift-box .flame .block-content5 .scroll-block {

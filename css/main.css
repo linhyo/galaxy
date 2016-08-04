@@ -1379,7 +1379,7 @@ button.btn-purple:focus {
     top: 96px;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
     background-color: #5a1d71;
   }
   .navbar-form {
@@ -17339,6 +17339,16 @@ a.btn-share-result:hover {
     display: block;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .small-carousel {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .small-carousel {
+    padding: 0 10px;
+  }
+}
 #smart-painter-top {
   position: relative;
 }
@@ -17398,7 +17408,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #smart-painter-top .banner-caption {
-    margin-top: 10px;
+    margin-top: 30px;
   }
   #smart-painter-top .banner-caption h1 {
     font-size: 40px;
@@ -17529,6 +17539,9 @@ a.btn-share-result:hover {
   display: block;
   position: relative;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 768px) {
   #smart-painter-middle .game-feature {
@@ -17583,10 +17596,10 @@ a.btn-share-result:hover {
 }
 @media (max-width: 767px) {
   #smart-painter-middle .carousel-caption {
-    top: 30px;
-    left: 30px;
-    right: 30px;
-    bottom: 30px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 #smart-painter-middle .carousel-ctrl {
@@ -17622,7 +17635,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #smart-painter-middle #carousel-left {
-    left: -20px;
+    left: -35px;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
@@ -17641,13 +17654,16 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #smart-painter-middle #carousel-right {
-    right: -20px;
+    right: -35px;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
   #smart-painter-middle #carousel-right {
     right: 50px;
   }
+}
+#smart-painter-middle #game-slider .owl-stage-outer {
+  padding: 15px 0;
 }
 @media (min-width: 1600px) {
   #smart-painter-middle .game-week,
@@ -17752,11 +17768,15 @@ a.btn-share-result:hover {
   #smart-painter-middle .game-opening {
     font-size: 15px;
   }
+  #smart-painter-middle .crown-icon > i {
+    width: 52px !important;
+    height: 30px !important;
+  }
 }
 @media (max-width: 767px) {
   #smart-painter-middle .game-week,
   #smart-painter-middle .game-name {
-    font-size: 30px;
+    font-size: 26px;
   }
   #smart-painter-middle .game-statistic .number p {
     font-size: 40px;
@@ -17766,20 +17786,23 @@ a.btn-share-result:hover {
     font-size: 16px;
   }
   #smart-painter-middle .game-info .player h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
   #smart-painter-middle .game-info .player p {
-    font-size: 14px;
+    font-size: 13px;
   }
   #smart-painter-middle .game-desc {
     font-size: 13px;
   }
   #smart-painter-middle .game-opening {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  #smart-painter-middle .banner-btn.black {
+    width: 120px;
   }
   #smart-painter-middle .crown-icon > i {
-    width: 52px !important;
-    height: 30px !important;
+    width: 40px !important;
+    height: 24px !important;
   }
 }
 #smart-painter-middle .game-week {
@@ -17861,7 +17884,16 @@ a.btn-share-result:hover {
   width: 23px;
   height: 29px;
   background: url("../images/smart-painter/lock.png") no-repeat center center;
-  margin: 25% auto 10%;
+}
+@media (min-width: 768px) {
+  #smart-painter-middle .lock-icon {
+    margin: 25% auto 10%;
+  }
+}
+@media (max-width: 767px) {
+  #smart-painter-middle .lock-icon {
+    margin: 15% auto 5%;
+  }
 }
 #smart-painter-middle .game-opening {
   display: inline-block;

@@ -58,7 +58,7 @@ $(document).ready(function () {
   gameSlider.owlCarousel({
     slideSpeed: 300,
     items: 1,
-    margin: 20,
+    margin: 5,
     loop: true,
     dots: false,
     nav: true,

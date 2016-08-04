@@ -16117,9 +16117,20 @@ a.btn-share-result:hover {
   width: 100%;
   z-index: 1;
 }
+@media (min-width: 768px) {
+  #galaxy-wall-top .banner-wrapper .large-banner {
+    display: block;
+  }
+  #galaxy-wall-top .banner-wrapper .small-banner {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
-  #galaxy-wall-top .banner-wrapper img {
-    height: 500px;
+  #galaxy-wall-top .banner-wrapper .large-banner {
+    display: none;
+  }
+  #galaxy-wall-top .banner-wrapper .small-banner {
+    display: block;
   }
 }
 #galaxy-wall-top .item {
@@ -16166,7 +16177,7 @@ a.btn-share-result:hover {
   }
   #galaxy-wall-top .item .banner-painter {
     position: relative;
-    margin-top: 180px;
+    margin-top: 220px;
     z-index: 10;
   }
   #galaxy-wall-top .item .banner-content {
@@ -16310,6 +16321,7 @@ a.btn-share-result:hover {
     width: 100%;
     text-align: center;
     margin-top: 120px;
+    padding: 0 30px;
   }
   #galaxy-wall-top .banner-desc h2 {
     font-size: 30px;
@@ -16623,7 +16635,6 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .rule-wrapper .rule-2,
 #galaxy-wall-middle .rule-wrapper .rule-3 {
   position: relative;
-  overflow: hidden;
   z-index: 1000;
 }
 @media (min-width: 768px) {
@@ -16899,6 +16910,8 @@ a.btn-share-result:hover {
 #galaxy-wall-middle .rule-wrapper .form-control:focus {
   background-color: #fff;
   border-color: #632366 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(99, 35, 102, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(99, 35, 102, 0.6);
 }
 #galaxy-wall-middle .rule-wrapper .form-submit {
   text-align: center;
@@ -16970,6 +16983,12 @@ a.btn-share-result:hover {
   color: #fff;
   font-size: 15px;
   line-height: 24px;
+}
+@media (min-width: 1600px) {
+  #galaxy-wall-bottom .title-block p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
 }
 #galaxy-wall-bottom .walls {
   margin: auto;
@@ -17159,16 +17178,22 @@ a.btn-share-result:hover {
   margin-top: -21px;
   width: 24px;
   height: 42px;
-  background: no-repeat center center / 100% auto;
+  background: url("../images/galaxy-wall/controller-icon.png") no-repeat;
   cursor: pointer;
 }
 #viewAndShare .modal-prev {
   left: -40px;
-  background-image: url("../images/galaxy-wall/prev-icon.png");
+  background-position: -5px -5px;
+}
+#viewAndShare .modal-prev:hover {
+  background-position: -39px -5px;
 }
 #viewAndShare .modal-next {
   right: -40px;
-  background-image: url("../images/galaxy-wall/next-icon.png");
+  background-position: -73px -5px;
+}
+#viewAndShare .modal-next:hover {
+  background-position: -107px -5px;
 }
 #viewAndShare .gw-image {
   position: relative;

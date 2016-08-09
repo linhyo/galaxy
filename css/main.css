@@ -17371,6 +17371,7 @@ a.btn-share-result:hover {
 @media (min-width: 1600px) {
   #smart-painter-top .banner-caption {
     margin-top: 30%;
+    margin-left: -100px;
   }
   #smart-painter-top .banner-caption h1 {
     font-size: 80px;

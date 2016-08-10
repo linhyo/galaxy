@@ -11163,7 +11163,7 @@ a.btn-share-result:hover {
   width: 100%;
   z-index: 1 !important;
   position: relative;
-  background-color: #ede5df;
+  background-color: #ebe2db;
 }
 #lucky-painter-header.header-banner figure {
   text-align: center;
@@ -11476,7 +11476,7 @@ a.btn-share-result:hover {
   display: block;
   width: 100%;
   position: relative;
-  background-color: #ede5df;
+  background-color: #ebe2db;
 }
 #lucky-painter-header-content.header-banner figure {
   text-align: center;
@@ -11768,7 +11768,7 @@ a.btn-share-result:hover {
   display: block;
   width: 100%;
   position: relative;
-  background-color: #ede5df;
+  background-color: #ebe2db;
 }
 #lucky-painter-header-register.header-banner figure {
   text-align: center;
@@ -12198,7 +12198,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #luckypainter-event {
-    padding: 110px 0 50px;
+    padding: 100px 0 50px;
   }
   #luckypainter-event:after {
     bottom: -110px;
@@ -12206,7 +12206,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event {
-    padding: 100px 0 40px;
+    padding: 80px 0 40px;
   }
   #luckypainter-event:after {
     bottom: -110px;
@@ -12229,7 +12229,12 @@ a.btn-share-result:hover {
     bottom: -50px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
+  #luckypainter-event .luckypainter-event-title p {
+    padding: 0 30%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
   #luckypainter-event .luckypainter-event-title p {
     padding: 0 32%;
   }
@@ -12241,7 +12246,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event .luckypainter-event-title p {
-    padding: 0 22%;
+    padding: 0 20%;
   }
 }
 #luckypainter-event .event-col-1,
@@ -12620,6 +12625,16 @@ a.btn-share-result:hover {
 .luckypainter-event-title {
   color: #632366;
 }
+@media (min-width: 1600px) {
+  .luckypainter-event-title p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1599px) {
+  .luckypainter-event-title p {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1200px) {
   .luckypainter-event-title h2,
   .luckypainter-event-title h3 {
@@ -12653,7 +12668,6 @@ a.btn-share-result:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .luckypainter-event-title p {
-  font-size: 15px;
   color: #8e4e91;
   margin: 10px 0 40px;
 }
@@ -12778,6 +12792,7 @@ a.btn-share-result:hover {
 }
 #product-collection-banner .banner-content p {
   color: #fff;
+  font-weight: 600;
 }
 .product-category {
   position: relative;
@@ -12789,6 +12804,11 @@ a.btn-share-result:hover {
 .product-category .category-caption {
   position: absolute;
   top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   border: solid #fff;
   text-align: center;
 }
@@ -12828,7 +12848,6 @@ a.btn-share-result:hover {
   .product-category .category-caption {
     max-width: 450px;
     padding: 20px 35px;
-    margin-top: -129px;
     border-width: 8px;
   }
   .product-category .category-caption h2 {
@@ -12842,7 +12861,6 @@ a.btn-share-result:hover {
   .product-category .category-caption {
     max-width: 420px;
     padding: 15px 30px;
-    margin-top: -110px;
     border-width: 6px;
   }
   .product-category .category-caption h2 {
@@ -12856,7 +12874,6 @@ a.btn-share-result:hover {
   .product-category .category-caption {
     max-width: 380px;
     padding: 15px 20px;
-    margin-top: -95px;
     border-width: 4px;
   }
   .product-category .category-caption h2 {
@@ -12870,7 +12887,6 @@ a.btn-share-result:hover {
   .product-category .category-caption {
     max-width: 300px;
     padding: 15px;
-    margin-top: -45px;
     border: none;
   }
   .product-category .category-caption h2 {

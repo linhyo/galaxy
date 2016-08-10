@@ -11478,6 +11478,11 @@ a.btn-share-result:hover {
   position: relative;
   background-color: #ebe2db;
 }
+@media (max-width: 991px) {
+  #lucky-painter-header-content.header-banner {
+    padding-bottom: 30px;
+  }
+}
 #lucky-painter-header-content.header-banner figure {
   text-align: center;
   position: relative;
@@ -11770,10 +11775,20 @@ a.btn-share-result:hover {
   position: relative;
   background-color: #ebe2db;
 }
+@media (max-width: 991px) {
+  #lucky-painter-header-register.header-banner {
+    padding-bottom: 30px;
+  }
+}
 #lucky-painter-header-register.header-banner figure {
   text-align: center;
   position: relative;
   display: block;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #lucky-painter-header-register.header-banner figure {
+    padding-bottom: 60px;
+  }
 }
 #lucky-painter-header-register.header-banner figure img {
   width: 100%;
@@ -12188,7 +12203,15 @@ a.btn-share-result:hover {
   height: 168px;
   background: url("../images/luckypainter-landing/paint-bottom-bg.png") repeat-x center center / 100% auto;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
+  #luckypainter-event {
+    padding: 180px 0 60px;
+  }
+  #luckypainter-event:after {
+    bottom: -140px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
   #luckypainter-event {
     padding: 140px 0 60px;
   }
@@ -12206,27 +12229,19 @@ a.btn-share-result:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #luckypainter-event {
-    padding: 80px 0 40px;
+    padding: 0 0 40px;
   }
   #luckypainter-event:after {
     bottom: -110px;
   }
 }
-@media (min-width: 1600px) {
-  #luckypainter-event {
-    padding: 180px 0 60px;
-  }
-  #luckypainter-event:after {
-    bottom: -140px;
-  }
-}
 @media (max-width: 767px) {
   #luckypainter-event {
-    padding: 40px 0 20px;
+    padding: 10px 0 20px;
   }
   #luckypainter-event:after {
     height: 70px;
-    bottom: -50px;
+    bottom: -45px;
   }
 }
 @media (min-width: 1600px) {
@@ -12396,12 +12411,15 @@ a.btn-share-result:hover {
   background-color: #fff;
   color: #d21f1a;
 }
-#luckypainter-list {
-  margin-bottom: 50px;
-}
 @media (min-width: 1600px) {
   #luckypainter-list {
     margin-top: 150px;
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 1599px) {
+  #luckypainter-list {
+    margin-bottom: 170px;
   }
 }
 @media (min-width: 992px) and (max-width: 1599px) {
@@ -12488,6 +12506,9 @@ a.btn-share-result:hover {
 #luckypainter-list .list-info p {
   color: #000;
 }
+#luckypainter-list .list-info p:not(.list-name) {
+  font-size: 15px;
+}
 #luckypainter-list .list-info .list-name {
   height: 24px;
   line-height: 24px;
@@ -12500,7 +12521,7 @@ a.btn-share-result:hover {
 }
 #luckypainter-list .luckypainter-filter {
   max-width: 390px;
-  margin: 0 auto 20px;
+  margin: 15px auto 20px;
 }
 #luckypainter-list .luckypainter-filter button {
   background-color: #ebebeb;

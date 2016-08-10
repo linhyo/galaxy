@@ -13,7 +13,13 @@
     height: 168px;
     background: url("../images/luckypainter-landing/paint-bottom-bg.png") repeat-x center center / 100% auto;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1600px) {
+    padding: 180px 0 60px;
+    &:after {
+      bottom: -140px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1599px) {
     padding: 140px 0 60px;
     &:after {
       bottom: -120px;
@@ -26,22 +32,16 @@
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 80px 0 40px;
+    padding: 0 0 40px;
     &:after {
       bottom: -110px;
     }
   }
-  @media (min-width: 1600px) {
-    padding: 180px 0 60px;
-    &:after {
-      bottom: -140px;
-    }
-  }
   @media (max-width: 767px) {
-    padding: 40px 0 20px;
+    padding: 10px 0 20px;
     &:after {
       height: 70px;
-      bottom: -50px;
+      bottom: -45px;
     }
   }
 
@@ -161,9 +161,12 @@
 }
 
 #luckypainter-list {
-  margin-bottom: 50px;
   @media (min-width: 1600px) {
     margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  @media (max-width: 1599px) {
+    margin-bottom: 170px;
   }
   @media (min-width: 992px) and (max-width: 1599px) {
     margin-top: 120px;
@@ -249,6 +252,9 @@
     p {
       color: #000;
     }
+    p:not(.list-name) {
+      font-size: 15px;
+    }
     .list-name {
       height: 24px;
       line-height: 24px;
@@ -262,7 +268,7 @@
   }
   .luckypainter-filter {
     max-width: 390px;
-    margin: 0 auto 20px;
+    margin: 15px auto 20px;
     button {
       background-color: #ebebeb;
       border-color: #9aa4ae;

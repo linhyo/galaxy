@@ -102,6 +102,10 @@
           }
           @media (max-width: 768px) {
             margin-bottom: 10px;
+            font-size: 60px;
+            line-height: 60px;
+          }
+          @media (max-width: 640px) {
             font-size: 30px;
             line-height: 30px;
           }
@@ -667,6 +671,9 @@
               font-size: 15px;
               font-weight: 600;
               margin-bottom: 5px;
+              @media (min-width: 1660px) and (max-width: 1920px) {
+                font-size: 18px;
+              }
               &:hover{
                 color: #632366;
               }
@@ -676,6 +683,9 @@
                 margin: 0 auto 5px;
               }
             }
+            label.active{
+              color: #632366;
+            }
             .form-control {
               .border-radius(0);
               border-color: #808d9b;
@@ -683,7 +693,7 @@
               &:focus {
                 background-color: #ffffff;
                 border-color: #632366 !important;
-                box-shadow: 0;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(99, 35, 102, 0.6);
               }
             }
             textarea {
@@ -726,7 +736,7 @@
           .register-success {
             display: none;
             text-align: center;
-            padding: 50px 0;
+            padding: 60px 0;
             @media (max-width: 480px) {
               padding: 0;
             }
@@ -759,7 +769,7 @@
               font-size: 16px;
               display: block;
               font-weight: 600;
-              padding: 0 150px;
+              padding: 0 50px;
               @media (max-width: 640px) {
                 padding: 0;
               }

@@ -11298,6 +11298,12 @@ a.btn-share-result:hover {
 @media (max-width: 768px) {
   #lucky-painter-header.header-banner .action-content .block-action .lending-title {
     margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header.header-banner .action-content .block-action .lending-title {
     font-size: 30px;
     line-height: 30px;
   }
@@ -12061,6 +12067,11 @@ a.btn-share-result:hover {
   font-weight: 600;
   margin-bottom: 5px;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label {
+    font-size: 18px;
+  }
+}
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label:hover {
   color: #632366;
 }
@@ -12068,6 +12079,9 @@ a.btn-share-result:hover {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-group {
     margin: 0 auto 5px;
   }
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label.active {
+  color: #632366;
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-control {
   -webkit-border-radius: 0;
@@ -12083,7 +12097,7 @@ a.btn-share-result:hover {
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-control:focus {
   background-color: #ffffff;
   border-color: #632366 !important;
-  box-shadow: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(99, 35, 102, 0.6);
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form textarea {
   resize: none;
@@ -12137,7 +12151,7 @@ a.btn-share-result:hover {
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success {
   display: none;
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success {
@@ -12177,7 +12191,7 @@ a.btn-share-result:hover {
   font-size: 16px;
   display: block;
   font-weight: 600;
-  padding: 0 150px;
+  padding: 0 50px;
 }
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success p {

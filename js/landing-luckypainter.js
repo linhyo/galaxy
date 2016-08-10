@@ -89,11 +89,17 @@ $(document).ready(function () {
     }, '50');
   });
 
-  $('.btn-submit').click(function(e){
-    e.preventDefault();
-    setTimeout(function () {
-      $('.register-form').hide();
-      $('.register-success').show();
-    }, '500');
+  $('.register-block input').focus(function () {
+    $(this).parent().find('label').addClass('active');
+  }).blur(function () {
+    $(this).parent().find('label').removeClass('active');
   });
+
+  //$('.btn-submit').click(function(e){
+  //  e.preventDefault();
+  //  setTimeout(function () {
+  //    $('.register-form').hide();
+  //    $('.register-success').show();
+  //  }, '500');
+  //});
 });

@@ -11466,10 +11466,10 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-painter-header-content .slimScrollDiv {
-    height: 180px !important;
+    height: 550px !important;
   }
   #lucky-painter-header-content .slimScrollDiv .scroll-block {
-    height: 160px !important;
+    height: 540px !important;
   }
 }
 #lucky-painter-header-content.header-banner {
@@ -11746,7 +11746,8 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
-    padding: 25px 35px;
+    background: url("../images/galaxy-wall/rule-wrapper-mobile-right.png") no-repeat center / 100% 100%;
+    padding: 55px 35px;
     width: 100%;
     position: relative;
   }
@@ -12038,8 +12039,9 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
-    padding: 25px 35px;
+    padding: 55px 35px;
     width: 100%;
+    background: url("../images/galaxy-wall/rule-wrapper-mobile.png") no-repeat center / 100% 100%;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block {
@@ -12777,6 +12779,11 @@ a.btn-share-result:hover {
   #product-collection-banner .banner-content h1 {
     font-size: 50px;
   }
+  #product-collection-banner .banner-content p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1600px) {
   #product-collection-banner .banner-content p {
     font-size: 24px;
   }
@@ -14457,7 +14464,7 @@ a.btn-share-result:hover {
   #product-page-feature .feature-item figure figcaption.caption-2,
   #product-page-feature .feature-item figure figcaption.caption-4,
   #product-page-feature .feature-item figure figcaption.caption-6 {
-    left: 40px;
+    left: 20px;
   }
   #product-page-feature .feature-item figure figcaption.caption-3,
   #product-page-feature .feature-item figure figcaption.caption-5 {
@@ -14469,6 +14476,14 @@ a.btn-share-result:hover {
   }
   #product-page-feature .feature-item figure figcaption button {
     background-color: transparent;
+  }
+}
+@media (min-width: 1200px) {
+  #product-page-feature .feature-item figure figcaption.caption-1,
+  #product-page-feature .feature-item figure figcaption.caption-2,
+  #product-page-feature .feature-item figure figcaption.caption-4,
+  #product-page-feature .feature-item figure figcaption.caption-6 {
+    left: 40px;
   }
 }
 @media (max-width: 991px) {
@@ -14484,11 +14499,11 @@ a.btn-share-result:hover {
     right: 20px;
   }
   #product-page-feature .feature-item figure figcaption p {
-    font-size: 15px;
-    margin: 5px 0 10px;
+    display: none;
   }
   #product-page-feature .feature-item figure figcaption button {
     background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
   }
 }
 @media (min-width: 768px) {

@@ -17022,7 +17022,7 @@ a.btn-share-result:hover {
   }
   #galaxy-wall-bottom .title-block p {
     margin: 30px 0 40px;
-    padding: 0 70px;
+    padding: 0 60px;
   }
 }
 @media (max-width: 767px) {
@@ -17047,7 +17047,7 @@ a.btn-share-result:hover {
 }
 #galaxy-wall-bottom .title-block p {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
 }
 @media (min-width: 1600px) {
@@ -17095,7 +17095,7 @@ a.btn-share-result:hover {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 15px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -17110,6 +17110,7 @@ a.btn-share-result:hover {
 }
 #galaxy-wall-bottom .wall-item .wall-caption p {
   color: #fff;
+  font-size: 15px;
   line-height: 24px;
   height: 48px;
 }
@@ -17437,7 +17438,7 @@ a.btn-share-result:hover {
 @media (min-width: 1600px) {
   #smart-painter-top .banner-caption {
     margin-top: 30%;
-    margin-left: -100px;
+    margin-left: -130px;
   }
   #smart-painter-top .banner-caption h1 {
     font-size: 80px;

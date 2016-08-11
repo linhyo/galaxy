@@ -207,7 +207,7 @@
     .align-items(center);
     .justify-content(center);
     > div {
-      width: 80%;
+      width: 100%;
       text-align: center;
     }
     @media (min-width: 768px) {
@@ -276,7 +276,7 @@
 
   @media (min-width: 1600px) {
     .game-week, .game-name {
-      font-size: 50px;
+      font-size: 48px;
     }
     .game-statistic {
       .number p {
@@ -342,7 +342,7 @@
 
   @media (min-width: 992px) and (max-width: 1199px) {
     .game-week, .game-name {
-      font-size: 40px;
+      font-size: 34px;
     }
     .game-statistic {
       .number p {
@@ -454,9 +454,9 @@
     white-space: nowrap;
   }
   .title-divider {
-    width: 100%;
+    width: 80%;
     border-top: 1px solid #fff;
-    margin: 8% 0 10%;
+    margin: 8% auto 10%;
   }
   .game-statistic {
     display: table;
@@ -516,14 +516,19 @@
   .game-desc {
     color: #fff;
     font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
   }
   .lock-icon {
     display: block;
     width: 23px;
     height: 29px;
     background: url("../images/smart-painter/lock.png") no-repeat center center;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       margin: 25% auto 10%;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin: 18% auto 10%;
     }
     @media (max-width: 767px) {
       margin: 15% auto 5%;

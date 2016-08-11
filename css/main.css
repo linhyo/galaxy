@@ -17651,7 +17651,7 @@ a.btn-share-result:hover {
   justify-content: center;
 }
 #smart-painter-middle .carousel-caption > div {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -17736,7 +17736,7 @@ a.btn-share-result:hover {
 @media (min-width: 1600px) {
   #smart-painter-middle .game-week,
   #smart-painter-middle .game-name {
-    font-size: 50px;
+    font-size: 48px;
   }
   #smart-painter-middle .game-statistic .number p {
     font-size: 65px;
@@ -17790,7 +17790,7 @@ a.btn-share-result:hover {
 @media (min-width: 992px) and (max-width: 1199px) {
   #smart-painter-middle .game-week,
   #smart-painter-middle .game-name {
-    font-size: 40px;
+    font-size: 34px;
   }
   #smart-painter-middle .game-statistic .number p {
     font-size: 40px;
@@ -17883,9 +17883,9 @@ a.btn-share-result:hover {
   white-space: nowrap;
 }
 #smart-painter-middle .title-divider {
-  width: 100%;
+  width: 80%;
   border-top: 1px solid #fff;
-  margin: 8% 0 10%;
+  margin: 8% auto 10%;
 }
 #smart-painter-middle .game-statistic {
   display: table;
@@ -17946,6 +17946,8 @@ a.btn-share-result:hover {
 #smart-painter-middle .game-desc {
   color: #fff;
   font-weight: 600;
+  width: 80%;
+  margin: 0 auto;
 }
 #smart-painter-middle .lock-icon {
   display: block;
@@ -17953,9 +17955,14 @@ a.btn-share-result:hover {
   height: 29px;
   background: url("../images/smart-painter/lock.png") no-repeat center center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #smart-painter-middle .lock-icon {
     margin: 25% auto 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #smart-painter-middle .lock-icon {
+    margin: 18% auto 10%;
   }
 }
 @media (max-width: 767px) {

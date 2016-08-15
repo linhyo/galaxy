@@ -13468,33 +13468,15 @@ a.btn-share-result:hover {
   position: absolute;
   width: 490px;
   z-index: 11;
+  font-size: 13px;
 }
-@media (max-width: 800px) {
+@media (min-width: 1660px) and (max-width: 1920px) {
   #product-page1.header-banner .bn5-product .bn5-product-content {
-    bottom: 65px;
-    height: 190px;
-    left: 330px;
-    position: absolute;
-    width: 305px;
-    z-index: 11;
-  }
-  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv {
-    height: 150px !important;
-  }
-  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
-    height: 150px !important;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1920px) {
-  #product-page1.header-banner .bn5-product .bn5-product-content {
-    bottom: 300px;
-    left: 800px;
-  }
-  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv {
-    height: 450px !important;
-  }
-  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
-    height: 450px !important;
+    width: 680px;
+    bottom: 100px;
+    height: 450px;
+    left: 785px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1366px) and (max-width: 1600px) {
@@ -13526,6 +13508,22 @@ a.btn-share-result:hover {
   }
   #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
     height: 200px !important;
+  }
+}
+@media (max-width: 800px) {
+  #product-page1.header-banner .bn5-product .bn5-product-content {
+    bottom: 65px;
+    height: 190px;
+    left: 330px;
+    position: absolute;
+    width: 305px;
+    z-index: 11;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv {
+    height: 150px !important;
+  }
+  #product-page1.header-banner .bn5-product .bn5-product-content .slimScrollDiv .scroll-block {
+    height: 150px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 980px) {
@@ -13651,6 +13649,11 @@ a.btn-share-result:hover {
   color: white;
   z-index: 1;
 }
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content {
+    top: 180px;
+  }
+}
 @media (max-width: 1024px) {
   #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content {
     width: 540px;
@@ -13682,6 +13685,11 @@ a.btn-share-result:hover {
   color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content .title-content {
+    font-size: 60px;
+  }
 }
 @media (max-width: 800px) {
   #product-page1.header-banner .block-banner figure .banner-content .container .bn1-content .title-content {

@@ -42,29 +42,13 @@
         position: absolute;
         width: 490px;
         z-index: 11;
-        @media (max-width: 800px) {
-          bottom: 65px;
-          height: 190px;
-          left: 330px;
-          position: absolute;
-          width: 305px;
-          z-index: 11;
-          .slimScrollDiv {
-            height: 150px !important;
-            .scroll-block {
-              height: 150px !important;
-            }
-          }
-        }
-        @media (min-width: 1600px) and (max-width: 1920px) {
-          bottom: 300px;
-          left: 800px;
-          .slimScrollDiv {
-            height: 450px !important;
-            .scroll-block {
-              height: 450px !important;
-            }
-          }
+        font-size: 13px;
+        @media (min-width: 1660px) and (max-width: 1920px){
+          width: 680px;
+          bottom: 100px;
+          height: 450px;
+          left: 785px;
+          font-size: 18px;
         }
         @media (min-width: 1366px) and (max-width: 1600px) {
           bottom: 145px;
@@ -86,6 +70,20 @@
             height: 200px !important;
             .scroll-block {
               height: 200px !important;
+            }
+          }
+        }
+        @media (max-width: 800px) {
+          bottom: 65px;
+          height: 190px;
+          left: 330px;
+          position: absolute;
+          width: 305px;
+          z-index: 11;
+          .slimScrollDiv {
+            height: 150px !important;
+            .scroll-block {
+              height: 150px !important;
             }
           }
         }
@@ -195,6 +193,9 @@
               top: 125px;
               color: white;
               z-index: 1;
+              @media (min-width: 1660px) and (max-width: 1920px){
+                top: 180px;
+              }
               @media (max-width: 1024px) {
                 width: 540px;
                 top: 65px;
@@ -220,6 +221,9 @@
                 color: white;
                 text-shadow: 2px 2px hsla(0, 0%, 0%, 0.3);
                 margin-bottom: 20px;
+                @media (min-width: 1660px) and (max-width: 1920px){
+                  font-size: 60px;
+                }
                 @media (max-width: 800px) {
                   font-size: 18px;
                   margin-bottom: 5px;

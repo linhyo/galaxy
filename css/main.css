@@ -11180,10 +11180,18 @@ a.btn-share-result:hover {
   height: auto;
   max-width: 1903px;
 }
+#lucky-painter-header.header-banner figure .banner-landing.mobile,
+#lucky-painter-header.header-banner figure .paint-block-landing.mobile {
+  display: none;
+}
 @media (max-width: 768px) {
   #lucky-painter-header.header-banner figure .banner-landing,
   #lucky-painter-header.header-banner figure .paint-block-landing {
     display: none;
+  }
+  #lucky-painter-header.header-banner figure .banner-landing.mobile,
+  #lucky-painter-header.header-banner figure .paint-block-landing.mobile {
+    display: block;
   }
 }
 #lucky-painter-header.header-banner figure .banner-landing-mobile {
@@ -11456,26 +11464,42 @@ a.btn-share-result:hover {
 }
 @media (max-width: 768px) {
   #lucky-painter-header-content .slimScrollDiv {
-    height: 250px !important;
+    height: 680px !important;
   }
   #lucky-painter-header-content .slimScrollDiv .scroll-block {
-    height: 250px !important;
+    height: 680px !important;
   }
 }
 @media (max-width: 640px) {
   #lucky-painter-header-content .slimScrollDiv {
-    height: 235px !important;
+    height: 550px !important;
   }
   #lucky-painter-header-content .slimScrollDiv .scroll-block {
-    height: 235px !important;
+    height: 550px !important;
   }
 }
 @media (max-width: 480px) {
   #lucky-painter-header-content .slimScrollDiv {
-    height: 550px !important;
+    height: 450px !important;
   }
   #lucky-painter-header-content .slimScrollDiv .scroll-block {
-    height: 540px !important;
+    height: 450px !important;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-content .slimScrollDiv {
+    height: 330px !important;
+  }
+  #lucky-painter-header-content .slimScrollDiv .scroll-block {
+    height: 330px !important;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-content .slimScrollDiv {
+    height: 280px !important;
+  }
+  #lucky-painter-header-content .slimScrollDiv .scroll-block {
+    height: 280px !important;
   }
 }
 #lucky-painter-header-content.header-banner {
@@ -11499,13 +11523,31 @@ a.btn-share-result:hover {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-@media (max-width: 480px) {
-  #lucky-painter-header-content.header-banner figure {
-    display: none;
-  }
-}
 #lucky-painter-header-content.header-banner figure img {
   width: 100%;
+}
+#lucky-painter-header-content.header-banner figure img.banner-landing {
+  display: block;
+}
+#lucky-painter-header-content.header-banner figure img.banner-landing.mobile,
+#lucky-painter-header-content.header-banner figure img.banner-landing.mobile-small {
+  display: none;
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-content.header-banner figure img.banner-landing {
+    display: none;
+  }
+  #lucky-painter-header-content.header-banner figure img.banner-landing.mobile {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-content.header-banner figure img.banner-landing.mobile {
+    display: none;
+  }
+  #lucky-painter-header-content.header-banner figure img.banner-landing.mobile-small {
+    display: block;
+  }
 }
 #lucky-painter-header-content.header-banner .block-header-content {
   display: block;
@@ -11534,11 +11576,6 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-content.header-banner .block-header-content {
     padding: 10px 0 0;
-  }
-}
-@media (max-width: 480px) {
-  #lucky-painter-header-content.header-banner .block-header-content {
-    position: relative;
   }
 }
 #lucky-painter-header-content.header-banner .block-header-content .wrapper-block {
@@ -11599,7 +11636,7 @@ a.btn-share-result:hover {
 @media (max-width: 480px) {
   #lucky-painter-header-content.header-banner .block-header-content .btn-prev-block1 {
     left: 0;
-    top: 105px;
+    top: 15px;
   }
 }
 #lucky-painter-header-content.header-banner .block-header-content .btn-prev-block1 .prev-icon {
@@ -11656,7 +11693,7 @@ a.btn-share-result:hover {
     position: relative;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 45px;
     text-shadow: -1px 1px 0 rgba(78, 58, 9, 0.5);
   }
 }
@@ -11714,6 +11751,7 @@ a.btn-share-result:hover {
   height: auto;
   top: 0;
   padding: 90px 180px;
+  margin-top: 0;
   background: url("../images/landing-header/block1-content.png") no-repeat center / 100% 100%;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -11740,22 +11778,31 @@ a.btn-share-result:hover {
 }
 @media (max-width: 768px) {
   #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
-    padding: 25px 55px;
+    margin-top: 30px;
+    background: url("../images/galaxy-wall/rule-wrapper-mobile-right.png") no-repeat center / 100% 100%;
+    padding: 50px 55px;
     width: 555px;
   }
 }
 @media (max-width: 640px) {
   #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
-    padding: 15px 35px;
+    margin-top: 0;
+    padding: 45px 45px;
     width: 490px;
   }
 }
 @media (max-width: 480px) {
   #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
-    background: url("../images/galaxy-wall/rule-wrapper-mobile-right.png") no-repeat center / 100% 100%;
+    margin-top: 30px;
     padding: 55px 35px;
     width: 100%;
     position: relative;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-content.header-banner .block-header-content .block-content-1 {
+    margin-top: 25px;
+    padding: 45px 35px;
   }
 }
 #lucky-painter-header-content.header-banner .block-header-content .block-content-1 .scroll-block {
@@ -11800,6 +11847,29 @@ a.btn-share-result:hover {
 #lucky-painter-header-register.header-banner figure img {
   width: 100%;
 }
+#lucky-painter-header-register.header-banner figure img.banner-landing {
+  display: block;
+}
+#lucky-painter-header-register.header-banner figure img.banner-landing.mobile,
+#lucky-painter-header-register.header-banner figure img.banner-landing.mobile-small {
+  display: none;
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner figure img.banner-landing {
+    display: none;
+  }
+  #lucky-painter-header-register.header-banner figure img.banner-landing.mobile {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner figure img.banner-landing.mobile {
+    display: none;
+  }
+  #lucky-painter-header-register.header-banner figure img.banner-landing.mobile-small {
+    display: block;
+  }
+}
 #lucky-painter-header-register.header-banner figure .paint-block-landing {
   position: absolute;
   left: 0;
@@ -11809,9 +11879,24 @@ a.btn-share-result:hover {
   max-width: 1920px;
   z-index: 1;
 }
-@media (max-width: 640px) {
-  #lucky-painter-header-register.header-banner figure {
+#lucky-painter-header-register.header-banner figure .paint-block-landing.mobile,
+#lucky-painter-header-register.header-banner figure .paint-block-landing.mobile-small {
+  display: none;
+}
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner figure .paint-block-landing {
     display: none;
+  }
+  #lucky-painter-header-register.header-banner figure .paint-block-landing.mobile {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  #lucky-painter-header-register.header-banner figure .paint-block-landing.mobile {
+    display: none;
+  }
+  #lucky-painter-header-register.header-banner figure .paint-block-landing.mobile-small {
+    display: block;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content {
@@ -11836,7 +11921,6 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content {
     padding: 10px 0 0;
-    position: relative;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .wrapper-block {
@@ -11891,8 +11975,13 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 {
-    right: 0;
-    top: 105px;
+    right: 10px;
+    top: 20px;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 {
+    top: 0;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .btn-prev-block2 .prev-icon {
@@ -11948,10 +12037,19 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
-    position: relative;
     width: 100%;
     top: 0;
-    left: 0;
+    left: -45px;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    top: -10px;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header {
+    line-height: 25px;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
@@ -11981,6 +12079,11 @@ a.btn-share-result:hover {
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
     font-size: 35px;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header span {
+    font-size: 30px;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .title-wrapper-header:after {
@@ -12026,28 +12129,45 @@ a.btn-share-result:hover {
 }
 @media (max-width: 1024px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
-    padding: 25px 125px;
+    padding: 50px 125px;
     width: 750px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
-    padding: 25px 55px;
+    padding: 150px 80px;
     width: 555px;
+    background: url("../images/galaxy-wall/rule-wrapper-mobile.png") no-repeat center / 100% 100%;
   }
 }
 @media (max-width: 640px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
-    padding: 15px 100px;
+    padding: 125px 80px;
     width: 490px;
-    position: relative;
   }
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
-    padding: 55px 35px;
-    width: 100%;
-    background: url("../images/galaxy-wall/rule-wrapper-mobile.png") no-repeat center / 100% 100%;
+    left: 5%;
+    margin-top: 0;
+    padding: 90px 30px;
+    top: 100px;
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 25px 30px;
+    top: 85px;
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 {
+    padding: 25px 30px;
+    top: 40px;
+    width: 90%;
   }
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block {
@@ -12075,13 +12195,29 @@ a.btn-share-result:hover {
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label:hover {
   color: #632366;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-group {
     margin: 0 auto 5px;
   }
 }
-#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label.active {
+@media (max-width: 768px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-group {
+    margin: 0 auto 15px;
+  }
+}
+@media (max-width: 640px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-group {
+    margin: 0 auto 5px;
+  }
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label.active,
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form label.isTyped {
   color: #632366;
+}
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form input.isTyped,
+#lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form textarea.isTyped {
+  border: 1px solid #632366 !important;
+  background-color: white !important;
 }
 #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-form .form-control {
   -webkit-border-radius: 0;
@@ -12177,6 +12313,14 @@ a.btn-share-result:hover {
   text-align: center;
   color: #632366;
   font-family: 'Bebas', sans-serif;
+}
+@media (max-width: 1024px) {
+  #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success .success-title {
+    margin: 5px 0;
+    line-height: 25px;
+    height: 30px;
+    font-size: 24px;
+  }
 }
 @media (max-width: 480px) {
   #lucky-painter-header-register.header-banner .block-header-content .block-content-2 .register-block .register-success .success-title {

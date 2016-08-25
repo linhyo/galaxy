@@ -20,8 +20,14 @@
         max-width: 1903px;
       }
       .banner-landing, .paint-block-landing{
+        &.mobile{
+          display: none;
+        }
         @media (max-width: 768px) {
           display: none;
+          &.mobile{
+            display: block;
+          }
         }
       }
       .banner-landing-mobile{
@@ -225,25 +231,41 @@
 #lucky-painter-header-content {
   @media (max-width: 768px) {
     .slimScrollDiv{
-      height: 250px !important;
+      height: 680px !important;
       .scroll-block{
-        height: 250px !important;
+        height: 680px !important;
       }
     }
   }
   @media (max-width: 640px) {
     .slimScrollDiv{
-      height: 235px !important;
+      height: 550px !important;
       .scroll-block{
-        height: 235px !important;
+        height: 550px !important;
       }
     }
   }
   @media (max-width: 480px) {
     .slimScrollDiv{
-      height: 550px !important;
+      height: 450px !important;
       .scroll-block{
-        height: 540px !important;
+        height: 450px !important;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    .slimScrollDiv{
+      height: 330px !important;
+      .scroll-block{
+        height: 330px !important;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .slimScrollDiv{
+      height: 280px !important;
+      .scroll-block{
+        height: 280px !important;
       }
     }
   }
@@ -260,11 +282,28 @@
       position: relative;
       display: block;
       .transition();
-      @media (max-width: 480px) {
-        display: none;
-      }
       img {
         width: 100%;
+        &.banner-landing{
+          display: block;
+          &.mobile, &.mobile-small{
+            display: none;
+          }
+          @media (max-width: 768px) {
+            display: none;
+            &.mobile{
+              display: block;
+            }
+          }
+          @media (max-width: 480px) {
+            &.mobile{
+              display: none;
+            }
+            &.mobile-small{
+              display: block;
+            }
+          }
+        }
       }
     }
     .block-header-content {
@@ -284,9 +323,6 @@
       }
       @media (max-width: 640px) {
         padding: 10px 0 0;
-      }
-      @media (max-width: 480px) {
-        position: relative;
       }
       .wrapper-block {
         width: 1285px;
@@ -324,7 +360,7 @@
         .transition();
         @media (max-width: 480px) {
           left: 0;
-          top: 105px;
+          top: 15px;
         }
         .prev-icon {
           background: url("../images/landing-header/block1-prev.png") no-repeat center center/100% auto;
@@ -367,7 +403,7 @@
           position: relative;
           width: 100%;
           top: 0;
-          left: 0;
+          left: 45px;
           text-shadow: -1px 1px 0 hsla(43, 79%, 17%, 0.5);
         }
         span {
@@ -409,6 +445,7 @@
         height: auto;
         top: 0;
         padding: 90px 180px;
+        margin-top: 0;
         background: url("../images/landing-header/block1-content.png") no-repeat center / 100% 100%;
         .transition();
         @media (min-width: 1660px) and (max-width: 1920px) {
@@ -423,18 +460,25 @@
           width: 750px;
         }
         @media (max-width: 768px) {
-          padding: 25px 55px;
+          margin-top: 30px;
+          background: url("../images/galaxy-wall/rule-wrapper-mobile-right.png") no-repeat center / 100% 100%;
+          padding: 50px 55px;
           width: 555px;
         }
         @media (max-width: 640px) {
-          padding: 15px 35px;
+          margin-top: 0;
+          padding: 45px 45px;
           width: 490px;
         }
         @media (max-width: 480px) {
-          background: url("../images/galaxy-wall/rule-wrapper-mobile-right.png") no-repeat center / 100% 100%;
+          margin-top: 30px;
           padding: 55px 35px;
           width: 100%;
           position: relative;
+        }
+        @media (max-width: 360px) {
+          margin-top: 25px;
+          padding: 45px 35px;
         }
         .scroll-block {
           width: 620px;
@@ -477,6 +521,26 @@
       }
       img {
         width: 100%;
+        &.banner-landing{
+          display: block;
+          &.mobile, &.mobile-small{
+            display: none;
+          }
+          @media (max-width: 768px) {
+            display: none;
+            &.mobile{
+              display: block;
+            }
+          }
+          @media (max-width: 480px) {
+            &.mobile{
+              display: none;
+            }
+            &.mobile-small{
+              display: block;
+            }
+          }
+        }
       }
       .paint-block-landing {
         position: absolute;
@@ -486,9 +550,23 @@
         height: auto;
         max-width: 1920px;
         z-index: 1;
-      }
-      @media (max-width: 640px) {
-        display: none;
+        &.mobile, &.mobile-small{
+          display: none;
+        }
+        @media (max-width: 768px) {
+          display: none;
+          &.mobile{
+            display: block;
+          }
+        }
+        @media (max-width: 480px) {
+          &.mobile{
+            display: none;
+          }
+          &.mobile-small{
+            display: block;
+          }
+        }
       }
     }
     .block-header-content {
@@ -507,7 +585,6 @@
       }
       @media (max-width: 640px) {
         padding: 10px 0 0;
-        position: relative;
       }
       .wrapper-block {
         width: 1285px;
@@ -543,8 +620,11 @@
         position: absolute;
         z-index: 1;
         @media (max-width: 480px) {
-          right: 0;
-          top: 105px;
+          right: 10px;
+          top: 20px;
+        }
+        @media (max-width: 320px) {
+          top: 0;
         }
         .prev-icon {
           background: url("../images/landing-header/block2-prev.png") no-repeat center center/100% auto;
@@ -586,10 +666,15 @@
           top: 90px;
         }
         @media (max-width: 480px) {
-          position: relative;
           width: 100%;
           top: 0;
-          left: 0;
+          left: -45px;
+        }
+        @media (max-width: 360px) {
+          top: -10px;
+        }
+        @media (max-width: 320px) {
+          line-height: 25px;
         }
         span {
           font-size: 80px;
@@ -606,6 +691,9 @@
           }
           @media (max-width: 640px) {
             font-size: 35px;
+          }
+          @media (max-width: 320px) {
+            font-size: 30px;
           }
         }
         &:after {
@@ -640,22 +728,35 @@
           padding: 65px 150px;
         }
         @media (max-width: 1024px) {
-          padding: 25px 125px;
+          padding: 50px 125px;
           width: 750px;
+          margin-top: 30px;
         }
         @media (max-width: 768px) {
-          padding: 25px 55px;
+          padding: 150px 80px;
           width: 555px;
+          background: url("../images/galaxy-wall/rule-wrapper-mobile.png") no-repeat center / 100% 100%;
         }
         @media (max-width: 640px) {
-          padding: 15px 100px;
+          padding: 125px 80px;
           width: 490px;
-          position: relative;
         }
         @media (max-width: 480px) {
-          padding: 55px 35px;
-          width: 100%;
-          background: url("../images/galaxy-wall/rule-wrapper-mobile.png") no-repeat center / 100% 100%;
+          left: 5%;
+          margin-top: 0;
+          padding: 90px 30px;
+          top: 100px;
+          width: 70%;
+        }
+        @media (max-width: 360px) {
+          padding: 25px 30px;
+          top: 85px;
+          width: 80%;
+        }
+        @media (max-width: 320px) {
+          padding: 25px 30px;
+          top: 40px;
+          width: 90%;
         }
         .register-block {
           position: relative;
@@ -679,12 +780,26 @@
               }
             }
             .form-group{
+              @media (max-width: 1024px) {
+                margin: 0 auto 5px;
+              }
               @media (max-width: 768px) {
+                margin: 0 auto 15px;
+              }
+              @media (max-width: 640px) {
                 margin: 0 auto 5px;
               }
             }
-            label.active{
-              color: #632366;
+            label{
+              &.active, &.isTyped{
+                color: #632366;
+              }
+            }
+            input, textarea{
+              &.isTyped{
+                border: 1px solid #632366 !important;
+                background-color: white !important;
+              }
             }
             .form-control {
               .border-radius(0);
@@ -757,6 +872,12 @@
               text-align: center;
               color: #632366;
               font-family: @landing-font;
+              @media (max-width: 1024px) {
+                margin: 5px 0;
+                line-height: 25px;
+                height: 30px;
+                font-size: 24px;
+              }
               @media (max-width: 480px) {
                 margin: 0;
                 line-height: 25px;

@@ -89,17 +89,29 @@ $(document).ready(function () {
     }, '50');
   });
 
-  $('.register-block input').focus(function () {
+  var checkValue = function(input){
+    if(input.val().length > 0){
+      input.parent().find('label').addClass('isTyped');
+      input.addClass('isTyped');
+    }else{
+      input.parent().find('label').removeClass('isTyped');
+      input.removeClass('isTyped');
+    }
+  };
+
+  $('input, textarea').focus(function () {
     $(this).parent().find('label').addClass('active');
+    checkValue($(this));
   }).blur(function () {
     $(this).parent().find('label').removeClass('active');
+    checkValue($(this));
   });
 
-  //$('.btn-submit').click(function(e){
-  //  e.preventDefault();
-  //  setTimeout(function () {
-  //    $('.register-form').hide();
-  //    $('.register-success').show();
-  //  }, '500');
-  //});
+  $('.btn-submit').click(function(e){
+    e.preventDefault();
+    setTimeout(function () {
+      $('.register-form').hide();
+      $('.register-success').show();
+    }, 500);
+  });
 });

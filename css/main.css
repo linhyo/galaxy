@@ -15676,13 +15676,13 @@ a.btn-share-result:hover {
 @media (max-width: 1024px) {
   #lucky-gift-box .flame .block-content1 .number-painter {
     margin: 0 auto;
-    padding: 35px 0 35px 160px;
+    padding: 35px 0 35px 140px;
   }
 }
 @media (max-width: 768px) {
   #lucky-gift-box .flame .block-content1 .number-painter {
     margin: 5px auto;
-    padding: 15px 0 15px 100px;
+    padding: 15px 0 15px 120px;
   }
 }
 @media (max-width: 480px) {
@@ -15711,7 +15711,7 @@ a.btn-share-result:hover {
   color: #ff6600;
   font-family: 'Bebas', sans-serif;
   font-size: 60px;
-  left: 80px;
+  left: 60px;
   line-height: 87px;
   position: absolute;
   text-align: center;
@@ -15733,12 +15733,12 @@ a.btn-share-result:hover {
   #lucky-gift-box .flame .block-content1 .number-painter .timer {
     line-height: 25px;
     top: 20px;
-    left: 25px;
+    left: 35px;
   }
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content1 .number-painter .timer {
-    left: 20px;
+    left: 25px;
     top: 15px;
     font-size: 20px;
     line-height: 20px;
@@ -15756,7 +15756,7 @@ a.btn-share-result:hover {
 #lucky-gift-box .flame .block-content1 .number-painter .description-bottom {
   color: #ff6600;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   width: 100%;
   line-height: 25px;
   z-index: 1;
@@ -15900,7 +15900,7 @@ a.btn-share-result:hover {
 @media (min-width: 1660px) and (max-width: 1920px) {
   #lucky-gift-box .flame .block-content1 .action-content .btn-content-event {
     font-size: 28px;
-    height: 38px;
+    height: 40px;
     line-height: 28px;
     width: 300px;
   }
@@ -15952,7 +15952,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 1660px) and (max-width: 1920px) {
   #lucky-gift-box .flame .block-content2 {
-    margin-top: 95px;
+    margin-top: 115px;
   }
 }
 @media (max-width: 1024px) {
@@ -15960,9 +15960,14 @@ a.btn-share-result:hover {
     margin-top: 15px;
   }
 }
+@media (max-width: 768px) {
+  #lucky-gift-box .flame .block-content2 {
+    margin-top: 25px;
+  }
+}
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content2 {
-    margin-top: 15px;
+    margin-top: 60px;
   }
 }
 @media (max-width: 360px) {
@@ -16030,11 +16035,6 @@ a.btn-share-result:hover {
 }
 @media (max-width: 480px) {
   #lucky-gift-box .flame .block-content2 .wrapper-promotion {
-    padding: 0 5px;
-  }
-}
-@media (max-width: 360px) {
-  #lucky-gift-box .flame .block-content2 .wrapper-promotion {
     display: none;
   }
 }
@@ -16043,6 +16043,17 @@ a.btn-share-result:hover {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  #lucky-gift-box .flame .block-content3 {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 360px) {
+  #lucky-gift-box .flame .block-content3 {
+    margin-top: 5px;
+  }
 }
 #lucky-gift-box .flame .block-content3 .title-content {
   color: white;
@@ -16052,7 +16063,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 1660px) and (max-width: 1920px) {
   #lucky-gift-box .flame .block-content3 .title-content {
-    font-size: 60px;
+    font-size: 45px;
     line-height: 40px;
   }
 }
@@ -16075,7 +16086,7 @@ a.btn-share-result:hover {
 }
 @media (min-width: 1660px) and (max-width: 1920px) {
   #lucky-gift-box .flame .block-content3 .sub-title-content {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 @media (max-width: 640px) {
@@ -16105,7 +16116,7 @@ a.btn-share-result:hover {
     padding: 0 10px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   #lucky-gift-box .flame .block-content3 .wrapper-content {
     display: none;
   }
@@ -16168,6 +16179,11 @@ a.btn-share-result:hover {
 @media (min-width: 1660px) and (max-width: 1920px) {
   #lucky-gift-box .flame .block-content4 {
     margin-top: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #lucky-gift-box .flame .block-content4 {
+    margin-top: 15px;
   }
 }
 @media (max-width: 480px) {
@@ -16235,11 +16251,6 @@ a.btn-share-result:hover {
   }
 }
 @media (max-width: 480px) {
-  #lucky-gift-box .flame .block-content4 .wrapper-promotion {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 360px) {
   #lucky-gift-box .flame .block-content4 .wrapper-promotion {
     display: none;
   }

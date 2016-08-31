@@ -137,4 +137,22 @@ $(document).ready(function () {
     return false;
   };
 
+  var checkValue = function(input){
+    if(input.val().length > 0){
+      input.parent().find('label').addClass('isTyped');
+      input.addClass('isTyped');
+    }else{
+      input.parent().find('label').removeClass('isTyped');
+      input.removeClass('isTyped');
+    }
+  };
+
+  $('input, textarea').focus(function () {
+    $(this).parent().find('label').addClass('active');
+    checkValue($(this));
+  }).blur(function () {
+    $(this).parent().find('label').removeClass('active');
+    checkValue($(this));
+  });
+
 });

@@ -775,6 +775,9 @@
       color: #9aa4ae;
       font-size: 15px;
       margin-bottom: 5px;
+      &.active, &.isTyped{
+        color: #632366;
+      }
     }
   }
   .form-control {
@@ -785,6 +788,10 @@
     &:focus {
       background-color: #fff;
       border-color: #632366 !important;
+    }
+    &.isTyped{
+      border: 1px solid #632366 !important;
+      background-color: white !important;
     }
   }
   .banner-btn {

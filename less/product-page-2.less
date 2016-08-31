@@ -164,13 +164,13 @@
 
 #product-page-testimonial {
   @media (min-width: 768px) {
-    padding: 60px 0 100px;
+    padding: 50px 0 100px;
     .testimonial-wrapper:after {
       bottom: -50px;
     }
   }
   @media (max-width: 767px) {
-    padding: 60px 0 80px;
+    padding: 50px 0 80px;
     .testimonial-wrapper:after {
       bottom: -40px;
     }
@@ -234,6 +234,14 @@
             left: 40px;
           }
         }
+        @media (max-width: 1199px) {
+          p {
+            display: none;
+          }
+          button {
+            margin-top: 10px;
+          }
+        }
         @media (max-width: 991px) {
           &.caption-1, &.caption-2, &.caption-4, &.caption-6 {
             left: 20px;
@@ -242,14 +250,8 @@
             text-align: right;
             right: 20px;
           }
-          p {
-            display: none;
-            //font-size: 15px;
-            //margin-top: 5px;
-          }
           button {
             background-color: rgba(255,255,255,0.5);
-            margin-top: 10px;
           }
         }
         @media (min-width: 768px) {

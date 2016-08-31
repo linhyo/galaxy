@@ -282,10 +282,10 @@
 
 #product-category-item {
   @media (min-width: 992px) {
-    padding: 40px 0;
+    padding: 20px 0 40px;
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 30px 0;
+    padding: 15px 0 30px;
   }
   @media (max-width: 767px) {
     padding: 10px 0;
@@ -455,6 +455,35 @@
       background-image: -moz-linear-gradient(transparent, #67327b);
       background-image: -o-linear-gradient(transparent, #67327b);
       background-image: linear-gradient(transparent, #67327b);
+    }
+  }
+}
+
+#product-breadcrumb {
+  ol {
+    padding: 8px 15px;
+    margin-top: 20px;
+    list-style: none;
+    > li {
+      display: inline-block;
+      > a {
+        color: #7f7f7f;
+        font-weight: 300;
+        font-size: 20px;
+      }
+      &.active {
+        > a {
+          color: #632366;
+        }
+      }
+      + li:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 15px;
+        background: url("../images/product-landing/right-arrow.png") no-repeat center center;
+        padding: 0 15px;
+      }
     }
   }
 }
